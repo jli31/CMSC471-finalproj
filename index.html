@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMSC471 Final Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="kicker">CMSC471 Final Project</p>
+        <h1>The Sound of Popularity: Decoding Spotify Hits</h1>
+        <p class="authors"><strong>Authors:</strong> Jiho Lee, John Li, Ed Yun, Andrew Zhang</p>
+        <p class="subtitle">
+          Explore how audio features, genre, and time shape what becomes a Spotify hit.
+        </p>
+      </header>
+      <section class="intro">
+        <p>
+          What did you listen to this morning on your way to school or work? Maybe it was during a
+          gym session, a daily run, while cooking dinner, or while finishing homework late at night.
+          In today's world, music is deeply woven into everyday life. As streaming platforms expand
+          and listening habits evolve, the music market keeps growing alongside them.
+        </p>
+        <p>
+          But what actually makes a song catch on? Is it energy, danceability, mood, or just timing?
+          In this project, we explore Spotify data to understand how modern music trends shift over
+          time and which audio patterns are most connected to popularity.
+        </p>
+      </section>
+
+      <section class="mini-viz" id="mini-viz-1">
+        <h2>Are faster songs more popular?</h2>
+        <p class="mini-viz-description">
+          Drag the tempo slider to explore tracks across BPM ranges and test whether higher speed
+          consistently aligns with higher popularity.
+        </p>
+
+        <div class="tempo-player">
+          <div class="slider-column">
+            <span class="tempo-label tempo-label-top">High tempo</span>
+            <div class="tempo-slider-shell">
+              <div class="tempo-cone-track" aria-hidden="true"></div>
+              <div class="tempo-fill-track" id="tempo-fill-track" aria-hidden="true"></div>
+              <input
+                id="tempo-slider"
+                class="tempo-slider"
+                type="range"
+                min="70"
+                max="190"
+                step="1"
+                value="120"
+                aria-label="Tempo slider in beats per minute"
+              />
+            </div>
+            <span class="tempo-label tempo-label-bottom">Low tempo</span>
+            <label class="tempo-input-wrap" for="tempo-input">
+              <span class="tempo-input-label">BPM</span>
+              <input id="tempo-input" class="tempo-input" type="number" min="70" max="190" step="1" value="120" />
+            </label>
+          </div>
+
+          <div class="song-panel">
+            <p class="song-kicker">Selected track</p>
+            <h3 id="song-title">-</h3>
+            <p id="song-artist">-</p>
+            <p id="song-metrics">Tempo: -- BPM | Popularity: --</p>
+
+            <div class="player-controls">
+              <a id="youtube-link" class="youtube-link" href="#" target="_blank" rel="noopener noreferrer">
+                Open on YouTube
+              </a>
+            </div>
+            <p id="audio-note" class="audio-note">
+              Click the button to open the selected song on YouTube.
+            </p>
+          </div>
+
+          <aside class="popularity-panel" aria-label="Popularity visualization">
+            <p class="popularity-title">Popularity</p>
+            <div class="popularity-visual">
+              <div id="popularity-bubble" class="popularity-bubble" aria-hidden="true"></div>
+            </div>
+            <p id="popularity-label" class="popularity-label">Popularity bubble</p>
+          </aside>
+        </div>
+
+        <p class="viz-disclaimer">
+          <strong>Note on popularity:</strong> Spotify popularity is a platform-generated score from 0 to 100.
+          It generally reflects a track's recent and overall listening performance relative to other songs on
+          Spotify, so it is best interpreted as a comparative index rather than a direct play count.
+        </p>
+
+        <p class="viz-transition">
+          You decide! Do you prefer songs with faster tempos or slower ones? What tempo is your favorite
+          song on this list?
+        </p>
+      </section>
+
+      <section class="insight-section">
+        <h3>Why tempo can be misleading</h3>
+        <p>
+          One takeaway from this view is that BPM alone does not always match how fast a song
+          feels. A track with a lower tempo can still sound energetic if its rhythm uses many
+          eighth or sixteenth notes, while a higher-tempo song can feel calmer when notes are more
+          spread out. In other words, a song at 71 BPM may feel like 142 BPM in perception, and the
+          reverse can also happen. <br><br>Try playing around with the slider yourself until you find a slower 
+          tempo but still energetic song!
+        </p>
+      </section>
+
+      <section id="viz-root">Mini visualizations 2-4 and the final integrated view will go here.</section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
