@@ -1,5 +1,4 @@
-# Track raw dataset snapshots for team collaboration.
-# Ignore generated files and archives.
-data/processed/
+# Track raw and processed dataset snapshots for team collaboration.
+# Ignore archives and OS noise.
 *.zip
 .DS_Store

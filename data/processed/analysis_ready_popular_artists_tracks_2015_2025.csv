@@ -1,0 +1,1078 @@
+track_id,track_name,artist_name,year,popularity,tempo,danceability,energy,valence,acousticness,liveness,speechiness,instrumentalness,duration_ms,lead_artist
+0OA00aPt3BV10qeMIs3meW,Big Dawgs,"Hanumankind, Kalmi",2024,93,180.098,0.464,0.745,0.262,0.0235,0.363,0.161,0.0,190667.0,Hanumankind
+0VjIjW4GlUZAMYd2vXMi3b,Blinding Lights,The Weeknd,2020,91,171.005,0.514,0.73,0.334,0.00146,0.0897,0.0598,9.54e-05,200040.0,The Weeknd
+7MXVkk9YMctZqd1Srtv4MB,Starboy,"The Weeknd, Daft Punk",2016,91,186.003,0.679,0.587,0.486,0.141,0.137,0.276,6.35e-06,230453.0,The Weeknd
+0V3wPSX9ygBnCm8psDIegu,Anti-Hero,Taylor Swift,2022,89,97.008,0.637,0.643,0.533,0.13,0.142,0.0519,1.8e-06,200690.0,Taylor Swift
+4R2kfaDFhslZEMJqAFNpdd,cardigan,Taylor Swift,2020,89,130.033,0.613,0.581,0.551,0.537,0.25,0.0424,0.000345,239560.0,Taylor Swift
+2O4Bb2WCkjlTPO827OnBMI,EASY,LE SSERAFIM,2024,88,165.004,0.744,0.7,0.602,0.189,0.114,0.0507,2.74e-06,164545.0,LE SSERAFIM
+1Iq8oo9XkmmvCQiGOfORiz,Is It Over Now? (Taylor's Version) (From The Vault),Taylor Swift,2023,88,100.012,0.596,0.658,0.176,0.0504,0.127,0.036,0.0,229478.0,Taylor Swift
+3hUxzQpSfdDqwM3ZTFQY0K,august,Taylor Swift,2020,88,89.937,0.532,0.623,0.403,0.538,0.0925,0.0331,7.28e-05,261923.0,Taylor Swift
+6RUKPb4LETWmmr3iAEQktW,Something Just Like This,"The Chainsmokers, Coldplay",2017,88,103.019,0.617,0.635,0.446,0.0498,0.164,0.0317,1.44e-05,247160.0,The Chainsmokers
+4lR8sYGMGZPvthF2yUfo7T,Smart,LE SSERAFIM,2024,87,113.076,0.799,0.675,0.594,0.115,0.0833,0.0465,0.0,166384.0,LE SSERAFIM
+5QO79kh1waicV47BqGRL3g,Save Your Tears,The Weeknd,2020,87,118.051,0.68,0.826,0.644,0.0212,0.543,0.0309,1.24e-05,215627.0,The Weeknd
+0tgVpDi06FyKpA1z0VMD4v,Perfect,Ed Sheeran,2017,87,95.05,0.599,0.448,0.168,0.163,0.106,0.0232,0.0,263400.0,Ed Sheeran
+7qiZfU4dY1lWllzX7mPBI3,Shape of You,Ed Sheeran,2017,87,95.977,0.825,0.652,0.931,0.581,0.0931,0.0802,0.0,233713.0,Ed Sheeran
+2LBqCSwhJGcFQeTHMVGwy3,Die For You,The Weeknd,2016,87,133.629,0.586,0.525,0.508,0.111,0.134,0.0615,0.0,260253.0,The Weeknd
+7fBv7CLKzipRk6EC6TWHOB,The Hills,The Weeknd,2015,87,113.003,0.585,0.564,0.137,0.0671,0.135,0.0515,0.0,242253.0,The Weeknd
+1VNWdmXSbaNrnWod10WIL0,"One Of The Girls (with JENNIE, Lily Rose Depp)","The Weeknd, JENNIE, Lily-Rose Depp",2024,86,87.521,0.531,0.652,0.179,0.0524,0.162,0.0325,1.39e-06,244685.0,The Weeknd
+3OJDtCdYs8QJnui708tEU3,Soltera,Shakira,2024,86,100.076,0.841,0.752,0.67,0.167,0.949,0.105,0.00046,214643.0,Shakira
+74X2u8JMVooG2QbjRxXwR8,Perfect Night,LE SSERAFIM,2023,86,136.054,0.697,0.82,0.502,0.1,0.0631,0.0308,0.0,159080.0,LE SSERAFIM
+09mEdoA6zrmBPgTEN5qXmN,Call Out My Name,The Weeknd,2018,86,134.17,0.461,0.593,0.175,0.17,0.307,0.0356,0.0,228373.0,The Weeknd
+7BKLCZ1jbUBVqRi2FVlTVw,Closer,"The Chainsmokers, Halsey",2016,86,95.01,0.748,0.524,0.661,0.414,0.111,0.0338,0.0,244960.0,The Chainsmokers
+5oO3drDxtziYU2H1X23ZIp,Love On The Brain,Rihanna,2016,86,172.006,0.509,0.637,0.378,0.0717,0.0789,0.0471,1.08e-05,224000.0,Rihanna
+5gDWsRxpJ2lZAffh5p7K0w,Stargirl Interlude,"The Weeknd, Lana Del Rey",2016,86,89.965,0.715,0.47,0.426,0.353,0.104,0.0772,0.0923,111627.0,The Weeknd
+3aAnwyBJY9OLNLqSgd4fZU,Deja Vu,TOMORROW X TOGETHER,2024,85,162.844,0.357,0.572,0.238,0.0811,0.145,0.069,0.0,171428.0,TOMORROW X TOGETHER
+3CWq0pAKKTWb0K4yiglDc4,You're Losing Me (From The Vault),Taylor Swift,2023,85,102.984,0.747,0.391,0.195,0.529,0.111,0.052,0.003,277832.0,Taylor Swift
+5sdQOyqq2IDhvmx2lHOpwd,Super Shy,NewJeans,2023,85,149.921,0.776,0.817,0.515,0.18,0.146,0.0748,3.44e-05,154667.0,NewJeans
+7KokYm8cMIXCsGVmUvKtqf,Karma,Taylor Swift,2022,85,90.02,0.642,0.62,0.0969,0.0734,0.483,0.0666,0.0,204852.0,Taylor Swift
+0mL82sxCRjrs3br407IdJh,Is There Someone Else?,The Weeknd,2022,85,134.951,0.702,0.586,0.608,0.0388,0.156,0.0313,7.27e-05,199111.0,The Weeknd
+6I3mqTwhRpn34SLVafSH7G,Ghost,Justin Bieber,2021,85,153.96,0.601,0.741,0.441,0.185,0.415,0.0478,2.91e-05,153190.0,Justin Bieber
+1cKHdTo9u0ZymJdPGSh6nq,I Was Never There,"The Weeknd, Gesaffelstein",2018,85,113.26,0.323,0.737,0.155,0.142,0.163,0.0338,0.000162,241067.0,The Weeknd
+37F0uwRSrdzkBiuj0D5UHI,Reminder,The Weeknd,2016,85,160.053,0.706,0.505,0.388,0.142,0.164,0.193,0.0,218880.0,The Weeknd
+7GUhiAHLoVy1V8ucQuZ3CB,Popular (with Playboi Carti & Madonna),"The Weeknd, Playboi Carti, Madonna",2024,84,99.018,0.854,0.668,0.833,0.0604,0.382,0.2,8.39e-05,215467.0,The Weeknd
+71BqAINEnezjQfxE4VuJfq,"""Slut!"" (Taylor's Version) (From The Vault)",Taylor Swift,2023,84,77.983,0.629,0.413,0.306,0.345,0.0603,0.055,7.62e-05,180381.0,Taylor Swift
+6WzRpISELf3YglGAh7TXcG,Popular (with Playboi Carti & Madonna) - From The Idol Vol. 1 (Music from the HBO Original Series),"The Weeknd, Playboi Carti, Madonna",2023,84,99.022,0.854,0.674,0.848,0.0517,0.509,0.184,8.53e-05,215467.0,The Weeknd
+5enxwA8aAbwZbf5qCHORXi,All Too Well (10 Minute Version) (Taylor's Version) (From The Vault),Taylor Swift,2021,84,93.023,0.631,0.518,0.205,0.274,0.088,0.0303,0.0,613027.0,Taylor Swift
+1qrpoAMXodY6895hGKoUpA,You Belong With Me (Taylor's Version),Taylor Swift,2021,84,130.033,0.632,0.773,0.474,0.0623,0.0885,0.0346,0.0,231124.0,Taylor Swift
+4pAl7FkDMNBsjykPXo91B3,Needed Me,Rihanna,2016,84,110.898,0.671,0.314,0.296,0.11,0.0825,0.244,0.0,191600.0,Rihanna
+22VdIZQfgXJea34mQxlt81,Can't Feel My Face,The Weeknd,2015,84,107.949,0.705,0.769,0.583,0.113,0.105,0.0425,0.0,213520.0,The Weeknd
+5KD6AEm19QnMbfWpfoOHMl,Now That We Don't Talk (Taylor's Version) (From The Vault),Taylor Swift,2023,83,109.994,0.793,0.512,0.0662,0.186,0.0889,0.0338,3.81e-05,146437.0,Taylor Swift
+3sW3oSbzsfecv9XoUdGs7h,Enchanted (Taylor's Version),Taylor Swift,2023,83,81.907,0.505,0.532,0.216,0.012,0.149,0.0265,0.0,353253.0,Taylor Swift
+1hjRhYpWyqDpPahmSlUTlc,Style (Taylor's Version),Taylor Swift,2023,83,94.971,0.575,0.824,0.292,0.000418,0.0901,0.038,0.0214,231000.0,Taylor Swift
+2p8IUWQDrpjuFltbdgLOag,After Hours,The Weeknd,2020,83,108.959,0.664,0.572,0.143,0.0811,0.121,0.0305,0.00604,361027.0,The Weeknd
+50kpGaPAhYJ3sGmk6vplg0,Love Yourself,Justin Bieber,2015,83,100.43,0.609,0.378,0.515,0.835,0.28,0.438,0.0,233720.0,Justin Bieber
+09CtPGIpYB4BrO8qb1RGsF,Sorry,Justin Bieber,2015,83,99.947,0.655,0.76,0.409,0.0797,0.299,0.045,0.0,200787.0,Justin Bieber
+45wMBGri1PORPjM9PwFfrS,Blank Space (Taylor's Version),Taylor Swift,2023,82,96.012,0.737,0.725,0.755,0.0976,0.174,0.0641,0.0,231833.0,Taylor Swift
+65FftemJ1DbbZ45DUfHJXE,OMG,NewJeans,2023,82,126.956,0.804,0.771,0.739,0.357,0.108,0.0433,3.07e-06,212253.0,NewJeans
+4D7BCuvgdJlYvlX5WlN54t,"You're On Your Own, Kid",Taylor Swift,2022,82,120.041,0.696,0.396,0.38,0.401,0.125,0.0656,5.2e-06,194207.0,Taylor Swift
+3CeCwYWvdfXbZLXFhBrbnf,Love Story (Taylor's Version),Taylor Swift,2021,82,119.082,0.626,0.79,0.416,0.135,0.0989,0.0311,3.97e-06,235767.0,Taylor Swift
+6bnF93Rx87YqUBLSgjiMU8,Heartless,The Weeknd,2020,82,170.062,0.537,0.746,0.252,0.0236,0.156,0.15,1.01e-06,198267.0,The Weeknd
+1oFAF1hdPOickyHgbuRjyX,Save Your Tears (Remix) (with Ariana Grande) - Bonus Track,"The Weeknd, Ariana Grande",2020,82,118.091,0.65,0.825,0.593,0.0215,0.0936,0.0325,2.44e-05,191014.0,The Weeknd
+1i1fxkWeaMmKEB4T7zqbzK,Don't Let Me Down,"The Chainsmokers, Daya",2016,82,159.803,0.532,0.869,0.422,0.157,0.136,0.172,0.00508,208373.0,The Chainsmokers
+2Ch7LmS7r2Gy2kc64wv3Bz,Die For You,The Weeknd,2016,82,133.249,0.582,0.525,0.51,0.111,0.134,0.0627,0.0,260253.0,The Weeknd
+1K39ty6o1sHwwlZwO6a7wK,Wildest Dreams (Taylor's Version),Taylor Swift,2023,81,140.061,0.581,0.672,0.514,0.0411,0.118,0.0739,9.35e-05,220433.0,Taylor Swift
+6rdkCkjk6D12xRpdMXy0I2,New Jeans,NewJeans,2023,81,134.014,0.807,0.721,0.532,0.51,0.115,0.0508,0.00216,108987.0,NewJeans
+56v8WEnGzLByGsDAXDiv4d,ETA,NewJeans,2023,81,134.971,0.812,0.749,0.841,0.108,0.0599,0.0397,0.0,151373.0,NewJeans
+3qoftcUZaUOncvIYjFSPdE,Bejeweled,Taylor Swift,2022,81,163.999,0.696,0.559,0.433,0.0618,0.0887,0.0693,5.58e-05,194166.0,Taylor Swift
+5jQI2r1RdgtuT8S3iG8zFC,Lavender Haze,Taylor Swift,2022,81,96.985,0.733,0.436,0.0976,0.258,0.157,0.08,0.000573,202396.0,Taylor Swift
+3rWDp9tBPQR9z6U5YyRSK4,Midnight Rain,Taylor Swift,2022,81,139.865,0.643,0.363,0.23,0.69,0.115,0.0767,5.17e-05,174783.0,Taylor Swift
+3r8RuvgbX9s7ammBn07D3W,Ditto,NewJeans,2022,81,133.854,0.814,0.641,0.183,0.027,0.0993,0.111,0.0,185507.0,NewJeans
+0a4MMyCrzT0En247IhqZbD,Hype Boy,NewJeans,2022,81,99.976,0.593,0.935,0.783,0.268,0.286,0.225,0.0,179027.0,NewJeans
+77sMIMlNaSURUAXq5coCxE,Fearless (Taylor's Version),Taylor Swift,2021,81,100.118,0.569,0.741,0.43,0.0122,0.333,0.0282,0.0,241592.0,Taylor Swift
+6YvqWjhGD8mB5QXcbcUKtx,Love Story (Taylor's Version),Taylor Swift,2021,81,119.054,0.627,0.792,0.415,0.13,0.0845,0.031,3.97e-06,235767.0,Taylor Swift
+4pvb0WLRcMtbPGmtejJJ6y,exile (feat. Bon Iver),"Taylor Swift, Bon Iver",2020,81,75.602,0.298,0.38,0.152,0.778,0.11,0.0287,5.62e-05,285634.0,Taylor Swift
+2NmsngXHeC1GQ9wWrzhOMf,illicit affairs,Taylor Swift,2020,81,119.845,0.559,0.31,0.46,0.881,0.106,0.0338,0.0,190898.0,Taylor Swift
+0lx2cLdOt3piJbcaXIV74f,willow,Taylor Swift,2020,81,81.112,0.392,0.574,0.529,0.833,0.145,0.17,0.00179,214707.0,Taylor Swift
+0UHB9METy4VCXNgkcGqHqS,Kiss It Better,Rihanna,2016,81,95.0,0.619,0.806,0.877,0.272,0.0671,0.0483,0.0,253080.0,Rihanna
+4PhsKqMdgMEUSstTDAmMpg,Often,The Weeknd,2015,81,134.078,0.572,0.631,0.0713,0.222,0.135,0.0476,0.0,249040.0,The Weeknd
+37BZB0z9T8Xu7U3e65qxFy,Save Your Tears (with Ariana Grande) (Remix),"The Weeknd, Ariana Grande",2021,80,118.091,0.65,0.825,0.593,0.0215,0.0936,0.0325,2.44e-05,191014.0,The Weeknd
+4iJyoBOLtHqaGxP12qzhQI,Peaches (feat. Daniel Caesar & Giveon),"Justin Bieber, Daniel Caesar, Giveon",2021,80,90.03,0.677,0.696,0.464,0.321,0.42,0.119,0.0,198082.0,Justin Bieber
+0sY6ZUTh4yoctD8VIXz339,champagne problems,Taylor Swift,2020,80,171.319,0.462,0.24,0.32,0.92,0.113,0.0377,0.0,244000.0,Taylor Swift
+1MgV7FIyNxIG7WzMRJV5HC,my tears ricochet,Taylor Swift,2020,80,129.86,0.456,0.263,0.111,0.806,0.0749,0.0332,0.0,255894.0,Taylor Swift
+72TFWvU3wUYdUuxejTTIzt,Work,"Rihanna, Drake",2016,80,91.974,0.725,0.534,0.558,0.0752,0.0919,0.0946,0.0,219320.0,Rihanna
+4F7A0DXBrmUAkp32uenhZt,Party Monster,The Weeknd,2016,80,77.525,0.573,0.63,0.218,0.189,0.259,0.105,2.31e-05,249213.0,The Weeknd
+3dhjNA0jGA8vHBQ1VdD6vV,I Feel It Coming,"The Weeknd, Daft Punk",2016,80,92.987,0.773,0.819,0.585,0.428,0.0679,0.118,0.0,269187.0,The Weeknd
+78TTtXnFQPzwqlbtbwqN0y,FourFiveSeconds,"Rihanna, Kanye West, Paul McCartney",2015,80,205.846,0.582,0.272,0.354,0.875,0.13,0.0501,0.0,188238.0,Rihanna
+4NioO5R9sHEZh4cGzMHyNt,Say Don't Go (Taylor's Version) (From The Vault),Taylor Swift,2023,79,109.946,0.626,0.547,0.192,0.0656,0.149,0.0342,1.67e-05,279833.0,Taylor Swift
+5kHMfzgLZP95O9NBy0ku4v,I Can See You (Taylor's Version) (From The Vault),Taylor Swift,2023,79,123.044,0.694,0.764,0.819,0.0586,0.0608,0.0337,0.0,273186.0,Taylor Swift
+7G0gBu6nLdhFDPRLc0HdDG,Mine (Taylor's Version),Taylor Swift,2023,79,121.08,0.646,0.783,0.49,0.00444,0.171,0.0356,1.38e-06,231707.0,Taylor Swift
+79uDOz0zuuWS7HWxzMmTa2,Back To December (Taylor's Version),Taylor Swift,2023,79,142.063,0.497,0.635,0.203,0.00621,0.117,0.0273,0.0,294190.0,Taylor Swift
+51vRumtqbkNW9wrKfESwfu,UNFORGIVEN (feat. Nile Rodgers),"LE SSERAFIM, Nile Rodgers",2023,79,104.008,0.795,0.875,0.375,0.111,0.107,0.0525,8.94e-05,182149.0,LE SSERAFIM
+3zwMVvkBe2qIKDObWgXw4N,right where you left me - bonus track,Taylor Swift,2021,79,137.915,0.581,0.619,0.645,0.769,0.117,0.0282,0.000106,245027.0,Taylor Swift
+5YqltLsjdqFtvqE7Nrysvs,We Are Never Ever Getting Back Together (Taylor's Version),Taylor Swift,2021,79,172.014,0.567,0.686,0.716,0.0317,0.0732,0.175,1.86e-06,193147.0,Taylor Swift
+22bPsP2jCgbLUvh82U0Z3M,The Way I Loved You (Taylor's Version),Taylor Swift,2021,79,161.032,0.402,0.732,0.472,0.0033,0.108,0.0484,0.0,243137.0,Taylor Swift
+0Jlcvv8IykzHaSmj49uNW8,the 1,Taylor Swift,2020,79,139.883,0.777,0.357,0.172,0.757,0.108,0.0522,7.28e-06,210252.0,Taylor Swift
+6PCUP3dWmTjcTtXY02oFdT,Castle on the Hill,Ed Sheeran,2017,79,135.007,0.461,0.834,0.471,0.0232,0.14,0.0989,1.14e-05,261154.0,Ed Sheeran
+0afhq8XCExXpqazXczTSve,Galway Girl,Ed Sheeran,2017,79,99.943,0.624,0.876,0.781,0.0735,0.327,0.1,0.0,170827.0,Ed Sheeran
+4B0JvthVoAAuygILe3n4Bs,What Do You Mean?,Justin Bieber,2015,79,125.02,0.845,0.567,0.793,0.59,0.0811,0.0956,0.00142,205680.0,Justin Bieber
+3lwK3WyKAI5bUuGY1OgGbZ,Smart,LE SSERAFIM,2024,78,113.076,0.799,0.675,0.594,0.115,0.0833,0.0465,0.0,166384.0,LE SSERAFIM
+3xYJScVfxByb61dYHTwiby,Hits Different,Taylor Swift,2023,78,106.026,0.672,0.782,0.239,0.148,0.296,0.0421,4.73e-06,234467.0,Taylor Swift
+045ZeOHPIzhxxsm8bq5kyE,Out Of The Woods (Taylor's Version),Taylor Swift,2023,78,91.992,0.547,0.885,0.192,0.000512,0.39,0.0418,9.37e-05,235800.0,Taylor Swift
+2vPMoMDXxu9uX1igWZmXSG,New Romantics (Taylor's Version),Taylor Swift,2023,78,121.98,0.651,0.855,0.698,0.0068,0.0759,0.0538,9.81e-06,230178.0,Taylor Swift
+3pv7Q5v2dpdefwdWIvE7yH,Shake It Off (Taylor's Version),Taylor Swift,2023,78,160.055,0.632,0.807,0.921,0.0103,0.29,0.0738,1.27e-05,219209.0,Taylor Swift
+4zmKGsrXjLmljb5fTaBTot,Snow On The Beach (feat. More Lana Del Rey),"Taylor Swift, Lana Del Rey",2023,78,109.846,0.664,0.401,0.315,0.806,0.108,0.0344,3.5e-06,229943.0,Taylor Swift
+4hqJ4bSlYJOXb6Z4SRmzxs,Long Live (Taylor's Version),Taylor Swift,2023,78,203.89,0.375,0.65,0.0752,0.0122,0.189,0.0402,0.0,317960.0,Taylor Swift
+4QhnNyKDsAkXPwHkSnuc89,"Eve, Psyche & The Bluebeard's wife",LE SSERAFIM,2023,78,142.951,0.663,0.872,0.626,0.0153,0.0519,0.2,0.0,185539.0,LE SSERAFIM
+0bMoNdAnxNR0OuQbGDovrr,ANTIFRAGILE,LE SSERAFIM,2023,78,105.019,0.879,0.784,0.83,0.0759,0.125,0.081,0.0,184444.0,LE SSERAFIM
+02wk5BttM0QL38ERjLPQJB,Cool With You,NewJeans,2023,78,134.993,0.752,0.65,0.532,0.653,0.105,0.12,0.00136,147880.0,NewJeans
+2pIUpMhHL6L9Z5lnKxJJr9,Attention,NewJeans,2022,78,104.988,0.811,0.648,0.695,0.236,0.0761,0.0368,0.0,180067.0,NewJeans
+1Ov37jtRQ2YNAe8HzfczkL,Wildest Dreams (Taylor's Version),Taylor Swift,2021,78,140.061,0.583,0.67,0.498,0.0374,0.126,0.0646,0.0001,220433.0,Taylor Swift
+3yII7UwgLF6K5zW3xad3MP,22 (Taylor's Version),Taylor Swift,2021,78,103.984,0.642,0.695,0.642,0.000443,0.0753,0.0281,1.02e-05,230960.0,Taylor Swift
+6AtZLIzUINvExIUy4QhdjP,I Knew You Were Trouble (Taylor's Version),Taylor Swift,2021,78,154.008,0.584,0.557,0.767,0.0129,0.0576,0.0342,0.0,219760.0,Taylor Swift
+4OAuvHryIVv4kMDNSLuPt6,Red (Taylor's Version),Taylor Swift,2021,78,125.047,0.516,0.777,0.408,0.00108,0.0761,0.0375,1.62e-06,223093.0,Taylor Swift
+7kt9e9LFSpN1zQtYEl19o1,this is me trying,Taylor Swift,2020,78,135.886,0.515,0.476,0.412,0.314,0.171,0.0328,4.74e-05,195097.0,Taylor Swift
+0PurA4JVJ8YQgSVopY8fn6,tolerate it,Taylor Swift,2020,78,74.952,0.316,0.361,0.221,0.878,0.0797,0.0488,2.67e-05,245440.0,Taylor Swift
+7szuecWAPwGoV1e5vGu8tl,In Your Eyes,The Weeknd,2020,78,100.021,0.667,0.719,0.717,0.00285,0.0736,0.0346,8.1e-05,237520.0,The Weeknd
+6mICuAdrwEjh6Y6lroV2Kg,Chantaje (feat. Maluma),"Shakira, Maluma",2017,78,102.034,0.852,0.773,0.907,0.187,0.159,0.0776,3.05e-05,195840.0,Shakira
+5GXAXm5YOmYT0kL5jHvYBt,I Feel It Coming,"The Weeknd, Daft Punk",2016,78,92.99,0.773,0.819,0.585,0.426,0.0679,0.118,0.0,269187.0,The Weeknd
+0bMWoFtQIrnW5YyNMc4aKQ,I'll See You There Tomorrow,TOMORROW X TOGETHER,2024,77,121.031,0.748,0.827,0.645,0.146,0.265,0.0512,0.0,196694.0,TOMORROW X TOGETHER
+1hR8BSuEqPCCZfv93zzzz9,Welcome To New York (Taylor's Version),Taylor Swift,2023,77,116.98,0.761,0.607,0.674,0.00961,0.367,0.0312,2.24e-05,212600.0,Taylor Swift
+1xwAWUI6Dj0WGC3KiUPN0O,Vigilante Shit,Taylor Swift,2022,77,79.846,0.798,0.277,0.163,0.173,0.121,0.39,5.25e-05,164801.0,Taylor Swift
+3eX0NZfLtGzoLUxPNvRfqm,Maroon,Taylor Swift,2022,77,108.075,0.637,0.398,0.0374,0.0573,0.101,0.0564,1.03e-06,218271.0,Taylor Swift
+2SLwbpExuoBDZBpjfefCtV,Out of Time,The Weeknd,2022,77,93.057,0.65,0.76,0.838,0.255,0.339,0.0446,0.0,214194.0,The Weeknd
+6VsvKPJ4xjVNKpI8VVZ3SV,invisible string,Taylor Swift,2020,77,83.433,0.653,0.452,0.45,0.838,0.108,0.055,7.73e-05,252881.0,Taylor Swift
+0ZNU020wNYvgW84iljPkPP,mirrorball,Taylor Swift,2020,77,110.107,0.553,0.413,0.379,0.687,0.0594,0.0334,2.33e-06,208978.0,Taylor Swift
+2RttW7RAu5nOAfq6YFvApB,Happier,Ed Sheeran,2017,77,89.792,0.522,0.385,0.236,0.536,0.135,0.0288,0.0,207520.0,Ed Sheeran
+72jbDTw1piOOj770jWNeaG,Paris,The Chainsmokers,2017,77,99.99,0.653,0.658,0.219,0.0215,0.0939,0.0304,1.66e-06,221507.0,The Chainsmokers
+4EDijkJdHBZZ0GwJ12iTAj,Stargirl Interlude,"The Weeknd, Lana Del Rey",2016,77,179.771,0.638,0.474,0.441,0.351,0.105,0.124,0.191,111640.0,The Weeknd
+0NTMtAO2BV4tnGvw9EgBVq,Bitch Better Have My Money,Rihanna,2015,77,102.99,0.781,0.728,0.395,0.0509,0.257,0.0621,1.94e-06,219306.0,Rihanna
+33RfPb7Vca7s2x5xzXR5E3,The Killa (I Belong to You),TOMORROW X TOGETHER,2024,76,67.968,0.759,0.56,0.481,0.134,0.126,0.144,4.84e-06,162642.0,TOMORROW X TOGETHER
+2GquhrcHbl2zOnF5javAFp,Swan Song,LE SSERAFIM,2024,76,90.038,0.709,0.628,0.59,0.325,0.246,0.0263,0.0,157179.0,LE SSERAFIM
+2ByBBvpR9b7IynvRmnG7kG,Clean (Taylor's Version),Taylor Swift,2023,76,103.96,0.771,0.386,0.239,0.276,0.121,0.0297,2.01e-05,271000.0,Taylor Swift
+0ZPjVmof45INEERgYfadtv,Chasing That Feeling,TOMORROW X TOGETHER,2023,76,141.994,0.69,0.842,0.626,0.0153,0.0639,0.0739,0.0,182670.0,TOMORROW X TOGETHER
+2D4dV2KXDTszzJ3p3cFqhA,Less Than Zero,The Weeknd,2022,76,142.981,0.535,0.791,0.5,0.00096,0.0788,0.0327,0.000155,211814.0,The Weeknd
+5kI4eCXXzyuIUXjQra0Cxi,betty,Taylor Swift,2020,76,95.939,0.593,0.377,0.502,0.6,0.0976,0.0253,0.0,294521.0,Taylor Swift
+2Eeur20xVqfUoM3Q7EFPFt,the last great american dynasty,Taylor Swift,2020,76,147.922,0.686,0.662,0.706,0.467,0.109,0.0413,0.0023,230999.0,Taylor Swift
+3FAmnX3nUGsue2TcNEnq0t,Miracle,TOMORROW X TOGETHER,2024,75,123.064,0.622,0.778,0.215,0.00739,0.0952,0.0528,0.0,163886.0,TOMORROW X TOGETHER
+0Dv0R4tfRj5jy8e8CF3JB9,Quarter Life,TOMORROW X TOGETHER,2024,75,89.341,0.375,0.786,0.537,0.0494,0.0836,0.0635,0.0,149347.0,TOMORROW X TOGETHER
+6GXgd1BPD9bUpqw5AntGV5,All You Had To Do Was Stay (Taylor's Version),Taylor Swift,2023,75,97.057,0.586,0.72,0.481,0.000718,0.0949,0.035,0.0,193289.0,Taylor Swift
+3MytWN8L7shNYzGl4tAKRp,Sparks Fly (Taylor's Version),Taylor Swift,2023,75,114.991,0.588,0.758,0.387,0.0251,0.131,0.0305,0.0,261231.0,Taylor Swift
+0NwGC0v03ysCYINtg6ns58,Better Than Revenge (Taylor's Version),Taylor Swift,2023,75,145.863,0.496,0.885,0.665,0.000886,0.191,0.0803,0.0,220307.0,Taylor Swift
+43y1WpBdnEy5TR9aZoSQL9,I Wish You Would (Taylor's Version),Taylor Swift,2023,75,118.026,0.669,0.851,0.541,0.00357,0.0676,0.0432,1.04e-05,207650.0,Taylor Swift
+64FzgoLZ3oXu2SriZblHic,Bad Blood (Taylor's Version),Taylor Swift,2023,75,169.943,0.619,0.686,0.364,0.0385,0.307,0.164,0.0,211104.0,Taylor Swift
+6uTPA1xlcsk6dbchB2dhzl,Back for More (with Anitta),"TOMORROW X TOGETHER, Anitta",2023,75,115.916,0.785,0.897,0.891,0.0452,0.222,0.158,0.0,131038.0,TOMORROW X TOGETHER
+5fpyAakgFOm4YTXkgfPzvV,ASAP,NewJeans,2023,75,130.052,0.934,0.486,0.372,0.466,0.0963,0.164,3.73e-05,134387.0,NewJeans
+7FmYn9e7KHMXcxqGSj9LjH,Mastermind,Taylor Swift,2022,75,125.966,0.662,0.357,0.124,0.553,0.0837,0.154,0.00129,191039.0,Taylor Swift
+6wBpO4Xc4YgShnENGSFA1M,Sour Grapes,LE SSERAFIM,2022,75,139.998,0.779,0.801,0.72,0.395,0.108,0.0457,0.0,196540.0,LE SSERAFIM
+5expoVGQPvXuwBBFuNGqBd,Hurt,NewJeans,2022,75,179.877,0.599,0.446,0.567,0.731,0.105,0.0833,0.0,177947.0,NewJeans
+2DwUdMJ5uxv20EhAildreg,Cookie,NewJeans,2022,75,156.935,0.847,0.638,0.661,0.0596,0.0894,0.0575,0.0,235562.0,NewJeans
+01K4zKU104LyJ8gMb7227B,Nothing New (feat. Phoebe Bridgers) (Taylor's Version) (From The Vault),"Taylor Swift, Phoebe Bridgers",2021,75,101.96,0.606,0.377,0.446,0.817,0.154,0.0275,0.0,258813.0,Taylor Swift
+4P7LVHDbzn7aI6wWRh5AHc,You Belong With Me (Taylor's Version),Taylor Swift,2021,75,130.033,0.632,0.773,0.474,0.0623,0.0885,0.0346,0.0,231124.0,Taylor Swift
+6huNf4dutXRjJyGn7f5BPS,Pray For Me,"The Weeknd, Kendrick Lamar",2021,75,100.626,0.732,0.678,0.196,0.0867,0.112,0.0886,2.41e-05,211421.0,The Weeknd
+4VuS959DSpr82t3qBqCrWG,Supermarket Flowers,Ed Sheeran,2017,75,89.749,0.589,0.242,0.257,0.914,0.0887,0.0442,0.0,221107.0,Ed Sheeran
+3HQcsqRjRdruUjkbDSgmVF,Woo,Rihanna,2016,75,115.004,0.42,0.466,0.185,0.0546,0.298,0.0326,0.00389,235587.0,Rihanna
+3vv9phIu6Y1vX3jcqaGz5Z,Roses,"The Chainsmokers, ROZES",2015,75,100.001,0.713,0.802,0.343,0.0435,0.309,0.0561,0.00377,226739.0,The Chainsmokers
+25KybV9BOUlvcnv7nN3Pyo,In The Night,The Weeknd,2015,75,168.022,0.505,0.68,0.539,0.0796,0.0465,0.0714,0.0,235653.0,The Weeknd
+2RB1n3NWUmG5X0rdihAQ3e,Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song] (feat. Freshlyground),"Shakira, Freshlyground",2024,74,126.974,0.764,0.887,0.816,0.00987,0.0585,0.176,0.0,202467.0,Shakira
+30Y4CV7A6YqtQtTTo7Ue4j,Mean (Taylor's Version),Taylor Swift,2023,74,163.874,0.524,0.692,0.621,0.311,0.192,0.0369,0.0,238693.0,Taylor Swift
+6qAcApH8obo8eqatCKUHd9,Bad Blood (feat. Kendrick Lamar) (Taylor's Version),"Taylor Swift, Kendrick Lamar",2023,74,170.091,0.602,0.648,0.174,0.0104,0.217,0.103,0.0,199773.0,Taylor Swift
+6T0sEnqjmHISIKwFETeeiP,Suburban Legends (Taylor's Version) (From The Vault),Taylor Swift,2023,74,118.048,0.699,0.621,0.344,0.198,0.104,0.0369,0.0,171819.0,Taylor Swift
+1zU8j1x3yi9xalMF96pzKp,Dear John (Taylor's Version),Taylor Swift,2023,74,119.294,0.419,0.47,0.133,0.0236,0.163,0.0296,0.0,405907.0,Taylor Swift
+6dTA6y0C2ReQklntzZl8l3,The Story Of Us (Taylor's Version),Taylor Swift,2023,74,139.846,0.515,0.781,0.57,0.00192,0.054,0.0535,0.0,267653.0,Taylor Swift
+0rhI6gvOeCKA502RdJAbfs,Sugar Rush Ride,TOMORROW X TOGETHER,2023,74,125.022,0.712,0.893,0.828,0.00788,0.169,0.0851,0.0,186571.0,TOMORROW X TOGETHER
+1wUnuiXMMvhudmzvcCtlZP,Get Up,NewJeans,2023,74,85.274,0.525,0.526,0.562,0.634,0.103,0.0534,0.127,36227.0,NewJeans
+0A1JLUlkZkp2EFrosoNQi0,Labyrinth,Taylor Swift,2022,74,110.014,0.406,0.306,0.122,0.785,0.122,0.0517,0.488,247962.0,Taylor Swift
+4CkgMiMqZ5JzW9iYXSTMTL,I Bet You Think About Me (feat. Chris Stapleton) (Taylor's Version) (From The Vault),"Taylor Swift, Chris Stapleton",2021,74,149.654,0.391,0.715,0.473,0.167,0.183,0.0495,0.0,285107.0,Taylor Swift
+2CYVETnhM9aytqrazYYwrK,Mr. Perfectly Fine (Taylor's Version) (From The Vault),Taylor Swift,2021,74,135.942,0.66,0.817,0.714,0.162,0.0667,0.0521,0.0,277592.0,Taylor Swift
+6tNSmBKSjFV1366ASuULfZ,I Knew You Were Trouble (Taylor's Version),Taylor Swift,2021,74,154.008,0.584,0.557,0.767,0.0129,0.0576,0.0342,0.0,219760.0,Taylor Swift
+3nsfB1vus2qaloUdcBZvDu,All Too Well (Taylor's Version),Taylor Swift,2021,74,185.972,0.44,0.528,0.132,0.0171,0.234,0.0317,0.00203,329160.0,Taylor Swift
+1cQ3LIkZE68pMSnPhZWXLu,Earned It (Fifty Shades Of Grey),The Weeknd,2021,74,119.757,0.658,0.282,0.39,0.433,0.0741,0.0353,0.0,277724.0,The Weeknd
+6KJqZcs9XDgVck7Lg9QOTC,seven,Taylor Swift,2020,74,94.926,0.596,0.488,0.415,0.9,0.091,0.0274,2.7e-05,208907.0,Taylor Swift
+4umIPjkehX1r7uhmGvXiSV,Intentions (feat. Quavo),"Justin Bieber, Quavo",2020,74,147.988,0.806,0.546,0.875,0.298,0.102,0.0579,0.0,212867.0,Justin Bieber
+4vUmTMuQqjdnvlZmAH61Qk,South of the Border (feat. Camila Cabello & Cardi B),"Ed Sheeran, Camila Cabello, Cardi B",2019,74,97.989,0.857,0.621,0.668,0.148,0.0865,0.0825,0.0,204467.0,Ed Sheeran
+4frLb7nWtsz2ymBE6k2GRP,Earned It (Fifty Shades Of Grey),The Weeknd,2015,74,119.829,0.659,0.291,0.406,0.405,0.0771,0.0348,0.0,277680.0,The Weeknd
+7uJH0YdSZL6psjxI6Xy08b,Acquainted,The Weeknd,2015,74,101.102,0.372,0.478,0.254,0.482,0.0844,0.0503,0.0,348853.0,The Weeknd
+61uyGDPJ06MkxJtHgPmuyO,Company,Justin Bieber,2015,74,94.893,0.561,0.797,0.421,0.132,0.0846,0.0588,0.0,208120.0,Justin Bieber
+0m5FEDhEXHx1ZUNabbnX4l,Deja Vu (Anemoia Remix),TOMORROW X TOGETHER,2024,73,162.857,0.383,0.769,0.51,0.0414,0.545,0.0442,0.0,170953.0,TOMORROW X TOGETHER
+4UwqOWDpdeIDVQDuKT6iza,You Are In Love (Taylor's Version),Taylor Swift,2023,73,84.948,0.537,0.495,0.492,0.609,0.112,0.0573,2.49e-06,267389.0,Taylor Swift
+59KOoHFcw5XfICnO57holu,Last Kiss (Taylor's Version),Taylor Swift,2023,73,79.401,0.55,0.366,0.16,0.447,0.101,0.0276,4.43e-06,369120.0,Taylor Swift
+5QVVjX0ZItqlVpEuVCM9Yg,This Love (Taylor's Version),Taylor Swift,2023,73,144.022,0.474,0.511,0.0586,0.299,0.0673,0.0339,0.0,250100.0,Taylor Swift
+5xXqyjLicvEpch72qEryFT,Speak Now (Taylor's Version),Taylor Swift,2023,73,118.995,0.727,0.677,0.639,0.248,0.143,0.0325,0.0,242473.0,Taylor Swift
+4s8BIKx4Zh6ryAEz8RTlaU,Foolish One (Taylor's Version) (From The Vault),Taylor Swift,2023,73,96.965,0.671,0.588,0.543,0.617,0.111,0.0299,0.0,311765.0,Taylor Swift
+0f0SbtoKGe41cX5LzlnX6X,Tinnitus (Wanna be a rock),TOMORROW X TOGETHER,2023,73,100.015,0.9,0.725,0.791,0.179,0.0791,0.135,0.00101,157262.0,TOMORROW X TOGETHER
+4K8jDTlNhZWEdnzZVGRMtN,FEARLESS (2023 Ver.),LE SSERAFIM,2023,73,103.948,0.856,0.615,0.48,0.0602,0.118,0.133,0.0018,168437.0,LE SSERAFIM
+0wavGRldH0AWyu2zvTz8zb,Sweet Nothing,Taylor Swift,2022,73,176.655,0.337,0.156,0.39,0.964,0.115,0.0518,7.72e-05,188497.0,Taylor Swift
+3UMrglJeju5yWyYIW6o99b,The Great War,Taylor Swift,2022,73,96.016,0.573,0.741,0.554,0.219,0.0842,0.0353,2.23e-05,240356.0,Taylor Swift
+1wtOxkiel43cVs0Yux5Q4h,Snow On The Beach (feat. Lana Del Rey),"Taylor Swift, Lana Del Rey",2022,73,109.957,0.663,0.319,0.193,0.69,0.117,0.0375,0.000993,256124.0,Taylor Swift
+35ovElsgyAtQwYPYnZJECg,Lift Me Up - From Black Panther: Wakanda Forever - Music From and Inspired By,Rihanna,2022,73,177.115,0.247,0.299,0.172,0.899,0.131,0.0315,0.0,196520.0,Rihanna
+1nH2PkJL1XoUq8oE6tBZoU,Sacrifice,The Weeknd,2022,73,122.0,0.735,0.795,0.905,0.0296,0.0678,0.113,3.18e-05,188918.0,The Weeknd
+4fsQ0K37TOXa3hEQfjEic1,ANTIFRAGILE,LE SSERAFIM,2022,73,105.025,0.882,0.797,0.824,0.0821,0.113,0.0819,0.0,184444.0,LE SSERAFIM
+6pYNq0ZwpPVazKzsqpf0G8,The Very First Night (Taylor's Version) (From The Vault),Taylor Swift,2021,73,121.009,0.678,0.733,0.581,0.00115,0.104,0.0281,0.0,200280.0,Taylor Swift
+7qEUFOVcxRI19tbT68JcYK,Everything Has Changed (feat. Ed Sheeran) (Taylor's Version),"Taylor Swift, Ed Sheeran",2021,73,79.918,0.498,0.61,0.474,0.271,0.223,0.0363,0.0,245427.0,Taylor Swift
+3T03rPwlL8NVk1yIaxeD8U,Off My Face,Justin Bieber,2021,73,90.674,0.509,0.228,0.586,0.92,0.104,0.0332,0.0,156468.0,Justin Bieber
+12ntTeqEeTg7GAVpe8Mhpl,marjorie,Taylor Swift,2020,73,96.103,0.535,0.561,0.287,0.876,0.115,0.0484,0.000136,257773.0,Taylor Swift
+70eFcWOvlMObDhURTqT4Fv,Beautiful People (feat. Khalid),"Ed Sheeran, Khalid",2019,73,92.979,0.64,0.647,0.546,0.124,0.0801,0.186,0.0,197867.0,Ed Sheeran
+51ChrwmUPDJvedPQnIU8Ls,Dive,Ed Sheeran,2017,73,134.943,0.761,0.386,0.526,0.355,0.0953,0.0399,0.0,238440.0,Ed Sheeran
+1dNIEtp7AY3oDAKCGg2XkH,Something Just Like This,"The Chainsmokers, Coldplay",2017,73,102.996,0.607,0.649,0.505,0.0306,0.174,0.0362,2.46e-05,247627.0,The Chainsmokers
+7BiELrM90hRxpozaIXbsLw,Sex With Me,Rihanna,2016,73,112.049,0.58,0.532,0.39,0.294,0.0948,0.0424,0.0,206400.0,Rihanna
+6t90Z9XkdsHD8xMxro6KRP,Consideration,"Rihanna, SZA",2016,73,144.975,0.883,0.584,0.784,0.0392,0.0869,0.0465,4.39e-06,161067.0,Rihanna
+5W3Mi5lW7CIr3eTj1cc69p,Pray For Me (with Kendrick Lamar),"The Weeknd, Kendrick Lamar",2024,72,100.556,0.741,0.671,0.191,0.095,0.181,0.106,2.93e-05,211421.0,The Weeknd
+2dYXrWkNO40NXy2Q3IYLRc,Puntería,"Shakira, Cardi B",2024,72,120.087,0.858,0.725,0.805,0.0222,0.138,0.0383,3.07e-05,181667.0,Shakira
+4tMzIAFTFdqGBQLdfbPces,Haunted (Taylor's Version),Taylor Swift,2023,72,162.201,0.427,0.915,0.355,0.00667,0.221,0.0619,0.0,245413.0,Taylor Swift
+1HCdems7PQZRj42QDWLA0A,Timeless (Taylor's Version) (From The Vault),Taylor Swift,2023,72,142.883,0.624,0.585,0.65,0.3,0.0916,0.0328,0.0,321397.0,Taylor Swift
+4e3ZNTAV6PCrdYMUrUlMpQ,Electric Touch (feat. Fall Out Boy) (Taylor's Version) (From The Vault),"Taylor Swift, Fall Out Boy",2023,72,131.073,0.547,0.855,0.282,0.0164,0.144,0.0597,0.0,266467.0,Taylor Swift
+2ve0kuaWUCt4Zx8x4bf1MR,Wonderland (Taylor's Version),Taylor Swift,2023,72,183.811,0.462,0.708,0.337,0.00933,0.198,0.0555,1.88e-05,245567.0,Taylor Swift
+2f0GI2ZLUtbGqFx8t2Gk6A,I Know Places (Taylor's Version),Taylor Swift,2023,72,160.039,0.575,0.803,0.68,0.087,0.0971,0.0465,0.0,195700.0,Taylor Swift
+75W3SngKzTuoQ94uLf3y82,How You Get The Girl (Taylor's Version),Taylor Swift,2023,72,120.027,0.754,0.682,0.547,0.00209,0.0941,0.0565,9.88e-06,247533.0,Taylor Swift
+29r5gr7b0f710smqMrm7pP,Happily Ever After,TOMORROW X TOGETHER,2023,72,156.087,0.688,0.683,0.528,0.017,0.134,0.0932,0.0,151919.0,TOMORROW X TOGETHER
+0aV5uARAknQgYhBaK944FP,"Would've, Could've, Should've",Taylor Swift,2022,72,157.979,0.483,0.84,0.55,0.43,0.146,0.119,0.000575,260362.0,Taylor Swift
+2vgUijXOTRMnWXDtvgMp2b,Take My Breath,The Weeknd,2022,72,121.02,0.698,0.769,0.354,0.0128,0.238,0.0368,0.00166,339023.0,The Weeknd
+3z6XUommYDWPHeFhmhhT6j,Message In A Bottle (Taylor's Version) (From The Vault),Taylor Swift,2021,72,115.915,0.622,0.791,0.494,0.00188,0.083,0.0535,3.72e-06,225960.0,Taylor Swift
+5YL553x8sHderRBDlm3NM3,White Horse (Taylor's Version),Taylor Swift,2021,72,185.262,0.423,0.517,0.366,0.369,0.177,0.0486,0.0,234516.0,Taylor Swift
+31CdkzHnMbvJuKZvtCQfR6,We Are Never Ever Getting Back Together (Taylor's Version),Taylor Swift,2021,72,172.014,0.567,0.686,0.716,0.0317,0.0732,0.175,1.86e-06,193147.0,Taylor Swift
+1Z8TPHiKeCUyClxV6WTTIf,0X1=LOVESONG (I Know I Love You) feat. Seori,"TOMORROW X TOGETHER, Seori",2021,72,104.973,0.584,0.836,0.484,0.0558,0.0663,0.079,0.0,202204.0,TOMORROW X TOGETHER
+5BK0uqwY9DNfZ630STAEaq,gold rush,Taylor Swift,2020,72,112.05,0.512,0.462,0.353,0.83,0.121,0.0408,0.166,185320.0,Taylor Swift
+3Uo7WG0vmLQ07WB4BDwy7D,willow,Taylor Swift,2020,72,80.961,0.392,0.579,0.549,0.835,0.145,0.164,0.00179,214707.0,Taylor Swift
+7dW84mWkdWE5a6lFWxJCBG,'tis the damn season,Taylor Swift,2020,72,145.916,0.575,0.434,0.348,0.735,0.105,0.0312,6.59e-05,229840.0,Taylor Swift
+4ppTAJUbNXELZcoUaL90wo,Try Me,The Weeknd,2018,72,92.026,0.456,0.679,0.107,0.596,0.129,0.064,0.000573,221107.0,The Weeknd
+6QdnKD1zwEgyOWtkrdzlOF,Hurt You,"The Weeknd, Gesaffelstein",2018,72,183.932,0.476,0.718,0.361,0.263,0.109,0.149,0.00261,230027.0,The Weeknd
+4h90qkbnW1Qq6pBhoPvwko,Sidewalks,"The Weeknd, Kendrick Lamar",2016,72,149.828,0.542,0.72,0.623,0.147,0.348,0.0628,0.0,231360.0,The Weeknd
+5fCKBIJ7BwaCpxxwZCbS5X,We got so much,LE SSERAFIM,2024,71,101.0,0.686,0.658,0.353,0.0944,0.207,0.0863,0.0,165748.0,LE SSERAFIM
+68viiGZoRbLCjsy5xD4VrU,(Entre Paréntesis),"Shakira, Grupo Frontera",2024,71,156.473,0.567,0.862,0.723,0.195,0.108,0.045,0.0,168896.0,Shakira
+4ABYxlb92WBIjHu7TIKmml,Castles Crumbling (feat. Hayley Williams) (Taylor's Version) (From The Vault),"Taylor Swift, Hayley Williams",2023,71,147.803,0.576,0.57,0.378,0.362,0.0668,0.0434,0.0,306062.0,Taylor Swift
+0zo975x58DlXbZllWvfYhg,When Emma Falls in Love (Taylor's Version) (From The Vault),Taylor Swift,2023,71,78.133,0.474,0.763,0.231,0.159,0.138,0.0505,0.0,252386.0,Taylor Swift
+5oqDgw5VGBln5dSIOPWyBq,Karma,Taylor Swift,2022,71,90.024,0.649,0.622,0.106,0.074,0.594,0.0582,0.0,204852.0,Taylor Swift
+0heeNYlwOGuUSe7TgUD27B,Question...?,Taylor Swift,2022,71,108.943,0.751,0.502,0.106,0.2,0.296,0.167,0.0,210557.0,Taylor Swift
+1HsSIPLTQT354yJcQGfEY3,Good Boy Gone Bad,TOMORROW X TOGETHER,2022,71,100.009,0.475,0.695,0.552,0.0159,0.125,0.102,0.0,191038.0,TOMORROW X TOGETHER
+1sZBzYhrQG40zcSuKkI93c,Good Parts (when the quality is bad but I am),LE SSERAFIM,2022,71,121.121,0.785,0.679,0.616,0.516,0.417,0.0379,0.0,156355.0,LE SSERAFIM
+2rurDawMfoKP4uHyb2kJBt,Te Felicito,"Shakira, Rauw Alejandro",2022,71,174.14,0.695,0.636,0.575,0.234,0.081,0.317,0.0,172235.0,Shakira
+6G12ZafqofSq7YtrMqUm76,Monotonía,"Shakira, Ozuna",2022,71,131.963,0.873,0.695,0.823,0.419,0.211,0.0459,1.23e-06,158805.0,Shakira
+1msEuwSBneBKpVCZQcFTsU,Forever & Always (Taylor's Version),Taylor Swift,2021,71,128.03,0.598,0.821,0.673,0.0231,0.143,0.0447,0.0,225328.0,Taylor Swift
+1gcyHQpBQ1lfXGdhZmWrHP,champagne problems,Taylor Swift,2021,71,171.319,0.462,0.24,0.32,0.92,0.113,0.0377,0.0,244000.0,Taylor Swift
+1kdWw77ZpYOkhxeuhzU1j6,it's time to go - bonus track,Taylor Swift,2021,71,151.923,0.592,0.41,0.416,0.801,0.09,0.0397,1.39e-05,254640.0,Taylor Swift
+4OmFmE0fzcMG6g0Y8p4eSD,Better Man (Taylor's Version) (From The Vault),Taylor Swift,2021,71,73.942,0.473,0.579,0.255,0.214,0.0877,0.0384,0.0,297013.0,Taylor Swift
+2gVhfX2Gy1T9kDuS9azrF7,willow,Taylor Swift,2021,71,81.112,0.392,0.574,0.529,0.833,0.145,0.17,0.00179,214707.0,Taylor Swift
+6lCvK2AR2uOKkVFCVlAzzm,tolerate it,Taylor Swift,2021,71,74.952,0.316,0.361,0.221,0.878,0.0797,0.0488,2.67e-05,245440.0,Taylor Swift
+0y6kdSRCVQhSsHSpWvTUm7,The Last Time (feat. Gary Lightbody of Snow Patrol) (Taylor's Version),"Taylor Swift, Gary Lightbody",2021,71,94.05,0.502,0.534,0.155,0.0399,0.0977,0.0278,0.0,299080.0,Taylor Swift
+0v4z1tuZvn6LGknom9Qx7d,Babe (Taylor's Version) (From The Vault),Taylor Swift,2021,71,167.844,0.584,0.743,0.746,0.0538,0.121,0.0931,2.83e-06,224240.0,Taylor Swift
+4pNApnaUWAL2J4KO2eqokq,Come Back...Be Here (Taylor's Version),Taylor Swift,2021,71,79.846,0.46,0.632,0.399,0.0158,0.0822,0.0302,0.0,223333.0,Taylor Swift
+21aOLk12MksET8AsbU0SI6,LO$ER=LO♡ER,TOMORROW X TOGETHER,2021,71,124.997,0.644,0.867,0.687,0.001,0.105,0.0383,0.0,199919.0,TOMORROW X TOGETHER
+3S8jK1mGzQi24ilFb45DAZ,Lonely (with benny blanco),"Justin Bieber, benny blanco",2021,71,79.461,0.619,0.241,0.0719,0.9,0.116,0.046,0.0,149190.0,Justin Bieber
+5dPz35akJjPqb17yeqNwqH,Ghost,Justin Bieber,2021,71,153.947,0.604,0.741,0.473,0.178,0.409,0.0475,3.49e-05,153190.0,Justin Bieber
+4pfrrhvplbJZAIsfosGWQP,the 1,Taylor Swift,2020,71,139.902,0.78,0.361,0.163,0.75,0.108,0.048,7.14e-06,210240.0,Taylor Swift
+5P2bHCDM2tsgIaYWsZMhu5,my tears ricochet,Taylor Swift,2020,71,129.947,0.456,0.265,0.112,0.814,0.0679,0.0328,0.0,255893.0,Taylor Swift
+19CSr8rwW05VJL2F91KFNK,ivy,Taylor Swift,2020,71,88.856,0.515,0.545,0.535,0.855,0.0921,0.0353,1.97e-05,260440.0,Taylor Swift
+0KRYCBwIpWYFNrXOmXbyUh,cardigan,Taylor Swift,2020,71,130.045,0.612,0.58,0.534,0.525,0.26,0.0419,0.000414,239560.0,Taylor Swift
+5S4aYQAJOwJMAamANWlICO,exile (feat. Bon Iver),"Taylor Swift, Bon Iver",2020,71,75.938,0.31,0.374,0.16,0.761,0.11,0.0275,2.46e-05,285640.0,Taylor Swift
+6nK2pIKFcRc5frrZKHgsiT,august,Taylor Swift,2020,71,89.567,0.387,0.634,0.42,0.553,0.0931,0.0363,6.93e-05,261920.0,Taylor Swift
+0eFQWVz0qIxDOvhLpZ40P7,the lakes - bonus track,Taylor Swift,2020,71,179.947,0.313,0.258,0.268,0.842,0.0948,0.0383,1.3e-06,211813.0,Taylor Swift
+4evmHXcjt3bTUHD1cvny97,Beautiful People (feat. Khalid),"Ed Sheeran, Khalid",2019,71,92.977,0.64,0.648,0.548,0.124,0.0802,0.187,0.0,197867.0,Ed Sheeran
+4NBTZtAt1F13VvlSKe6KTl,This Feeling,"The Chainsmokers, Kelsea Ballerini",2018,71,105.049,0.575,0.571,0.449,0.0558,0.0912,0.0439,0.0,197947.0,The Chainsmokers
+4mCf3vQf7z0Yseo0RxAi3V,Desperado,Rihanna,2016,71,94.384,0.685,0.61,0.323,0.323,0.102,0.0439,0.0,186467.0,Rihanna
+6IG3sQ8s9nfk6TUlVzRhbN,Is It Over Now? (Taylor's Version) (From The Vault),Taylor Swift,2023,70,99.994,0.595,0.656,0.191,0.041,0.122,0.037,0.0,229478.0,Taylor Swift
+4i6cwNY6oIUU2XZxPIw82Y,Karma (feat. Ice Spice),"Taylor Swift, Ice Spice",2023,70,89.977,0.615,0.616,0.0734,0.0623,0.579,0.0622,0.0,201493.0,Taylor Swift
+3yNJkriPzWjkkDAWHIAVUq,Ours (Taylor's Version),Taylor Swift,2023,70,159.813,0.535,0.488,0.348,0.449,0.111,0.0278,0.0,235803.0,Taylor Swift
+0XM1XnOYv8BkFPFVCU8ZjX,Do It Like That,"TOMORROW X TOGETHER, Jonas Brothers",2023,70,119.989,0.776,0.92,0.842,0.0103,0.325,0.0548,0.0,145066.0,TOMORROW X TOGETHER
+0BiqmkasE5FdrChwKfVp8X,Bigger Than The Whole Sky,Taylor Swift,2022,70,165.71,0.422,0.235,0.068,0.826,0.115,0.0568,0.00648,218503.0,Taylor Swift
+56hioFjQ0DXrdn04hZcFgG,Mastermind,Taylor Swift,2022,70,125.934,0.661,0.352,0.13,0.571,0.0884,0.117,0.00147,191039.0,Taylor Swift
+4d1CG5ei1E2vGbvmgf5KKv,This Love (Taylor's Version),Taylor Swift,2022,70,144.039,0.47,0.494,0.0524,0.302,0.0672,0.0349,0.0,250100.0,Taylor Swift
+296nXCOv97WJNRWzIBQnoj,FEARLESS,LE SSERAFIM,2022,70,103.971,0.863,0.62,0.432,0.0508,0.129,0.135,0.00324,168437.0,LE SSERAFIM
+2nqio0SfWg6gh2eCtfuMa5,Fifteen (Taylor's Version),Taylor Swift,2021,70,95.466,0.559,0.646,0.289,0.116,0.32,0.0272,0.0,294419.0,Taylor Swift
+05GsNucq8Bngd9fnd4fRa0,Begin Again (Taylor's Version),Taylor Swift,2021,70,78.915,0.519,0.527,0.267,0.075,0.132,0.0274,0.0,238867.0,Taylor Swift
+2T9WeqSMJJb8YBDHPYGU4p,22 (Taylor's Version),Taylor Swift,2021,70,103.984,0.642,0.695,0.642,0.000443,0.0753,0.0281,1.02e-05,230960.0,Taylor Swift
+7l2tmgUhV7Y2aJHjiszifg,Mr. Perfectly Fine (Taylor's Version) (From The Vault),Taylor Swift,2021,70,135.937,0.661,0.819,0.724,0.167,0.0647,0.0519,0.0,277592.0,Taylor Swift
+1nahzW3kfMuwReTka28tH5,Hold On,Justin Bieber,2021,70,140.002,0.658,0.634,0.302,0.0104,0.12,0.0431,0.0,170813.0,Justin Bieber
+7MbT4I8qGntX4fMdqMQgke,peace,Taylor Swift,2020,70,150.044,0.647,0.272,0.339,0.918,0.0918,0.0916,1.73e-05,234000.0,Taylor Swift
+1XjHRolIXL2M1EEOUsGGR4,cowboy like me,Taylor Swift,2020,70,127.967,0.604,0.517,0.511,0.768,0.123,0.0347,0.000155,275040.0,Taylor Swift
+6DrLROM5MG9bxWHeEG5elq,illicit affairs,Taylor Swift,2020,70,119.58,0.529,0.304,0.44,0.862,0.108,0.0356,0.0,190893.0,Taylor Swift
+2olxzvoFI9IpxqFeUv7WOX,the last great american dynasty,Taylor Swift,2020,70,147.991,0.688,0.653,0.701,0.481,0.106,0.0403,0.00414,231000.0,Taylor Swift
+2QDyYdZyhlP2fp79KZX8Bi,mad woman,Taylor Swift,2020,70,141.916,0.592,0.699,0.506,0.655,0.114,0.0471,1.68e-05,237258.0,Taylor Swift
+7cm50Lw03k6VvRauJtkyTj,this is me trying,Taylor Swift,2020,70,135.882,0.511,0.478,0.408,0.312,0.147,0.0322,2.3e-05,195107.0,Taylor Swift
+2I8YAEA1VmCuP1wkJHMpTw,mirrorball,Taylor Swift,2020,70,110.137,0.549,0.417,0.347,0.686,0.0604,0.035,1.9e-06,208973.0,Taylor Swift
+1bhUWB0zJMIKr9yVPrkEuI,Perfect Duet (Ed Sheeran & Beyoncé),"Ed Sheeran, Beyoncé",2017,70,94.992,0.587,0.299,0.356,0.779,0.123,0.0263,0.0,259550.0,Ed Sheeran
+5cTYNNvFtfVtRbGj6073U3,Earned It (Fifty Shades Of Grey),The Weeknd,2024,69,119.681,0.483,0.284,0.392,0.425,0.0725,0.0393,0.0,277724.0,The Weeknd
+3y5nzCgwQPoaYWTdoKxWTo,EASY (English ver.),LE SSERAFIM,2024,69,165.002,0.737,0.694,0.567,0.212,0.116,0.0494,7.14e-06,164547.0,LE SSERAFIM
+5QUIK7ZtziW8kGWo8RqopF,Now That We Don't Talk (Taylor's Version) (From The Vault),Taylor Swift,2023,69,110.013,0.8,0.501,0.0831,0.16,0.0874,0.034,7.14e-05,146437.0,Taylor Swift
+2EFZ9emtKWEglWUQGEQ3P9,Never Grow Up (Taylor's Version),Taylor Swift,2023,69,125.058,0.685,0.323,0.569,0.851,0.198,0.0289,0.0,292920.0,Taylor Swift
+0CD7DzeCsuPJygddqlUVYa,"""Slut!"" (Taylor's Version) (From The Vault)",Taylor Swift,2023,69,155.875,0.591,0.412,0.328,0.309,0.0608,0.0863,0.000199,180381.0,Taylor Swift
+2ahp0wvyEzyvgWfOhStHWp,Blue Flame (2023 Ver.),LE SSERAFIM,2023,69,112.046,0.771,0.747,0.762,0.023,0.0706,0.0455,1.47e-06,201895.0,LE SSERAFIM
+11YovYUVkZdLyOFncbecWL,Our Night is more beautiful than your Day,NewJeans,2023,69,104.975,0.487,0.346,0.193,0.578,0.111,0.043,0.0,192412.0,NewJeans
+7712gjoih4QoDbXpljEk21,Paris,Taylor Swift,2022,69,110.947,0.7,0.509,0.345,0.112,0.137,0.0789,3.27e-05,196259.0,Taylor Swift
+5kiZGSxgqPdv6rbqL9THdd,High Infidelity,Taylor Swift,2022,69,87.862,0.646,0.529,0.755,0.723,0.0885,0.0864,0.0,231475.0,Taylor Swift
+3S7HNKPakdwNEBFIVTL6dZ,Treacherous (Taylor's Version),Taylor Swift,2021,69,109.984,0.645,0.593,0.299,0.0344,0.13,0.0288,0.000127,242720.0,Taylor Swift
+6sQckd3Z8NPxVVKUnavY1F,'tis the damn season,Taylor Swift,2021,69,145.916,0.575,0.434,0.348,0.735,0.105,0.0312,6.59e-05,229840.0,Taylor Swift
+6lzc0Al0zfZOIFsFvBS1ki,State Of Grace (Taylor's Version),Taylor Swift,2021,69,129.958,0.594,0.713,0.328,0.000328,0.114,0.0503,0.0,295413.0,Taylor Swift
+550erGcdD9n6PnwxrvYqZT,Hey Stephen (Taylor's Version),Taylor Swift,2021,69,115.99,0.788,0.571,0.797,0.106,0.0934,0.0296,0.0,254255.0,Taylor Swift
+3Dby3p1m6IOZn2gIIqECgK,gold rush,Taylor Swift,2021,69,112.05,0.512,0.462,0.353,0.83,0.121,0.0408,0.166,185320.0,Taylor Swift
+0kAZ3H6G9Zac4PMpmobMkj,If This Was A Movie (Taylor's Version),Taylor Swift,2021,69,147.854,0.472,0.701,0.304,0.091,0.23,0.0279,0.0,237022.0,Taylor Swift
+73qMN9bXy7MSPwwGfH3wQr,Sad Beautiful Tragic (Taylor's Version),Taylor Swift,2021,69,130.059,0.601,0.406,0.232,0.622,0.133,0.0275,9.19e-05,284773.0,Taylor Swift
+2RJnNdu4pb3MypbBroHU0T,Safe & Sound (feat. Joy Williams and John Paul White) (Taylor's Version),"Taylor Swift, Joy Williams, John Paul White",2021,69,144.751,0.41,0.312,0.22,0.783,0.0783,0.0269,6.36e-06,239668.0,Taylor Swift
+2WnAKZefdRHxtBEkRjFOHC,Anyone,Justin Bieber,2021,69,115.885,0.685,0.521,0.578,0.185,0.111,0.0345,3.59e-06,190779.0,Justin Bieber
+2ehRU518I0hYqMGQnk4lDY,invisible string,Taylor Swift,2020,69,83.455,0.651,0.459,0.454,0.859,0.105,0.0507,6.63e-05,252880.0,Taylor Swift
+6MWoRt97mnSTXZhu3ggi9C,hoax,Taylor Swift,2020,69,118.819,0.662,0.181,0.429,0.966,0.133,0.0415,3.86e-06,220043.0,Taylor Swift
+3RaT22zZsxVYxxKR7TAaYF,"no body, no crime (feat. HAIM)","Taylor Swift, HAIM",2020,69,79.015,0.546,0.613,0.535,0.418,0.103,0.0264,0.0,215627.0,Taylor Swift
+76mOLcXOjOEhyY4mMF1l3r,seven,Taylor Swift,2020,69,94.955,0.602,0.494,0.374,0.888,0.0902,0.0277,2.59e-05,208907.0,Taylor Swift
+3ObPkJQAgjAhTwYvDhPrAW,Blue Hour,TOMORROW X TOGETHER,2020,69,112.005,0.71,0.82,0.746,0.00962,0.0871,0.0836,0.0,209105.0,TOMORROW X TOGETHER
+77UjLW8j5UAGAGVGhR5oUK,Pray For Me (with Kendrick Lamar),"The Weeknd, Kendrick Lamar",2018,69,100.584,0.735,0.677,0.188,0.0762,0.111,0.093,2.17e-05,211440.0,The Weeknd
+7DKS0rX27cCEPsK0R6tFWS,Wasted Times,The Weeknd,2018,69,122.585,0.56,0.678,0.29,0.61,0.111,0.0581,1.42e-05,220293.0,The Weeknd
+70lnL3QaSOIIyMa2X9aVRL,Perro Fiel (feat. Nicky Jam),"Shakira, Nicky Jam",2017,69,183.817,0.75,0.76,0.893,0.187,0.0548,0.198,0.0,195213.0,Shakira
+2rizacJSyD9S1IQUxUxnsK,All We Know,"The Chainsmokers, Phoebe Ryan",2016,69,90.0,0.662,0.586,0.296,0.097,0.115,0.0307,0.00272,194080.0,The Chainsmokers
+6K4Co1NQyOnoFEJMkZHkln,James Joint,Rihanna,2016,69,134.202,0.399,0.203,0.405,0.66,0.27,0.0298,0.000163,72080.0,Rihanna
+1N3dZ7TTWO6VcD4Y3hHYLZ,Try Everything,Shakira,2016,69,115.474,0.705,0.609,0.476,0.0257,0.0846,0.0307,0.0,196853.0,Shakira
+24NrkwIc5BzCUqzJaG6USZ,Deja Vu,TOMORROW X TOGETHER,2024,68,162.844,0.357,0.572,0.238,0.0811,0.145,0.069,0.0,171428.0,TOMORROW X TOGETHER
+3CCRVu4F91Qp2mnGjmWBrf,Say Don't Go (Taylor's Version) (From The Vault),Taylor Swift,2023,68,109.95,0.633,0.551,0.164,0.066,0.127,0.0341,9.94e-06,279833.0,Taylor Swift
+6qxvy9Pe4RJIq5JBVbbwbS,Maroon,Taylor Swift,2023,68,108.055,0.65,0.397,0.0382,0.0609,0.089,0.0365,1.4e-06,218271.0,Taylor Swift
+12nBPF4Rh4XLFJV0YLN7uj,Innocent (Taylor's Version),Taylor Swift,2023,68,133.627,0.522,0.598,0.149,0.101,0.152,0.0284,0.0,301222.0,Taylor Swift
+6PQOU00xWNrGwCZzboriXy,"You're On Your Own, Kid",Taylor Swift,2023,68,120.044,0.694,0.386,0.39,0.423,0.126,0.0597,1.05e-05,194207.0,Taylor Swift
+3Vpk1hfMAQme8VJ0SNRSkd,Style (Taylor's Version),Taylor Swift,2023,68,94.868,0.511,0.822,0.305,0.000421,0.0899,0.0397,0.0197,231000.0,Taylor Swift
+53H3sGmqiXWO4MwuZAJfyn,Devil by the Window,TOMORROW X TOGETHER,2023,68,133.995,0.536,0.596,0.643,0.0592,0.116,0.0984,6.6e-06,186471.0,TOMORROW X TOGETHER
+43mnNatwMMydJ4CxMdQVnJ,"Farewell, Neverland",TOMORROW X TOGETHER,2023,68,167.952,0.615,0.645,0.787,0.357,0.113,0.134,0.0,180676.0,TOMORROW X TOGETHER
+7kaFsQygyiCqRboWCXztxZ,Do It Like That,"TOMORROW X TOGETHER, Jonas Brothers",2023,68,119.992,0.772,0.921,0.842,0.0103,0.334,0.0531,0.0,145066.0,TOMORROW X TOGETHER
+5LMoKDVzW2kDneNu2UbspP,Zero,NewJeans,2023,68,171.932,0.705,0.653,0.578,0.31,0.122,0.17,1.46e-05,154194.0,NewJeans
+3pUa0ZxdSeaJXm0EIydD3F,"Would've, Could've, Should've",Taylor Swift,2022,68,157.984,0.488,0.832,0.554,0.424,0.139,0.114,0.00288,260362.0,Taylor Swift
+3QF5RsWzK1lCvf2o2cY65P,Dear Reader,Taylor Swift,2022,68,107.747,0.562,0.388,0.159,0.481,0.117,0.0705,0.00145,225194.0,Taylor Swift
+3KyKxJ4P3pVCgaZwaq2rUC,Gasoline,The Weeknd,2022,68,123.006,0.728,0.741,0.31,0.000582,0.33,0.0473,0.00206,212166.0,The Weeknd
+6iiAfo4wTA2CVC3Uwx9uh8,You're Not Sorry (Taylor's Version),Taylor Swift,2021,68,133.873,0.506,0.444,0.241,0.0538,0.123,0.0285,0.0,261843.0,Taylor Swift
+6Wlq9rqkxrqj5Kls4Kw14H,evermore (feat. Bon Iver),"Taylor Swift, Bon Iver",2021,68,125.177,0.39,0.27,0.32,0.937,0.111,0.0308,0.00227,304107.0,Taylor Swift
+7J4b3LVCIGO4CMBDFLPoP6,Holy Ground (Taylor's Version),Taylor Swift,2021,68,156.894,0.622,0.809,0.511,0.0288,0.109,0.0638,0.00218,202960.0,Taylor Swift
+1cSFlSBdpT4F5vb1frQ231,The Other Side Of The Door (Taylor's Version),Taylor Swift,2021,68,163.936,0.432,0.873,0.629,0.0279,0.167,0.0577,0.0,238444.0,Taylor Swift
+7eResoqEJJAVTkQYSqvO3P,That's When (feat. Keith Urban) (Taylor's Version) (From The Vault),"Taylor Swift, Keith Urban",2021,68,90.201,0.588,0.608,0.508,0.225,0.092,0.0365,0.0,189496.0,Taylor Swift
+6uwfVkaOM1mcMkFmSn35ix,"no body, no crime (feat. HAIM)","Taylor Swift, HAIM",2021,68,79.015,0.546,0.613,0.535,0.418,0.103,0.0264,0.0,215627.0,Taylor Swift
+43Ykum9T72UOPhBN31grpN,ivy,Taylor Swift,2021,68,88.856,0.515,0.545,0.535,0.855,0.0921,0.0353,1.97e-05,260440.0,Taylor Swift
+2r9CbjYgFhtAmcFv1cSquB,I Almost Do (Taylor's Version),Taylor Swift,2021,68,145.88,0.511,0.559,0.248,0.0167,0.113,0.0264,0.0,244587.0,Taylor Swift
+2awNGIJHodfLZSClB3PYhz,coney island (feat. The National),"Taylor Swift, The National",2021,68,107.895,0.537,0.537,0.292,0.819,0.142,0.0617,0.000904,275320.0,Taylor Swift
+5uICWmZTLkpEVbK22PBP6e,marjorie,Taylor Swift,2021,68,96.103,0.535,0.561,0.287,0.876,0.115,0.0484,0.000136,257773.0,Taylor Swift
+4IQkfUsrwXol38VV3U7t7T,Run (feat. Ed Sheeran) (Taylor's Version) (From The Vault),"Taylor Swift, Ed Sheeran",2021,68,125.039,0.61,0.488,0.443,0.817,0.312,0.0293,0.0,240227.0,Taylor Swift
+44tTqUi3xi7E28QLzHVdUA,Anti-Romantic,TOMORROW X TOGETHER,2021,68,142.977,0.641,0.489,0.206,0.0509,0.071,0.11,0.0,215188.0,TOMORROW X TOGETHER
+3IhtE4fkytdrtEfV34UzkD,betty,Taylor Swift,2020,68,95.946,0.595,0.376,0.476,0.589,0.0989,0.0256,0.0,294520.0,Taylor Swift
+73YUReisjb3A9ActdLLjJQ,happiness,Taylor Swift,2020,68,122.079,0.559,0.334,0.211,0.87,0.114,0.0376,0.0,315147.0,Taylor Swift
+08fa9LFcFBTcilB3iq2e2A,epiphany,Taylor Swift,2020,68,94.219,0.354,0.267,0.113,0.731,0.0858,0.0281,0.000402,289749.0,Taylor Swift
+3orEOtd8CPL8GFlpRpKuoE,Faith,The Weeknd,2020,68,175.946,0.375,0.605,0.128,0.612,0.147,0.0729,0.0448,283227.0,The Weeknd
+5u1n1kITHCxxp8twBcZxWy,Holy (feat. Chance The Rapper),"Justin Bieber, Chance the Rapper",2020,68,86.919,0.673,0.704,0.372,0.196,0.0898,0.36,0.0,212093.0,Justin Bieber
+364dI1bYnvamSnBJ8JcNzN,Intentions,"Justin Bieber, Quavo",2020,68,148.014,0.811,0.553,0.86,0.317,0.105,0.0552,0.0,212869.0,Justin Bieber
+3zl7j5ua8mF4JDYuxrfo01,Perfect Symphony (Ed Sheeran & Andrea Bocelli),"Ed Sheeran, Andrea Bocelli",2017,68,95.156,0.544,0.417,0.207,0.586,0.085,0.0247,0.0,265363.0,Ed Sheeran
+7iNIg7XDEaYECfWD5dJ9Va,Friends (with BloodPop®),"Justin Bieber, BloodPop®",2017,68,104.979,0.743,0.735,0.631,0.00389,0.304,0.0382,0.0,189467.0,Justin Bieber
+4mU5iXHeLgbR94siF7p1sY,Six Feet Under,The Weeknd,2016,68,140.035,0.772,0.504,0.244,0.129,0.125,0.0761,0.0,237573.0,The Weeknd
+4oeaIftdpT3JuZLcCkKmVE,False Alarm,The Weeknd,2016,68,173.978,0.517,0.677,0.192,0.0324,0.189,0.0746,3.37e-05,220307.0,The Weeknd
+00NAQYOP4AmWR549nnYJZu,Secrets,The Weeknd,2016,68,109.945,0.664,0.771,0.763,0.0155,0.46,0.0533,9.6e-06,265600.0,The Weeknd
+1L8ObNUDCh7k6GwDIbfx9Q,Popular (with Playboi Carti & Madonna),"The Weeknd, Playboi Carti, Madonna",2024,67,99.02,0.853,0.676,0.85,0.0571,0.39,0.186,3.92e-05,215467.0,The Weeknd
+24emu3sabKISjRkrys28jq,Lavender Haze,Taylor Swift,2023,67,97.043,0.735,0.454,0.0751,0.236,0.133,0.0876,0.00113,202396.0,Taylor Swift
+4eKMqf9ZMSclDX7V9Ptg7x,Midnight Rain,Taylor Swift,2023,67,140.15,0.654,0.372,0.198,0.705,0.114,0.0667,6.78e-05,174783.0,Taylor Swift
+4evLyY5Ue1Wesc61t2KXAU,Superman (Taylor's Version),Taylor Swift,2023,67,131.93,0.533,0.742,0.356,0.0031,0.108,0.0303,0.0,274945.0,Taylor Swift
+1OcSfkeCg9hRC2sFKB4IMJ,Out Of The Woods (Taylor's Version),Taylor Swift,2023,67,92.021,0.545,0.885,0.206,0.000537,0.385,0.0447,5.59e-05,235800.0,Taylor Swift
+0VpF6RLdCfPIeYRwMu4tZK,Bejeweled,Taylor Swift,2023,67,164.0,0.695,0.546,0.425,0.0648,0.0883,0.066,0.000128,194166.0,Taylor Swift
+0108kcWLnn2HlH2kedi1gn,Blank Space (Taylor's Version),Taylor Swift,2023,67,96.057,0.733,0.733,0.701,0.0885,0.168,0.067,0.0,231833.0,Taylor Swift
+5qIHFdkW6phMsTZlN2g8Lc,Anti-Hero,Taylor Swift,2023,67,96.935,0.637,0.649,0.497,0.115,0.147,0.0584,1.22e-06,200690.0,Taylor Swift
+0pjBqAz8GlxGlpaU4W0DxS,Cruel Summer - LP Giobbi Remix,"Taylor Swift, LP Giobbi",2023,67,122.99,0.731,0.722,0.265,0.0893,0.112,0.0691,0.00256,192900.0,Taylor Swift
+7mYwDmbbp8UPLlnRjTJ54X,Impurities,LE SSERAFIM,2023,67,180.126,0.597,0.766,0.453,0.244,0.0664,0.0982,0.0,196365.0,LE SSERAFIM
+7txjUEY6McJDJKqIo1Rxjp,Acróstico - Milan + Sasha,Shakira,2023,67,143.756,0.741,0.461,0.303,0.839,0.0985,0.105,0.0,170786.0,Shakira
+6wAFvJPpTZVirBKGZ4EnMW,Glitch,Taylor Swift,2022,67,140.864,0.675,0.466,0.347,0.361,0.11,0.201,0.0,148781.0,Taylor Swift
+0jvo9CjnbR0lYUDTSNTMiu,Bejeweled,Taylor Swift,2022,67,164.003,0.7,0.55,0.412,0.0661,0.091,0.0653,0.000102,194166.0,Taylor Swift
+4axSuOg3BqsowKjRpj59RU,Carolina - From The Motion Picture “Where The Crawdads Sing”,Taylor Swift,2022,67,115.851,0.476,0.189,0.324,0.904,0.254,0.0329,4.52e-06,264439.0,Taylor Swift
+6sCvvleqKbeyOkQDieBYgp,Lift Me Up - From Black Panther: Wakanda Forever - Music From and Inspired By,Rihanna,2022,67,177.115,0.247,0.299,0.172,0.899,0.131,0.0315,0.0,196520.0,Rihanna
+2Ghp894n1laIf2w98VeAOJ,How Do I Make You Love Me?,The Weeknd,2022,67,121.006,0.805,0.498,0.636,0.0203,0.085,0.0737,2.37e-05,214215.0,The Weeknd
+52OkpDsU6MmPx1AwGOb6Ap,cowboy like me,Taylor Swift,2021,67,127.967,0.604,0.517,0.511,0.768,0.123,0.0347,0.000155,275040.0,Taylor Swift
+7eQj6r5PIdYKEIZjucBMcq,Stay Stay Stay (Taylor's Version),Taylor Swift,2021,67,100.02,0.693,0.681,0.663,0.0848,0.0768,0.025,0.0,205787.0,Taylor Swift
+4uuEGH5SVuzkkSFjo2DEiY,Don't You (Taylor's Version) (From The Vault),Taylor Swift,2021,67,101.934,0.563,0.473,0.405,0.514,0.109,0.0503,1.2e-05,208609.0,Taylor Swift
+55Vf4bimc1Rtfg0PAQRAo2,happiness,Taylor Swift,2021,67,122.079,0.559,0.334,0.211,0.87,0.114,0.0376,0.0,315147.0,Taylor Swift
+0NRHj8hDwwmSPaA41o379r,The Moment I Knew (Taylor's Version),Taylor Swift,2021,67,125.952,0.636,0.402,0.208,0.0494,0.107,0.031,0.0,285280.0,Taylor Swift
+3oGVx9RBmiYGv5ZCecWLkx,Forever Winter (Taylor's Version) (From The Vault),Taylor Swift,2021,67,116.012,0.611,0.552,0.41,0.256,0.134,0.031,0.0,263533.0,Taylor Swift
+5VYWxXUpxuxEmCqMLDqICo,long story short,Taylor Swift,2021,67,157.895,0.546,0.73,0.573,0.66,0.0972,0.0417,0.179,215920.0,Taylor Swift
+7A2cNLRT0YJc1yjxHlKihs,Starlight (Taylor's Version),Taylor Swift,2021,67,126.014,0.628,0.685,0.605,0.00324,0.18,0.0358,0.0,220413.0,Taylor Swift
+7HC7R2D8WjXVcUHJyEGjRs,Breathe (feat. Colbie Caillat) (Taylor's Version),"Taylor Swift, Colbie Caillat",2021,67,148.035,0.506,0.626,0.321,0.156,0.228,0.0287,0.0,263377.0,Taylor Swift
+4e5ayHsOLJNLTGfjau2mEw,The Lucky One (Taylor's Version),Taylor Swift,2021,67,117.889,0.686,0.571,0.538,0.066,0.0608,0.05,0.0,240467.0,Taylor Swift
+0tQ9vBYpldCuikPsbgOVKA,Untouchable (Taylor's Version),Taylor Swift,2021,67,200.391,0.393,0.531,0.224,0.0181,0.169,0.0329,0.0,312107.0,Taylor Swift
+31qCy5ZaophVA81wtlwLc4,Anyone,Justin Bieber,2021,67,115.884,0.686,0.538,0.584,0.181,0.113,0.0345,3.13e-06,190779.0,Justin Bieber
+0RP1kqoSPkVXsKiQNhMKzV,mad woman,Taylor Swift,2020,67,141.898,0.593,0.7,0.451,0.67,0.116,0.0492,6.77e-06,237267.0,Taylor Swift
+6JlI8Ay77m4nJvZTHvfT1J,peace,Taylor Swift,2020,67,150.072,0.644,0.284,0.328,0.916,0.0909,0.0821,1.5e-05,234000.0,Taylor Swift
+3O5osWf1rSoKMwe6E9ZaXP,evermore (feat. Bon Iver),"Taylor Swift, Bon Iver",2020,67,125.177,0.39,0.27,0.32,0.937,0.111,0.0308,0.00227,304107.0,Taylor Swift
+1sOW4PuG5X3Ie3EXUhAopJ,Escape From LA,The Weeknd,2020,67,145.74,0.404,0.524,0.168,0.0456,0.199,0.0593,0.00316,355960.0,The Weeknd
+4y4spB9m0Q6026KfkAvy9Q,Lonely (with benny blanco),"Justin Bieber, benny blanco",2020,67,79.859,0.631,0.239,0.0927,0.864,0.116,0.0398,0.0,149297.0,Justin Bieber
+16wAOAZ2OkqoIDN7TpChjR,Yummy,Justin Bieber,2020,67,145.843,0.677,0.506,0.497,0.345,0.118,0.0964,0.0,208520.0,Justin Bieber
+7DrluKkTviBwCc8AV3VGmf,Clandestino,"Shakira, Maluma",2018,67,165.842,0.766,0.822,0.881,0.39,0.349,0.16,3.37e-05,231921.0,Shakira
+35QZaWQRkmnAVqBF1TLCxQ,Nancy Mulligan,Ed Sheeran,2017,67,101.993,0.68,0.852,0.858,0.117,0.0866,0.0349,0.0,179787.0,Ed Sheeran
+15vzANxN8G9wWfwAJLLMCg,Paris,The Chainsmokers,2017,67,99.999,0.646,0.644,0.251,0.0243,0.0888,0.031,0.0,221520.0,The Chainsmokers
+0ifooM33X1iBxVYyOkSbXW,A Lonely Night,The Weeknd,2016,67,113.998,0.853,0.663,0.864,0.0431,0.0891,0.0755,8.71e-06,220173.0,The Weeknd
+1mhVXWduD8ReDwusfaHNwU,Tell Your Friends,The Weeknd,2015,67,74.64,0.583,0.454,0.309,0.265,0.181,0.0425,0.0,334333.0,The Weeknd
+4UXmlYr1AbcsWsIbrUz2DC,Good Bones,LE SSERAFIM,2024,66,141.076,0.508,0.888,0.594,0.143,0.161,0.162,0.0,160002.0,LE SSERAFIM
+0GKDhq6ZbmSbRHd3eyGlB7,Vigilante Shit,Taylor Swift,2023,66,79.962,0.867,0.272,0.157,0.157,0.118,0.363,3.42e-05,164801.0,Taylor Swift
+5M787RexsAiVYjQusM98CV,New Romantics (Taylor's Version),Taylor Swift,2023,66,121.978,0.649,0.846,0.698,0.00675,0.0824,0.0602,4.63e-06,230178.0,Taylor Swift
+4txojlesMFQZGWxwz2EeqB,"Would've, Could've, Should've",Taylor Swift,2023,66,157.96,0.482,0.837,0.534,0.435,0.123,0.12,0.00147,260362.0,Taylor Swift
+2k0ZEeAqzvYMcx9Qt5aClQ,All You Had To Do Was Stay (Taylor's Version),Taylor Swift,2023,66,96.997,0.588,0.721,0.52,0.000656,0.131,0.0317,0.0,193289.0,Taylor Swift
+45R112Jz5hQeKgITXgSXzs,Karma,Taylor Swift,2023,66,90.034,0.647,0.614,0.0956,0.0782,0.611,0.0651,0.0,204852.0,Taylor Swift
+2VuqMjgoKaOHNM8HpxtXKx,The Great War,Taylor Swift,2023,66,96.009,0.573,0.737,0.592,0.203,0.0851,0.0352,2.78e-05,240356.0,Taylor Swift
+1QQii3pa5m8MEda0nbkjfw,Mastermind,Taylor Swift,2023,66,125.977,0.661,0.345,0.126,0.545,0.0871,0.144,0.000915,191039.0,Taylor Swift
+4WUepByoeqcedHoYhSNHRt,Welcome To New York (Taylor's Version),Taylor Swift,2023,66,116.998,0.757,0.61,0.685,0.00942,0.367,0.0327,3.66e-05,212600.0,Taylor Swift
+27exgla7YBw9DUNNcTIpjy,Wildest Dreams (Taylor's Version),Taylor Swift,2023,66,139.985,0.589,0.674,0.514,0.0436,0.112,0.0656,7.18e-05,220433.0,Taylor Swift
+0kwrPQkiGVE8KTHalH1uMo,Super Shy,NewJeans,2023,66,149.921,0.776,0.817,0.515,0.18,0.146,0.0748,3.44e-05,154667.0,NewJeans
+5wjsJIUf6pdrwauPDae43o,El Jefe,"Shakira, Fuerza Regida",2023,66,74.962,0.785,0.662,0.964,0.228,0.143,0.0499,0.0,170297.0,Shakira
+2iVgM5C7m1G4CJGbms301G,Copa Vacía,"Shakira, Manuel Turizo",2023,66,180.043,0.713,0.651,0.512,0.0741,0.0668,0.0781,0.000775,173548.0,Shakira
+7gVWKBcfIW93YxNBi3ApIE,"You're On Your Own, Kid",Taylor Swift,2022,66,120.044,0.694,0.38,0.376,0.416,0.126,0.0614,8.47e-06,194207.0,Taylor Swift
+4g2c7NoTWAOSYDy44l9nub,Lavender Haze,Taylor Swift,2022,66,97.038,0.735,0.444,0.0984,0.204,0.17,0.0684,0.0012,202396.0,Taylor Swift
+199E1RRrVmVTQqBXih5qRC,Maroon,Taylor Swift,2022,66,108.034,0.658,0.378,0.0382,0.0593,0.0976,0.0379,0.0,218271.0,Taylor Swift
+02Zkkf2zMkwRGQjZ7T4p8f,Anti-Hero,Taylor Swift,2022,66,96.953,0.638,0.634,0.519,0.133,0.152,0.0457,1.23e-06,200690.0,Taylor Swift
+6Nl7KyvjkFncGsjB49SxLl,Midnight Rain,Taylor Swift,2022,66,139.966,0.636,0.377,0.23,0.71,0.115,0.0708,6.51e-05,174783.0,Taylor Swift
+5BYl3SodS3rGmafWXRWmB7,The Great War,Taylor Swift,2022,66,96.025,0.57,0.739,0.593,0.213,0.0937,0.0358,1.78e-05,240356.0,Taylor Swift
+37YoRLUu1qId0ewavgvnkG,Blue Flame,LE SSERAFIM,2022,66,112.045,0.781,0.725,0.765,0.0281,0.0761,0.0452,0.0,201895.0,LE SSERAFIM
+21ApmVGIzIAIDSBdHu6SVt,No Celestial,LE SSERAFIM,2022,66,138.028,0.618,0.801,0.699,0.0168,0.131,0.0825,0.0,166491.0,LE SSERAFIM
+0k0vFacOHNuArLWMiH60p7,Tell Me Why (Taylor's Version),Taylor Swift,2021,66,100.023,0.578,0.909,0.541,0.0222,0.333,0.0628,0.0,200576.0,Taylor Swift
+2JoJrsEV15OzbijS47lids,Today Was A Fairytale (Taylor's Version),Taylor Swift,2021,66,158.162,0.482,0.779,0.328,0.0135,0.296,0.0409,0.0,241822.0,Taylor Swift
+66tOfHVH3aUrscg8vExRV4,dorothea,Taylor Swift,2021,66,119.966,0.605,0.488,0.354,0.696,0.129,0.0264,0.0,225880.0,Taylor Swift
+34V9RiEPe8MNdU32qJsJa1,We Were Happy (Taylor's Version) (From The Vault),Taylor Swift,2021,66,106.007,0.609,0.373,0.13,0.849,0.0779,0.0263,0.0,244237.0,Taylor Swift
+2m3ObD945KvpE5y9A1eUWm,Jump Then Fall (Taylor's Version),Taylor Swift,2021,66,160.111,0.572,0.69,0.624,0.0474,0.0897,0.0358,0.0,237580.0,Taylor Swift
+0oaY19dUwZimIgzn3ZZLZO,2 Much,Justin Bieber,2021,66,119.59,0.583,0.444,0.167,0.593,0.353,0.0456,0.0,152796.0,Justin Bieber
+4u4NyuceXP7Uzh7XFJKCr1,Hold On,Justin Bieber,2021,66,139.98,0.658,0.634,0.29,0.0106,0.132,0.0413,0.0,170813.0,Justin Bieber
+7vBNFh3NIZTj6tB5s1IBjE,marjorie,Taylor Swift,2020,66,96.103,0.535,0.562,0.294,0.878,0.114,0.0479,0.000132,257773.0,Taylor Swift
+1EXa37LpSvi3OQ9UYQ28rD,epiphany,Taylor Swift,2020,66,93.933,0.317,0.254,0.103,0.727,0.0867,0.0286,0.000326,289747.0,Taylor Swift
+0YeDG5HnKnG7jpArkzsSPa,hoax,Taylor Swift,2020,66,118.84,0.676,0.178,0.404,0.964,0.135,0.0394,7.9e-06,220040.0,Taylor Swift
+2o2sgVJIgFXk8GQjWTgI6U,long story short,Taylor Swift,2020,66,157.895,0.546,0.73,0.573,0.66,0.0972,0.0417,0.179,215920.0,Taylor Swift
+3k7ne7VmH43ZPWxPdvPUgR,coney island (feat. The National),"Taylor Swift, The National",2020,66,107.895,0.537,0.537,0.292,0.819,0.142,0.0617,0.000904,275320.0,Taylor Swift
+670fUmXf4KQekzbEgaXyPA,dorothea,Taylor Swift,2020,66,119.966,0.605,0.488,0.354,0.696,0.129,0.0264,0.0,225880.0,Taylor Swift
+6b5P51m8xx2XA6U7sdNZ5E,Alone Again,The Weeknd,2020,66,65.375,0.218,0.652,0.0599,0.033,0.172,0.0641,0.111,250053.0,The Weeknd
+2K9Ovn1o2bTGqbsABGC6m3,Too Late,The Weeknd,2020,66,120.077,0.638,0.863,0.226,0.052,0.685,0.132,5.46e-05,239973.0,The Weeknd
+6kWxIqQDsKFYCJGbU4AjCX,Hardest To Love,The Weeknd,2020,66,80.957,0.467,0.608,0.108,0.0909,0.125,0.0707,8.83e-05,211400.0,The Weeknd
+5Xhqh4lwJPtMUTsdBztN1a,Me Gusta,"Shakira, Anuel AA",2020,66,92.007,0.775,0.696,0.775,0.0559,0.157,0.0681,0.00184,190570.0,Shakira
+0AtP8EkGPn6SwxKDaUuXec,Remember The Name (feat. Eminem & 50 Cent),"Ed Sheeran, Eminem, 50 Cent",2019,66,91.046,0.852,0.666,0.726,0.135,0.798,0.184,0.0,207760.0,Ed Sheeran
+1rqb2FCXVn2HNL1afJEnTr,9 and Three Quarters (Run Away),TOMORROW X TOGETHER,2019,66,128.931,0.639,0.756,0.531,0.0055,0.13,0.0606,0.0,211867.0,TOMORROW X TOGETHER
+58kZ9spgxmlEznXGu6FPdQ,Sick Boy,The Chainsmokers,2018,66,89.996,0.663,0.577,0.454,0.109,0.12,0.0531,0.0,193200.0,The Chainsmokers
+2pJZ1v8HezrAoZ0Fhzby92,What Do I Know?,Ed Sheeran,2017,66,115.092,0.838,0.492,0.895,0.251,0.262,0.038,0.0,237333.0,Ed Sheeran
+4qknM1pQz53QOyfDVTjcM9,Me Enamoré,Shakira,2017,66,103.71,0.74,0.879,0.948,0.193,0.0928,0.105,8.25e-05,226893.0,Shakira
+7eDYNlBwRMeFOZHOZ95dZ1,"Yeah, I Said It",Rihanna,2016,66,127.88,0.509,0.38,0.249,0.547,0.36,0.158,1.21e-06,133080.0,Rihanna
+1gZADNt16Oh23jWyMYRk4p,Prisoner,"The Weeknd, Lana Del Rey",2015,66,135.017,0.551,0.405,0.341,0.443,0.11,0.0398,0.000217,274960.0,The Weeknd
+3H3qBumaYj67PT3aMEBvAP,As You Are,The Weeknd,2015,66,173.663,0.377,0.329,0.0528,0.131,0.279,0.0569,0.00654,340493.0,The Weeknd
+5JKk6Gh5CLlwpbPz48eWtB,Cohete,"Shakira, Rauw Alejandro",2024,65,119.968,0.749,0.687,0.656,0.158,0.136,0.0304,4.58e-06,172504.0,Shakira
+6M9ppdfFjR1AbpUl3Y8DcV,Suburban Legends (Taylor's Version) (From The Vault),Taylor Swift,2023,65,118.036,0.701,0.625,0.323,0.207,0.105,0.036,0.0,171819.0,Taylor Swift
+0lKUBmEyQfzsQHozyeXzES,Clean (Taylor's Version),Taylor Swift,2023,65,103.955,0.772,0.391,0.258,0.25,0.0981,0.0293,2.92e-05,271000.0,Taylor Swift
+0TyGh27YQ5LknmiDhCzJiT,You Are In Love (Taylor's Version),Taylor Swift,2023,65,84.68,0.363,0.498,0.477,0.61,0.112,0.0755,3.91e-06,267389.0,Taylor Swift
+4bBDkw2KBMX0tcgAaXC83Q,Labyrinth,Taylor Swift,2023,65,109.993,0.493,0.308,0.13,0.804,0.123,0.0436,0.328,247962.0,Taylor Swift
+7oomkQSYf1ia2VnVEWfFIU,Question...?,Taylor Swift,2023,65,108.978,0.741,0.509,0.113,0.205,0.262,0.19,0.0,210557.0,Taylor Swift
+3FxJDucHWdw6caWTKO5b23,I Wish You Would (Taylor's Version),Taylor Swift,2023,65,118.009,0.67,0.858,0.539,0.00354,0.0687,0.0439,1.25e-05,207650.0,Taylor Swift
+733OhaXQIHY7BKtY3vnSkn,How You Get The Girl (Taylor's Version),Taylor Swift,2023,65,119.997,0.758,0.691,0.538,0.00196,0.0939,0.0515,1.09e-05,247533.0,Taylor Swift
+1ULabO0PEsdJekqVH6G10G,I Know Places (Taylor's Version),Taylor Swift,2023,65,160.027,0.582,0.788,0.652,0.0999,0.115,0.0445,0.0,195700.0,Taylor Swift
+50yNTF0Od55qnHLxYsA5Pw,Shake It Off (Taylor's Version),Taylor Swift,2023,65,160.058,0.636,0.808,0.917,0.0121,0.359,0.0729,2.18e-05,219209.0,Taylor Swift
+7oZONwFiFIErZcXAtTu7FY,Bad Blood (Taylor's Version),Taylor Swift,2023,65,169.971,0.618,0.683,0.363,0.0362,0.305,0.194,0.0,211104.0,Taylor Swift
+59ScHwQ4PP0TRTJgG07PAW,Dreamer,TOMORROW X TOGETHER,2023,65,159.09,0.532,0.573,0.264,0.213,0.11,0.0473,0.0,186584.0,TOMORROW X TOGETHER
+2AdzsePCqH6NUcMq7tYYmx,Back for More (TXT Ver.),TOMORROW X TOGETHER,2023,65,115.881,0.735,0.938,0.868,0.0156,0.235,0.113,0.0,162835.0,TOMORROW X TOGETHER
+6DSGb5CmwHX4pvclq8HUU1,No-Return (Into the unknown),LE SSERAFIM,2023,65,157.976,0.753,0.717,0.948,0.0267,0.271,0.0593,0.0,184824.0,LE SSERAFIM
+7woEDtme8YkFiWeyiinIjy,New Jeans,NewJeans,2023,65,134.014,0.807,0.721,0.532,0.51,0.115,0.0508,0.00216,108987.0,NewJeans
+5yeuXkukVGuix3vmLu2BPJ,Vigilante Shit,Taylor Swift,2022,65,79.996,0.87,0.279,0.16,0.16,0.121,0.364,1.74e-05,164801.0,Taylor Swift
+6ADDIJxxqzM9LMpm78yzQG,Snow On The Beach (feat. Lana Del Rey),"Taylor Swift, Lana Del Rey",2022,65,110.007,0.659,0.323,0.154,0.735,0.116,0.0436,0.00321,256124.0,Taylor Swift
+1E5Xu8dur0fAjSP1VpVhAZ,Best Friends,The Weeknd,2022,65,90.0,0.737,0.564,0.528,0.436,0.351,0.105,0.0,163504.0,The Weeknd
+1DzJbVkBELu6jDu6q0T0tk,Nothing Is Lost (You Give Me Strength),The Weeknd,2022,65,126.985,0.52,0.693,0.12,0.0002,0.122,0.0331,2.2e-05,267505.0,The Weeknd
+1exxGxUMlJWD1h9YcE9YZH,Opening Sequence,TOMORROW X TOGETHER,2022,65,145.199,0.609,0.64,0.442,0.167,0.0959,0.0539,0.0,177976.0,TOMORROW X TOGETHER
+7F0MuIk5glqtowCUjbn9es,Impurities,LE SSERAFIM,2022,65,90.065,0.715,0.757,0.464,0.231,0.0656,0.0373,0.0,196365.0,LE SSERAFIM
+6ON9UuIq49xXY9GPmHIYRp,The Best Day (Taylor's Version),Taylor Swift,2021,65,125.0,0.642,0.576,0.469,0.488,0.159,0.0282,0.0,245290.0,Taylor Swift
+01QdEx6kFr78ZejhQtWR5m,Forever & Always (Piano Version) (Taylor's Version),Taylor Swift,2021,65,118.753,0.546,0.273,0.271,0.819,0.137,0.0308,0.0,267833.0,Taylor Swift
+2NIBaWXdjaTDmytjjwbEfP,Eyes Open (Taylor's Version),Taylor Swift,2021,65,137.048,0.566,0.773,0.256,0.000818,0.184,0.0356,0.00103,243264.0,Taylor Swift
+4qUijfYU8EoIWiY6oSyrgT,Bye Bye Baby (Taylor's Version) (From The Vault),Taylor Swift,2021,65,80.132,0.624,0.624,0.527,0.334,0.0995,0.0539,0.0,242158.0,Taylor Swift
+6a8aUhYbaQBUI8PcJ5ZmQ6,closure,Taylor Swift,2021,65,151.884,0.689,0.704,0.92,0.835,0.134,0.245,4.83e-06,180653.0,Taylor Swift
+0DMVrlMUn01M0IcpDbwgu7,Girl At Home (Taylor's Version),Taylor Swift,2021,65,125.089,0.691,0.736,0.612,0.00955,0.101,0.0326,1.88e-05,220520.0,Taylor Swift
+6OGogr19zPTM4BALXuMQpF,Take My Breath - Single Version,The Weeknd,2021,65,121.004,0.748,0.74,0.518,0.0107,0.101,0.0484,2.18e-05,220196.0,The Weeknd
+6Xgq7MvZiet0hVi3KaDSgJ,Holy (feat. Chance The Rapper),"Justin Bieber, Chance the Rapper",2021,65,87.017,0.67,0.693,0.388,0.2,0.0909,0.35,0.0,212093.0,Justin Bieber
+0AaV4MJrgmLV3XhoiWXjjb,evermore (feat. Bon Iver),"Taylor Swift, Bon Iver",2020,65,120.94,0.395,0.27,0.314,0.937,0.111,0.0309,0.00249,304107.0,Taylor Swift
+2slqvGLwzZZYsT4K4Y1GBC,Only The Young - Featured in Miss Americana,Taylor Swift,2020,65,93.516,0.56,0.78,0.602,0.00244,0.0714,0.0517,0.0,157507.0,Taylor Swift
+4BGZF4oLbTL0pWm7C18pbv,Scared To Live,The Weeknd,2020,65,87.221,0.504,0.498,0.196,0.131,0.0929,0.0499,0.0,191307.0,The Weeknd
+0EmYZZ8OqeALedVhijSjsg,CROWN,TOMORROW X TOGETHER,2019,65,110.979,0.623,0.8,0.58,0.0497,0.0619,0.0424,0.0,230707.0,TOMORROW X TOGETHER
+0Nwar8rweBUyfyuoyjjUvk,Privilege,The Weeknd,2018,65,93.631,0.404,0.564,0.371,0.915,0.134,0.0344,0.00252,170573.0,The Weeknd
+6PJ8FF6UR8FZXfEvpHkIVN,How Would You Feel (Paean),Ed Sheeran,2017,65,139.979,0.617,0.439,0.242,0.424,0.127,0.0269,0.0,280533.0,Ed Sheeran
+36YCdzT57us0LhDmCYtrNE,Rockin',The Weeknd,2016,65,112.878,0.738,0.885,0.752,0.0133,0.0821,0.206,0.0,232880.0,The Weeknd
+3nlVjrlLMJHC7Flf9impf9,"Dancing In The Dark - From The ""Home"" Soundtrack",Rihanna,2015,65,115.005,0.795,0.75,0.762,0.177,0.0875,0.0526,0.0,223040.0,Rihanna
+6C6fHTuFUxVtJpBOOaMvJr,Shameless,The Weeknd,2015,65,100.06,0.603,0.563,0.234,0.147,0.109,0.027,0.0,253507.0,The Weeknd
+27NV2KxoQ8WuLMqlTDI61F,Often - Kygo Remix,"The Weeknd, Kygo",2015,65,80.156,0.523,0.491,0.408,0.123,0.331,0.0491,0.0,234400.0,The Weeknd
+64zcAZeIWHszCGKOSqAogH,Te Felicito,"Shakira, Rauw Alejandro",2024,64,174.174,0.696,0.602,0.581,0.228,0.0859,0.329,0.0,172533.0,Shakira
+2dfH1gA3FZDv9L69Dqy9RY,Monotonía,"Shakira, Ozuna",2024,64,132.022,0.849,0.695,0.827,0.348,0.156,0.0387,1.59e-06,161633.0,Shakira
+2L09RYwH5Pjzca6PmbUAw3,Sweet Nothing,Taylor Swift,2023,64,175.917,0.335,0.166,0.391,0.967,0.115,0.048,0.00012,188497.0,Taylor Swift
+6HRsJu8vcnzYDN4t0570FY,Wonderland (Taylor's Version),Taylor Swift,2023,64,183.892,0.464,0.705,0.385,0.00976,0.209,0.0434,2.61e-05,245567.0,Taylor Swift
+7GA86Uo2jYbj8vIXe2nyWd,Snow On The Beach (feat. Lana Del Rey),"Taylor Swift, Lana Del Rey",2023,64,110.014,0.653,0.331,0.166,0.705,0.116,0.039,0.0013,256124.0,Taylor Swift
+5tWxKWq1DSP1s9WQ5PWuqu,Paris,Taylor Swift,2023,64,110.963,0.691,0.498,0.454,0.116,0.136,0.101,3.07e-05,196259.0,Taylor Swift
+71CBDRKmF2VeRKYMG1DFBh,Bigger Than The Whole Sky,Taylor Swift,2023,64,82.951,0.48,0.22,0.0633,0.837,0.116,0.0425,0.00269,218503.0,Taylor Swift
+6ClYMObS7f3Nn4AiZHYQt3,Cruel Summer - Live from TS | The Eras Tour,Taylor Swift,2023,64,83.178,0.278,0.907,0.33,0.126,0.89,0.0827,0.0,229567.0,Taylor Swift
+4WBEj8TeGtRPNJdOmT3WJW,This Love (Taylor's Version),Taylor Swift,2023,64,144.071,0.471,0.509,0.0567,0.316,0.0673,0.0355,0.0,250100.0,Taylor Swift
+05RlBHEZg1RmL9DnPgv9Qq,Fire in the belly,LE SSERAFIM,2023,64,119.932,0.716,0.779,0.442,0.0106,0.0266,0.0589,0.0,198233.0,LE SSERAFIM
+5702raF31K9rvD6KZ6sCTo,Ditto,NewJeans,2023,64,133.854,0.814,0.641,0.183,0.027,0.0993,0.111,0.0,185507.0,NewJeans
+3zmwONxswBAzGwExPugSLN,Sweet Nothing,Taylor Swift,2022,64,176.747,0.334,0.161,0.396,0.967,0.115,0.0506,4.71e-05,188497.0,Taylor Swift
+6zzdyvVWjGrQBraSvuqJPY,Starry Eyes,The Weeknd,2022,64,134.23,0.309,0.418,0.146,0.465,0.295,0.031,7.58e-05,148000.0,The Weeknd
+5jAIouBES8LWMiriuNq170,State Of Grace (Acoustic Version) (Taylor's Version),Taylor Swift,2021,64,208.918,0.445,0.131,0.101,0.663,0.108,0.0564,1.57e-06,321640.0,Taylor Swift
+1n2wszmJyVkw6FHqyLnQsY,Come In With The Rain (Taylor's Version),Taylor Swift,2021,64,143.929,0.476,0.564,0.167,0.0406,0.102,0.0269,0.0,237339.0,Taylor Swift
+4CHpVfAhuxNJ3ibExe6kxO,You All Over Me (feat. Maren Morris) (Taylor's Version) (From The Vault),"Taylor Swift, Maren Morris",2021,64,142.893,0.599,0.494,0.44,0.816,0.101,0.0372,0.0,220839.0,Taylor Swift
+0UAdDYrkCvVQftaKpL6q5f,the lakes - original version,Taylor Swift,2021,64,90.053,0.197,0.406,0.251,0.717,0.293,0.0619,0.000362,227203.0,Taylor Swift
+3ExweHKZF9B752DPQByRVT,Change (Taylor's Version),Taylor Swift,2021,64,95.999,0.499,0.815,0.344,0.000191,0.181,0.0341,0.0,279360.0,Taylor Swift
+1IBhYEvvi02tDVByxIiTh4,All Too Well (Taylor's Version),Taylor Swift,2021,64,185.972,0.44,0.528,0.132,0.0171,0.234,0.0317,0.00203,329160.0,Taylor Swift
+137mSruegm1u6x9NvwiagR,Unstable (feat. The Kid LAROI),"Justin Bieber, The Kid LAROI",2021,64,99.757,0.495,0.333,0.37,0.737,0.112,0.0288,0.0,158324.0,Justin Bieber
+35rdVq36LMHQX0Suw9a6tK,closure,Taylor Swift,2020,64,151.884,0.689,0.704,0.92,0.835,0.134,0.245,4.83e-06,180653.0,Taylor Swift
+3WlbeuhfRSqU7ylK2Ui5U7,Snowchild,The Weeknd,2020,64,148.062,0.55,0.611,0.243,0.162,0.121,0.137,6.88e-05,247187.0,The Weeknd
+2ZlCGeK30BLRNSPC832pNZ,Forever (feat. Post Malone & Clever),"Justin Bieber, Post Malone, Clever",2020,64,139.98,0.824,0.483,0.892,0.538,0.204,0.08,1.49e-05,219933.0,Justin Bieber
+41L3O37CECZt3N7ziG2z7l,Yummy,Justin Bieber,2020,64,145.919,0.688,0.514,0.494,0.366,0.116,0.0903,0.0,210427.0,Justin Bieber
+1AI7UPw3fgwAFkvAlZWhE0,Take Me Back to London (feat. Stormzy),"Ed Sheeran, Stormzy",2019,64,138.058,0.885,0.762,0.605,0.219,0.162,0.216,0.0,189733.0,Ed Sheeran
+4BiiOzZCrXEzHRLYcYFiD5,Hope,"The Chainsmokers, Winona Oak",2018,64,104.941,0.773,0.699,0.513,0.488,0.0814,0.0958,3.6e-06,180120.0,The Chainsmokers
+3Lfiu5sZ4M4B6JaKMBc0FU,Barcelona,Ed Sheeran,2017,64,99.975,0.747,0.76,0.682,0.448,0.153,0.187,0.0,191147.0,Ed Sheeran
+6RtzmszGXs32TRhv5zTKNM,Same Ol' Mistakes,Rihanna,2016,64,151.777,0.44,0.803,0.501,0.199,0.0591,0.0443,0.00282,397093.0,Rihanna
+1oGdVdYjeQvojGKDddxLQQ,True Colors,The Weeknd,2016,64,76.671,0.624,0.424,0.584,0.286,0.173,0.24,0.0,206013.0,The Weeknd
+6pDVjCUA3B1vg9waKutAsv,Attention,The Weeknd,2016,64,148.04,0.671,0.428,0.362,0.688,0.119,0.124,0.000182,197653.0,The Weeknd
+0Q8NdNYJUr07b2ZX4y8EXR,Smart (English ver.),LE SSERAFIM,2024,63,113.056,0.812,0.675,0.651,0.13,0.0679,0.0416,0.0,166384.0,LE SSERAFIM
+1SztNGCwEHJEVFx90E5g7D,High Infidelity,Taylor Swift,2023,63,176.082,0.564,0.545,0.766,0.726,0.0878,0.104,0.0,231475.0,Taylor Swift
+10GRRCR5fctuOF4GFmATJI,Dear Reader,Taylor Swift,2023,63,107.601,0.475,0.386,0.162,0.497,0.119,0.0737,0.00104,225194.0,Taylor Swift
+7C0w28EsX0Um2FrZs9gso2,Glitch,Taylor Swift,2023,63,140.845,0.677,0.451,0.399,0.318,0.11,0.19,0.0,148781.0,Taylor Swift
+74cpuIw43kA8xPgbQEPdss,Flash Forward,LE SSERAFIM,2023,63,114.949,0.773,0.879,0.839,0.162,0.0897,0.0391,0.0,195512.0,LE SSERAFIM
+1PeBPKbOCc370rnLKploBL,ジュエリー (Prod. imase),LE SSERAFIM,2023,63,119.018,0.725,0.863,0.691,0.102,0.13,0.0514,0.0,163813.0,LE SSERAFIM
+43q586vP8gGkYypKoSddhl,Labyrinth,Taylor Swift,2022,63,110.039,0.487,0.313,0.141,0.791,0.124,0.0487,0.348,247962.0,Taylor Swift
+6C7OF1Jal7YkyjzyUG8vkK,Question...?,Taylor Swift,2022,63,108.989,0.751,0.502,0.112,0.226,0.297,0.162,0.0,210557.0,Taylor Swift
+1NhjYYcYTRywc0di98xHxf,"Here We Go… Again (feat. Tyler, the Creator)","The Weeknd, Tyler, The Creator",2022,63,134.943,0.469,0.623,0.198,0.345,0.588,0.0302,0.0,209778.0,The Weeknd
+6AOrC7t2WS5ykYcnoHpiS2,Lonely Boy (The tattoo on my ring finger),TOMORROW X TOGETHER,2022,63,144.881,0.666,0.639,0.505,0.24,0.0928,0.131,0.0,168752.0,TOMORROW X TOGETHER
+2KdKh9vHbKW0tZLqtpxxI0,Honest (feat. Don Toliver),"Justin Bieber, Don Toliver",2022,63,150.002,0.81,0.655,0.809,0.127,0.105,0.0698,8.16e-05,193322.0,Justin Bieber
+1n3b9Eekoy3S9ZSZ5DmTW1,All Too Well (Sad Girl Autumn Version) - Recorded at Long Pond Studios,Taylor Swift,2021,63,93.009,0.585,0.286,0.189,0.838,0.115,0.0312,0.0,598150.0,Taylor Swift
+5dwQhzeE8LXpl9sbZJZmQS,the lakes - bonus track,Taylor Swift,2020,63,89.846,0.509,0.262,0.287,0.85,0.0851,0.0311,1.68e-06,211798.0,Taylor Swift
+0vVMlbdYx2080Oa9FndPZr,long story short,Taylor Swift,2020,63,157.893,0.546,0.732,0.571,0.674,0.0972,0.0423,0.184,215920.0,Taylor Swift
+6NriykdkRrjQMZo1sfVYUo,"no body, no crime (feat. HAIM)","Taylor Swift, HAIM",2020,63,79.011,0.547,0.613,0.528,0.431,0.102,0.0264,0.0,215627.0,Taylor Swift
+3fGnrtrtL1IHSX9t4DKOYf,Cornelia Street - Live From Paris,Taylor Swift,2020,63,97.085,0.502,0.462,0.304,0.578,0.721,0.0265,0.0,296013.0,Taylor Swift
+40U8d12pC5UHqmHwXjHjjl,Repeat After Me (Interlude),The Weeknd,2020,63,95.032,0.555,0.619,0.141,0.0323,0.0917,0.0314,0.000224,195813.0,The Weeknd
+2BcnxwxBuar5wjCaLqm5N3,Until I Bleed Out,The Weeknd,2020,63,115.233,0.245,0.394,0.148,0.423,0.093,0.0374,2.9e-05,190173.0,The Weeknd
+0UnTaVkntyh3vqvLEvbpQx,In Your Eyes (with Doja Cat) - Remix,"The Weeknd, Doja Cat",2020,63,99.984,0.679,0.731,0.727,0.00518,0.0614,0.0319,0.000127,237912.0,The Weeknd
+2ecGP5xUE5126x6yHa7J6E,Can't You See Me?,TOMORROW X TOGETHER,2020,63,139.925,0.59,0.818,0.664,0.0584,0.205,0.0771,0.0,201445.0,TOMORROW X TOGETHER
+2o9LAypwGH4ctV0i9boo6d,Come Around Me,Justin Bieber,2020,63,157.944,0.648,0.681,0.766,0.263,0.0971,0.0379,0.00761,200773.0,Justin Bieber
+6EbduYTr62sSzvl36wWiFM,BLOW (with Chris Stapleton & Bruno Mars),"Ed Sheeran, Chris Stapleton, Bruno Mars",2019,63,92.469,0.631,0.796,0.596,0.000245,0.38,0.0401,0.0115,209120.0,Ed Sheeran
+1m84zLz4WizjR4mCDoXReg,I Don't Care - Acoustic,Ed Sheeran,2019,63,94.058,0.706,0.349,0.624,0.791,0.108,0.0302,0.0,238220.0,Ed Sheeran
+0NWqNXBJTpXbkI5rPWNy3p,All I Know,"The Weeknd, Future",2016,63,120.021,0.467,0.417,0.171,0.421,0.102,0.074,0.000202,321027.0,The Weeknd
+15k2nBQJ0teDmPZHrOXL2N,Ordinary Life,The Weeknd,2016,63,149.748,0.537,0.587,0.365,0.0275,0.0961,0.0771,0.0,221920.0,The Weeknd
+4LR9G3Vr27KaqrNm9aymBq,Die For You - Sped Up,"The Weeknd, xxtristanxo, Speed Radio",2016,63,77.787,0.556,0.543,0.431,0.0985,0.186,0.131,0.0,223441.0,The Weeknd
+3qrH2YFnbEiQeUe4wzgOuP,"Try Everything - From ""Zootropolis""",Shakira,2016,63,115.483,0.704,0.598,0.472,0.0283,0.106,0.0309,0.0,196707.0,Shakira
+2IjyFRCRn8x1bEquOM3vxg,Purpose,Justin Bieber,2015,63,130.021,0.481,0.285,0.316,0.9,0.123,0.0424,0.0,210160.0,Justin Bieber
+3KV9n8QMepWCXI3TkWKeZy,Copa Vacía,"Shakira, Manuel Turizo",2024,62,179.927,0.717,0.616,0.527,0.0221,0.0774,0.0681,0.000512,174526.0,Shakira
+3FEIMzqeq5EXqaMi3mHP6L,Última,Shakira,2024,62,152.033,0.624,0.354,0.389,0.951,0.0878,0.0394,0.0,178667.0,Shakira
+7r8aFgJzUbqpApUNmzV5yY,Growing Pain,TOMORROW X TOGETHER,2023,62,172.054,0.479,0.86,0.454,0.00158,0.335,0.0602,0.0,200544.0,TOMORROW X TOGETHER
+7o3sxXABQ4VacMPDa6hUFO,Blue Spring,TOMORROW X TOGETHER,2023,62,169.917,0.505,0.747,0.222,0.00471,0.463,0.0312,0.0,185949.0,TOMORROW X TOGETHER
+0bPy1iMfSOO2pevpXLhnoG,Skipping Stones,TOMORROW X TOGETHER,2023,62,93.991,0.575,0.794,0.203,0.00435,0.0219,0.0376,0.0,200847.0,TOMORROW X TOGETHER
+2oWpe2L8ypC080BxpDVuTY,Anti-Hero - Kungs Remix,"Taylor Swift, Kungs",2022,62,115.997,0.721,0.919,0.675,0.0266,0.348,0.0878,0.001,194612.0,Taylor Swift
+6a4GH1gljLL7VvmO9u5O92,Don't Break My Heart,The Weeknd,2022,62,121.959,0.767,0.618,0.243,0.31,0.179,0.032,0.0,205469.0,The Weeknd
+51A8eKvvZz9uydvIZ7xRSV,Superstar (Taylor's Version),Taylor Swift,2021,62,171.862,0.454,0.555,0.171,0.157,0.343,0.0283,0.0,263865.0,Taylor Swift
+7nWui6jiMM2m9qFmET1Mtj,Ronan (Taylor's Version),Taylor Swift,2021,62,116.04,0.623,0.279,0.38,0.661,0.193,0.031,0.0,264253.0,Taylor Swift
+4Wh5WGtov1VJ6EJ8OQgNeS,Magic,TOMORROW X TOGETHER,2021,62,108.236,0.654,0.88,0.51,0.00303,0.32,0.413,0.0,159750.0,TOMORROW X TOGETHER
+6F2r4HgpJnvKDmkN6JEN6J,As I Am (feat. Khalid),"Justin Bieber, Khalid",2021,62,99.928,0.595,0.543,0.109,0.127,0.0975,0.038,0.0,174406.0,Justin Bieber
+2tB9OFgAHjAds3cqquLlvp,Loved By You (feat. Burna Boy),"Justin Bieber, Burna Boy",2021,62,101.04,0.79,0.724,0.642,0.0696,0.113,0.0852,2.33e-06,159250.0,Justin Bieber
+6qYkmqFsXbj8CQjAdbYz07,Blinding Lights,The Weeknd,2020,62,170.987,0.515,0.726,0.35,0.00152,0.087,0.0547,0.00015,200046.0,The Weeknd
+5JXpZcc3CeQaC6vAF1iaV5,Fairy of Shampoo,TOMORROW X TOGETHER,2020,62,105.145,0.544,0.796,0.473,0.313,0.42,0.0604,0.00673,267099.0,TOMORROW X TOGETHER
+1DhRbox3xkceP64k3JeYfW,Antisocial (with Travis Scott),"Ed Sheeran, Travis Scott",2019,62,151.957,0.716,0.823,0.91,0.132,0.361,0.0495,0.0,161747.0,Ed Sheeran
+3RsEvBUaNT9MXqUvQVuK1G,Cat & Dog,TOMORROW X TOGETHER,2019,62,160.005,0.843,0.794,0.319,0.0637,0.104,0.146,0.00023,187573.0,TOMORROW X TOGETHER
+5HDPtsnyb3maFmPL8LLUTG,New Man,Ed Sheeran,2017,62,94.026,0.78,0.745,0.862,0.0559,0.0595,0.145,0.0,189280.0,Ed Sheeran
+4UknpXoLjlB7Mao4UWcJ2o,A Lonely Night,The Weeknd,2016,62,113.999,0.853,0.663,0.864,0.0431,0.0891,0.0755,8.65e-06,220173.0,The Weeknd
+5J4WHWFvEWRd2FBVhcTcmi,"Dancing In The Dark - From The ""Home"" Soundtrack",Rihanna,2015,62,115.003,0.795,0.749,0.761,0.179,0.0875,0.0525,0.0,223040.0,Rihanna
+0wzPHTgOtFIDhk2rD3Au4x,Angel,The Weeknd,2015,62,127.966,0.626,0.583,0.335,0.105,0.115,0.0435,0.0,377347.0,The Weeknd
+6J7PIkhtHwmFjPLq0SyuPj,Dark Times,"The Weeknd, Ed Sheeran",2015,62,132.608,0.501,0.403,0.27,0.116,0.124,0.0747,1.03e-05,260640.0,The Weeknd
+05kJkr80XEaZeN8kxyQoFp,Lavender Haze - Acoustic Version,Taylor Swift,2023,61,97.075,0.724,0.554,0.71,0.772,0.0791,0.0392,6.32e-05,174376.0,Taylor Swift
+4iK0QSCW3nmt6bsZtAjzX6,Deep Down,TOMORROW X TOGETHER,2023,61,123.987,0.801,0.471,0.41,0.0597,0.0675,0.0795,0.000253,163619.0,TOMORROW X TOGETHER
+7CHDUDw89DCR8vvI0yTXGa,Beautiful Restriction,NewJeans,2023,61,124.904,0.609,0.869,0.338,0.166,0.224,0.0567,0.0,232453.0,NewJeans
+6J834IBcZJMH38ksrgAqwF,Paris,Taylor Swift,2022,61,110.962,0.696,0.485,0.339,0.103,0.136,0.123,6.69e-05,196259.0,Taylor Swift
+3jzbpOzoYa22FvzBkNkLvC,Bigger Than The Whole Sky,Taylor Swift,2022,61,165.523,0.395,0.226,0.0656,0.829,0.115,0.0518,0.00322,218503.0,Taylor Swift
+2d3d9xZutJjmUpntiyHt3F,Anti-Hero - Acoustic Version,Taylor Swift,2022,61,96.864,0.624,0.332,0.397,0.597,0.195,0.0365,0.000679,196473.0,Taylor Swift
+5XbA7TAqsD0fj0dGBrbb0D,I Heard You're Married (feat. Lil Wayne),"The Weeknd, Lil Wayne",2022,61,109.946,0.736,0.848,0.784,0.103,0.299,0.171,0.0,263642.0,The Weeknd
+04CHEoMbrLOiX8co3EG5dO,Thursday's Child Has Far To Go,TOMORROW X TOGETHER,2022,61,167.14,0.631,0.762,0.668,0.049,0.0926,0.105,0.0,211399.0,TOMORROW X TOGETHER
+5XO1SOADQxkdqGLFxX8rLN,The Great Mermaid,LE SSERAFIM,2022,61,94.963,0.625,0.824,0.438,0.000884,0.0908,0.0614,0.0,177795.0,LE SSERAFIM
+5pcjystBtalYeqaiXCcgEY,You All Over Me (feat. Maren Morris) (Taylor's Version) (From The Vault),"Taylor Swift, Maren Morris",2021,61,142.731,0.589,0.496,0.44,0.818,0.101,0.0377,0.0,220839.0,Taylor Swift
+1lb61ya67YS87CtjYN0bil,No Rules,TOMORROW X TOGETHER,2021,61,120.03,0.747,0.736,0.703,0.00158,0.214,0.0544,3.3e-05,186076.0,TOMORROW X TOGETHER
+5NU40QTlXrDUJzDBdv79bg,Deserve You,Justin Bieber,2021,61,89.934,0.677,0.633,0.409,0.0314,0.112,0.0771,0.0,187239.0,Justin Bieber
+6rap8NpGq8LDcVaJWkKFPn,champagne problems,Taylor Swift,2020,61,171.346,0.463,0.248,0.325,0.92,0.113,0.0374,0.0,244000.0,Taylor Swift
+3w9VRlKPvNxj40RdUGRweH,dorothea,Taylor Swift,2020,61,119.953,0.607,0.488,0.361,0.694,0.129,0.0264,0.0,225880.0,Taylor Swift
+7bFqfMKnKsZJH9FytUXg3E,exile (feat. Bon Iver) - the long pond studio sessions,"Taylor Swift, Bon Iver",2020,61,151.956,0.359,0.305,0.108,0.848,0.111,0.0306,6.74e-05,279893.0,Taylor Swift
+5SGEPm9ge10bD4j3ec9UHV,Missed You - Bonus Track,The Weeknd,2020,61,151.98,0.689,0.374,0.321,0.115,0.111,0.0851,0.000132,144540.0,The Weeknd
+5T03itPFOPGGkvVPvPiyla,Put It All on Me (feat. Ella Mai),"Ed Sheeran, Ella Mai",2019,61,101.007,0.627,0.594,0.388,0.256,0.373,0.0479,0.0,197093.0,Ed Sheeran
+6SznMYPQJHzr3IwsAHLId2,Bibia Be Ye Ye,Ed Sheeran,2017,61,127.067,0.738,0.677,0.882,0.52,0.133,0.0824,0.0,176747.0,Ed Sheeran
+2dfHh7ECGxfNqZTQno09Vk,Hearts Don't Break Around Here,Ed Sheeran,2017,61,105.177,0.604,0.366,0.181,0.719,0.162,0.0267,0.0,248413.0,Ed Sheeran
+4mJDfMcT7odIUjWlb2WO4L,Baby One More Time - Recorded at Spotify Studios New York City,Ed Sheeran,2017,61,104.511,0.792,0.307,0.631,0.189,0.0834,0.0522,0.0,177215.0,Ed Sheeran
+15BlympuVSfZFROojEMY2M,Don't Let Me Down (feat. Daya) - Illenium Remix,"The Chainsmokers, Daya, ILLENIUM",2016,61,79.648,0.428,0.656,0.355,0.0751,0.15,0.075,0.181,218933.0,The Chainsmokers
+1KnJwhZU3DIBe54Q4HPpIl,Higher,Rihanna,2016,61,153.199,0.292,0.567,0.392,0.112,0.119,0.0416,1.01e-06,120627.0,Rihanna
+2f7HKQh8zptKYnO6aIhErl,Kiss It Better - R3hab Remix,Rihanna,2016,61,102.023,0.73,0.743,0.475,0.0583,0.103,0.0417,0.0,184200.0,Rihanna
+7HtPBwBoCBDy1tpstag7HL,Starboy,"The Weeknd, Daft Punk",2016,61,186.038,0.677,0.592,0.528,0.134,0.175,0.281,3.86e-06,230453.0,The Weeknd
+27BgDmciSjoxTG0almHTpZ,Love To Lay,The Weeknd,2016,61,116.971,0.711,0.807,0.698,0.052,0.214,0.0608,0.0,223293.0,The Weeknd
+7lsYGc5H5DHktxO7gbB8bN,Ordinary Life,The Weeknd,2016,61,149.882,0.544,0.586,0.361,0.0276,0.0962,0.0794,0.0,221920.0,The Weeknd
+1bAvtmTl0F9loyz9AwPwp7,Losers,"The Weeknd, Labrinth",2015,61,91.007,0.666,0.485,0.287,0.0355,0.504,0.053,0.000599,281147.0,The Weeknd
+0SNIAtRCPVVLoGEPcuHSIc,I'll Show You,Justin Bieber,2015,61,133.595,0.401,0.608,0.0761,0.0505,0.183,0.0578,7.96e-05,199947.0,Justin Bieber
+2vz6HIZBaQOnWCH7kKhKQH,Die For You,The Weeknd,2024,60,133.719,0.545,0.533,0.455,0.107,0.158,0.0667,0.0,260256.0,The Weeknd
+7c75oBbQEqm6HFSgjjy2Ib,Deja Vu (Sped Up Ver.),TOMORROW X TOGETHER,2024,60,97.701,0.643,0.64,0.343,0.0752,0.192,0.0486,0.0,142849.0,TOMORROW X TOGETHER
+2ixHc1vhAsk6URSaPB0fwL,Deja Vu (Slowed + Reverb Ver.),TOMORROW X TOGETHER,2024,60,146.491,0.54,0.759,0.168,0.196,0.078,0.0611,0.0,195994.0,TOMORROW X TOGETHER
+2qcLLzq1deFSABxoqWFGdi,Acróstico - Milan + Sasha,Shakira,2024,60,143.836,0.734,0.446,0.353,0.827,0.104,0.074,1.32e-06,171674.0,Shakira
+77LZvE2XLYn2AW55UxIG8H,Happy Fools (feat. Coi Leray),"TOMORROW X TOGETHER, Coi Leray",2023,60,163.952,0.698,0.742,0.545,0.158,0.146,0.251,0.0,155753.0,TOMORROW X TOGETHER
+3e10Ct9oFcIdgFjkDUBV2k,Beautiful Love - Free Fire,Justin Bieber,2022,60,110.985,0.797,0.595,0.537,0.0447,0.108,0.0465,1.53e-06,207838.0,Justin Bieber
+24OeEKPQ8qqNZnPevRHxUT,Red Eye (feat. TroyBoi),"Justin Bieber, TroyBoi",2021,60,96.033,0.815,0.816,0.774,0.0501,0.0761,0.0513,0.000887,187453.0,Justin Bieber
+23EquxExXkNmGCCY96P0Iu,Hailey,Justin Bieber,2021,60,100.042,0.462,0.745,0.254,0.0367,0.0795,0.0699,0.0,193355.0,Justin Bieber
+2NnrAdjE9cPdMklonMBuAv,willow - dancing witch version (Elvira remix),"Taylor Swift, ELVIRA",2020,60,83.922,0.429,0.567,0.67,0.449,0.536,0.272,1.5e-05,184819.0,Taylor Swift
+7o3Mcis1uKcYDuuJD1W0Rm,King Of The Fall,The Weeknd,2020,60,78.018,0.585,0.757,0.208,0.101,0.273,0.0599,0.0,301595.0,The Weeknd
+6utQlfLooYsUkq5xUg3vxt,Nothing Compares - Bonus Track,The Weeknd,2020,60,131.922,0.532,0.577,0.0397,0.00253,0.234,0.0352,0.0437,222307.0,The Weeknd
+0VsGaRXR5WAzpu51unJTis,Best Part of Me (feat. YEBBA),"Ed Sheeran, Yebba",2019,60,81.655,0.565,0.243,0.239,0.758,0.285,0.0317,8.82e-06,243267.0,Ed Sheeran
+0fTiDOXRNEN0lUeYGoSHml,Somebody,"The Chainsmokers, Drew Love",2018,60,203.443,0.32,0.63,0.323,0.192,0.102,0.0493,0.0,221987.0,The Chainsmokers
+6TIU9Ehmi6dMzZK73Ym4yj,Save Myself,Ed Sheeran,2017,60,78.842,0.552,0.29,0.481,0.85,0.227,0.0448,0.0,247107.0,Ed Sheeran
+5T6bJp3XgwT0IaCfKMxmAu,Perfect - Acoustic,Ed Sheeran,2017,60,94.973,0.432,0.377,0.394,0.459,0.114,0.0304,0.0,260867.0,Ed Sheeran
+5ULRlgiSPSKTaJN1vU9yso,Shape of You - Acoustic,Ed Sheeran,2017,60,100.728,0.843,0.4,0.927,0.49,0.125,0.103,0.0,223573.0,Ed Sheeran
+6i759FCuKx713ZnYjtpQGU,True Colors,The Weeknd,2016,60,76.676,0.616,0.424,0.582,0.284,0.173,0.251,0.0,206027.0,The Weeknd
+57qiTKh8bVX0VtfUNTQqhw,Nothing Without You,The Weeknd,2016,60,109.825,0.575,0.634,0.191,0.0646,0.0878,0.068,0.0,198653.0,The Weeknd
+3DX4Y0egvc0slLcLl31h2p,Secrets,The Weeknd,2016,60,109.948,0.665,0.771,0.764,0.0155,0.46,0.0533,9.6e-06,265600.0,The Weeknd
+03j354P848KtNU2FVSwkDG,Real Life,The Weeknd,2015,60,90.634,0.581,0.652,0.358,0.439,0.351,0.0496,0.0,223373.0,The Weeknd
+5L9WFUodzACitS1TiGm7Mi,No Sense,"Justin Bieber, Travis Scott",2015,60,133.956,0.636,0.499,0.362,0.0474,0.108,0.0309,0.0,275040.0,Justin Bieber
+6YckHetPOkzxtXXaYx0Gt1,Save Your Tears,The Weeknd,2024,59,118.066,0.681,0.824,0.622,0.0186,0.484,0.0329,7.35e-06,215627.0,The Weeknd
+218WdV0d4ijtTtPTKGuf1E,Starboy (feat. Daft Punk),"The Weeknd, Daft Punk",2024,59,185.986,0.692,0.593,0.5,0.154,0.125,0.28,6.99e-06,230461.0,The Weeknd
+7H3cuCPaX9WHZXQ0Q9RlxH,Popular (Sped Up) (with Playboi Carti & Madonna),"The Weeknd, Madonna, Playboi Carti, xxtristanxo",2024,59,114.941,0.851,0.678,0.77,0.0306,0.285,0.191,0.00116,187556.0,The Weeknd
+0tLijuYdMi1UwK7CD3B7bH,I'll See You There Tomorrow,TOMORROW X TOGETHER,2024,59,121.031,0.748,0.827,0.645,0.146,0.265,0.0512,0.0,196694.0,TOMORROW X TOGETHER
+40Ccxt7rKCXiViGQKPPACR,Cómo Dónde y Cuándo,Shakira,2024,59,163.837,0.651,0.668,0.509,0.345,0.244,0.0748,0.0,179000.0,Shakira
+3lJyZMz60jW3TTGeOFUrCd,Chasing That Feeling (English Ver. - Digital Only),TOMORROW X TOGETHER,2023,59,142.021,0.672,0.825,0.752,0.0133,0.063,0.0539,0.0,182670.0,TOMORROW X TOGETHER
+0sNfFxw3pJkVmRsgY781vM,"FEARNOT (Between you, me and the lamppost)",LE SSERAFIM,2023,59,105.976,0.563,0.694,0.196,0.11,0.157,0.0284,0.0,206832.0,LE SSERAFIM
+1gWRnZ52AK1ZUvpjjTteKf,Better Man (Taylor's Version) (From The Vault),Taylor Swift,2021,59,73.942,0.473,0.579,0.255,0.214,0.0877,0.0384,0.0,297013.0,Taylor Swift
+3XoYQvTJK5KT0ynrq7mcCN,MOA Diary (Dubaddu Wari Wari),TOMORROW X TOGETHER,2021,59,113.922,0.717,0.893,0.575,0.074,0.141,0.181,0.0,188276.0,TOMORROW X TOGETHER
+3buwFfY33H32wfZ6X9poV3,Somebody,Justin Bieber,2021,59,75.991,0.551,0.756,0.359,0.000284,0.118,0.045,9.48e-05,179415.0,Justin Bieber
+5mdNyCS7ttVcAyVYOIFEjs,my tears ricochet - the long pond studio sessions,Taylor Swift,2020,59,129.007,0.531,0.172,0.168,0.946,0.0615,0.0351,1.01e-05,295173.0,Taylor Swift
+1gaLZjPrDnHQWJds2Jg4KT,this is me trying - the long pond studio sessions,Taylor Swift,2020,59,68.097,0.435,0.332,0.157,0.928,0.0867,0.031,0.000898,209293.0,Taylor Swift
+7ryS0xBZNYjQqql34GCkDp,Daylight - Live From Paris,Taylor Swift,2020,59,75.858,0.49,0.228,0.217,0.794,0.733,0.0361,0.0,262320.0,Taylor Swift
+3EPgWM1zfTSzEc0z4AwWTM,cardigan - the long pond studio sessions,Taylor Swift,2020,59,86.478,0.395,0.234,0.247,0.88,0.107,0.0382,0.0,230680.0,Taylor Swift
+4tyX1rw9X309WkEdh2As4B,coney island (feat. The National),"Taylor Swift, The National",2020,59,107.873,0.529,0.536,0.304,0.826,0.141,0.0627,0.00082,275320.0,Taylor Swift
+2ExKb6Ag2WXob6FpkSeXhE,Save Your Tears,The Weeknd,2020,59,118.061,0.684,0.817,0.623,0.0222,0.439,0.0308,2.19e-05,215627.0,The Weeknd
+6mS8cd33jFrighnLc0obxQ,Ghosting,TOMORROW X TOGETHER,2020,59,151.989,0.413,0.878,0.694,0.00319,0.305,0.0694,0.000961,223492.0,TOMORROW X TOGETHER
+4wuCQX7JvAZLlrcmH4AeZF,Cross Me (feat. Chance the Rapper & PnB Rock),"Ed Sheeran, Chance the Rapper, PnB Rock",2019,59,95.005,0.746,0.787,0.607,0.212,0.0669,0.12,0.0,206187.0,Ed Sheeran
+19TOAlTFq0NDHvUPQR0tkr,South of the Border (feat. Camila Cabello & Cardi B) - Cheat Codes Remix,"Ed Sheeran, Cardi B, Camila Cabello, Cheat Codes",2019,59,114.054,0.845,0.766,0.782,0.212,0.111,0.0658,0.0,195924.0,Ed Sheeran
+5ug4vqGZ3eisGhY1IsziNX,Best Part of Me (feat. YEBBA),"Ed Sheeran, Yebba",2019,59,81.657,0.565,0.242,0.237,0.762,0.285,0.0318,9.3e-06,243267.0,Ed Sheeran
+2U28aK9o2gI7sBL4XRzFfL,20cm,TOMORROW X TOGETHER,2019,59,136.557,0.664,0.552,0.612,0.029,0.18,0.0274,0.0,217027.0,TOMORROW X TOGETHER
+73TXMz1i41sGfOuDg8gH4L,Candle In The Wind - 2018 Version,Ed Sheeran,2018,59,76.028,0.549,0.449,0.506,0.732,0.117,0.0455,0.0,198777.0,Ed Sheeran
+6D2tzc8kRnZb7P1lNwMBLH,Close To You,Rihanna,2016,59,80.098,0.494,0.17,0.145,0.895,0.139,0.0337,0.0,223213.0,Rihanna
+3FWPoYBDserKdzcattMFGa,Roses (feat. ROZES),"The Chainsmokers, ROZES",2015,59,100.033,0.718,0.808,0.309,0.0299,0.225,0.0473,0.00414,225813.0,The Chainsmokers
+6cy83P2limyzaFSl3OoQe0,"Towards The Sun - From The ""Home"" Soundtrack",Rihanna,2015,59,170.17,0.266,0.689,0.264,0.0531,0.152,0.0389,0.0,273293.0,Rihanna
+2fTe41iso7GyCLuRu3UmJh,Popular (Slowed) (with Playboi Carti & Madonna),"The Weeknd, Madonna, Playboi Carti, xxtristanxo",2024,58,83.145,0.785,0.605,0.69,0.0755,0.163,0.186,1.29e-05,258418.0,The Weeknd
+4SD0V2HMxkBupk6ml9alm4,In Your Eyes,The Weeknd,2024,58,100.029,0.667,0.717,0.727,0.00318,0.0754,0.033,1.73e-05,237522.0,The Weeknd
+0kXG39GnyM0YtG3ct38P6u,Call Out My Name,The Weeknd,2024,58,134.005,0.415,0.611,0.164,0.202,0.305,0.0391,0.0,228382.0,The Weeknd
+04948IGlqY1vSh7AHbueiQ,Blinding Lights,The Weeknd,2024,58,170.925,0.521,0.741,0.361,0.00172,0.079,0.0707,0.000185,200046.0,The Weeknd
+07Kq5cRJkYNieu1rge3PZX,UNFORGIVEN - Japanese ver.,"LE SSERAFIM, ナイル・ロジャース, Ado",2023,58,104.002,0.797,0.873,0.435,0.121,0.121,0.0591,3.63e-05,182933.0,LE SSERAFIM
+2nW48vXnZZ5EYka46v7GOk,Attention (250 Remix),NewJeans,2023,58,104.984,0.727,0.911,0.815,0.0442,0.249,0.034,0.0,181400.0,NewJeans
+6JVXVLqCPaodBSEwRFUN8w,Ditto (250 Remix),NewJeans,2023,58,133.75,0.796,0.543,0.52,0.135,0.134,0.0593,0.0,201867.0,NewJeans
+08hPrxBgkSFFNnheFd9u0r,Go To Sleep,"Hanumankind, Parimal Shais",2023,58,160.03,0.745,0.651,0.507,0.0121,0.174,0.0687,0.000643,201188.0,Hanumankind
+7lFNXsbcbds699xCWO3pSe,Dear Reader,Taylor Swift,2022,58,107.954,0.681,0.396,0.157,0.487,0.117,0.0487,0.00138,225194.0,Taylor Swift
+1Xg9k7OAyJryBXVx3KUklz,Take My Breath - Single Version,The Weeknd,2022,58,120.996,0.747,0.739,0.523,0.0106,0.101,0.0487,2.22e-05,220196.0,The Weeknd
+1WOLOzZPyjUpJUnEI7kLI1,Lola's Chant,"Hanumankind, Kalmi",2022,58,129.06,0.677,0.709,0.384,0.0507,0.135,0.0474,0.295,142791.0,Hanumankind
+0EepXu0NfnnUX8efEZR167,Forever Winter (Taylor's Version) (From The Vault),Taylor Swift,2021,58,116.012,0.611,0.552,0.41,0.256,0.134,0.031,0.0,263533.0,Taylor Swift
+6M3PsepEj5gyJoIi7Xvr7u,Take My Breath - Single Version,The Weeknd,2021,58,120.996,0.747,0.739,0.523,0.0106,0.101,0.0487,2.22e-05,220196.0,The Weeknd
+3Yp61j6axuQe4nxYWvbOXy,Frost,TOMORROW X TOGETHER,2021,58,96.004,0.776,0.746,0.581,0.00551,0.382,0.0532,0.0,194771.0,TOMORROW X TOGETHER
+7ypFllJwlotXBJfLjsXhvo,Dear Sputnik,TOMORROW X TOGETHER,2021,58,125.09,0.529,0.806,0.492,0.000184,0.27,0.0364,4.87e-06,194913.0,TOMORROW X TOGETHER
+7aely3H8kMj9o0gt6vXHE1,Die For You (feat. Dominic Fike),"Justin Bieber, Dominic Fike",2021,58,135.031,0.728,0.629,0.71,0.00196,0.0847,0.0318,1.94e-06,198426.0,Justin Bieber
+10Z9RbwrTbQ0gQeNRJ2dC1,Lifetime,Justin Bieber,2021,58,179.637,0.48,0.274,0.332,0.771,0.114,0.0317,0.0,207020.0,Justin Bieber
+08J4bMHbILkwSIhbtrcvjN,the 1 - the long pond studio sessions,Taylor Swift,2020,58,139.803,0.708,0.25,0.156,0.898,0.102,0.0361,0.026,219893.0,Taylor Swift
+2hmafYGj1CXYKIYcMnX4lj,cardigan - cabin in candlelight version,Taylor Swift,2020,58,129.976,0.652,0.237,0.367,0.9,0.0991,0.0335,0.0,228000.0,Taylor Swift
+3oF7Or7T35yhQbGxbCGvRX,Death By A Thousand Cuts - Live From Paris,Taylor Swift,2020,58,91.844,0.584,0.655,0.604,0.712,0.97,0.0306,0.0,199067.0,Taylor Swift
+4MGexoZc12lqE0hYkq9YYx,august - the long pond studio sessions,Taylor Swift,2020,58,89.977,0.554,0.663,0.545,0.5,0.791,0.0324,4.77e-05,260000.0,Taylor Swift
+5AG3LHmg3FyVbRESspoPAD,Save Your Tears,The Weeknd,2020,58,118.051,0.68,0.826,0.644,0.0212,0.543,0.0309,1.24e-05,215627.0,The Weeknd
+1WrScpykT891CZhFThXJtj,We Lost The Summer,TOMORROW X TOGETHER,2020,58,105.748,0.551,0.784,0.764,0.0391,0.0332,0.0753,0.0,210549.0,TOMORROW X TOGETHER
+3zLCX1TGMpsA67cW2pq6ut,永遠に光れ (Everlasting Shine),TOMORROW X TOGETHER,2020,58,127.097,0.527,0.891,0.39,0.119,0.208,0.0724,0.0,191147.0,TOMORROW X TOGETHER
+2S5NuP68ckFRvC0qMd7dVR,Beauty And A Beat,"Justin Bieber, Nicki Minaj",2020,58,127.976,0.587,0.82,0.578,0.0011,0.131,0.0668,7.36e-06,226613.0,Justin Bieber
+543bCW2ruMPmxUBWirQ3MR,Cross Me (feat. Chance the Rapper & PnB Rock),"Ed Sheeran, Chance the Rapper, PnB Rock",2019,58,95.005,0.746,0.787,0.607,0.214,0.0669,0.12,0.0,206187.0,Ed Sheeran
+22PEycypPsZpzlMxTgukiQ,Our Summer,TOMORROW X TOGETHER,2019,58,107.98,0.739,0.571,0.267,0.00271,0.165,0.0323,0.0,210280.0,TOMORROW X TOGETHER
+7oolFzHipTMg2nL7shhdz2,Eraser,Ed Sheeran,2017,58,86.013,0.64,0.812,0.914,0.086,0.0509,0.0834,0.0,227427.0,Ed Sheeran
+3Te3gG6MPEDNqLGzWrjKC3,Nothing Without You,The Weeknd,2016,58,109.919,0.599,0.635,0.194,0.064,0.0878,0.0679,0.0,198653.0,The Weeknd
+7iTloMifzZo9ZNZKEe4V2V,The Hills - Remix,"The Weeknd, Eminem",2015,58,111.156,0.46,0.628,0.354,0.0673,0.0934,0.225,0.0,263693.0,The Weeknd
+7E390nZTMqEbrNC1TmHd42,The Feeling,"Justin Bieber, Halsey",2015,58,127.12,0.523,0.809,0.211,0.0823,0.0971,0.061,1.22e-06,244907.0,Justin Bieber
+23UV8pJEvRnAZd6ZAXBC0H,No Pressure,"Justin Bieber, Big Sean",2015,58,148.986,0.647,0.596,0.557,0.123,0.279,0.224,0.0,286853.0,Justin Bieber
+4NueXv4xT4WvQmYbDbjMoM,King Of The Fall,The Weeknd,2024,57,156.173,0.517,0.744,0.241,0.119,0.294,0.0516,0.0,301595.0,The Weeknd
+7hIozlEu6hrYrtsXJj45A4,Heartless,The Weeknd,2024,57,169.909,0.535,0.743,0.262,0.0283,0.145,0.165,1.12e-06,198267.0,The Weeknd
+0h5DkbfNEAxsquWRxqzOaO,The Hills,The Weeknd,2024,57,112.928,0.577,0.579,0.141,0.0632,0.137,0.0562,0.0,242291.0,The Weeknd
+2x8uHFZoDuCwXDWhagx3Av,Wicked Games,The Weeknd,2024,57,114.025,0.656,0.571,0.348,0.0121,0.175,0.0315,6.12e-06,325234.0,The Weeknd
+6iKlSDvBLyQP0AWygx01XT,Can't Feel My Face,The Weeknd,2024,57,107.985,0.699,0.762,0.648,0.163,0.0827,0.0456,0.0,213525.0,The Weeknd
+2RzZMPIZIEomnQDq4eYIaW,I Feel It Coming (feat. Daft Punk),"The Weeknd, Daft Punk",2024,57,92.968,0.772,0.813,0.535,0.429,0.0851,0.156,0.0,269177.0,The Weeknd
+08ZaKnsnO14nB9pxAgabCm,EASY,LE SSERAFIM,2024,57,165.004,0.744,0.7,0.602,0.189,0.114,0.0507,2.74e-06,164545.0,LE SSERAFIM
+2D48pEtMZRYcByAhjvVLM3,Nassau,Shakira,2024,57,107.844,0.754,0.708,0.797,0.262,0.141,0.272,0.0,156467.0,Shakira
+09mHLXMh3rmruStxevfh3U,La Fuerte,"Shakira, Bizarrap",2024,57,128.001,0.853,0.868,0.828,0.295,0.12,0.0427,3.12e-06,164833.0,Shakira
+6c8jkAgbVk44B8SwRi8vQs,Tiempo Sin Verte,Shakira,2024,57,124.971,0.801,0.731,0.67,0.0252,0.303,0.0336,0.0,196233.0,Shakira
+6KFhu3gk0whUnGCeOjkL8A,Magic,TOMORROW X TOGETHER,2023,57,108.119,0.661,0.852,0.495,0.00307,0.306,0.413,0.0,159750.0,TOMORROW X TOGETHER
+2pCcl9FB4KCqYXYzloAMRK,Perfect Night (Sped Up ver.),LE SSERAFIM,2023,57,168.081,0.613,0.872,0.548,0.091,0.0877,0.0382,4.15e-05,128779.0,LE SSERAFIM
+12Yy0hZrUebGnr3IrppPnW,Zero (J.I.D Remix),"NewJeans, JID",2023,57,172.02,0.69,0.77,0.692,0.166,0.663,0.231,0.000169,224682.0,NewJeans
+4yjDMKCAeLovlo9ih0AgXW,OMG (FRNK Remix),NewJeans,2023,57,129.039,0.759,0.856,0.686,0.268,0.248,0.0452,0.0,210400.0,NewJeans
+1ZlHr9FYHT7YTbXCoxPq5C,Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song] (feat. Freshlyground),"Shakira, Freshlyground",2023,57,127.031,0.697,0.91,0.623,0.00271,0.147,0.247,0.0,201773.0,Shakira
+0j0gJqxitjhmmkrW56dtQH,Anti-Hero (feat. Bleachers),"Taylor Swift, Bleachers",2022,57,96.947,0.633,0.809,0.471,0.00956,0.102,0.0364,0.00215,228397.0,Taylor Swift
+4356PL6jkERzJouVfQQkZo,High Infidelity,Taylor Swift,2022,57,87.963,0.652,0.536,0.758,0.712,0.0854,0.0881,0.0,231475.0,Taylor Swift
+6krYS8KtmNAYyb5uTZiYW4,Dawn FM,The Weeknd,2022,57,111.65,0.28,0.478,0.0807,0.674,0.483,0.037,5.85e-05,96240.0,The Weeknd
+20pl0RVGT7P6L1Jr9p51nw,Trust Fund Baby,TOMORROW X TOGETHER,2022,57,66.802,0.465,0.407,0.347,0.715,0.0523,0.0819,0.0,156364.0,TOMORROW X TOGETHER
+0v1cUEN3oF5URBDpc0wVtF,Anti-Romantic,TOMORROW X TOGETHER,2021,57,142.977,0.641,0.489,0.206,0.0509,0.071,0.11,0.0,215188.0,TOMORROW X TOGETHER
+15Ocew2xtUZAtviIClOaPt,Magic,TOMORROW X TOGETHER,2021,57,108.087,0.681,0.88,0.506,0.00303,0.32,0.421,0.0,159750.0,TOMORROW X TOGETHER
+4MmMxyew8yq1OEyJOMaX6M,As I Am (feat. Khalid),"Justin Bieber, Khalid",2021,57,99.947,0.608,0.547,0.108,0.131,0.0974,0.0368,0.0,174406.0,Justin Bieber
+6mqyTq948oap5AkyTsd6XF,the lakes - the long pond studio sessions,Taylor Swift,2020,57,89.844,0.606,0.221,0.112,0.794,0.0888,0.0468,0.0,199733.0,Taylor Swift
+560uQyz3p5G9WdnMX39xc6,illicit affairs - the long pond studio sessions,Taylor Swift,2020,57,117.699,0.489,0.235,0.435,0.883,0.113,0.0356,0.0,183720.0,Taylor Swift
+7N015NTIWGjQDddHUdHPoO,exile (feat. Bon Iver) - the long pond studio sessions,"Taylor Swift, Bon Iver",2020,57,151.956,0.359,0.305,0.108,0.848,0.111,0.0306,6.74e-05,279893.0,Taylor Swift
+2yceD2hx5HhOLgkm1CITCi,mirrorball - the long pond studio sessions,Taylor Swift,2020,57,109.993,0.509,0.386,0.109,0.78,0.118,0.0272,3.45e-05,237373.0,Taylor Swift
+12I69qHomlIZflYA1G2MAp,Maze in the Mirror,TOMORROW X TOGETHER,2020,57,152.764,0.379,0.505,0.458,0.209,0.117,0.0302,0.0,226083.0,TOMORROW X TOGETHER
+40qyPyljksBEqlNw5sW37T,Habitual,Justin Bieber,2020,57,138.995,0.761,0.443,0.626,0.525,0.0751,0.0448,1.83e-05,168200.0,Justin Bieber
+521Os1SMlxmsoevsqyjNmJ,Changes,Justin Bieber,2020,57,65.877,0.504,0.412,0.616,0.738,0.12,0.0422,0.0,135493.0,Justin Bieber
+3HHFOztnhfIWxjOr2s06sw,Blue Orangeade,TOMORROW X TOGETHER,2019,57,111.004,0.758,0.849,0.429,0.0063,0.144,0.0575,0.0,185520.0,TOMORROW X TOGETHER
+72rUKYfdSaMVhgUhajRvrX,New Rules,TOMORROW X TOGETHER,2019,57,120.015,0.762,0.791,0.393,0.015,0.312,0.102,2.49e-06,174107.0,TOMORROW X TOGETHER
+1KeZgPUr54C8iz3FjqzVoz,Young,The Chainsmokers,2017,57,103.006,0.615,0.564,0.454,0.0105,0.148,0.0291,0.0,224773.0,The Chainsmokers
+1JI70l1lE5IF2tgJm5TnMD,Don't Let Me Down (feat. Daya) - Hardwell & Sephyx Remix,"The Chainsmokers, Daya, Hardwell, Sephyx",2016,57,149.864,0.509,0.897,0.283,0.0861,0.0625,0.0454,0.000634,162440.0,The Chainsmokers
+0Heg7xuh81isHE7TCCLxxz,House Of Balloons / Glass Table Girls,The Weeknd,2024,56,88.992,0.668,0.502,0.243,0.00283,0.265,0.0337,0.00322,407316.0,The Weeknd
+6EsmgNOkSDEzL4KWLkqwGK,Miracle,TOMORROW X TOGETHER,2024,56,123.064,0.622,0.778,0.215,0.00739,0.0952,0.0528,0.0,163886.0,TOMORROW X TOGETHER
+2M4tVhRXucLE9M3STv21Yi,Lavender Haze - Felix Jaehn Remix,"Taylor Swift, Felix Jaehn",2023,56,119.972,0.781,0.717,0.629,0.0297,0.273,0.169,0.0028,171562.0,Taylor Swift
+0THn1agoZT9wJXkITUz6dJ,Choices,LE SSERAFIM,2023,56,98.546,0.449,0.837,0.722,0.0254,0.114,0.198,0.0,201027.0,LE SSERAFIM
+40CJrEAyXS8qe0BBFbYbJO,Perfect Night (Holiday Remix),LE SSERAFIM,2023,56,134.012,0.617,0.885,0.868,0.00511,0.201,0.0337,0.0,162337.0,LE SSERAFIM
+67gUqq3wVAztSquOpNZ4Xs,Popular (with Playboi Carti & Madonna) - From The Idol Vol. 1 (Music from the HBO Original Series),"The Weeknd, Playboi Carti, Madonna",2023,56,98.995,0.844,0.677,0.841,0.0406,0.407,0.158,8.32e-05,215467.0,The Weeknd
+5GjkD2Xujig8TPty57wfsS,Karma,Taylor Swift,2022,56,90.007,0.654,0.638,0.0941,0.0727,0.497,0.075,0.0,204852.0,Taylor Swift
+6C0H8ts9M6deezz0yYR6LK,Anti-Hero - ILLENIUM Remix,"Taylor Swift, ILLENIUM",2022,56,96.957,0.6,0.722,0.388,0.169,0.288,0.0438,0.00017,267960.0,Taylor Swift
+5lFDIbYMcFHPPgzMcnPqSz,State Of Grace (Taylor's Version),Taylor Swift,2021,56,129.958,0.594,0.713,0.328,0.000328,0.114,0.0503,0.0,295413.0,Taylor Swift
+3lyibc1saJfWe5z7rTyWYO,0X1=LOVESONG (I Know I Love You) feat. Seori,"TOMORROW X TOGETHER, Seori",2021,56,104.973,0.584,0.836,0.484,0.0558,0.0663,0.079,0.0,202204.0,TOMORROW X TOGETHER
+27UcQ6dAvQrgH9C880rCM3,Love You Different (feat. BEAM),"Justin Bieber, BEAM",2021,56,127.138,0.759,0.584,0.374,0.0652,0.16,0.06,1.59e-06,186696.0,Justin Bieber
+1t2M7UYoUpmhfZNMBsymJr,tolerate it,Taylor Swift,2020,56,147.442,0.373,0.36,0.212,0.878,0.079,0.0387,1.54e-05,245440.0,Taylor Swift
+3uayvzcbqFydIbgUeC6EJh,closure,Taylor Swift,2020,56,151.868,0.686,0.705,0.919,0.832,0.134,0.249,4.55e-06,180653.0,Taylor Swift
+28tIMaewZuGR8urkvFhQyA,the last great american dynasty - the long pond studio sessions,Taylor Swift,2020,56,147.948,0.64,0.618,0.614,0.743,0.0574,0.0379,0.004,232347.0,Taylor Swift
+5ciyqWW5YuGqF4Avu7uwry,Nothing Compares - Bonus Track,The Weeknd,2020,56,131.922,0.532,0.577,0.0397,0.00253,0.234,0.0352,0.0437,222307.0,The Weeknd
+7MXgrcOQAJ5VwSNUL0lDd3,Blinding Lights (with ROSALÍA) - Remix,"The Weeknd, ROSALÍA",2020,56,170.903,0.49,0.694,0.249,0.0133,0.0946,0.0618,4.62e-05,216123.0,The Weeknd
+0RRd7AcCl0HR5gzzRuCMXs,Eternally,TOMORROW X TOGETHER,2020,56,185.924,0.382,0.85,0.414,0.0255,0.0912,0.423,0.0,217374.0,TOMORROW X TOGETHER
+0YKzTMzgAXgQLpChiBRTlf,Drama,TOMORROW X TOGETHER,2020,56,126.001,0.632,0.961,0.714,0.0705,0.26,0.0688,0.0,209563.0,TOMORROW X TOGETHER
+4A6f3zMLDDAUgkGTLtpMc3,Wishlist,TOMORROW X TOGETHER,2020,56,149.966,0.61,0.92,0.301,0.00059,0.307,0.107,0.0,191788.0,TOMORROW X TOGETHER
+4dJThL3k5tMRdduAiARM4R,PUMA,TOMORROW X TOGETHER,2020,56,104.951,0.684,0.793,0.437,0.0505,0.137,0.102,0.0,205520.0,TOMORROW X TOGETHER
+5Py8zRKGkZvgHniVVtvNCN,All Around Me,Justin Bieber,2020,56,117.148,0.53,0.438,0.694,0.811,0.212,0.0372,0.0,136907.0,Justin Bieber
+6VkmdRz8YgHFQV3ZNTJAWU,Intentions - Acoustic,Justin Bieber,2020,56,73.994,0.715,0.411,0.799,0.594,0.0903,0.0337,0.0,160612.0,Justin Bieber
+7hvO2qCwJVZxiyoA7c9i5d,BLOW (with Chris Stapleton & Bruno Mars),"Ed Sheeran, Chris Stapleton, Bruno Mars",2019,56,92.47,0.631,0.796,0.596,0.000245,0.38,0.0401,0.0108,209120.0,Ed Sheeran
+5weKCP07IGA1565wfI3cZ1,Happier - Acoustic,Ed Sheeran,2018,56,91.004,0.493,0.4,0.15,0.0425,0.133,0.0261,1.47e-06,206209.0,Ed Sheeran
+0bGLvHd0ApdT4t0shCfpzG,Side Effects,"The Chainsmokers, Emily Warren",2018,56,110.01,0.669,0.711,0.544,0.00217,0.466,0.033,0.0,172747.0,The Chainsmokers
+6ufrOaf4v6Qady6GiIpQ0s,Everybody Hates Me,The Chainsmokers,2018,56,154.957,0.475,0.752,0.515,0.00703,0.406,0.0467,0.0,223467.0,The Chainsmokers
+5PTfZsGlsDDPH8i3PdQnXJ,Call Out My Name - A Cappella,The Weeknd,2018,56,135.089,0.397,0.339,0.459,0.887,0.306,0.0361,0.0,224747.0,The Weeknd
+0wfbD5rAksdXUzRvMfM3x5,The One,The Chainsmokers,2017,56,99.991,0.76,0.303,0.15,0.238,0.294,0.0284,8.09e-06,177573.0,The Chainsmokers
+50RJdoxw8iajGNtHQe6QeS,Something Just Like This - Alesso Remix,"The Chainsmokers, Coldplay, Alesso",2017,56,120.082,0.663,0.728,0.563,0.24,0.122,0.0491,0.000417,252933.0,The Chainsmokers
+5MgBUUjbkQ27Kd9CbeZFLo,Roses (feat. ROZES) - Zaxx Remix,"The Chainsmokers, ROZES, Zaxx",2016,56,128.121,0.677,0.881,0.566,0.00445,0.359,0.054,0.0146,190267.0,The Chainsmokers
+5gZsEYaYvyi1sAVyuiXbDm,Work,"Rihanna, Drake",2016,56,91.974,0.725,0.534,0.558,0.0752,0.0919,0.0946,0.0,219320.0,Rihanna
+2uv4moS862MAZcntQfurpz,Earned It (Fifty Shades Of Grey),The Weeknd,2015,56,119.839,0.647,0.291,0.4,0.408,0.0771,0.0363,0.0,277680.0,The Weeknd
+4yWCzA44dQyp0SoeM81bUb,Life Is Worth Living,Justin Bieber,2015,56,76.04,0.558,0.296,0.463,0.907,0.108,0.0426,0.0,234787.0,Justin Bieber
+5YNf9s8WE3iF33YaFNrgpa,What Do You Mean? - Acoustic,Justin Bieber,2015,56,124.926,0.772,0.358,0.759,0.794,0.104,0.0438,0.0,203800.0,Justin Bieber
+1mqoRXYWx8z842pmq6njeH,Often,The Weeknd,2024,55,134.016,0.57,0.617,0.0743,0.239,0.127,0.0458,0.0,249109.0,The Weeknd
+4gc7qfGOq1gNUBd54YHrHZ,After Hours,The Weeknd,2024,55,108.942,0.66,0.563,0.147,0.0993,0.123,0.0307,0.00451,361025.0,The Weeknd
+5XXPBP7Y5efnNitAWxWn80,Is There Someone Else?,The Weeknd,2024,55,134.961,0.702,0.581,0.614,0.0385,0.155,0.0305,0.000138,199111.0,The Weeknd
+0FdVjpuRaEye7mqhp4MAQ2,The Killa (I Belong to You),TOMORROW X TOGETHER,2024,55,67.968,0.759,0.56,0.481,0.134,0.126,0.144,4.84e-06,162642.0,TOMORROW X TOGETHER
+3cLJZEdlBiY2jZ5lduO4Sm,El Jefe,"Shakira, Fuerza Regida",2024,55,149.903,0.782,0.64,0.965,0.214,0.124,0.0446,0.0,170600.0,Shakira
+2qRUun6bLQlaP0Rs0Uj6Xd,(Entre Paréntesis),"Shakira, Grupo Frontera",2024,55,156.473,0.567,0.862,0.723,0.195,0.108,0.045,0.0,168896.0,Shakira
+0CerW91SZ7XXHk6tdKE05a,Back for More (TXT Ver.),TOMORROW X TOGETHER,2023,55,115.881,0.735,0.938,0.868,0.0156,0.235,0.113,0.0,162835.0,TOMORROW X TOGETHER
+1xaLyNaaZC3i5tmaDAWP76,"Eve, Psyche & the Bluebeard's wife (English Ver.)",LE SSERAFIM,2023,55,142.963,0.686,0.872,0.703,0.048,0.0562,0.137,0.0,186119.0,LE SSERAFIM
+3NJ5Ksj7LNbvfNgEtl3o6Z,Burn the Bridge,LE SSERAFIM,2023,55,172.171,0.532,0.76,0.297,0.0418,0.318,0.113,1.02e-06,154650.0,LE SSERAFIM
+6CUKsv928uT4561qJovhhG,Hype Boy (250 Remix),NewJeans,2023,55,86.105,0.767,0.645,0.656,0.134,0.0853,0.0435,0.000402,251000.0,NewJeans
+2gWWYL6iXZKkOqCE3TQHBM,Hurt (250 Remix),NewJeans,2023,55,89.991,0.653,0.527,0.943,0.165,0.325,0.0287,0.000136,224000.0,NewJeans
+759ndr57jb0URg4j9YSWml,A Tale By Quincy,The Weeknd,2022,55,67.289,0.447,0.513,0.572,0.679,0.096,0.127,2.98e-05,96232.0,The Weeknd
+4c4qqhFrvOgddweMQS0ptG,Sacrifice (Remix) (feat. Swedish House Mafia),"The Weeknd, Swedish House Mafia",2022,55,122.028,0.774,0.742,0.677,0.0312,0.0907,0.0784,5.03e-05,238033.0,The Weeknd
+661CJWXysgwKXI1dreYNBU,Holy Ground (Taylor's Version),Taylor Swift,2021,55,156.894,0.622,0.809,0.511,0.0288,0.109,0.0638,0.00218,202960.0,Taylor Swift
+5RaBeejGtdPEszYEKYECs2,Love Story (Taylor's Version) - Elvira Remix,"Taylor Swift, ELVIRA",2021,55,123.068,0.669,0.56,0.155,0.00215,0.264,0.0352,3.23e-05,211857.0,Taylor Swift
+2bk3kDxxFLHafZDuw06Fxs,Die For You,The Weeknd,2021,55,133.851,0.602,0.528,0.455,0.11,0.157,0.0556,0.0,260256.0,The Weeknd
+35HpFGWVSqW4D0Wi8A7zLI,Love Sight,TOMORROW X TOGETHER,2021,55,111.845,0.607,0.433,0.204,0.391,0.122,0.0304,0.0,252253.0,TOMORROW X TOGETHER
+5KByGq0JijSSDcy0qzuINs,invisible string - the long pond studio sessions,Taylor Swift,2020,55,83.438,0.59,0.282,0.351,0.942,0.11,0.0281,4.85e-06,257360.0,Taylor Swift
+1mh5dObNoOvCfHmXnhvDEK,betty - the long pond studio sessions,Taylor Swift,2020,55,95.68,0.538,0.316,0.518,0.841,0.119,0.0299,0.0,290040.0,Taylor Swift
+0QTBsdoJhamY3Aid3fOsOd,hoax - the long pond studio sessions,Taylor Swift,2020,55,118.832,0.682,0.155,0.483,0.962,0.18,0.0394,0.0,221800.0,Taylor Swift
+4cOWq0cVsKjxaQpRMbDoH1,seven - the long pond studio sessions,Taylor Swift,2020,55,94.963,0.694,0.449,0.363,0.914,0.1,0.0301,0.000126,208987.0,Taylor Swift
+4YHHz3VIXgNDGdoL9xC1tx,peace - the long pond studio sessions,Taylor Swift,2020,55,149.897,0.619,0.344,0.513,0.93,0.0734,0.0647,7.61e-05,214373.0,Taylor Swift
+4GBkffrtA51p17JH35irGA,'tis the damn season,Taylor Swift,2020,55,145.91,0.575,0.435,0.351,0.737,0.105,0.0311,5.38e-05,229840.0,Taylor Swift
+1MFRapRpkXLhgMplU0CM76,exile,"Taylor Swift, Bon Iver",2020,55,75.938,0.31,0.374,0.16,0.761,0.11,0.0275,2.46e-05,285640.0,Taylor Swift
+5VwwpU7KsLhgfbMEecedhJ,Get Me (feat. Kehlani),"Justin Bieber, Kehlani",2020,55,109.345,0.833,0.507,0.76,0.0499,0.107,0.151,5.33e-05,185427.0,Justin Bieber
+6PzOPrXx8tJEqace76yrv2,E.T.A.,Justin Bieber,2020,55,127.314,0.465,0.493,0.458,0.49,0.127,0.0659,0.0,176733.0,Justin Bieber
+6J7WMB5GII6pEOzy687jhO,Beautiful People (feat. Khalid) - NOTD Remix,"Ed Sheeran, Khalid, NOTD",2019,55,103.972,0.702,0.794,0.37,0.00715,0.11,0.0562,4.56e-05,162081.0,Ed Sheeran
+2qRN7PWiHRLprw4FpDeI9N,Nothing On You (feat. Paulo Londra & Dave),"Ed Sheeran, Paulo Londra, Dave",2019,55,88.011,0.747,0.649,0.84,0.333,0.172,0.218,0.0,200733.0,Ed Sheeran
+3Rn10yxcNeVzm5OXug2Kwf,Nap of a star,TOMORROW X TOGETHER,2019,55,140.022,0.626,0.452,0.354,0.413,0.104,0.0259,1.12e-06,243013.0,TOMORROW X TOGETHER
+4O7sUONPtqPBUKXuAMsoak,Can't We Just Leave the Monster Alive?,TOMORROW X TOGETHER,2019,55,109.022,0.732,0.856,0.655,0.208,0.0956,0.0736,0.0,230040.0,TOMORROW X TOGETHER
+5X6TnKT37TaSDkFm0598Uo,Castle on the Hill - Acoustic,Ed Sheeran,2017,55,145.561,0.563,0.26,0.616,0.518,0.146,0.0391,0.0,226227.0,Ed Sheeran
+7crMiinWx373rNBZBaVske,Closer,"The Chainsmokers, Halsey",2016,55,94.949,0.738,0.541,0.657,0.415,0.11,0.0303,0.0,245507.0,The Chainsmokers
+7Jd5LgnSRQElW6FsTWVPzE,Never Ending,Rihanna,2016,55,82.215,0.53,0.391,0.521,0.751,0.187,0.0286,6.97e-05,202507.0,Rihanna
+4NlnpZPi5Z3r1uuyRglUhO,Needed Me,Rihanna,2016,55,110.898,0.671,0.314,0.296,0.11,0.0825,0.244,0.0,191600.0,Rihanna
+1UuZhGTon3gzXQAJzNa2A4,"Towards The Sun - From The ""Home"" Soundtrack",Rihanna,2015,55,170.18,0.261,0.689,0.263,0.0531,0.152,0.0392,0.0,273293.0,Rihanna
+0ydruTZ2bBY3TNf2vd8J8q,The Hills,The Weeknd,2015,55,112.892,0.57,0.564,0.143,0.0743,0.135,0.0627,2.5e-06,242240.0,The Weeknd
+2SnNaoNhMjC1WRMTWD8qTX,Mark My Words,Justin Bieber,2015,55,116.348,0.389,0.256,0.521,0.88,0.169,0.0334,2.69e-06,134347.0,Justin Bieber
+1DLL8tOoiayr5qBRrJZKn4,The Morning,The Weeknd,2024,54,120.063,0.637,0.549,0.185,0.355,0.0797,0.0432,0.0,315672.0,The Weeknd
+17UoqnSRKmsWbhInoFGq4F,Acquainted,The Weeknd,2024,54,105.673,0.384,0.496,0.237,0.484,0.0861,0.0588,0.0,348883.0,The Weeknd
+4jy7MUJliwsbX0IxIpxc3F,I Was Never There (with Gesaffelstein),"The Weeknd, Gesaffelstein",2024,54,113.563,0.327,0.722,0.175,0.173,0.186,0.0341,0.000116,241067.0,The Weeknd
+4e19x7w4fKmasu1PVHBkam,Quarter Life,TOMORROW X TOGETHER,2024,54,89.341,0.375,0.786,0.537,0.0494,0.0836,0.0635,0.0,149347.0,TOMORROW X TOGETHER
+5Y13v0siYYNTXZSZgPRIgZ,Deja Vu (Anemoia Remix),TOMORROW X TOGETHER,2024,54,162.857,0.383,0.769,0.51,0.0414,0.545,0.0442,0.0,170953.0,TOMORROW X TOGETHER
+6F67FNdOBNMFzxdj1CQ5pL,Lavender Haze - Snakehips Remix,"Taylor Swift, Snakehips",2023,54,109.866,0.679,0.804,0.481,0.055,0.37,0.142,3.43e-06,187511.0,Taylor Swift
+2BPLFluGLtHPN9EF6oK5w8,Hits Different,Taylor Swift,2023,54,106.027,0.679,0.774,0.262,0.117,0.249,0.0448,2.34e-06,234467.0,Taylor Swift
+3o0Nlc7DVVC39pfv4nTi9Y,ドレスコード (Prod. imase),LE SSERAFIM,2023,54,111.991,0.752,0.796,0.801,0.0582,0.188,0.0281,0.0,216348.0,LE SSERAFIM
+5bwpbZBOY0mrmRhZ94c0kW,Cookie (FRNK Remix),NewJeans,2023,54,80.021,0.833,0.468,0.78,0.55,0.102,0.0575,0.0,212400.0,NewJeans
+6RJBrG3VHz2hPITjv88chh,Glitch,Taylor Swift,2022,54,140.734,0.571,0.477,0.331,0.313,0.11,0.246,0.0,148781.0,Taylor Swift
+1IxeJLsubGTboNN9K5XNfL,Wildest Dreams (Taylor's Version),Taylor Swift,2022,54,139.99,0.587,0.663,0.544,0.0354,0.0902,0.0599,9.06e-05,220433.0,Taylor Swift
+1u4HUiREUR6vX1W1RYG2Tm,All Too Well (10 Minute Version) (The Short Film),Taylor Swift,2022,54,93.021,0.625,0.515,0.193,0.323,0.0764,0.0281,3.53e-05,686022.0,Taylor Swift
+1NlK2NtpuUazpziLhnJwEV,Phantom Regret by Jim,The Weeknd,2022,54,110.113,0.394,0.519,0.241,0.75,0.129,0.0465,0.195,179580.0,The Weeknd
+3vJcz8exedHCjQ9ed95NqU,Every Angel is Terrifying,The Weeknd,2022,54,118.167,0.447,0.959,0.46,0.109,0.0498,0.348,2.75e-05,167256.0,The Weeknd
+37zcCimcUGurQoLEAuN8nR,Is There Someone Else?,The Weeknd,2022,54,134.951,0.702,0.586,0.608,0.0388,0.156,0.0313,7.27e-05,199111.0,The Weeknd
+3Bgl1xMI00capuTqUHBNUW,Valley of Lies,"TOMORROW X TOGETHER, iann dior",2022,54,140.004,0.753,0.743,0.96,0.286,0.144,0.0338,0.0,184094.0,TOMORROW X TOGETHER
+0JosgxxZKZ87QbW5TISJDE,The Hydra,LE SSERAFIM,2022,54,104.064,0.766,0.75,0.534,0.00279,0.0943,0.162,0.0676,104203.0,LE SSERAFIM
+3IxAFD3NO9vUqJpL0xH3kc,right where you left me,Taylor Swift,2021,54,137.915,0.581,0.619,0.645,0.769,0.117,0.0282,0.000106,245027.0,Taylor Swift
+04xrhDrQ2WOW8GLwu7kbc0,mad woman - the long pond studio sessions,Taylor Swift,2020,54,141.834,0.663,0.465,0.346,0.887,0.109,0.0408,0.000168,238333.0,Taylor Swift
+0U0etHtpARihOUUY8Akc7y,willow - lonely witch version,Taylor Swift,2020,54,80.855,0.41,0.381,0.557,0.892,0.148,0.0548,0.0,214653.0,Taylor Swift
+4yyKppX85ZkmlGOC2toBZA,epiphany - the long pond studio sessions,Taylor Swift,2020,54,93.87,0.524,0.2,0.113,0.916,0.068,0.0274,0.000392,274880.0,Taylor Swift
+2fgiBCtbWo8pijF6M7pN1i,The Archer - Live From Paris,Taylor Swift,2020,54,125.022,0.473,0.54,0.0995,0.167,0.858,0.0425,0.00213,210960.0,Taylor Swift
+38uNCW1do0LKfMIt4MDkPo,Missed You - Bonus Track,The Weeknd,2020,54,151.98,0.689,0.374,0.321,0.115,0.111,0.0851,0.000132,144540.0,The Weeknd
+32HKm4gUeUqQ8SQ28uGYUo,After Hours,The Weeknd,2020,54,108.968,0.659,0.572,0.14,0.0784,0.123,0.0304,0.00772,361025.0,The Weeknd
+195eCIcjTLsOJZ1nfNHUUJ,Way Home,TOMORROW X TOGETHER,2020,54,152.78,0.586,0.769,0.458,0.042,0.151,0.249,0.0,182945.0,TOMORROW X TOGETHER
+60brXKLTC15vK0av5gIldm,Confirmation,Justin Bieber,2020,54,190.105,0.454,0.316,0.454,0.608,0.151,0.0368,0.0,170587.0,Justin Bieber
+1PnAx788sAvcI3ZxTlEyX8,Second Emotion (feat. Travis Scott),"Justin Bieber, Travis Scott",2020,54,141.97,0.797,0.777,0.961,0.0273,0.095,0.0569,2.87e-05,202720.0,Justin Bieber
+3sVCSgIArXIhiWHvbUmauZ,Angel Or Devil,TOMORROW X TOGETHER,2019,54,104.012,0.791,0.73,0.435,0.0201,0.366,0.081,0.0,232480.0,TOMORROW X TOGETHER
+2NHSYwGkAvPHzCinY0KwXo,Shape of You - Stormzy Remix,"Ed Sheeran, Stormzy",2017,54,127.656,0.609,0.674,0.789,0.595,0.203,0.202,0.0,231261.0,Ed Sheeran
+6KjbNLbRjuoa8rEq5yNA6H,Honest,The Chainsmokers,2017,54,100.035,0.673,0.514,0.312,0.0121,0.385,0.0465,8.5e-05,208000.0,The Chainsmokers
+4s2rzq6ZpCfg5ODq0z79QG,Don't Let Me Down (feat. Daya) - W&W Remix,"The Chainsmokers, Daya, W&W",2016,54,159.897,0.431,0.877,0.484,0.041,0.126,0.121,0.00128,195093.0,The Chainsmokers
+3grxgV6Ot8KqtysApjYLs1,Sorry - Latino Remix,"Justin Bieber, J Balvin",2015,54,100.075,0.642,0.753,0.495,0.146,0.299,0.0454,0.0,219987.0,Justin Bieber
+3RzEhrrHxO4wvn8MUfHMqy,Party Monster,The Weeknd,2024,53,77.507,0.588,0.596,0.187,0.226,0.224,0.078,1.25e-05,249208.0,The Weeknd
+0a2zAX33ZMrd5J73H1Ii9O,Less Than Zero,The Weeknd,2024,53,142.946,0.537,0.777,0.424,0.000829,0.0832,0.0327,0.000135,211814.0,The Weeknd
+0NQOXTDg2p7hFYlFq6tZKW,Cruel Summer,Taylor Swift,2023,53,169.878,0.552,0.715,0.628,0.136,0.106,0.156,1.52e-05,178426.0,Taylor Swift
+1p0kTGMwMtSTcV7fAnkkQc,Back for More (with Anitta),"TOMORROW X TOGETHER, Anitta",2023,53,115.916,0.785,0.897,0.891,0.0452,0.222,0.158,0.0,131038.0,TOMORROW X TOGETHER
+1hXpqrmqmlYMfpF23fb8mK,Guardian,LE SSERAFIM,2023,53,150.105,0.771,0.875,0.722,0.00775,0.0998,0.0562,0.0,158981.0,LE SSERAFIM
+5zYrD1r49ex3WJk6iVIhfw,"Eve, Psyche & the Bluebeard's wife (feat. Demi Lovato)","LE SSERAFIM, Demi Lovato",2023,53,142.952,0.664,0.882,0.654,0.0393,0.0387,0.186,0.0,185539.0,LE SSERAFIM
+3tGq7hWDCtrnL83y5OGual,Message In A Bottle (Fat Max G Remix) (Taylor's Version),"Taylor Swift, Fat Max Gsus",2022,53,115.969,0.684,0.733,0.343,0.00226,0.273,0.0422,0.000125,224649.0,Taylor Swift
+18zQTt3ifDv6iLni2YuXMg,Born Again,Rihanna,2022,53,116.642,0.465,0.26,0.259,0.475,0.138,0.031,0.0,213333.0,Rihanna
+5yR9bGLr8Zz2EndMrthui1,君じゃない誰かの愛し方 (Ring),TOMORROW X TOGETHER,2022,53,129.35,0.446,0.737,0.496,0.0166,0.42,0.0581,0.0,204112.0,TOMORROW X TOGETHER
+04m2nJR2Ia6d1ZOt8gi5xA,All Too Well (10 Minute Version) (Taylor's Version) (From The Vault),Taylor Swift,2021,53,93.0,0.631,0.522,0.213,0.279,0.0875,0.0302,0.0,613027.0,Taylor Swift
+6pU4nUCle2kZR2k3XV86YF,What if I had been that PUMA,TOMORROW X TOGETHER,2021,53,95.985,0.861,0.679,0.589,0.0287,0.362,0.0784,0.0,212704.0,TOMORROW X TOGETHER
+6XtPOQQmTO5hLdaD8ICyEU,0X1=LOVESONG (I Know I Love You) feat. Seori (Emocore Mix),TOMORROW X TOGETHER,2021,53,105.037,0.501,0.769,0.425,0.0109,0.299,0.034,0.00014,218569.0,TOMORROW X TOGETHER
+45VJD6xlBaIpRc4wBoTWvD,No Rules,TOMORROW X TOGETHER,2021,53,120.02,0.748,0.736,0.712,0.00161,0.179,0.0553,3.39e-05,187281.0,TOMORROW X TOGETHER
+59ltMnCjkPJqUM4pBlc1o2,There She Go (feat. Lil Uzi Vert),"Justin Bieber, Lil Uzi Vert",2021,53,150.071,0.727,0.716,0.911,0.00968,0.12,0.0346,0.0,215020.0,Justin Bieber
+45PF1Y3RcW5MK0jxWvhc4D,Don't Wait Up,Shakira,2021,53,118.981,0.916,0.552,0.349,0.344,0.0566,0.0546,0.000722,204044.0,Shakira
+7tXMHAFEOzcUaUQqovRGho,ivy,Taylor Swift,2020,53,86.629,0.329,0.547,0.522,0.848,0.088,0.0397,1.11e-05,260440.0,Taylor Swift
+0P9wLFurlgumLXuqFEpw52,the 1,Taylor Swift,2020,53,139.902,0.78,0.361,0.163,0.75,0.108,0.048,7.14e-06,210240.0,Taylor Swift
+6kz2hkq1xQvDqPcUyBkw8f,exile (feat. Bon Iver),"Taylor Swift, Bon Iver",2020,53,75.938,0.31,0.374,0.16,0.761,0.11,0.0275,2.46e-05,285640.0,Taylor Swift
+7zcnlq38eqNWyUF6eNaB5Z,cardigan,Taylor Swift,2020,53,130.045,0.612,0.58,0.534,0.525,0.26,0.0419,0.000414,239560.0,Taylor Swift
+2hLu8L8SNfCN4yKyPdX0h3,That's What Love Is,Justin Bieber,2020,53,147.576,0.638,0.437,0.75,0.692,0.12,0.0356,0.0,165120.0,Justin Bieber
+5DcLYkS1rnSgRMfhXNvh0d,Magic Island,TOMORROW X TOGETHER,2019,53,104.996,0.742,0.424,0.769,0.515,0.115,0.0424,0.0,192920.0,TOMORROW X TOGETHER
+0Uzy6FHTYob2CbWisMz4Ap,Poppin' Star,TOMORROW X TOGETHER,2019,53,137.014,0.821,0.586,0.811,0.18,0.0845,0.0477,0.0,193427.0,TOMORROW X TOGETHER
+2bQhVQbV7VBzSOPo8mbkUR,Beach House,The Chainsmokers,2018,53,179.945,0.4,0.838,0.533,0.174,0.341,0.0526,0.0,206120.0,The Chainsmokers
+5nCtCCB5i1OfbADvynNw0i,Shape of You (feat. Zion & Lennox) - Latin Remix,"Ed Sheeran, Lennox, Zion",2017,53,95.995,0.787,0.872,0.46,0.168,0.0408,0.0871,1.51e-06,237664.0,Ed Sheeran
+6V9kwssTrwkKT72imgowj9,My Type,"The Chainsmokers, Emily Warren",2017,53,94.989,0.604,0.603,0.15,0.0357,0.126,0.0389,0.0,217413.0,The Chainsmokers
+5Qn56ssVeZJfNwDCme7Eo0,Amarillo,Shakira,2017,53,130.926,0.833,0.78,0.93,0.464,0.146,0.0351,1.09e-06,219640.0,Shakira
+7sG2bWi2eDtvX9vX8yC1Gn,Inside Out,"The Chainsmokers, Charlee",2016,53,143.937,0.545,0.65,0.121,0.00308,0.122,0.0315,7.98e-06,233773.0,The Chainsmokers
+4UTizOdGljPIIbXtoXycAd,Pose,Rihanna,2016,53,145.918,0.685,0.852,0.77,0.181,0.147,0.0846,0.00135,144227.0,Rihanna
+32lgtADX2cB9I4KFs1Y1py,False Alarm,The Weeknd,2016,53,173.998,0.518,0.676,0.197,0.0324,0.189,0.0744,3.62e-05,220307.0,The Weeknd
+1E43TJhKcM8hXgM958ROQ1,Love To Lay,The Weeknd,2016,53,116.971,0.711,0.807,0.699,0.0519,0.214,0.0608,0.0,223293.0,The Weeknd
+6gcA4zzG6FnMEgPSDKbAMs,Been You,Justin Bieber,2015,53,113.019,0.74,0.78,0.862,0.022,0.32,0.0692,0.0,199227.0,Justin Bieber
+6DLxSl32CR7dklfpQLcxVY,In The Night,The Weeknd,2024,52,112.061,0.397,0.668,0.551,0.0826,0.047,0.125,0.0,235653.0,The Weeknd
+2pQufQ915Pve9LgCTWs1r5,Out of Time,The Weeknd,2024,52,93.003,0.639,0.761,0.8,0.25,0.271,0.0684,0.0,214191.0,The Weeknd
+045g99gDVveOIJIlrJ2D8H,Reminder,The Weeknd,2024,52,160.097,0.703,0.479,0.385,0.186,0.16,0.203,0.0,218879.0,The Weeknd
+1bIhEN6lxZTokWS7Qk5DJP,Goodbye Now,TOMORROW X TOGETHER,2023,52,135.881,0.583,0.389,0.254,0.213,0.156,0.0278,0.0,276520.0,TOMORROW X TOGETHER
+5z8PXrhJszWg8ejJ5alWo3,Back for More (with Anitta) (Performance Ver.),"TOMORROW X TOGETHER, Anitta",2023,52,115.84,0.725,0.908,0.897,0.0305,0.252,0.111,0.0,172438.0,TOMORROW X TOGETHER
+2KkIiEt1WIHOYItqkD30kR,Lavender Haze,Taylor Swift,2022,52,96.962,0.735,0.46,0.106,0.253,0.184,0.0804,0.00167,202396.0,Taylor Swift
+25C86uEjQ0fjj3bvsxIusO,Out of Time,The Weeknd,2022,52,92.971,0.617,0.762,0.823,0.232,0.291,0.0469,0.0,214191.0,The Weeknd
+3YZmW6AUHsbN7KhOTd944i,Best Friends - Remix,"The Weeknd, Summer Walker",2022,52,180.22,0.608,0.649,0.612,0.24,0.311,0.113,0.0,175072.0,The Weeknd
+1t2fPE8rClkb0ZACu26ebN,Free Falling,TOMORROW X TOGETHER,2022,52,92.018,0.622,0.683,0.261,0.0484,0.123,0.0517,0.0,217207.0,TOMORROW X TOGETHER
+4Rrv9oNClBhzKRfKwdkg99,The World Is My Oyster,LE SSERAFIM,2022,52,120.043,0.623,0.837,0.601,0.0203,0.199,0.0399,0.454,106821.0,LE SSERAFIM
+3ovYlDqMHyuTssHN6XkM1C,FEARLESS - Japanese ver.,LE SSERAFIM,2022,52,103.979,0.856,0.663,0.376,0.0518,0.127,0.0841,0.000997,168867.0,LE SSERAFIM
+33kxP9sQOzB3fRL8zl17uK,The Hills,The Weeknd,2021,52,112.995,0.583,0.565,0.144,0.0889,0.132,0.0475,0.0,242291.0,The Weeknd
+37kWYmbo68VxWl9nNBvr8T,Dear Sputnik,TOMORROW X TOGETHER,2021,52,125.083,0.528,0.806,0.487,0.000184,0.254,0.0364,6.18e-06,195349.0,TOMORROW X TOGETHER
+0Fb1M7rbOnydw6SrXXSlHr,Ito,TOMORROW X TOGETHER,2021,52,82.97,0.568,0.66,0.423,0.212,0.296,0.0356,0.0,243248.0,TOMORROW X TOGETHER
+5G99lkpldkHJx6o1Z37ts7,Angels Speak,"Justin Bieber, Poo Bear",2021,52,119.341,0.522,0.243,0.569,0.874,0.098,0.0461,0.0,231668.0,Justin Bieber
+2ZTKWFG6OtHI3ewy9OGNOY,gold rush,Taylor Swift,2020,52,112.018,0.498,0.471,0.351,0.811,0.121,0.0411,0.113,185320.0,Taylor Swift
+3qy4znWySY3rwzS2vHDOeg,cowboy like me,Taylor Swift,2020,52,127.986,0.605,0.513,0.512,0.774,0.123,0.0337,0.000177,275040.0,Taylor Swift
+0Oju1YcbPCJuUQQWoZNdJK,my tears ricochet,Taylor Swift,2020,52,129.947,0.456,0.265,0.112,0.814,0.0679,0.0328,0.0,255893.0,Taylor Swift
+4lD3RXyvHpJsM3BhIEC4aA,Lover - Live From Paris,Taylor Swift,2020,52,68.541,0.277,0.605,0.479,0.168,0.954,0.0398,0.00246,229733.0,Taylor Swift
+1UHoF9p75IVsvUt6WdTYhn,august,Taylor Swift,2020,52,89.567,0.387,0.634,0.42,0.553,0.0931,0.0363,6.93e-05,261920.0,Taylor Swift
+7FKbTRXXIWVFQmPH8zGfU0,The Man - Live From Paris,Taylor Swift,2020,52,90.905,0.343,0.864,0.714,0.672,0.962,0.0875,0.0,219386.0,Taylor Swift
+4LEK9rD7TWIG4FCL1s27XC,cardigan,Taylor Swift,2020,52,130.033,0.613,0.581,0.551,0.537,0.25,0.0424,0.000345,239560.0,Taylor Swift
+4TA5KWeqdDmgdVPHE7Yj3B,Final Lullaby - Bonus Track,The Weeknd,2020,52,100.901,0.604,0.26,0.318,0.841,0.327,0.0373,9.33e-05,185689.0,The Weeknd
+75nKBP8jQu681pTNCtrEnn,Running Over (feat. Lil Dicky),"Justin Bieber, Lil Dicky",2020,52,149.982,0.774,0.603,0.977,0.44,0.0869,0.0591,4.37e-05,179627.0,Justin Bieber
+1b6tPXXCV2fSNtR3SKWUQA,Available,Justin Bieber,2020,52,75.016,0.702,0.606,0.595,0.0741,0.129,0.0361,0.0,195333.0,Justin Bieber
+569Xgt70tGY3GyqHfDDc7y,Roller Coaster,TOMORROW X TOGETHER,2019,52,125.016,0.462,0.651,0.413,0.016,0.0712,0.0509,2.13e-06,214347.0,TOMORROW X TOGETHER
+7GncL3nyKUjsEm8Z5gvTpW,Trap (feat. Maluma),"Shakira, Maluma",2017,52,132.009,0.774,0.504,0.323,0.556,0.128,0.0552,0.0,199813.0,Shakira
+2PC9Tl8SWVO2yhDDtJcrAi,Setting Fires,"The Chainsmokers, XYLØ",2016,52,105.039,0.626,0.717,0.56,0.017,0.261,0.0375,0.0,247427.0,The Chainsmokers
+2C95q2UTaZr1zj3xzj5uXC,Work,"Rihanna, Drake",2016,52,91.995,0.726,0.535,0.563,0.0751,0.0919,0.0964,0.0,219320.0,Rihanna
+5LJz7kmFhLqB53tmVWxig5,Goodnight Gotham,Rihanna,2016,52,82.134,0.418,0.672,0.353,0.00686,0.277,0.0429,2.14e-06,88493.0,Rihanna
+6LJFgCd9wU2VptHEwz2Wl3,Starboy - Kygo Remix,"The Weeknd, Daft Punk, Kygo",2016,52,93.024,0.752,0.606,0.409,0.207,0.152,0.0912,1.26e-06,244720.0,The Weeknd
+12MqM3S0fTvR6X4Jt1Xvn6,Until You Were Gone,"The Chainsmokers, Tritonal, Emily Warren",2015,52,128.061,0.577,0.698,0.324,0.0541,0.131,0.0451,0.0,215625.0,The Chainsmokers
+42bUsj5M2olT2wRMRaro9g,The Hills - Remix,"The Weeknd, Nicki Minaj",2015,52,106.33,0.399,0.598,0.193,0.118,0.121,0.133,0.0,242453.0,The Weeknd
+22SXyL6pUjwIvGWvgGjLov,Can't Feel My Face - Martin Garrix Remix,"The Weeknd, Martin Garrix",2015,52,128.009,0.608,0.722,0.121,0.00791,0.315,0.107,2.84e-05,252933.0,The Weeknd
+7sK3nu6yk8urQ44ouEB7Au,Children,Justin Bieber,2015,52,127.04,0.631,0.884,0.33,0.0128,0.193,0.316,0.0,223333.0,Justin Bieber
+13EPC0roxU5qBKgE6mOyLr,Take My Breath,The Weeknd,2024,51,121.018,0.699,0.78,0.372,0.015,0.254,0.0384,0.00218,339023.0,The Weeknd
+4b59G0rp6YFyhgYKuSmJSG,Stargirl Interlude (feat. Lana Del Rey),"The Weeknd, Lana Del Rey",2024,51,89.867,0.706,0.458,0.539,0.325,0.0929,0.0915,0.179,111611.0,The Weeknd
+3A5WXYwdFVlnFufww717dq,Sacrifice,The Weeknd,2024,51,121.986,0.724,0.802,0.907,0.0347,0.0656,0.0854,4.84e-05,188918.0,The Weeknd
+0cyyRzvCp22yPwHB7zmg41,EASY (English ver.) (Sped Up ver.),LE SSERAFIM,2024,51,102.506,0.827,0.713,0.599,0.174,0.115,0.0434,8.51e-05,132330.0,LE SSERAFIM
+68mG7AwXBzIXTC47HlRN19,Big Dawgs,"Hanumankind, Kalmi",2024,51,180.033,0.464,0.745,0.291,0.0193,0.328,0.16,0.0,190667.0,Hanumankind
+6pW82dtuBNNpI1ytFasNgr,Puntería,"Shakira, Cardi B",2024,51,120.087,0.858,0.725,0.805,0.0222,0.138,0.0383,3.07e-05,181667.0,Shakira
+2EcjZ55drzQUQaDnZPSHvX,Snow On The Beach (feat. More Lana Del Rey),"Taylor Swift, Lana Del Rey",2023,51,109.875,0.665,0.385,0.304,0.793,0.103,0.0329,4.18e-05,229943.0,Taylor Swift
+31PF8eu76bgCLNzNm0ZmBX,紫陽花のような恋 (Hydrangea Love),TOMORROW X TOGETHER,2023,51,169.692,0.475,0.653,0.388,0.00686,0.0881,0.0405,0.0,232737.0,TOMORROW X TOGETHER
+72RWX5lMa27RQG5DzbGaoj,The Hydra,LE SSERAFIM,2023,51,104.064,0.766,0.75,0.534,0.00279,0.0943,0.162,0.0676,104203.0,LE SSERAFIM
+7y2WZKii5EQkpGUef37XkR,"Eve, Psyche & the Bluebeard's wife (Rina Sawayama Remix)","LE SSERAFIM, Rina Sawayama",2023,51,142.888,0.614,0.814,0.707,0.0616,0.0775,0.198,1.24e-06,174173.0,LE SSERAFIM
+6FnZShD1O17bZa9emuXLXh,Blue Flame - Japanese ver.,LE SSERAFIM,2023,51,112.056,0.771,0.743,0.746,0.0213,0.0809,0.0377,8.54e-06,201280.0,LE SSERAFIM
+02w1rM6spvEcbFxd63xCl2,Less Than Zero,The Weeknd,2022,51,142.981,0.535,0.791,0.5,0.00096,0.0788,0.0327,0.000155,211814.0,The Weeknd
+77p4fRpoeiZMtUy3P9kN21,willow - 90's trend remix,Taylor Swift,2021,51,168.085,0.6,0.603,0.379,0.313,0.0872,0.0741,0.0,225107.0,Taylor Swift
+5pZLsASxnWyLYdGj0FJxCb,All Too Well (Sad Girl Autumn Version) - Recorded at Long Pond Studios,Taylor Swift,2021,51,92.795,0.568,0.283,0.182,0.848,0.115,0.0318,0.0,598150.0,Taylor Swift
+463Zbb2V5mG4mFflg2RS41,Can't Feel My Face,The Weeknd,2021,51,107.943,0.709,0.777,0.6,0.122,0.0883,0.0444,0.0,213525.0,The Weeknd
+1DA36fEIoN6IKuDAI6oBbK,Ice Cream,TOMORROW X TOGETHER,2021,51,97.974,0.824,0.527,0.707,0.0332,0.0895,0.0691,0.0,202762.0,TOMORROW X TOGETHER
+4wZeTwH0B4zk77j2vPfFAU,Frost,TOMORROW X TOGETHER,2021,51,96.003,0.776,0.746,0.588,0.0056,0.362,0.053,0.0,195628.0,TOMORROW X TOGETHER
+4yRVrTMD8zLyaCVcirIAdu,0X1=LOVESONG (I Know I Love You) - Japanese Ver.,"TOMORROW X TOGETHER, Lilas Ikuta",2021,51,105.328,0.522,0.818,0.5,0.0601,0.031,0.0997,0.0,205293.0,TOMORROW X TOGETHER
+1ZrpvgLUBHozH2PLbc4SrO,Peaches (feat. Daniel Caesar & Giveon),"Justin Bieber, Daniel Caesar, Giveon",2021,51,89.926,0.698,0.684,0.526,0.374,0.434,0.0972,0.0,198082.0,Justin Bieber
+6iKFUkq6GmaW4UQGED1tSd,Know No Better (feat. DaBaby),"Justin Bieber, DaBaby",2021,51,131.92,0.67,0.441,0.849,0.615,0.0947,0.104,0.0,161819.0,Justin Bieber
+0EFdoyXHpRHhEmsOlQhIXO,happiness,Taylor Swift,2020,51,122.035,0.558,0.331,0.201,0.861,0.113,0.0381,0.0,315147.0,Taylor Swift
+4ojxSyrEraN7d46BMBPThZ,the last great american dynasty,Taylor Swift,2020,51,147.991,0.688,0.653,0.701,0.481,0.106,0.0403,0.00414,231000.0,Taylor Swift
+7CVTowKpGPA2MsIbkTl2oc,illicit affairs,Taylor Swift,2020,51,119.58,0.529,0.304,0.44,0.862,0.108,0.0356,0.0,190893.0,Taylor Swift
+5DnDBYrfGoxdnomqEAkFIv,this is me trying,Taylor Swift,2020,51,135.882,0.511,0.478,0.408,0.312,0.147,0.0322,2.3e-05,195107.0,Taylor Swift
+4WHIqhrbdva5vQSrCuet3l,invisible string,Taylor Swift,2020,51,83.455,0.651,0.459,0.454,0.859,0.105,0.0507,6.63e-05,252880.0,Taylor Swift
+0HhSydjvwLiBjnVQCG5SjK,Heartless,The Weeknd,2020,51,169.97,0.537,0.752,0.234,0.0187,0.145,0.132,1.36e-06,198267.0,The Weeknd
+3FHXUqaUer9o231Je1zxIN,I Don't Want Your Money (feat. H.E.R.),"Ed Sheeran, H.E.R.",2019,51,91.419,0.468,0.63,0.762,0.31,0.137,0.0843,0.0,204507.0,Ed Sheeran
+5d1rmWWF1725tnYjq6rMDB,Way To Break My Heart (feat. Skrillex),"Ed Sheeran, Skrillex",2019,51,170.125,0.726,0.731,0.437,0.11,0.0928,0.159,3.45e-06,190293.0,Ed Sheeran
+1VYj8u5I4L5Xl21zQiQMx7,I Don't Care (with Justin Bieber) - Jonas Blue Remix,"Ed Sheeran, Justin Bieber, Jonas Blue",2019,51,124.026,0.708,0.872,0.25,0.0736,0.337,0.0502,0.0,192681.0,Ed Sheeran
+5xhJmd0I15jFcEdqxfCzKk,It Won't Kill Ya,"The Chainsmokers, Louane",2017,51,170.138,0.572,0.53,0.12,0.0647,0.127,0.0654,0.000169,217613.0,The Chainsmokers
+26AuyrZGzWWiYZPSd3XBIg,Bloodstream,The Chainsmokers,2017,51,90.955,0.62,0.627,0.164,0.0317,0.172,0.0259,0.0,224280.0,The Chainsmokers
+0Ye1olMyvB2rLjZ4vlYVWI,Closer - R3hab Remix,"The Chainsmokers, Halsey, R3HAB",2016,51,100.042,0.775,0.559,0.408,0.081,0.219,0.0417,0.0,161120.0,The Chainsmokers
+62tnsScYuep18LnQiQqHmX,Kiss It Better - KAYTRANADA Edition,Rihanna,2016,51,108.049,0.854,0.498,0.343,0.0229,0.3,0.332,0.000212,325307.0,Rihanna
+2Mh0jU5IyRTQfpyMnvki5Z,Let You Go - Radio Edit,"The Chainsmokers, Great Good Fine Ok",2015,51,125.979,0.598,0.882,0.25,0.27,0.0793,0.0954,0.0,218973.0,The Chainsmokers
+4AMnUGvZUVJgDuY7rOPzUZ,Get Used To It,Justin Bieber,2015,51,110.043,0.687,0.705,0.45,0.0339,0.164,0.0515,0.0,238133.0,Justin Bieber
+0gffIJd1VcWekSXslfUIf0,Popular (Slowed) (with Playboi Carti & Madonna),"The Weeknd, Madonna, Playboi Carti, xxtristanxo",2024,50,83.129,0.769,0.614,0.768,0.0734,0.182,0.166,5.9e-05,258418.0,The Weeknd
+2POhSUOXkU7xEIi2z2nEDE,Tell Your Friends,The Weeknd,2024,50,74.593,0.549,0.454,0.313,0.271,0.174,0.0489,0.0,334333.0,The Weeknd
+7tDLiXn8gSZ0KuQubcNVPX,Wasted Times,The Weeknd,2024,50,122.673,0.538,0.665,0.285,0.615,0.11,0.0834,2.78e-05,220293.0,The Weeknd
+16TyjAiSkhVm5pmSccJcsW,EASY (Drum & Bass Remix),LE SSERAFIM,2024,50,82.519,0.654,0.745,0.502,0.0487,0.146,0.0543,0.0134,164727.0,LE SSERAFIM
+3bnlKtMaT1JenMM90AkgmN,Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song] (feat. Freshlyground),"Shakira, Freshlyground",2024,50,126.974,0.764,0.887,0.817,0.00987,0.0585,0.176,0.0,202467.0,Shakira
+3a5wHq45xKCNbSwHDnlnjZ,Do It Like That (Alan Walker Remix),"TOMORROW X TOGETHER, Jonas Brothers, Alan Walker",2023,50,124.962,0.651,0.863,0.655,0.0125,0.282,0.0568,6.16e-06,139441.0,TOMORROW X TOGETHER
+2JGsTyLC4gLCWXVmvUn5Wi,The World Is My Oyster (2023 Ver.),LE SSERAFIM,2023,50,120.017,0.614,0.855,0.591,0.0211,0.135,0.0398,0.521,106821.0,LE SSERAFIM
+5sVWwPuoQlZpvAFcF0MMjf,Perfect Night (Slowed + Reverb ver.),LE SSERAFIM,2023,50,121.234,0.716,0.612,0.395,0.247,0.12,0.0292,1.91e-05,175894.0,LE SSERAFIM
+3dCCHYqCAMdm1GCuklUaZG,Ditto (250 Remix) (Instrumental),NewJeans,2023,50,134.041,0.763,0.573,0.202,0.0453,0.0972,0.0571,0.681,201880.0,NewJeans
+12xIjI9A9UlB6zEc7kyZ06,"Carolina - ""Where The Crawdads Sing"" - Video Edition",Taylor Swift,2022,50,115.727,0.364,0.185,0.42,0.893,0.269,0.0374,0.0,163944.0,Taylor Swift
+3WXyY2PxX88kpBtB0GH61w,Take My Breath,The Weeknd,2022,50,121.02,0.698,0.769,0.354,0.0128,0.238,0.0368,0.00166,339023.0,The Weeknd
+21SralRv4ucDT3i1rYrr85,Sad Beautiful Tragic (Taylor's Version),Taylor Swift,2021,50,130.059,0.601,0.406,0.232,0.622,0.133,0.0275,9.19e-05,284773.0,Taylor Swift
+11FvynPeozvRw769iN9kV7,Call Out My Name,The Weeknd,2021,50,133.991,0.471,0.581,0.161,0.19,0.309,0.0345,0.0,228382.0,The Weeknd
+7i2xVGqiF5FBPvLg6PLHX3,There She Go (feat. Lil Uzi Vert),"Justin Bieber, Lil Uzi Vert",2021,50,150.074,0.725,0.716,0.904,0.00945,0.119,0.0349,0.0,215020.0,Justin Bieber
+5jQyGzcwqAxwT5QUIMivoX,mirrorball,Taylor Swift,2020,50,110.137,0.549,0.417,0.347,0.686,0.0604,0.035,1.9e-06,208973.0,Taylor Swift
+36a08nLG1xazGaaVKK0vv7,You Need To Calm Down - Live From Paris,Taylor Swift,2020,50,85.01,0.595,0.832,0.742,0.0637,0.818,0.0463,2.25e-05,203960.0,Taylor Swift
+65YnIFKuwUCLIqMHAP8TAm,the lakes,Taylor Swift,2020,50,179.947,0.313,0.258,0.268,0.842,0.0948,0.0383,1.3e-06,211813.0,Taylor Swift
+2vJ7QvyCiR4DaHxwO58izA,seven,Taylor Swift,2020,50,94.955,0.602,0.494,0.374,0.888,0.0902,0.0277,2.59e-05,208907.0,Taylor Swift
+5fOV54t6mMYv3H9CsnvU81,ME! - Live From Paris,Taylor Swift,2020,50,91.014,0.545,0.935,0.552,0.0428,0.976,0.0456,0.000514,213027.0,Taylor Swift
+4vIKzWqtn44umal5jXq4wE,1000 Nights (feat. Meek Mill & A Boogie Wit da Hoodie),"Ed Sheeran, Meek Mill, A Boogie Wit da Hoodie",2019,50,98.001,0.778,0.589,0.513,0.467,0.0902,0.269,0.0,212307.0,Ed Sheeran
+5FFtpF6rg5xdz3EwGFbUMg,Our Summer (Acoustic Mix),TOMORROW X TOGETHER,2019,50,106.08,0.621,0.63,0.51,0.402,0.124,0.0318,0.0,221947.0,TOMORROW X TOGETHER
+3CgTgHLI8qHAqLoZkz1BdQ,You Owe Me,The Chainsmokers,2018,50,89.98,0.675,0.445,0.348,0.222,0.231,0.0394,0.0,190013.0,The Chainsmokers
+7klcjsUjOT35E862g1BlSC,La tortura,"Shakira, Alejandro Sanz",2018,50,100.001,0.741,0.779,0.834,0.023,0.12,0.0421,0.000788,213107.0,Shakira
+1KqvRRQd3lfM0pAlkGPrgD,Shape of You (feat. Nyla & Kranium) - Major Lazer Remix,"Ed Sheeran, Nyla, Kranium, Major Lazer",2017,50,104.891,0.682,0.812,0.347,0.00574,0.0553,0.118,0.0,192000.0,Ed Sheeran
+2A17f6I4fh6GqYX0J8noGr,Galway Girl - Martin Jensen Remix,"Ed Sheeran, Martin Jensen",2017,50,100.055,0.726,0.748,0.731,0.0245,0.141,0.0438,0.0,196044.0,Ed Sheeran
+6rjO7ZdSUdd8W2fkWL7fK9,Castle on the Hill - Recorded at Spotify Studios New York City,Ed Sheeran,2017,50,147.58,0.556,0.355,0.644,0.581,0.118,0.0398,0.0,225791.0,Ed Sheeran
+6cPyTS0Kk2sc4xQwC93kOg,Break Up Every Night,The Chainsmokers,2017,50,149.999,0.624,0.806,0.528,0.00411,0.0872,0.0437,0.0,207520.0,The Chainsmokers
+4S1vnq8appsFS8xT5bnXgm,Love On The Brain,Rihanna,2016,50,171.974,0.509,0.629,0.393,0.072,0.0814,0.0463,9.58e-06,224000.0,Rihanna
+31F83eeeh5Sz6g616t13DW,Reminder,The Weeknd,2016,50,80.031,0.744,0.496,0.446,0.16,0.164,0.0804,1.72e-06,218880.0,The Weeknd
+6SNUuxeg0NWXSEkFirAkAM,The Hills - RL Grime Remix,"The Weeknd, RL Grime",2015,50,139.996,0.572,0.897,0.438,0.112,0.157,0.0433,0.244,271067.0,The Weeknd
+5AYD5mHQHXkUuZRDFNyEyi,"Where You Belong - From ""Fifty Shades Of Grey"" Soundtrack",The Weeknd,2015,50,120.009,0.548,0.433,0.1,0.19,0.163,0.0333,0.0,297773.0,The Weeknd
+28SGSSREhZ2Jv9QmaLRsam,"Earned It (Fifty Shades Of Grey) - From The ""Fifty Shades Of Grey"" Soundtrack",The Weeknd,2015,50,119.882,0.667,0.342,0.453,0.397,0.0945,0.0325,0.0,250973.0,The Weeknd
+00IH8ZjI9ZGB51WRX1Oesj,Trust,Justin Bieber,2015,50,76.0,0.513,0.494,0.493,0.0949,0.124,0.206,0.0,203613.0,Justin Bieber
+1m6FkAtWVloxIRHKl7pBDP,We Are,"Justin Bieber, Nas",2015,50,78.717,0.587,0.772,0.661,0.255,0.137,0.258,0.0,202960.0,Justin Bieber
+7e3c59O0Ea3NN6yTylcloq,High For This,The Weeknd,2024,49,147.383,0.296,0.413,0.0805,0.622,0.0857,0.079,0.00011,249102.0,The Weeknd
+4tVBXvmQDYaBMuVnazDU7P,EASY (Pluggnb Remix),LE SSERAFIM,2024,49,170.023,0.352,0.846,0.45,0.0975,0.562,0.0595,0.0,151279.0,LE SSERAFIM
+6lliRg7AiW61pc2nrxjPNX,EASY (English ver.) (Slowed + Reverb ver.),LE SSERAFIM,2024,49,139.994,0.804,0.668,0.436,0.229,0.116,0.0397,0.0165,193769.0,LE SSERAFIM
+2ebR6glZRqhlpWXpSeMmEB,EASY (Sped Up ver.),LE SSERAFIM,2024,49,102.521,0.859,0.718,0.585,0.216,0.129,0.0451,1.35e-05,132439.0,LE SSERAFIM
+5KxZfCXXmVvKhPo8hQz2pS,Lavender Haze - Felix Jaehn Remix,"Taylor Swift, Felix Jaehn",2023,49,119.995,0.777,0.717,0.634,0.0334,0.336,0.195,0.00488,171562.0,Taylor Swift
+5afpl2cZ88bvEfeBmpwX6m,紫陽花のような恋 (Hydrangea Love),TOMORROW X TOGETHER,2023,49,169.692,0.475,0.653,0.388,0.00686,0.0881,0.0405,0.0,232737.0,TOMORROW X TOGETHER
+0MvgLL3Rkj9JjEvpUqAy0m,ANTIFRAGILE - Japanese ver.,LE SSERAFIM,2023,49,104.984,0.863,0.799,0.823,0.0677,0.155,0.0662,0.0,185293.0,LE SSERAFIM
+4MhgDz4lSj2HtlUcpe3yrd,Attention (250 Remix) (Instrumental),NewJeans,2023,49,104.97,0.747,0.795,0.7,0.00437,0.245,0.102,0.435,181400.0,NewJeans
+5dvjl2nhzcLM6NXzkpKDiL,Vigilante Shit,Taylor Swift,2022,49,79.97,0.875,0.286,0.155,0.163,0.127,0.361,4.23e-05,164801.0,Taylor Swift
+22t8PQeP5klRoguomM4wZp,Anti-Hero - Jayda G Remix,"Taylor Swift, Jayda G",2022,49,120.004,0.792,0.779,0.76,0.065,0.0939,0.0604,4.54e-05,215697.0,Taylor Swift
+6Uj2XaahtYXK2WeD7GGwBY,Gasoline,The Weeknd,2022,49,123.006,0.728,0.741,0.31,0.000582,0.33,0.0473,0.00206,212166.0,The Weeknd
+0xa4hvXeYHRRNhA7wBfUar,Sacrifice,The Weeknd,2022,49,122.0,0.735,0.795,0.905,0.0296,0.0678,0.113,3.18e-05,188918.0,The Weeknd
+3kOtREqmcGaEA2KhqffFnw,How Do I Make You Love Me?,The Weeknd,2022,49,121.006,0.805,0.498,0.636,0.0203,0.085,0.0737,2.37e-05,214215.0,The Weeknd
+0ubOHILtEFcusJK7xzxuKm,Best Friends - Remix,"The Weeknd, Summer Walker",2022,49,180.22,0.608,0.649,0.612,0.24,0.311,0.113,0.0,175072.0,The Weeknd
+0WE0h1qUWJBt97DtvuMWRN,Ronan (Taylor's Version),Taylor Swift,2021,49,116.04,0.623,0.279,0.38,0.661,0.193,0.031,0.0,264253.0,Taylor Swift
+23Gv9vq4FurPK6np6xX0Bi,I Feel It Coming,"The Weeknd, Daft Punk",2021,49,92.973,0.773,0.815,0.559,0.415,0.087,0.128,0.0,269177.0,The Weeknd
+67HlBRWRSjAHY2ujn6eOan,Often,The Weeknd,2021,49,133.981,0.57,0.624,0.0778,0.241,0.125,0.0462,0.0,249109.0,The Weeknd
+2L1l2GV8K16gAqIPKjPhSz,What if I had been that PUMA,TOMORROW X TOGETHER,2021,49,96.003,0.86,0.677,0.586,0.0279,0.319,0.0823,0.0,213651.0,TOMORROW X TOGETHER
+4HEo19dGKUa2L6uE8Uvqg5,永遠に光れ (Everlasting Shine),TOMORROW X TOGETHER,2021,49,127.013,0.523,0.894,0.378,0.101,0.19,0.0615,0.0,193573.0,TOMORROW X TOGETHER
+2jENXjiYuPriGaFNLSmgO5,EYES (from “Armored Saurus”),TOMORROW X TOGETHER,2021,49,114.931,0.628,0.938,0.529,0.01,0.0978,0.0987,0.0,214198.0,TOMORROW X TOGETHER
+2BGVCCEnQrqH2iz7gIIGFi,Force,TOMORROW X TOGETHER,2021,49,131.989,0.734,0.872,0.658,0.000935,0.324,0.0908,0.0,239760.0,TOMORROW X TOGETHER
+5E75Cr0oqxGoX0YYwdC3nZ,"Peaches (Remix) feat. Ludacris, Usher & Snoop Dogg","Justin Bieber, USHER, Snoop Dogg, Ludacris",2021,49,89.906,0.64,0.69,0.59,0.399,0.463,0.235,0.0,229473.0,Justin Bieber
+3kZLeZr4StCy1tlOBRJrUH,Lifetime,Justin Bieber,2021,49,90.025,0.669,0.276,0.341,0.769,0.115,0.0282,0.0,207020.0,Justin Bieber
+5XkJj6sV2XLMaURdmdXgNx,willow - moonlit witch version,Taylor Swift,2020,49,81.551,0.36,0.643,0.535,0.411,0.136,0.221,0.000241,208867.0,Taylor Swift
+2jhfs6moEAK13eLM6xim4l,betty,Taylor Swift,2020,49,95.946,0.595,0.376,0.476,0.589,0.0989,0.0256,0.0,294520.0,Taylor Swift
+0zEprKYeuGOIZoHyu6O1E2,the lakes - bonus track,Taylor Swift,2020,49,179.947,0.313,0.258,0.268,0.842,0.0948,0.0383,1.3e-06,211813.0,Taylor Swift
+1oCyEPXnvytOWS5S9mBE8N,Alone Again,The Weeknd,2020,49,90.673,0.255,0.653,0.058,0.0337,0.168,0.0551,0.107,250057.0,The Weeknd
+2pGp7wk76ZfbxYG5MRwfcs,Save Your Tears,The Weeknd,2020,49,118.059,0.684,0.817,0.623,0.0222,0.439,0.0308,2.19e-05,215627.0,The Weeknd
+1SySkCqhEG6Z68o2n07Bsr,In Your Eyes (feat. Kenny G) - Remix,"The Weeknd, Kenny G",2020,49,99.969,0.606,0.786,0.525,0.00229,0.0725,0.0366,9.46e-05,256551.0,The Weeknd
+7gCFW1KSX4gDgAhro23URU,In Your Eyes,The Weeknd,2020,49,100.021,0.667,0.72,0.705,0.00255,0.0753,0.0331,7.89e-05,237522.0,The Weeknd
+2PipF4mcI9d6cqq5AAp7GU,Save Your Tears (Remix) (with Ariana Grande) - Bonus Track,"The Weeknd, Ariana Grande",2020,49,118.091,0.65,0.825,0.593,0.0215,0.0936,0.0325,2.44e-05,191014.0,The Weeknd
+6VLkgf5YmLixsabdqiCVGU,At Least For Now,Justin Bieber,2020,49,110.754,0.494,0.304,0.291,0.683,0.187,0.0328,0.0,149653.0,Justin Bieber
+6gcQJ6W4H89xkQFm63gcsB,Holy - Acoustic,"Justin Bieber, Chance the Rapper",2020,49,79.927,0.532,0.566,0.576,0.706,0.161,0.0467,0.0,205816.0,Justin Bieber
+1Bdptrvb7nQkq8kCw3siE9,Feels (feat. Young Thug & J Hus),"Ed Sheeran, Young Thug, J Hus",2019,49,91.667,0.665,0.68,0.69,0.112,0.096,0.291,0.0,150787.0,Ed Sheeran
+1pJQAHpD51J7GYaFrrFO9S,Don't Say,"The Chainsmokers, Emily Warren",2017,49,99.806,0.567,0.464,0.309,0.0199,0.269,0.0302,9.31e-06,228480.0,The Chainsmokers
+7F1LWA9sIlTorHUo4amGqk,Reminder - Remix,"The Weeknd, A$AP Rocky, Young Thug",2017,49,160.035,0.751,0.654,0.527,0.153,0.104,0.206,0.0,221968.0,The Weeknd
+0w75KG0DuLDi6tdHmEMovD,Don't Let Me Down,"The Chainsmokers, Daya",2016,49,159.763,0.534,0.868,0.406,0.187,0.148,0.205,0.0032,208667.0,The Chainsmokers
+4v1CvZazmdpxQLEt3sCeKH,New York City,The Chainsmokers,2015,49,126.062,0.564,0.639,0.0624,0.0127,0.133,0.038,0.0,230667.0,The Chainsmokers
+0vLxMyI85TR1aPDyz647rF,Bitch Better Have My Money,Rihanna,2015,49,102.986,0.782,0.712,0.366,0.0447,0.257,0.0603,2.98e-06,219306.0,Rihanna
+0bHA8LApeZHv7ZlhVUWg8X,American Oxygen,Rihanna,2015,49,78.205,0.391,0.745,0.483,0.0497,0.329,0.0884,0.0,320161.0,Rihanna
+4kP50JQmyFrl9pLSmnFPZr,All In It,Justin Bieber,2015,49,97.166,0.498,0.701,0.507,0.502,0.238,0.0721,3.59e-05,231413.0,Justin Bieber
+6LRLy3SmtsPJaopCiavbme,Popular (Instrumental) (with Playboi Carti & Madonna),"The Weeknd, Madonna, Playboi Carti",2024,48,99.003,0.782,0.608,0.584,0.00561,0.093,0.0932,0.904,215467.0,The Weeknd
+5ck9P3yEwc8w2Z1oE0CRlz,Popular (A Cappella) (with Playboi Carti & Madonna),"The Weeknd, Madonna, Playboi Carti",2024,48,99.014,0.622,0.318,0.403,0.681,0.0661,0.915,0.0,215467.0,The Weeknd
+1DYtDpkadSjqvjjtIP88SI,Puntería - Vinyl Version,"Shakira, Cardi B",2024,48,120.044,0.797,0.691,0.736,0.00289,0.258,0.031,0.00112,189067.0,Shakira
+5NlYplrGsjUDFZ6x3HeVyT,Lavender Haze,Taylor Swift,2023,48,97.045,0.736,0.455,0.087,0.235,0.189,0.0791,0.000623,202396.0,Taylor Swift
+2Xeyoy0TGrSHR0MBI8e4zS,君じゃない誰かの愛し方 (Ring),TOMORROW X TOGETHER,2023,48,129.35,0.446,0.737,0.496,0.0166,0.42,0.0581,0.0,204112.0,TOMORROW X TOGETHER
+2KsiPmkW27MalI0SqC64eI,"Eve, Psyche & the Bluebeard's wife (feat. UPSAHL)","LE SSERAFIM, UPSAHL",2023,48,143.033,0.664,0.872,0.676,0.0394,0.0561,0.145,0.0,186119.0,LE SSERAFIM
+2oLVT9Lo0SavCNpGw4WfPp,OMG (FRNK Remix) (Instrumental),NewJeans,2023,48,129.056,0.807,0.737,0.558,0.114,0.216,0.047,0.00253,210400.0,NewJeans
+6tU4EeTSSawN9sbfAjWPX4,Hype Boy (250 Remix) (Instrumental),NewJeans,2023,48,85.989,0.741,0.541,0.616,0.0256,0.0772,0.048,0.722,251000.0,NewJeans
+2akxtSALPUX8orriSWyDi4,Cookie (FRNK Remix) (Instrumental),NewJeans,2023,48,80.002,0.869,0.275,0.42,0.764,0.104,0.0684,0.639,212400.0,NewJeans
+1q9V1vsIEehAm2hDT6l53g,Hurt (250 Remix) (Instrumental),NewJeans,2023,48,89.996,0.614,0.43,0.973,0.0241,0.0576,0.0491,0.678,216547.0,NewJeans
+6ms6ZqngVJxqfQiyXLrC3E,ひとりの夜 (Hitori no Yoru),TOMORROW X TOGETHER,2022,48,149.868,0.483,0.483,0.36,0.289,0.368,0.0328,0.0,218867.0,TOMORROW X TOGETHER
+06fglfpCAtDtmlyfJYgA01,Save Your Tears,The Weeknd,2021,48,118.065,0.685,0.816,0.619,0.0216,0.439,0.0308,2.05e-05,215627.0,The Weeknd
+5OvpZeRmZEBPp7Vgp0n6oj,Ice Cream,TOMORROW X TOGETHER,2021,48,97.969,0.823,0.526,0.698,0.0327,0.0825,0.0692,0.0,204358.0,TOMORROW X TOGETHER
+6jUqjExnh8QBGd7RtnAIJF,"0X1=LOVESONG (I Know I Love You) feat. pH-1, Woodie Gochild, Seori",TOMORROW X TOGETHER,2021,48,101.819,0.61,0.626,0.481,0.363,0.405,0.031,0.0,205148.0,TOMORROW X TOGETHER
+6e3oGWsdfHSKBCFv548RRm,"Where Do I Fit In (feat. Tori Kelly, Chandler Moore & Judah Smith)","Justin Bieber, Tori Kelly, Chandler Moore, Judah Smith",2021,48,113.922,0.389,0.261,0.379,0.82,0.134,0.0343,5.72e-05,286453.0,Justin Bieber
+6EKDPhgCDL2cwRvloAEwSP,Name (feat. Tori Kelly),"Justin Bieber, Tori Kelly",2021,48,151.658,0.45,0.324,0.291,0.829,0.089,0.0264,0.0,159724.0,Justin Bieber
+0x3CUvkL4jUPYVONrYUubR,betty,Taylor Swift,2020,48,96.029,0.59,0.379,0.467,0.544,0.0983,0.0255,0.0,294521.0,Taylor Swift
+7klXN6RCN5Rj0VeYO5gBzU,mad woman,Taylor Swift,2020,48,141.898,0.593,0.7,0.451,0.67,0.116,0.0492,6.77e-06,237267.0,Taylor Swift
+0O9i6jhscByEJs1ipy5hu4,peace,Taylor Swift,2020,48,150.072,0.644,0.284,0.328,0.916,0.0909,0.0821,1.5e-05,234000.0,Taylor Swift
+5MFjHn1qfR9AsWuyzJLk1z,epiphany,Taylor Swift,2020,48,93.933,0.317,0.254,0.103,0.727,0.0867,0.0286,0.000326,289747.0,Taylor Swift
+5PKKJ4fo3ZuGcYKkI79fgf,Heartless,The Weeknd,2020,48,84.969,0.614,0.758,0.25,0.0281,0.137,0.0774,1.18e-06,198267.0,The Weeknd
+3V937b8IsyJ0ZvVHxreiMs,Faith,The Weeknd,2020,48,175.472,0.355,0.605,0.123,0.614,0.146,0.0774,0.0483,283217.0,The Weeknd
+51a6oFNsFpB2zew1tdzT6I,Escape From LA,The Weeknd,2020,48,146.099,0.423,0.548,0.169,0.0476,0.187,0.0567,0.00269,355960.0,The Weeknd
+4LKx0dlvzsmntdhMCTtV97,Too Late,The Weeknd,2020,48,119.949,0.64,0.869,0.185,0.0514,0.691,0.124,0.000121,239980.0,The Weeknd
+5Sg09MvHqNWPWsYeuY2toY,Blinding Lights,The Weeknd,2020,48,170.962,0.518,0.727,0.342,0.00153,0.0882,0.0557,0.000152,200046.0,The Weeknd
+4eQO9RHTjYT1O9DTuZLj9v,Blinding Lights,The Weeknd,2020,48,170.962,0.518,0.727,0.342,0.00153,0.0882,0.0557,0.000152,200046.0,The Weeknd
+5GM4EsVHaxGjzgQ81S2J61,Hardest To Love,The Weeknd,2020,48,81.186,0.466,0.609,0.103,0.0911,0.122,0.065,9.32e-05,211402.0,The Weeknd
+39nTNk5MfyiiRupTwn1iyC,Take It Out On Me,Justin Bieber,2020,48,129.967,0.771,0.615,0.29,0.00343,0.104,0.101,2.54e-06,178013.0,Justin Bieber
+2nyTaLu3TTrSS6CAxR3z0b,"Take Me Back To London (Remix) [feat. Stormzy, Jaykae & Aitch]","Ed Sheeran, Jaykae, Aitch, Stormzy",2019,48,138.011,0.851,0.667,0.596,0.25,0.19,0.268,0.0,232151.0,Ed Sheeran
+2dNVHgOx99fv4oSVF9GN1Y,Party Monster,The Weeknd,2016,48,77.486,0.588,0.635,0.208,0.191,0.259,0.0531,1.24e-05,249213.0,The Weeknd
+0oOSnYGTkjLjOcrXLleVNq,Smart (Smartest Remix),LE SSERAFIM,2024,47,140.108,0.769,0.936,0.808,0.0427,0.0582,0.165,0.0,176571.0,LE SSERAFIM
+2P58XhyNkacK1LHSCk5O2t,Cohete,"Shakira, Rauw Alejandro",2024,47,119.968,0.749,0.687,0.656,0.158,0.136,0.0304,4.58e-06,172504.0,Shakira
+71koLb7kowtfrjvJF00tTb,Karma (feat. Ice Spice),"Taylor Swift, Ice Spice",2023,47,90.048,0.619,0.623,0.0797,0.0571,0.499,0.0615,0.0,201493.0,Taylor Swift
+7kjSmkSo15pHlkb0mOQtfj,Lavender Haze - Tensnake Remix,"Taylor Swift, Tensnake",2023,47,109.028,0.773,0.777,0.803,0.182,0.0988,0.0461,0.00621,214967.0,Taylor Swift
+4diV6EkJLVW2TAxFNgQeIF,ひとりの夜 (Hitori no Yoru),TOMORROW X TOGETHER,2023,47,149.757,0.495,0.488,0.405,0.293,0.363,0.0324,0.0,218859.0,TOMORROW X TOGETHER
+6RY6S8ZUTCSbvXr9s1R0Fo,Ito,TOMORROW X TOGETHER,2023,47,83.022,0.574,0.657,0.403,0.215,0.302,0.0356,0.0,243415.0,TOMORROW X TOGETHER
+3A6QF5UMok0qq7gLKAmT9g,Snow On The Beach (feat. Lana Del Rey),"Taylor Swift, Lana Del Rey",2022,47,109.947,0.65,0.325,0.172,0.686,0.137,0.0399,0.00144,256124.0,Taylor Swift
+4Rrj1QxDqsj28gv9SiHQRA,Out of Time - KAYTRANADA Remix,"The Weeknd, KAYTRANADA",2022,47,108.283,0.742,0.599,0.573,0.0962,0.0981,0.297,0.000578,275556.0,The Weeknd
+2022B8GxEstpvibwgbJ15s,Starry Eyes,The Weeknd,2022,47,134.23,0.309,0.418,0.146,0.465,0.295,0.031,7.58e-05,148000.0,The Weeknd
+38JOdzBE9kPj5UhKtqIIqQ,Starboy,"The Weeknd, Daft Punk",2021,47,186.012,0.676,0.588,0.484,0.137,0.137,0.275,8.47e-06,230461.0,The Weeknd
+7graOvVPwjmSFwJ3rHoPDt,Heartless,The Weeknd,2021,47,169.985,0.538,0.751,0.244,0.0194,0.145,0.128,1.42e-06,198267.0,The Weeknd
+0djfvA3c8AxxlQolu6zn6K,Blinding Lights,The Weeknd,2021,47,171.005,0.513,0.726,0.332,0.00154,0.0884,0.0597,0.000138,200046.0,The Weeknd
+1F65jvOrItxUyNK30z6Yht,In Your Eyes,The Weeknd,2021,47,100.018,0.667,0.721,0.703,0.00248,0.0753,0.033,6.24e-05,237522.0,The Weeknd
+08my8XgmXQWx3VRRU8EOTP,Magic,TOMORROW X TOGETHER,2021,47,108.065,0.663,0.85,0.499,0.00322,0.293,0.412,0.0,159760.0,TOMORROW X TOGETHER
+4C9pETarpQoI5ODtx6My41,I Can't Be Myself (feat. Jaden),"Justin Bieber, Jaden",2021,47,120.064,0.704,0.659,0.542,0.00197,0.141,0.0315,3.36e-06,193360.0,Justin Bieber
+7ya7Jv4hJ9W0Baz7h9nL7E,Ghost,Justin Bieber,2021,47,153.96,0.601,0.741,0.441,0.185,0.415,0.0478,2.91e-05,153190.0,Justin Bieber
+5dfjlWOwxxCQnM26MpsJjV,I Can't Be Myself (feat. Jaden),"Justin Bieber, Jaden",2021,47,120.064,0.704,0.66,0.54,0.00195,0.141,0.0316,3.08e-06,193360.0,Justin Bieber
+6i4G85fdtDwK6UpQba337E,2 Much,Justin Bieber,2021,47,119.59,0.583,0.444,0.167,0.593,0.353,0.0456,0.0,152796.0,Justin Bieber
+3Ic8V1CEjOY53OVpo2k1Ap,Off My Face,Justin Bieber,2021,47,90.674,0.509,0.228,0.586,0.92,0.104,0.0332,0.0,156468.0,Justin Bieber
+4iHnpQ9tSj0hvvZprBCtN1,Baby,"Justin Bieber, Ludacris",2021,47,65.027,0.731,0.842,0.473,0.0457,0.0988,0.113,0.0,216613.0,Justin Bieber
+2b4dRZGflAQT7ZbFwOclyP,the 1,Taylor Swift,2020,47,140.015,0.765,0.348,0.171,0.764,0.108,0.0579,1.01e-05,210252.0,Taylor Swift
+3RNDw7yywLNyawDKV99hTx,Love Story - Digital Dog Remix,"Taylor Swift, Digital Dog",2020,47,128.017,0.729,0.637,0.508,0.0126,0.0908,0.0384,0.0326,358573.0,Taylor Swift
+4XCYmu7QLySdIahgBALKJK,hoax,Taylor Swift,2020,47,118.84,0.676,0.178,0.404,0.964,0.135,0.0394,7.9e-06,220040.0,Taylor Swift
+3WAXILvmHFoyVHnK0kDK1S,After Hours - The Blaze Remix,"The Weeknd, The Blaze",2020,47,109.016,0.605,0.536,0.28,0.426,0.087,0.0494,0.161,238128.0,The Weeknd
+2FBpJGt00G0h1q0RHuqaGO,Yummy - Summer Walker Remix,"Justin Bieber, Summer Walker",2020,47,145.867,0.654,0.577,0.535,0.31,0.109,0.0531,0.0,209213.0,Justin Bieber
+6Kzzkq9sFHm51RwhHswCVc,South of the Border (feat. Camila Cabello) - Acoustic,"Ed Sheeran, Camila Cabello",2019,47,93.918,0.735,0.686,0.961,0.502,0.101,0.0329,0.0,194885.0,Ed Sheeran
+5Va44ERiHtC2tfBD53OApA,Nothing On You (feat. Paulo Londra & Dave),"Ed Sheeran, Paulo Londra, Dave",2019,47,88.011,0.747,0.649,0.84,0.333,0.172,0.219,0.0,200733.0,Ed Sheeran
+5H7CwzYZ60e7w69tX4ivQN,Shape of You - Galantis Remix,"Ed Sheeran, Galantis",2017,47,100.021,0.838,0.765,0.905,0.0514,0.0297,0.0462,0.00021,195988.0,Ed Sheeran
+6GeD5g9vZTz25Egf8kxoIY,Last Day Alive,"The Chainsmokers, Florida Georgia Line",2017,47,144.913,0.435,0.706,0.24,0.0571,0.0903,0.0425,4.15e-05,214307.0,The Chainsmokers
+0dj1CtyRxZ4bnIT4Q20jNT,Wake Up Alone,"The Chainsmokers, Jhené Aiko",2017,47,75.168,0.643,0.52,0.23,0.0102,0.11,0.0334,0.0,215720.0,The Chainsmokers
+15MTd64KUMG7CF6mOyovsQ,Something Just Like This - Don Diablo Remix,"The Chainsmokers, Coldplay, Don Diablo",2017,47,124.039,0.72,0.746,0.511,0.125,0.0929,0.0983,0.000476,230853.0,The Chainsmokers
+1D8bmUIhLHEO4KMS2SHwUx,Nada,Shakira,2017,47,98.003,0.764,0.737,0.447,0.589,0.175,0.0354,0.0,189573.0,Shakira
+639QPT9YkqIdgPkZMkatN7,Needed Me,Rihanna,2016,47,110.938,0.685,0.313,0.295,0.1,0.082,0.261,0.0,191600.0,Rihanna
+31adnbEEiHwy6DDQ82F3HP,Love On The Brain,Rihanna,2016,47,172.006,0.509,0.637,0.378,0.0717,0.0789,0.0471,1.08e-05,224000.0,Rihanna
+3EdsfpdAlaQBMO0LgNOEhn,"Sledgehammer - From The Motion Picture ""Star Trek Beyond""",Rihanna,2016,47,130.825,0.387,0.822,0.475,0.489,0.284,0.0918,0.0,211400.0,Rihanna
+13LPQrcGUpv72CPJ9w0agp,Earned It (Fifty Shades Of Grey) - Marian Hill Remix (From Fifty Shades Of Grey Remixed),The Weeknd,2015,47,120.089,0.614,0.339,0.211,0.355,0.14,0.0677,0.0018,192240.0,The Weeknd
+36UEl3tAYgKAB7kTnO9XDn,Popular (with Playboi Carti & Madonna),"The Weeknd, Playboi Carti, Madonna",2024,46,98.998,0.851,0.679,0.811,0.0483,0.429,0.212,3.32e-05,215467.0,The Weeknd
+3MAX1blv9P12wBOPgHMfra,EASY (Instrumental),LE SSERAFIM,2024,46,164.967,0.751,0.756,0.251,0.0548,0.116,0.057,0.885,164545.0,LE SSERAFIM
+4sLK0o0Vxk4HNVW3A7pKvw,EASY (Slowed + Reverb ver.),LE SSERAFIM,2024,46,139.997,0.81,0.667,0.448,0.246,0.126,0.0455,0.0116,193767.0,LE SSERAFIM
+6EXHGKZ79AUTzCe9BMZjhT,Cruel Summer - Live from TS | The Eras Tour,Taylor Swift,2023,46,84.744,0.342,0.906,0.327,0.132,0.954,0.079,0.0,229567.0,Taylor Swift
+0K1jAnEXaT5BPK6Q6z7WQT,君じゃない誰かの愛し方 (Ring) - Unplugged Ver.,TOMORROW X TOGETHER,2023,46,97.041,0.622,0.526,0.383,0.199,0.175,0.025,0.0,205262.0,TOMORROW X TOGETHER
+5phOffUF55tovtQaz1alMo,"You're On Your Own, Kid",Taylor Swift,2022,46,120.045,0.693,0.387,0.364,0.392,0.124,0.0663,9.11e-06,194207.0,Taylor Swift
+4XiypEn8iKbeP1TbTqdfk5,Anti-Hero - Roosevelt Remix,"Taylor Swift, Roosevelt",2022,46,110.99,0.716,0.737,0.804,0.322,0.152,0.0343,0.000264,299203.0,Taylor Swift
+4cm7Ap6IWH6m8JyB9IXT3x,Best Friends,The Weeknd,2022,46,90.0,0.737,0.564,0.528,0.436,0.351,0.105,0.0,163504.0,The Weeknd
+7znFWDzgm3Ld5fpze6EJp5,Force,TOMORROW X TOGETHER,2021,46,131.998,0.738,0.872,0.637,0.000988,0.325,0.0907,0.0,241453.0,TOMORROW X TOGETHER
+6mrUAKW4UA7ygQzoyekxxr,Angels Speak,"Justin Bieber, Poo Bear",2021,46,119.341,0.522,0.243,0.569,0.874,0.098,0.0461,0.0,231668.0,Justin Bieber
+5RE1BlC2bVRL02T0wcLq2X,As I Am (feat. Khalid),"Justin Bieber, Khalid",2021,46,99.928,0.595,0.543,0.109,0.127,0.0975,0.038,0.0,174406.0,Justin Bieber
+6Z2pe32hFnUd2x5NgO5KFc,Die For You (feat. Dominic Fike),"Justin Bieber, Dominic Fike",2021,46,135.027,0.729,0.632,0.702,0.00196,0.0848,0.032,2.62e-06,198426.0,Justin Bieber
+2t96tGXVqmNT9KbbIXyEP1,Deserve You,Justin Bieber,2021,46,89.934,0.677,0.633,0.409,0.0314,0.112,0.0771,0.0,187239.0,Justin Bieber
+0pYUyZ3aQR1fAOdhXfoD3R,Somebody,Justin Bieber,2021,46,75.999,0.547,0.753,0.375,0.000286,0.12,0.0463,8.72e-05,179415.0,Justin Bieber
+5sSudVJ80OUYU35dhkfGz1,mad woman,Taylor Swift,2020,46,141.978,0.596,0.709,0.533,0.649,0.114,0.0431,9.92e-06,237258.0,Taylor Swift
+2MnzNhe3pPExotEbZpeXnh,the last great american dynasty,Taylor Swift,2020,46,147.909,0.684,0.661,0.713,0.473,0.109,0.0407,0.00215,230999.0,Taylor Swift
+4GS68CE8nKLIKjjapiSm2I,betty - Live from the 2020 Academy of Country Music Awards,Taylor Swift,2020,46,88.668,0.452,0.441,0.497,0.685,0.128,0.0258,0.0,312139.0,Taylor Swift
+5dMVtDN1RDNTOL92oDncwd,Repeat After Me (Interlude),The Weeknd,2020,46,94.945,0.555,0.607,0.145,0.0313,0.101,0.0301,0.00018,195815.0,The Weeknd
+1Hp7vdJwQ4ozmAJzPAJpfX,Snowchild,The Weeknd,2020,46,148.118,0.676,0.61,0.24,0.166,0.122,0.114,6.47e-05,247192.0,The Weeknd
+6hU8kY1Pot3gvEHb9CVj3F,Scared To Live,The Weeknd,2020,46,87.343,0.48,0.493,0.211,0.123,0.0995,0.0512,0.0,191299.0,The Weeknd
+2BTkcHMf8j5pqa5UIMFGcy,Until I Bleed Out,The Weeknd,2020,46,125.209,0.249,0.37,0.178,0.444,0.0911,0.0357,4.44e-05,192364.0,The Weeknd
+31bmr5SE0qrrIPhjGbnwKP,After Hours,The Weeknd,2020,46,108.968,0.659,0.572,0.14,0.0784,0.123,0.0304,0.00772,361025.0,The Weeknd
+6jin465re80co3DeK8hsns,Remember The Name (feat. Eminem & 50 Cent),"Ed Sheeran, Eminem, 50 Cent",2019,46,91.046,0.852,0.666,0.726,0.135,0.798,0.184,0.0,207760.0,Ed Sheeran
+6f807x0ima9a1j3VPbc7VN,I Don't Care (with Justin Bieber) - Loud Luxury Remix,"Ed Sheeran, Justin Bieber, Loud Luxury",2019,46,122.036,0.748,0.916,0.518,0.102,0.0653,0.0583,0.0,194754.0,Ed Sheeran
+2R0FW1n6cOkQDJhAkQENsf,Perfect,"Ed Sheeran, The Piano Guys",2017,46,179.199,0.538,0.215,0.112,0.979,0.0876,0.0608,0.901,310799.0,Ed Sheeran
+63OshgWbxCtI1WHb5C0Txd,Work - R3hab Remix,"Rihanna, Drake, R3HAB",2016,46,100.052,0.706,0.804,0.211,0.0125,0.332,0.0601,0.0,219400.0,Rihanna
+49tG0W4vxwEQtpr0FfkzTQ,Kiss It Better,Rihanna,2016,46,95.0,0.619,0.806,0.877,0.272,0.0671,0.0483,0.0,253080.0,Rihanna
+0VCJ5YjphljOf1YRcPp08v,Try Everything,Shakira,2016,46,115.485,0.706,0.594,0.459,0.0272,0.0866,0.0322,0.0,196880.0,Shakira
+5J8JQbFMEMT5qae9wkdUTE,Bloodstream,"Ed Sheeran, Rudimental",2015,46,89.354,0.482,0.59,0.27,0.202,0.0592,0.0485,2.48e-05,308877.0,Ed Sheeran
+2TkiEnJWisllOpk8LNjVhy,Smart (Festival House Remix),LE SSERAFIM,2024,45,124.036,0.736,0.961,0.895,0.495,0.159,0.036,0.00204,145161.0,LE SSERAFIM
+3Ts8EnvvGTHzFTh7eNlwTy,Smart (Chill Remix),LE SSERAFIM,2024,45,115.063,0.78,0.757,0.666,0.301,0.121,0.0401,8.51e-05,162783.0,LE SSERAFIM
+1Zp1EpnagAUeH6qYQplj9R,Smart (Sped Up ver.),LE SSERAFIM,2024,45,72.424,0.69,0.83,0.853,0.195,0.135,0.095,1.17e-05,129471.0,LE SSERAFIM
+0ThxqUZ9PwS6n0UT5i1XH6,Lavender Haze - Jungle Remix,"Taylor Swift, Jungle",2023,45,124.006,0.65,0.713,0.331,0.312,0.221,0.042,0.104,235932.0,Taylor Swift
+2PnWf3DoX5Ha3UL8VdpVrs,Lavender Haze - Snakehips Remix,"Taylor Swift, Snakehips",2023,45,109.937,0.697,0.796,0.448,0.0578,0.368,0.158,1.17e-05,187511.0,Taylor Swift
+31cPtAsM5gjCeQYhlwbIBD,UNFORGIVEN - Japanese ver.,"LE SSERAFIM, ナイル・ロジャース, Ado",2023,45,104.002,0.797,0.873,0.435,0.121,0.121,0.0591,3.63e-05,182933.0,LE SSERAFIM
+7DAB0lFAvDT0Nhw5BjBqt1,Maroon,Taylor Swift,2022,45,108.049,0.658,0.401,0.0384,0.0547,0.0927,0.0367,1.2e-06,218271.0,Taylor Swift
+5E36pd9opG8oT1GkKYv7qz,Lavender Haze,Taylor Swift,2022,45,96.999,0.743,0.463,0.101,0.253,0.164,0.0782,0.000634,202396.0,Taylor Swift
+1BJWay8HsY5Tz8L28itkCk,Anti-Hero,Taylor Swift,2022,45,96.982,0.639,0.628,0.506,0.12,0.191,0.0525,1.07e-06,200690.0,Taylor Swift
+16M9Rxid0nXhVmme7lzVwN,Anti-Hero (feat. Bleachers),"Taylor Swift, Bleachers",2022,45,96.94,0.631,0.819,0.499,0.00952,0.101,0.0367,0.0043,228397.0,Taylor Swift
+0khQeEwEv6GndVypzpGOG5,"Here We Go… Again (feat. Tyler, the Creator)","The Weeknd, Tyler, The Creator",2022,45,134.943,0.469,0.623,0.198,0.345,0.588,0.0302,0.0,209778.0,The Weeknd
+3TVnaEVbUBFmWYk9IOIwRo,Don't Break My Heart,The Weeknd,2022,45,121.959,0.767,0.618,0.243,0.31,0.179,0.032,0.0,205469.0,The Weeknd
+2urqWNGpjl07PLAafoa5nT,How Do I Make You Love Me? - Sebastian Ingrosso & Salvatore Ganacci Remix,"The Weeknd, Sebastian Ingrosso, Salvatore Ganacci",2022,45,124.012,0.863,0.802,0.379,0.0145,0.111,0.0476,0.597,217766.0,The Weeknd
+2JB4yy74C4alrHLUP1vC5E,Third Eye Freeverse (Red Bull 64 Bars),"Hanumankind, Karan Kanchan",2022,45,134.06,0.532,0.692,0.551,0.112,0.268,0.0943,0.000341,244071.0,Hanumankind
+1BwXCMe8F4goPwResZJPHb,right where you left me - bonus track,Taylor Swift,2021,45,137.915,0.581,0.619,0.645,0.769,0.117,0.0282,0.000106,245027.0,Taylor Swift
+44V5YKYkMw9vVqnnYTMMIc,Nothing New (feat. Phoebe Bridgers) (Taylor's Version) (From The Vault),"Taylor Swift, Phoebe Bridgers",2021,45,101.96,0.606,0.377,0.446,0.817,0.154,0.0275,0.0,258813.0,Taylor Swift
+2B88kyD8JVMOHXdja0mFvx,Wicked Games,The Weeknd,2021,45,114.081,0.658,0.575,0.335,0.00963,0.191,0.0313,5.29e-06,325234.0,The Weeknd
+2xUuzDqjpXP0kwqZ5wGpVv,After Hours,The Weeknd,2021,45,108.977,0.653,0.574,0.139,0.0772,0.122,0.0316,0.00661,361025.0,The Weeknd
+2BS6hEI43E8Rx1vDwG7B2N,0X1=LOVESONG (I Know I Love You) feat. MOD SUN,"TOMORROW X TOGETHER, MOD SUN",2021,45,105.052,0.497,0.734,0.443,0.0008,0.39,0.0341,0.0,218756.0,TOMORROW X TOGETHER
+4DrBQoFqYm3WTNyJEAkbU9,"Where You Go I Follow (feat. Pink Sweat$, Chandler Moore & Judah Smith)","Justin Bieber, Pink Sweat$, Chandler Moore, Judah Smith",2021,45,139.93,0.646,0.634,0.308,0.181,0.639,0.0538,5.65e-05,212533.0,Justin Bieber
+2vxifWbsK3QiAy1vriVbNE,Peaches (feat. Daniel Caesar & Giveon),"Justin Bieber, Daniel Caesar, Giveon",2021,45,90.03,0.677,0.696,0.464,0.321,0.42,0.119,0.0,198082.0,Justin Bieber
+1EsTfiu26JucTyc5npjJU4,Love You Different (feat. BEAM),"Justin Bieber, BEAM",2021,45,127.143,0.756,0.59,0.382,0.068,0.159,0.0589,1.45e-06,186696.0,Justin Bieber
+2HFHwTr1IBWheGoQtNNKtx,Holy (feat. Chance The Rapper),"Justin Bieber, Chance the Rapper",2021,45,87.017,0.67,0.693,0.388,0.2,0.0909,0.35,0.0,212093.0,Justin Bieber
+6vnSlld7gcZOOZo9O3Bw16,Hold On,Justin Bieber,2021,45,140.002,0.658,0.634,0.302,0.0104,0.12,0.0431,0.0,170813.0,Justin Bieber
+7K5ASMnqnCR42bJBJ3GAVz,Unstable (feat. The Kid LAROI),"Justin Bieber, The Kid LAROI",2021,45,99.757,0.495,0.333,0.37,0.737,0.112,0.0288,0.0,158324.0,Justin Bieber
+3yz88FVJQhwG2EqYHw3pkx,invisible string,Taylor Swift,2020,45,83.433,0.653,0.452,0.45,0.838,0.108,0.055,7.73e-05,252881.0,Taylor Swift
+59HA1SBz1DPCCvdDeILV7E,exile (feat. Bon Iver),"Taylor Swift, Bon Iver",2020,45,75.602,0.298,0.38,0.152,0.778,0.11,0.0287,5.62e-05,285634.0,Taylor Swift
+6rhbL6MhAej39S8KupwjrC,Final Lullaby - Bonus Track,The Weeknd,2020,45,100.901,0.604,0.26,0.318,0.841,0.327,0.0373,9.33e-05,185689.0,The Weeknd
+28dQlavHTyrEkmI7w7Nivp,Heartless,The Weeknd,2020,45,169.97,0.537,0.752,0.234,0.0187,0.145,0.132,1.36e-06,198267.0,The Weeknd
+7wcoSs40brhyS3htaaDkgD,Heartless - Remix,"The Weeknd, Lil Uzi Vert",2020,45,170.031,0.545,0.774,0.281,0.0446,0.143,0.153,0.0,200127.0,The Weeknd
+7HWetAoWK9qkFM575HONAY,Lonely (with benny blanco),"Justin Bieber, benny blanco",2020,45,79.968,0.631,0.226,0.0765,0.879,0.115,0.0396,0.0,149297.0,Justin Bieber
+0wzlQwQ17rpVVqgdaFNA7Q,Cat & Dog (English Version),TOMORROW X TOGETHER,2019,45,159.926,0.841,0.8,0.382,0.0501,0.121,0.107,6.73e-06,187600.0,TOMORROW X TOGETHER
+0xCdQ9jYFDENkE2ck73CAc,Save Yourself - NGHTMRE VIP REMIX,"The Chainsmokers, NGHTMRE",2018,45,146.043,0.458,0.928,0.0637,0.000982,0.14,0.0602,0.0257,141373.0,The Chainsmokers
+0TNouIVlNVAU1N2xDPVvbY,Castle on the Hill - Throttle Remix,"Ed Sheeran, Throttle",2017,45,137.993,0.585,0.86,0.204,0.0412,0.372,0.0539,0.0,220880.0,Ed Sheeran
+7FbaWIOO2WojXWw2DUyEVv,Chantaje (feat. Maluma) - Versión Salsa,"Shakira, Maluma",2017,45,102.012,0.813,0.752,0.908,0.47,0.0544,0.0496,0.0,226805.0,Shakira
