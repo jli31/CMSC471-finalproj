@@ -4,14 +4,10 @@
 
 This repo uses local Kaggle datasets for Spotify analytics. We commit `data/raw/` snapshots so collaborators all use the same files.
 
-1. Install Kaggle CLI and configure your API token (`~/.kaggle/kaggle.json`).
-2. From the repo root, run:
+No Kaggle CLI setup or API token is required.
+Just pull the repository and use files in `data/raw/`.
 
-```bash
-bash scripts/download_kaggle_data.sh
-```
-
-The script downloads and extracts:
+Committed datasets in `data/raw/`:
 
 - `rohiteng/spotify-music-analytics-dataset-20152025`
 - `gauthamvijayaraj/spotify-tracks-dataset-updated-every-week`

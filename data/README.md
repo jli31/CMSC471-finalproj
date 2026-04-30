@@ -15,12 +15,7 @@ Generated/processed outputs remain gitignored.
 3. https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset
 4. https://www.kaggle.com/datasets/tomigelo/spotify-audio-features
 
-## Download
+## Usage
 
-Run:
-
-```bash
-bash scripts/download_kaggle_data.sh
-```
-
-This downloads zip files into `data/raw/` and extracts each dataset into its own subfolder.
+No download script or Kaggle API token is required for collaborators.
+The dataset snapshot is already committed in `data/raw/`, so teammates only need to clone/pull the repo.
