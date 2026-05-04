@@ -273,11 +273,11 @@ function renderDashboardTakeaway() {
     "dashboard-takeaway",
     `${data.length} tracks in ${segment}, ${state.year0}-${state.year1}. ${profileSentence(
       data
-    )} The highest median feature is ${strongest.key} (${fmt(strongest.value)}).`
+    )} Median ${strongest.key} edges highest (${fmt(strongest.value)}), but the scatter is the honest part: popularity still spreads across moods and energies—no single corner “wins” everything.`
   );
   const { strongest: separator } = featureSeparator(data);
-  setText("dash-timeline-title", `Feature trends move separately; ${strongest.key} is highest overall`);
-  setText("dash-scatter-title", "Popularity spans mood and energy, so the cluster matters");
+  setText("dash-timeline-title", `Feature trends move separately; ${strongest.key} leads the medians`);
+  setText("dash-scatter-title", "Popularity spreads across the mood–energy map");
   setText(
     "dash-threshold-title",
     separator.key === "features"
@@ -462,7 +462,7 @@ function addPointAnnotation(g, x, y, d, key, label, width, dx = 8, dy = -10) {
 }
 
 function renderHook() {
-  const margin = { top: 16, right: 24, bottom: 40, left: 44 };
+  const margin = { top: 16, right: 24, bottom: 52, left: 52 };
   const height = 200;
   const { width, el } = chartSize("#hook-chart", 640, height);
   if (!el || allTracks.length === 0) return;
@@ -480,7 +480,7 @@ function renderHook() {
       dv >= 0 ? "rose" : "fell"
     } by about ${Math.abs(dv).toFixed(
       2
-    )} on Spotify's 0-1 scale. That is the starting question: is this broad movement, or is it driven by specific filters and eras?`;
+    )} on Spotify's 0-1 scale. Treat that as a loose weather report, not a rule: individual songs still sit all over the map, and the rest of the page asks whether simple stories (tempo, mood, length) hold once you change the lens.`;
   }
 
   const keys = ["danceability", "energy", "valence"];
@@ -515,6 +515,21 @@ function renderHook() {
 
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(8).tickFormat(d3.format("d")));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5));
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", height + 40)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 11)
+    .text("Release year");
+  g.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -height / 2)
+    .attr("y", -40)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 11)
+    .text("Mean Spotify feature score (0 = low, 1 = high)");
 
   const leg = g.append("g").attr("class", "legend").attr("transform", `translate(${width - 160}, 4)`);
   keys.forEach((key, i) => {
@@ -525,7 +540,7 @@ function renderHook() {
 }
 
 function renderTimelineWithBrush() {
-  const margin = { top: 12, right: 20, bottom: 48, left: 46 };
+  const margin = { top: 12, right: 20, bottom: 56, left: 52 };
   const height = 240;
   const { width, el } = chartSize("#dash-timeline", 500, height);
   if (!el) return;
@@ -559,6 +574,21 @@ function renderTimelineWithBrush() {
 
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(10).tickFormat(d3.format("d")));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5));
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", height + 44)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 11)
+    .text("Release year");
+  g.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -height / 2)
+    .attr("y", -40)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 11)
+    .text("Mean feature score in filter (0–1)");
 
   const leg = g.append("g").attr("class", "legend").attr("transform", `translate(4, -4)`);
   keys.forEach((key, i) => {
@@ -660,7 +690,7 @@ function renderScatter(container, wMin, h, showLegend) {
 }
 
 function renderThreshold() {
-  const margin = { top: 8, right: 16, bottom: 28, left: 92 };
+  const margin = { top: 8, right: 16, bottom: 40, left: 92 };
   const height = 220;
   const { width, el } = chartSize("#dash-threshold", 320, height);
   if (!el) return;
@@ -684,6 +714,13 @@ function renderThreshold() {
   const y = d3.scaleBand().domain(feats).range([0, height]).padding(0.35);
 
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(5));
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", height + 30)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 10)
+    .text("Median feature score (0–1)");
   rows.forEach((row) => {
     const yy = y(row.feat);
     const h = y.bandwidth();
@@ -723,7 +760,7 @@ const ERA_BANDS = [
 ];
 
 function renderEraTimeline() {
-  const margin = { top: 20, right: 16, bottom: 40, left: 46 };
+  const margin = { top: 22, right: 16, bottom: 48, left: 52 };
   const height = 200;
   const { width, el } = chartSize("#era-timeline", 700, height);
   if (!el) return;
@@ -768,11 +805,31 @@ function renderEraTimeline() {
 
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(10).tickFormat(d3.format("d")));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5));
-  g.append("text").attr("x", 4).attr("y", -4).attr("fill", "#fde68a").attr("font-size", 12).text("Mean valence by year (annotated eras)");
+  g.append("text")
+    .attr("x", 4)
+    .attr("y", -6)
+    .attr("fill", "#fde68a")
+    .attr("font-size", 11)
+    .text("Mean valence by year (shaded eras are illustrative)");
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", height + 38)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 11)
+    .text("Release year");
+  g.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -height / 2)
+    .attr("y", -40)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 11)
+    .text("Mean valence (0–1)");
 }
 
 function renderEraHist() {
-  const margin = { top: 10, right: 12, bottom: 40, left: 44 };
+  const margin = { top: 10, right: 12, bottom: 48, left: 52 };
   const height = 200;
   const { width, el } = chartSize("#era-hist", 520, height);
   if (!el) return;
@@ -824,16 +881,31 @@ function renderEraHist() {
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(6));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(4));
   g.append("text")
-    .attr("x", width / 2)
-    .attr("y", height + 30)
+    .attr("transform", "rotate(-90)")
+    .attr("x", -height / 2)
+    .attr("y", -40)
     .attr("text-anchor", "middle")
     .attr("fill", "#c4b5fd")
     .attr("font-size", 11)
-    .text(`Valence histogram · gray = all filtered · pink = ${state.eraYear} only`);
+    .text("Number of tracks in bin");
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", height + 36)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 11)
+    .text("Valence (0 = sad, 1 = positive)");
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", height + 50)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#94a3b8")
+    .attr("font-size", 10)
+    .text(`Gray = all filtered tracks · Pink = ${state.eraYear} only`);
 }
 
 function renderMythTempo() {
-  const margin = { top: 10, right: 10, bottom: 48, left: 50 };
+  const margin = { top: 10, right: 10, bottom: 48, left: 56 };
   const h = 130;
   const { width, el } = chartSize("#myth-tempo", 400, h);
   if (!el) return;
@@ -866,16 +938,24 @@ function renderMythTempo() {
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${h})`).call(d3.axisBottom(x).ticks(6));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(4));
   g.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -h / 2)
+    .attr("y", -44)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 10)
+    .text("Mean popularity in tempo bin (0–100)");
+  g.append("text")
     .attr("x", width / 2)
     .attr("y", h + 34)
     .attr("text-anchor", "middle")
     .attr("fill", "#c4b5fd")
     .attr("font-size", 10)
-    .text("Tempo (BPM) → mean popularity in bin");
+    .text("Track tempo (BPM, bin midpoint on line)");
 }
 
 function renderMythValence() {
-  const margin = { top: 6, right: 6, bottom: 32, left: 38 };
+  const margin = { top: 6, right: 6, bottom: 42, left: 46 };
   const h = 170;
   const { width, el } = chartSize("#myth-valence", 280, h);
   if (!el) return;
@@ -895,10 +975,25 @@ function renderMythValence() {
   g.append("path").datum(by).attr("fill", "none").attr("stroke", "#fde047").attr("stroke-width", 2).attr("d", line);
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${h})`).call(d3.axisBottom(x).ticks(5).tickFormat(d3.format("d")));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(4));
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", h + 34)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 10)
+    .text("Release year");
+  g.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -h / 2)
+    .attr("y", -38)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 10)
+    .text("Mean valence (0–1)");
 }
 
 function renderMythDanceEnergy() {
-  const margin = { top: 6, right: 6, bottom: 32, left: 38 };
+  const margin = { top: 6, right: 6, bottom: 42, left: 46 };
   const h = 170;
   const { width, el } = chartSize("#myth-dance-energy", 280, h);
   if (!el) return;
@@ -913,6 +1008,21 @@ function renderMythDanceEnergy() {
   const y = d3.scaleLinear().domain([0, 1]).range([h, 0]);
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${h})`).call(d3.axisBottom(x).ticks(4));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(4));
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", h + 34)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 10)
+    .text("Danceability (0–1)");
+  g.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -h / 2)
+    .attr("y", -38)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 10)
+    .text("Energy (0–1)");
   g.selectAll("c")
     .data(data)
     .join("circle")
@@ -924,7 +1034,7 @@ function renderMythDanceEnergy() {
 }
 
 function renderMythDuration() {
-  const margin = { top: 6, right: 6, bottom: 32, left: 38 };
+  const margin = { top: 6, right: 6, bottom: 42, left: 46 };
   const h = 170;
   const { width, el } = chartSize("#myth-duration", 280, h);
   if (!el) return;
@@ -954,6 +1064,21 @@ function renderMythDuration() {
   g.append("path").datum(series).attr("fill", "none").attr("stroke", "#a78bfa").attr("stroke-width", 2).attr("d", line);
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${h})`).call(d3.axisBottom(x).ticks(5).tickFormat(d3.format("d")));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(4));
+  g.append("text")
+    .attr("x", width / 2)
+    .attr("y", h + 34)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 10)
+    .text("Release year");
+  g.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -h / 2)
+    .attr("y", -38)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#c4b5fd")
+    .attr("font-size", 10)
+    .text("Mean duration (minutes)");
 }
 
 function renderCapstone() {
@@ -962,7 +1087,7 @@ function renderCapstone() {
   if (!panel || !stats) return;
   const data = filtered();
   if (data.length === 0) {
-    panel.innerHTML = "<h3>No answer yet</h3><p>No tracks match this filter.</p>";
+    panel.innerHTML = "<h3>No readout yet</h3><p>No tracks match this filter.</p>";
     stats.innerHTML = "<h4>Summary</h4><p>Widen the year range or choose another segment.</p>";
     return;
   }
@@ -1038,17 +1163,17 @@ function renderCapstone() {
     .join("");
 
   panel.innerHTML = `
-    <p class="cap-kicker">Conclusion for the current filter</p>
-    <p class="cap-answer">${profileSentence(data)} The clearest profile is descriptive: it summarizes what these popular tracks share, not what caused them to become popular.</p>
+    <p class="cap-kicker">Readout for this slice (same lens as every chart above)</p>
+    <p class="cap-answer">${profileSentence(data)} Under the hood, hits still disagree with each other on dance, energy, and mood—that spread is why we don’t claim one “predictor.” The blocks below compress a noisy crowd into medians and gaps: useful shorthand for <em>this</em> filter, not a recipe for fame.</p>
     <div class="evidence-grid">
       <article class="evidence-card">
         <h3>Typical profile</h3>
-        <p>The median track gives the best compact snapshot of the selected group.</p>
+        <p>The median is the center of a wide cloud—one stand-in for the group, not everyone’s taste.</p>
         <div class="cap-metric-list">${metricRows}</div>
       </article>
       <article class="evidence-card">
-        <h3>What separates the hottest tracks</h3>
-        <p>The top popularity quarter differs most on <strong>${strongestSeparator.key}</strong> (${strongestSeparator.delta >= 0 ? "+" : ""}${fmt(strongestSeparator.delta)}).</p>
+        <h3>Where the biggest tracks sit</h3>
+        <p>Top quarter vs the rest differs most on <strong>${strongestSeparator.key}</strong> (${strongestSeparator.delta >= 0 ? "+" : ""}${fmt(strongestSeparator.delta)}). Small gaps still matter as texture; they’re not proof that turning this dial “makes” a smash.</p>
         <div class="cap-metric-list">${separatorRows}</div>
       </article>
       <article class="evidence-card">
@@ -1057,7 +1182,7 @@ function renderCapstone() {
         <p>${durationTrend}</p>
       </article>
       <article class="evidence-card">
-        <h3>What did not fully explain it</h3>
+        <h3>What didn’t carry the whole story</h3>
         <p>${tempoSummary}</p>
       </article>
     </div>

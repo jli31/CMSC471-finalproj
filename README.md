@@ -1,83 +1,124 @@
-# CMSC471-finalproj
+# The Sound of Spotify, 2015–2025
 
-## Data Setup
+**Course:** CMSC471 · Interactive explanation  
+**Authors:** Jiho Lee, John Li, Ed Yun, Andrew Zhang
 
-This repo uses local Kaggle datasets for Spotify analytics. We commit `data/raw/` snapshots so collaborators all use the same files.
+Single-page web story about how **popular tracks on Spotify (2015–2025)** look in audio-feature space over time—and what happens when you change the **years** and **segment** (genre when known, otherwise language). Everything on the page shares **one filter state** so the demo stays one coherent question instead of mixing unrelated subsets.
 
-No Kaggle CLI setup or API token is required.
-Just pull the repository and use files in `data/raw/`.
+---
 
-Committed datasets in `data/raw/`:
+## Overview
 
-- `rohiteng/spotify-music-analytics-dataset-20152025`
-- `gauthamvijayaraj/spotify-tracks-dataset-updated-every-week`
-- `maharshipandya/-spotify-tracks-dataset`
-- `tomigelo/spotify-audio-features`
+We combine several public Kaggle Spotify exports into one **analysis-ready CSV** of hit-tier tracks with **year, popularity, tempo, danceability, energy, valence**, and related fields, plus a merged **genre** column for filtering.
 
+The live piece is plain **HTML + CSS + D3 v7** (no bundler). It walks a reader from a **decade hook chart** through a **linked dashboard** (timeline with brush, mood–energy scatter, top-quartile feature strip), an **era + mood distribution** view, **tempo vs popularity** exploration with a track lookup, **myth-check** mini charts, and a **generated readout** that summarizes the *current* slice in plain language.
 
-Recs from classmates:
-SquirrelMap: there's a lot of quantitative data metrics that can measure factors like mood in music over time. observing over time with a slider is a great and intuitive idea! if the team considers looking at global music, they could make use of a map structure!
+**Main intellectual takeaway:** the data keep pushing back on silver-bullet stories. Averages drift, but **popularity stays spread out** across mood, energy, and tempo; the visualization is built to make that **heterogeneity** visible rather than hiding it behind one headline chart.
 
-MusicGenre: Dataset seems very rich for plotting different metrics, and I like the idea of creating a map that displays the development of genres with an interactive slider/dropdown. Creating the context for the visualization for generated metrics like energy might be difficult, and will probably require explanations for viewers. 
+---
 
-BasketballEvol: I like the idea of looking through how music has changed over time, but I encourage the group to explore the types of visualizations they want to use further
+## Problem and design response
 
+- **Problem:** It is easy to tell a tidy decade story about “how music changed,” but those stories often **flip when the window or scene changes**, and disconnected static charts rarely ask the **same** question on the **same** songs twice.
 
-Concrete concept you can build
-1) “The Sound of Spotify, 2015–2025” (main narrative)
-Visual A: Timeline + area/line chart of average audio features by year (danceability, energy, valence, acousticness, etc.)
-Visual B: Genre/artist scatterplot (e.g., energy vs valence, color by genre, size by popularity)
-Visual C: Popularity threshold panel (simple model-like explainer: what feature ranges appear in top songs)
-Interaction linkage: brushing/selecting a year or genre in one chart filters/highlights all others
-2) “What changed during specific eras?”
-Add annotation bands for years/events (e.g., pandemic era, TikTok boom)
-Reader can scrub through years and see feature distributions morph in real time
-3) “Myth-checker” mini panels
-Short claim cards with tiny interactive plots:
+- **Response:** **One lens** (year range + segment) drives **every** chart, including myth checks and the closing recap. The design is the argument: trend → profile → spread in time → quick falsifiers → readout—so a demo can show a claim being **checked** under one consistent subset, including when the answer is “messy / no single predictor.”
 
-“Are faster songs more popular?”
-“Do happier songs trend up?”
-“Did songs get shorter over time?”
-This keeps text minimal and visual-first, like the MBTA example’s layered exploration style (MBTA Viz).
+---
 
-Why this satisfies the assignment well
-Complex idea explained: popularity is multi-factor, shifts over time, genre-dependent
-Interactive diagrams + annotations: exactly what they asked
-Low-risk implementation: all data local CSV, no API auth issues
-Strong storytelling arc: intro claim → evidence panels → interactive deep dive → conclusion
-Suggested page structure
-Section 1: 1-screen hook chart + one sentence takeaway
-Section 2: linked exploratory dashboard (2–3 coordinated visuals)
-Section 3: annotated “what changed over time”
-Section 4: myth-check cards + final summary
-If you want, next step
-I can sketch a specific MVP build plan (what to finish in 3 days): exact 3 charts, what columns to use, and which D3 interactions to implement first.
+## How to run locally
 
+The app loads CSV with `fetch` via a **relative path**. Use a small local server from the project root (not `file://`, which browsers often block for data files).
 
+```bash
+cd CMSC471-finalproj
+python3 -m http.server 8000
+```
 
+Then open **http://localhost:8000/** in a browser.
 
-Recommended flow
-Mini Viz 1: Tempo vs Popularity
-One question: “Are faster songs more popular?”
-Simple scatter or binned line
-1 sentence takeaway beside it
-Mini Viz 2: Mood Shift Over Time
-Line chart for valence (and maybe energy) by year
-Annotate 1–2 notable periods
-Mini Viz 3: Danceability + Energy space
-Small 2D density/hex/scatter
-Highlight where top-popularity tracks cluster
-Mini Viz 4: Duration trend
-Track length vs year (or histogram by era)
-Quick myth-buster takeaway
-Final Main Visualization (capstone)
-Large linked view combining:
-year slider
-genre filter
-scatter (energy x valence, size=popularity)
-side panel with summary stats
-Narrative prompt: “Given an era + genre, what audio profile predicts higher popularity?”
-Why this is strong
-Each mini chart is cognitively light.
-Final chart feels earned (reader already learned axes/features).
-Minimal text needed; annotations do the teaching.
+No API keys, no Kaggle CLI, and no build step are required if you use the committed `data/` tree as-is.
+
+---
+
+## Repository layout
+
+| Path | Role |
+|------|------|
+| `index.html` | Page structure, narrative copy, section anchors |
+| `css/styles.css` | Layout, theme, chart containers, myth/capstone panels |
+| `js/script.js` | D3 charts, filter state, brush, takeaways, capstone text |
+| `data/raw/` | Committed snapshots of Kaggle CSVs (team baseline) |
+| `data/processed/` | Merged / filtered CSVs consumed by the app |
+| `scripts/merge_genre.py` | Joins `track_genre` from `dataset.csv` into the popular-tracks table |
+
+The browser loads **`data/processed/analysis_ready_popular_tracks_2015_2025_genre.csv`** as the main dataset (`DATA_MAIN` in `js/script.js`). Other files under `data/processed/` are alternate or auxiliary slices the team used while iterating.
+
+---
+
+## Data sources and pipeline
+
+### Raw sources (Kaggle)
+
+Snapshots live under `data/raw/` (exact folder names vary by download). Primary references:
+
+1. [Spotify Music Analytics Dataset 2015–2025](https://www.kaggle.com/datasets/rohiteng/spotify-music-analytics-dataset-20152025)  
+2. [Spotify tracks dataset (updated)](https://www.kaggle.com/datasets/gauthamvijayaraj/spotify-tracks-dataset-updated-every-week)  
+3. [Spotify tracks dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)  
+4. [Spotify audio features](https://www.kaggle.com/datasets/tomigelo/spotify-audio-features)  
+
+More detail: `data/README.md`.
+
+### Processed artifact (main)
+
+- **`analysis_ready_popular_tracks_2015_2025_genre.csv`** — rows keyed by `track_id`, with audio features, `year`, `popularity`, `language`, `duration_ms`, and **`genre`** (from `dataset.csv` where available).
+
+### How `genre` was added
+
+```bash
+python3 scripts/merge_genre.py
+```
+
+The script reads `data/processed/analysis_ready_popular_tracks_2015_2025.csv` and `data/raw/dataset.csv`, maps `track_id` → `track_genre`, and writes `analysis_ready_popular_tracks_2015_2025_genre.csv` with an extra `genre` column. Tracks without a genre label still appear; the UI can treat unknown genres as part of “all” or language-based buckets depending on the row.
+
+Earlier table-building steps (filtering to 2015–2025, popularity thresholds, deduplication) were done in the team’s notebook / spreadsheet workflow; the committed processed CSV is the **handoff artifact** that the front end trusts.
+
+---
+
+## Implementation process (chronological)
+
+1. **Scoping** — Chose a bounded story (Spotify audio features + time + popularity) and local CSVs only, to avoid auth and API drift during the course timeline.
+
+2. **Data alignment** — Standardized on one “popular tracks” table per year range, then **merged genre** from a second raw file so the UI could offer a meaningful segment filter beyond language alone.
+
+3. **Hook + spine** — Built the opening multi-line chart (danceability, energy, valence by year) and wired a single **global filter** (year min/max, segment) so later sections would not contradict each other.
+
+4. **Dashboard** — Added a **brushable** feature timeline, **energy–valence** scatter (size = popularity), and a **top 25% vs rest** median comparison strip—each re-querying the same filtered rows.
+
+5. **Era layer** — Valence timeline with light era bands for context, plus a **focus-year histogram** to compare a single year’s mood spread against the filtered baseline.
+
+6. **Myth checks + tempo explorer** — Small charts and copy for “fast = popular?”, “happier over time?”, “dance × energy cluster?”, “shorter songs?”—implemented as **sanity checks**, not causal models. Tempo section adds **nearest-track** lookup and an external **YouTube** link for listening.
+
+7. **Capstone readout** — Auto-generated summary + metric cards from the **same** `filtered()` dataset so the closing text always matches what the reader just saw.
+
+8. **Narrative + rubric pass** — Tightened prose for a **live audience** (story over documentation), added an explicit **problem / design** strip on the page, and aligned language with the **non–single-predictor** takeaway.
+
+---
+
+## Peer feedback (early)
+
+Classmates nudged us toward **time-based interaction** (sliders / linked views), **clear definitions** for opaque metrics like energy, and **more deliberate chart types** instead of default scatter-only exploration. That fed directly into the decoder-ring section, brush timeline, and myth cards.
+
+---
+
+## Limitations
+
+- **Spotify features** are coarse summaries of audio; they are not lyrics, culture, or marketing.
+- **Popularity** is Spotify’s own 0–100 blend (recency and relative performance), not raw stream counts.
+- **Genre** coverage is incomplete; many rows rely on **language** or “all” for fair comparisons.
+- We report **associations and distributions**, not causation. When effects are small or slice-dependent, that is part of the result.
+
+---
+
+## License
+
+See `LICENSE` in the repository root.

@@ -10,68 +10,104 @@
   <body>
     <main class="page">
       <header class="hero">
-        <p class="kicker">CMSC471 · Interactive explanation</p>
+        <p class="kicker">CMSC471 · One lens, linked all the way down</p>
         <h1>The Sound of Spotify, 2015–2025</h1>
         <p class="authors"><strong>Authors:</strong> Jiho Lee, John Li, Ed Yun, Andrew Zhang</p>
         <p class="subtitle">
-          The story: popular Spotify tracks do not move in one clean direction. Mood, energy,
-          danceability, and duration shift differently by era and segment, so each chart narrows
-          the question from broad trend to specific profile.
+          Over the last decade, the hits in your feed didn’t all move in one direction—some years got
+          brighter, some heavier, some easier to dance to, and not always at the same time. The surprise
+          in the numbers is often quieter: there isn’t one dial you can turn to “explain” popularity;
+          people keep liking different kinds of songs, and the averages are just where the crowd leans
+          for a moment. Pick a slice in Step 2, and every chart below stays on that same pile of tracks
+          while you poke at the easy stories.
         </p>
       </header>
 
+      <section class="problem-solution" aria-label="Problem and design response">
+        <article class="ps-card ps-card--problem">
+          <h2 class="ps-head">The tension</h2>
+          <p>
+            Everyone wants a tidy headline about how hits “moved” across 2015–2025—until the years or
+            the scene changes, and the picture tilts. One static chart can’t settle whose story is fair,
+            and it can’t show you how thin the “rules” really are when people keep liking different kinds
+            of songs at the same time.
+          </p>
+        </article>
+        <article class="ps-card ps-card--solution">
+          <h2 class="ps-head">What we built to show that</h2>
+          <p>
+            Pick years and a segment once; <strong>every</strong> view below—including the little myth
+            charts and the closing recap—runs on that exact subset. We’re not fishing for a single
+            predictor; we’re stress-testing the tidy headlines (faster, happier, shorter) on the same
+            songs. When the lines and dots refuse to line up, that <em>is</em> the finding—popular music
+            stays a wide cloud, and filters only change which crowd you’re describing.
+          </p>
+        </article>
+      </section>
+
       <section class="intro story-overview" aria-label="Introduction">
-        <h2>What this page is trying to answer</h2>
-        <p>
-          This project asks whether popular Spotify tracks from 2015-2025 share a recognizable
-          sound profile, and whether that profile changes once you look by year range or segment.
-          The goal is not to find a single formula for popularity. Instead, the page treats
-          popularity as the outcome of several musical signals moving together: mood, energy,
-          danceability, tempo, duration, and era.
+        <h2>The thread we’re pulling</h2>
+        <p class="story-overview-lead">
+          Spotify tags each track with rough “vibes in numbers”—mood, energy, how danceable it feels,
+          tempo, length—and a popularity score. None of that replaces listening, and none of it hands you
+          a formula: mostly we see overlapping tastes, modest averages, and a lot of scatter. What we
+          <em>can</em> do is watch how that cloud drifts (or doesn’t) across 2015–2025, then change the
+          window and ask whether the same campfire story still sounds true.
         </p>
-        <p>
-          The page starts with the full set of high-performing tracks, then lets you narrow the
-          lens. Every chart after the filter uses the same selected tracks, so the sections build
-          one argument rather than separate observations: first the broad trend, then the selected
-          profile, then the era context, then a set of simple claims that either hold up or break
-          down.
+        <p class="story-overview-follow">
+          Skim the opening curve, then tighten the years or pick a segment. The middle of the page is
+          where your slice takes shape; the small charts at the end poke at the easy explanations people
+          repeat at parties; the last panel is a plain-English recap—not a verdict on what “works,” but
+          a snapshot of how messy the hits still are under one lens.
         </p>
         <div class="overview-grid" aria-label="Reading path">
-          <p><strong>Start broad.</strong> Look for the overall movement in mood, energy, and danceability.</p>
-          <p><strong>Narrow the lens.</strong> Use years or segment to test whether the pattern changes.</p>
-          <p><strong>Pressure test it.</strong> Check whether simple explanations like tempo or duration are enough.</p>
-          <p><strong>End with a profile.</strong> The capstone summarizes what stands out for the current filter.</p>
+          <p><strong>1 · Trend</strong> The decade-wide mood / energy / dance shape before you narrow anything.</p>
+          <p><strong>2 · Lens</strong> Years + segment—your “what if we only looked at…” knob.</p>
+          <p><strong>3–4 · Profile &amp; era</strong> How that slice moves year by year, then mood in more detail.</p>
+          <p><strong>5–6 · Checks &amp; readout</strong> Quick reality checks, then a short written recap of the slice.</p>
         </div>
       </section>
 
-      <section class="story-note" aria-label="Feature guide">
-        <h2>What the features mean</h2>
+      <section class="story-note" aria-label="Feature definitions">
+        <h2>A tiny decoder ring</h2>
+        <p class="story-note-lead">
+          Most lines use 0–1 scores (higher = more of that quality). Popularity is 0–100 on Spotify’s
+          own scale; tempo is BPM.
+        </p>
         <div class="definition-grid">
-          <p><strong>Valence</strong> is Spotify's estimate of musical positivity, used here as mood.</p>
-          <p><strong>Energy</strong> captures intensity and activity, not whether a song is happy.</p>
-          <p><strong>Danceability</strong> describes how steady and movement-friendly the track feels.</p>
-          <p><strong>Popularity</strong> is Spotify's 0-100 platform index, not raw streams.</p>
+          <p><strong>Valence</strong> — “How sunny does it sound?” (rough mood; not lyrics).</p>
+          <p><strong>Energy</strong> — Loud, busy, forward motion—not the same as happy.</p>
+          <p><strong>Danceability</strong> — Steady beat, easy to move to.</p>
+          <p><strong>Popularity</strong> — Spotify’s blend of recent and long-run listening; not raw streams.</p>
         </div>
       </section>
 
-      <nav class="story-spine" aria-label="Story steps">
+      <p class="story-spine-label">Jump to</p>
+      <nav class="story-spine" aria-label="Jump to section">
         <a href="#section-hook"><span>1</span> Trend</a>
         <a href="#section-controls"><span>2</span> Lens</a>
         <a href="#section-dashboard"><span>3</span> Profile</a>
         <a href="#section-eras"><span>4</span> Era</a>
-        <a href="#mini-viz-1"><span>5</span> Checks</a>
-        <a href="#section-capstone"><span>6</span> Answer</a>
+        <a href="#section-checks"><span>5</span> Checks</a>
+        <a href="#section-capstone"><span>6</span> Readout</a>
       </nav>
 
       <section class="viz-section" id="section-hook" aria-labelledby="hook-heading">
         <p class="step-label">Step 1 · Overall trend</p>
         <h2 id="hook-heading">Start with the shape of popular tracks</h2>
+        <p class="section-lead">
+          Each line is the <strong>average</strong> danceability, energy, and valence for hit-tier tracks in a
+          given release year—so you’re watching the “center of gravity” of the sound move (or refuse to
+          move) across the decade. When the lines peel apart, it usually means one ingredient of the
+          zeitgeist changed while another didn’t.
+        </p>
         <p id="hook-takeaway" class="takeaway">Loading yearly averages…</p>
         <div class="chart-wrap chart-wrap--wide" id="hook-chart"></div>
         <p class="support-copy">
-          This first view is the baseline. If all three lines moved together, the story would be
-          simple. Instead, the rest of the page asks whether the movement depends on the selected
-          years, segment, or a specific audio feature.
+          Averages smooth away the weird outliers and one-off years—fair warning. The yellow blurb
+          calls out how mood shifted from the first to the last year on the chart. From here on, you get
+          to stress-test whether that decade-wide shape still matters once you zoom into a smaller window
+          or a single scene.
         </p>
       </section>
 
@@ -79,9 +115,10 @@
         <p class="step-label">Step 2 · Choose the lens</p>
         <h2>Use one filter for the whole story</h2>
         <p class="section-lead">
-          Brush the timeline or set years and segment below. The dashboard, era view, hypothesis
-          checks, and final answer all update together, so each section is explaining the same
-          subset of tracks.
+          Same controls, every chart: pick a stretch of years and (if you want) a genre or language
+          bucket. Everything downstream—scatterplots, little myth charts, closing summary—only talks
+          about that same pile of songs, so you’re never comparing apples you filtered to oranges you
+          didn’t.
         </p>
         <div class="control-bar">
           <label class="control">
@@ -102,39 +139,43 @@
           <span class="selection-label">Current lens</span>
           <strong>Loading selection…</strong>
         </div>
-        <p class="brush-hint">
-          <strong>Timeline:</strong> drag on the chart background to brush a year range (double-click
-          timeline to reset).
-        </p>
-        <p class="support-copy support-copy--compact">
-          Think of the filter as changing the cast of songs, not changing the question. The question
-          remains: among popular tracks, what sound profile appears most clearly?
+        <p class="support-copy support-copy--compact brush-hint">
+          <strong>Tip:</strong> in the big timeline in the next section, drag across the background to set years;
+          double-click clears. You’re rewinding or fast-forwarding the story, not changing the question.
         </p>
       </section>
 
       <section class="viz-section dashboard" id="section-dashboard" aria-label="Dashboard">
         <p class="step-label">Step 3 · Build the profile</p>
-        <h2>Which features define the selected hits?</h2>
+        <h2>How do these hits spread out—and where are the extremes?</h2>
         <p id="dashboard-takeaway" class="takeaway takeaway--secondary">Loading selected profile…</p>
         <p class="support-copy">
-          Read this section left to right: the timeline shows how the selected group changes by
-          year, the scatter shows whether songs cluster by mood and intensity, and the bar chart
-          checks whether the most popular quarter looks different from the rest.
+          Three snapshots of the same playlist you just defined: how the <em>average</em> vibe drifts year
+          to year, where individual songs sit in the mood–energy plane, and whether the very biggest
+          tracks in your slice sit measurably differently from the rest.
         </p>
         <div class="dashboard-grid">
           <div class="panel panel--span2">
             <h3 id="dash-timeline-title">Feature trends move separately</h3>
-            <p class="panel-caption">Lines are weighted by tracks per year in your current filter.</p>
+            <p class="panel-caption">
+              Year on the bottom, average 0–1 features on the side. Brush the background to set your
+              years; double-click resets.
+            </p>
             <div class="chart-wrap" id="dash-timeline"></div>
           </div>
           <div class="panel">
             <h3 id="dash-scatter-title">Popularity spans mood and energy</h3>
-            <p class="panel-caption">Dot size ∝ popularity. Color = segment.</p>
+            <p class="panel-caption">
+              Energy ↔ valence; bigger dots = higher Spotify popularity; color = segment.
+            </p>
             <div class="chart-wrap" id="dash-scatter"></div>
           </div>
           <div class="panel">
             <h3 id="dash-threshold-title">What top songs look like</h3>
-            <p class="panel-caption">Bars: median feature for hits in top 25% popularity vs rest.</p>
+            <p class="panel-caption">
+              Gray = median for the lower 75% by popularity; pink = median for the top 25%. Same 0–1
+              scale along the bottom.
+            </p>
             <div class="chart-wrap" id="dash-threshold"></div>
           </div>
         </div>
@@ -144,15 +185,16 @@
         <p class="step-label">Step 4 · Put the profile in time</p>
         <h2 id="eras-heading">Do era shifts explain the mood pattern?</h2>
         <p class="section-lead">
-          Shaded bands mark rough historical periods. Scrub a year to compare the valence
-          distribution for that year to everything in your current filter.
+          Here we lean hard on <strong>mood</strong> (valence) year by year, with light bands nudging you toward
+          rough cultural chapters—living-room streaming, phones everywhere, that sort of thing. They’re
+          bookmarks, not proof; the line is still just “how sunny did the average hit sound this year?”
         </p>
         <p id="era-takeaway" class="takeaway takeaway--secondary">Loading era comparison…</p>
         <div class="chart-wrap chart-wrap--wide" id="era-timeline"></div>
         <p class="support-copy">
-          The era view focuses on valence because mood is the feature most likely to be misread
-          from a single average. The histogram below shows whether a year really shifts the shape
-          of the mood distribution or only nudges the mean.
+          A single average can hide a split personality for a year. The histogram underneath shows the
+          full spread of moods: gray is your whole filtered set, pink is one focus year you pick—so you
+          can see if the mood line moved because everything shifted, or because a tail got fatter.
         </p>
         <div class="era-controls">
           <label class="control control--grow">
@@ -164,17 +206,21 @@
         <div class="chart-wrap" id="era-hist"></div>
       </section>
 
+      <div id="section-checks" class="checks-stack">
       <section class="mini-viz" id="mini-viz-1">
         <p class="step-label">Step 5a · Hypothesis check</p>
         <h2>Does faster tempo mean more popular?</h2>
         <p class="mini-viz-description">
-          The small chart tests tempo against popularity in bins. The slider then turns the pattern
-          into a concrete track example from the same filtered set.
+          Everyone jokes about “fast bangers.” The little line bins songs by tempo and asks a blunt
+          question: do faster bins actually carry higher average popularity in <em>your</em> slice? Then
+          drag the slider (or type BPM) to land on a real track nearby—the bubble is how big that song
+          is on Spotify’s popularity dial right now.
         </p>
         <p id="tempo-takeaway" class="result-callout">Loading tempo check…</p>
         <p class="support-copy support-copy--compact">
-          Tempo is intentionally narrow: it is easy to understand, but it does not capture groove,
-          subdivision, production density, or whether listeners experience a song as fast.
+          BPM is a blunt instrument: a slow track with frantic hi-hats can still feel fast. If the chart
+          shrugs but the song you pulled up slaps, trust your ears—then notice where the numbers and the
+          listening disagree.
         </p>
         <div class="myth-inline" id="myth-tempo"></div>
 
@@ -226,62 +272,64 @@
         </div>
 
         <p class="viz-disclaimer">
-          <strong>Note:</strong> Spotify popularity is a 0–100 index from the platform, not raw streams.
+          <strong>Popularity in one line:</strong> Spotify’s 0–100 score is a platform recipe (recency + staying
+          power vs other tracks), not “exact streams,” and definitely not proof that tempo made anyone
+          famous.
         </p>
       </section>
 
       <section class="viz-section" id="section-hypotheses" aria-label="Hypothesis checkers">
         <p class="step-label">Step 5b · Pressure test the profile</p>
-        <h2>Which simple explanations hold up?</h2>
+        <h2>Which simple explanations hold up—and when do they fall apart?</h2>
         <p class="section-lead">
-          These checks ask whether one easy claim explains the filtered set. Each result updates
-          with the same year and segment choices above.
+          Three campfire arguments about pop—did hits get happier? do smashes cluster in one corner of
+          dance vs energy? are songs shrinking?—each gets a tiny chart and a cheeky yellow verdict for
+          whatever slice you’re holding. Read them as provocations, not courtroom evidence.
         </p>
         <p class="support-copy">
-          A strong result here should survive the current filter. A mixed result means the claim may
-          describe part of the data, but it is not enough to explain the whole selected group.
+          If a pattern survives every scene you throw at it, maybe it’s a real decade-wide habit. If it
+          vanishes the second you switch segments, that’s the same lesson from another angle: listening
+          isn’t one taste, and “the data” only ever describes the crowd you turned the knob toward.
         </p>
         <div class="myth-grid">
           <article class="myth-card">
             <h3>Happier over time?</h3>
             <p class="myth-claim">Mean valence (mood) by year in your filter.</p>
+            <p class="myth-explainer">Year → average “sunniness” of your filtered hits (0–1).</p>
             <p id="myth-valence-result" class="result-callout">Loading result…</p>
             <div class="chart-wrap chart-wrap--short" id="myth-valence"></div>
           </article>
           <article class="myth-card">
             <h3>Dance × energy</h3>
             <p class="myth-claim">Where do very popular tracks cluster?</p>
+            <p class="myth-explainer">Danceable ↔ intense; pink = top quarter of popularity in your slice.</p>
             <p id="myth-dance-energy-result" class="result-callout">Loading result…</p>
             <div class="chart-wrap chart-wrap--short" id="myth-dance-energy"></div>
           </article>
           <article class="myth-card">
             <h3>Shorter songs?</h3>
             <p class="myth-claim">Average duration (minutes) by year.</p>
+            <p class="myth-explainer">Year → average length in minutes (file length, not songcraft tricks).</p>
             <p id="myth-duration-result" class="result-callout">Loading result…</p>
             <div class="chart-wrap chart-wrap--short" id="myth-duration"></div>
           </article>
         </div>
       </section>
-
-      <section class="insight-section insight-section--compact">
-        <h3>Why tempo can mislead</h3>
-        <p>
-          BPM does not always match perceived speed—subdivision and groove matter. Use the slider
-          to find a slow track that still feels energetic.
-        </p>
-      </section>
+      </div>
 
       <section class="viz-section capstone" id="section-capstone" aria-labelledby="cap-heading">
-        <p class="step-label">Step 6 · Answer the question</p>
-        <h2 id="cap-heading">What profile stands out now?</h2>
+        <p class="step-label">Step 6 · Where we land</p>
+        <h2 id="cap-heading">The readout for your slice</h2>
         <p class="section-lead">
-          This final view restates the selected subset as an answer: the typical feature profile,
-          the hottest examples, and the main caveat.
+          No new picture here—just a voice-over on the road you already drove. It restates what this
+          slice of hits “sounds like” in numbers, name-drops a few standouts, and leans into the boring
+          truth we kept seeing: there’s no sole ingredient for popularity here, only a shape to the
+          crowd you filtered to.
         </p>
         <p class="support-copy">
-          Treat the answer as descriptive rather than predictive. The page can show what successful
-          tracks in this dataset tend to sound like, but it cannot prove which feature caused a song
-          to become popular.
+          Twist the filters and read it again: if the closing paragraph rewrites itself completely,
+          that’s the point—different people (and different years and scenes) like different things, and
+          the page is built to make that obvious instead of hiding it behind one heroic chart.
         </p>
         <div class="capstone-layout">
           <section class="cap-answer-panel" id="cap-answer-panel" aria-live="polite"></section>
