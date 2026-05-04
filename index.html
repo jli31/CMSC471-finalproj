@@ -3,40 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CMSC471 Final Project</title>
+    <title>The Sound of Spotify, 2015–2025 · CMSC471</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   </head>
   <body>
     <main class="page">
       <header class="hero">
-        <p class="kicker">CMSC471 Final Project</p>
-        <h1>The Sound of Popularity: Decoding Spotify Hits</h1>
+        <p class="kicker">CMSC471 · Interactive explanation</p>
+        <h1>The Sound of Spotify, 2015–2025</h1>
         <p class="authors"><strong>Authors:</strong> Jiho Lee, John Li, Ed Yun, Andrew Zhang</p>
         <p class="subtitle">
-          Explore how audio features, genre, and time shape what becomes a Spotify hit.
+          A visual-first look at how audio features, language segments, and time relate to popularity
+          among high-performing tracks (Spotify popularity ≥ 45).
         </p>
       </header>
-      <section class="intro">
+
+      <section class="intro intro--compact" aria-label="Introduction">
         <p>
-          What did you listen to this morning on your way to school or work? Maybe it was during a
-          gym session, a daily run, while cooking dinner, or while finishing homework late at night.
-          In today's world, music is deeply woven into everyday life. As streaming platforms expand
-          and listening habits evolve, the music market keeps growing alongside them.
-        </p>
-        <p>
-          But what actually makes a song catch on? Is it energy, danceability, mood, or just timing?
-          In this project, we explore Spotify data to understand how modern music trends shift over
-          time and which audio patterns are most connected to popularity.
+          Streaming rewards many factors at once: energy, mood, danceability, tempo, and era. Use
+          the charts below to see yearly averages, scatter patterns, and how filters link every
+          view—rather than reading a long essay about it.
         </p>
       </section>
 
-      <section class="mini-viz" id="mini-viz-1">
-        <h2>Are faster songs more popular?</h2>
-        <p class="mini-viz-description">
-          Drag the tempo slider to explore tracks across BPM ranges and test whether higher speed
-          consistently aligns with higher popularity.
+      <section class="viz-section" id="section-hook" aria-labelledby="hook-heading">
+        <h2 id="hook-heading">The big picture</h2>
+        <p id="hook-takeaway" class="takeaway">Loading yearly averages…</p>
+        <div class="chart-wrap chart-wrap--wide" id="hook-chart"></div>
+      </section>
+
+      <section class="viz-section" id="section-controls" aria-label="Filters">
+        <h2>Linked exploration</h2>
+        <p class="section-lead">
+          Brush the timeline or set years and segment below. Every dashboard chart, the era
+          histogram, the myth-checkers, and the capstone use the same filter.
         </p>
+        <div class="control-bar">
+          <label class="control">
+            <span>Year from</span>
+            <input type="number" id="control-year-min" min="2015" max="2025" value="2015" />
+          </label>
+          <label class="control">
+            <span>Year to</span>
+            <input type="number" id="control-year-max" min="2015" max="2025" value="2025" />
+          </label>
+          <label class="control control--grow">
+            <span>Segment (genre if known, else language)</span>
+            <select id="control-genre"></select>
+          </label>
+          <button type="button" class="btn-reset" id="control-reset">Reset filters</button>
+        </div>
+        <p class="brush-hint">
+          <strong>Timeline:</strong> drag on the chart background to brush a year range (double-click
+          timeline to reset).
+        </p>
+      </section>
+
+      <section class="viz-section dashboard" id="section-dashboard" aria-label="Dashboard">
+        <div class="dashboard-grid">
+          <div class="panel panel--span2">
+            <h3>Average audio features by year</h3>
+            <p class="panel-caption">Lines are weighted by tracks per year in your current filter.</p>
+            <div class="chart-wrap" id="dash-timeline"></div>
+          </div>
+          <div class="panel">
+            <h3>Energy × valence</h3>
+            <p class="panel-caption">Dot size ∝ popularity. Color = segment.</p>
+            <div class="chart-wrap" id="dash-scatter"></div>
+          </div>
+          <div class="panel">
+            <h3>What “top” songs look like</h3>
+            <p class="panel-caption">Bars: median feature for hits in top 25% popularity vs rest.</p>
+            <div class="chart-wrap" id="dash-threshold"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="viz-section" id="section-eras" aria-labelledby="eras-heading">
+        <h2 id="eras-heading">What changed in key eras?</h2>
+        <p class="section-lead">
+          Shaded bands mark rough historical periods. Scrub a year to compare the valence
+          distribution for that year to everything in your current filter.
+        </p>
+        <div class="chart-wrap chart-wrap--wide" id="era-timeline"></div>
+        <div class="era-controls">
+          <label class="control control--grow">
+            <span>Focus year for distribution</span>
+            <input type="range" id="era-year-slider" min="2015" max="2025" step="1" value="2020" />
+            <span id="era-year-label" class="era-year-label">2020</span>
+          </label>
+        </div>
+        <div class="chart-wrap" id="era-hist"></div>
+      </section>
+
+      <section class="mini-viz" id="mini-viz-1">
+        <h2>Myth 1 · Tempo and one hit at a time</h2>
+        <p class="mini-viz-description">
+          The small chart uses the same filter as above (tempo vs popularity, binned means). The
+          slider still picks the nearest hit by BPM so you can hear a concrete example.
+        </p>
+        <div class="myth-inline" id="myth-tempo"></div>
 
         <div class="tempo-player">
           <div class="slider-column">
@@ -73,9 +140,7 @@
                 Open on YouTube
               </a>
             </div>
-            <p id="audio-note" class="audio-note">
-              Click the button to open the selected song on YouTube.
-            </p>
+            <p id="audio-note" class="audio-note">Click the button to open the selected song on YouTube.</p>
           </div>
 
           <aside class="popularity-panel" aria-label="Popularity visualization">
@@ -88,30 +153,48 @@
         </div>
 
         <p class="viz-disclaimer">
-          <strong>Note on popularity:</strong> Spotify popularity is a platform-generated score from 0 to 100.
-          It generally reflects a track's recent and overall listening performance relative to other songs on
-          Spotify, so it is best interpreted as a comparative index rather than a direct play count.
-        </p>
-
-        <p class="viz-transition">
-          You decide! Do you prefer songs with faster tempos or slower ones? What tempo is your favorite
-          song on this list?
+          <strong>Note:</strong> Spotify popularity is a 0–100 index from the platform, not raw streams.
         </p>
       </section>
 
-      <section class="insight-section">
-        <h3>Why tempo can be misleading</h3>
+      <section class="myth-grid" aria-label="Myth checkers">
+        <article class="myth-card">
+          <h3>Happier over time?</h3>
+          <p class="myth-claim">Mean valence (mood) by year in your filter.</p>
+          <div class="chart-wrap chart-wrap--short" id="myth-valence"></div>
+        </article>
+        <article class="myth-card">
+          <h3>Dance × energy</h3>
+          <p class="myth-claim">Where do very popular tracks cluster?</p>
+          <div class="chart-wrap chart-wrap--short" id="myth-dance-energy"></div>
+        </article>
+        <article class="myth-card">
+          <h3>Shorter songs?</h3>
+          <p class="myth-claim">Average duration (minutes) by year.</p>
+          <div class="chart-wrap chart-wrap--short" id="myth-duration"></div>
+        </article>
+      </section>
+
+      <section class="insight-section insight-section--compact">
+        <h3>Why tempo can mislead</h3>
         <p>
-          One takeaway from this view is that BPM alone does not always match how fast a song
-          feels. A track with a lower tempo can still sound energetic if its rhythm uses many
-          eighth or sixteenth notes, while a higher-tempo song can feel calmer when notes are more
-          spread out. In other words, a song at 71 BPM may feel like 142 BPM in perception, and the
-          reverse can also happen. <br><br>Try playing around with the slider yourself until you find a slower 
-          tempo but still energetic song!
+          BPM does not always match perceived speed—subdivision and groove matter. Use the slider
+          to find a slow track that still feels energetic.
         </p>
       </section>
 
-      <section id="viz-root">Mini visualizations 2-4 and the final integrated view will go here.</section>
+      <section class="viz-section capstone" id="section-capstone" aria-labelledby="cap-heading">
+        <h2 id="cap-heading">Capstone · Given your filter, what profile stands out?</h2>
+        <p class="section-lead">
+          Same encoding as the dashboard scatter, larger. The summary updates with your linked
+          filters: think of it as a compact answer to “what audio profile shows up among popular
+          tracks here?”
+        </p>
+        <div class="capstone-layout">
+          <div class="chart-wrap chart-wrap--tall" id="cap-scatter"></div>
+          <aside class="cap-stats" id="cap-stats" aria-live="polite"></aside>
+        </div>
+      </section>
     </main>
 
     <script src="js/script.js"></script>
