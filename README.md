@@ -1,3 +1,8 @@
+new idea: question is anatomy of music and explaining more about it. what makes something popular is just one part. main vis is ed's idea of finding a song, and then zooms in on a 3d graph to find other songs in the same area based on the axes
+
+
+
+
 # The Sound of Spotify, 2015–2025
 
 **Course:** CMSC471 · Interactive explanation  
