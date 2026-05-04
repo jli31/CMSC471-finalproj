@@ -14,30 +14,74 @@
         <h1>The Sound of Spotify, 2015–2025</h1>
         <p class="authors"><strong>Authors:</strong> Jiho Lee, John Li, Ed Yun, Andrew Zhang</p>
         <p class="subtitle">
-          A visual-first look at how audio features, language segments, and time relate to popularity
-          among high-performing tracks (Spotify popularity ≥ 45).
+          The story: popular Spotify tracks do not move in one clean direction. Mood, energy,
+          danceability, and duration shift differently by era and segment, so each chart narrows
+          the question from broad trend to specific profile.
         </p>
       </header>
 
-      <section class="intro intro--compact" aria-label="Introduction">
+      <section class="intro story-overview" aria-label="Introduction">
+        <h2>What this page is trying to answer</h2>
         <p>
-          Streaming rewards many factors at once: energy, mood, danceability, tempo, and era. Use
-          the charts below to see yearly averages, scatter patterns, and how filters link every
-          view—rather than reading a long essay about it.
+          This project asks whether popular Spotify tracks from 2015-2025 share a recognizable
+          sound profile, and whether that profile changes once you look by year range or segment.
+          The goal is not to find a single formula for popularity. Instead, the page treats
+          popularity as the outcome of several musical signals moving together: mood, energy,
+          danceability, tempo, duration, and era.
+        </p>
+        <p>
+          The page starts with the full set of high-performing tracks, then lets you narrow the
+          lens. Every chart after the filter uses the same selected tracks, so the sections build
+          one argument rather than separate observations: first the broad trend, then the selected
+          profile, then the era context, then a set of simple claims that either hold up or break
+          down.
+        </p>
+        <div class="overview-grid" aria-label="Reading path">
+          <p><strong>Start broad.</strong> Look for the overall movement in mood, energy, and danceability.</p>
+          <p><strong>Narrow the lens.</strong> Use years or segment to test whether the pattern changes.</p>
+          <p><strong>Pressure test it.</strong> Check whether simple explanations like tempo or duration are enough.</p>
+          <p><strong>End with a profile.</strong> The capstone summarizes what stands out for the current filter.</p>
+        </div>
+      </section>
+
+      <section class="story-note" aria-label="Feature guide">
+        <h2>What the features mean</h2>
+        <div class="definition-grid">
+          <p><strong>Valence</strong> is Spotify's estimate of musical positivity, used here as mood.</p>
+          <p><strong>Energy</strong> captures intensity and activity, not whether a song is happy.</p>
+          <p><strong>Danceability</strong> describes how steady and movement-friendly the track feels.</p>
+          <p><strong>Popularity</strong> is Spotify's 0-100 platform index, not raw streams.</p>
+        </div>
+      </section>
+
+      <nav class="story-spine" aria-label="Story steps">
+        <a href="#section-hook"><span>1</span> Trend</a>
+        <a href="#section-controls"><span>2</span> Lens</a>
+        <a href="#section-dashboard"><span>3</span> Profile</a>
+        <a href="#section-eras"><span>4</span> Era</a>
+        <a href="#mini-viz-1"><span>5</span> Checks</a>
+        <a href="#section-capstone"><span>6</span> Answer</a>
+      </nav>
+
+      <section class="viz-section" id="section-hook" aria-labelledby="hook-heading">
+        <p class="step-label">Step 1 · Overall trend</p>
+        <h2 id="hook-heading">Start with the shape of popular tracks</h2>
+        <p id="hook-takeaway" class="takeaway">Loading yearly averages…</p>
+        <div class="chart-wrap chart-wrap--wide" id="hook-chart"></div>
+        <p class="support-copy">
+          This first view is the baseline. If all three lines moved together, the story would be
+          simple. Instead, the rest of the page asks whether the movement depends on the selected
+          years, segment, or a specific audio feature.
         </p>
       </section>
 
-      <section class="viz-section" id="section-hook" aria-labelledby="hook-heading">
-        <h2 id="hook-heading">The big picture</h2>
-        <p id="hook-takeaway" class="takeaway">Loading yearly averages…</p>
-        <div class="chart-wrap chart-wrap--wide" id="hook-chart"></div>
-      </section>
-
       <section class="viz-section" id="section-controls" aria-label="Filters">
-        <h2>Linked exploration</h2>
+        <p class="step-label">Step 2 · Choose the lens</p>
+        <h2>Use one filter for the whole story</h2>
         <p class="section-lead">
-          Brush the timeline or set years and segment below. Every dashboard chart, the era
-          histogram, the myth-checkers, and the capstone use the same filter.
+          Brush the timeline or set years and segment below. The dashboard, era view, hypothesis
+          checks, and final answer all update together, so each section is explaining the same
+          subset of tracks.
         </p>
         <div class="control-bar">
           <label class="control">
@@ -54,26 +98,42 @@
           </label>
           <button type="button" class="btn-reset" id="control-reset">Reset filters</button>
         </div>
+        <div class="selection-strip" id="selection-strip" aria-live="polite">
+          <span class="selection-label">Current lens</span>
+          <strong>Loading selection…</strong>
+        </div>
         <p class="brush-hint">
           <strong>Timeline:</strong> drag on the chart background to brush a year range (double-click
           timeline to reset).
         </p>
+        <p class="support-copy support-copy--compact">
+          Think of the filter as changing the cast of songs, not changing the question. The question
+          remains: among popular tracks, what sound profile appears most clearly?
+        </p>
       </section>
 
       <section class="viz-section dashboard" id="section-dashboard" aria-label="Dashboard">
+        <p class="step-label">Step 3 · Build the profile</p>
+        <h2>Which features define the selected hits?</h2>
+        <p id="dashboard-takeaway" class="takeaway takeaway--secondary">Loading selected profile…</p>
+        <p class="support-copy">
+          Read this section left to right: the timeline shows how the selected group changes by
+          year, the scatter shows whether songs cluster by mood and intensity, and the bar chart
+          checks whether the most popular quarter looks different from the rest.
+        </p>
         <div class="dashboard-grid">
           <div class="panel panel--span2">
-            <h3>Average audio features by year</h3>
+            <h3 id="dash-timeline-title">Feature trends move separately</h3>
             <p class="panel-caption">Lines are weighted by tracks per year in your current filter.</p>
             <div class="chart-wrap" id="dash-timeline"></div>
           </div>
           <div class="panel">
-            <h3>Energy × valence</h3>
+            <h3 id="dash-scatter-title">Popularity spans mood and energy</h3>
             <p class="panel-caption">Dot size ∝ popularity. Color = segment.</p>
             <div class="chart-wrap" id="dash-scatter"></div>
           </div>
           <div class="panel">
-            <h3>What “top” songs look like</h3>
+            <h3 id="dash-threshold-title">What top songs look like</h3>
             <p class="panel-caption">Bars: median feature for hits in top 25% popularity vs rest.</p>
             <div class="chart-wrap" id="dash-threshold"></div>
           </div>
@@ -81,12 +141,19 @@
       </section>
 
       <section class="viz-section" id="section-eras" aria-labelledby="eras-heading">
-        <h2 id="eras-heading">What changed in key eras?</h2>
+        <p class="step-label">Step 4 · Put the profile in time</p>
+        <h2 id="eras-heading">Do era shifts explain the mood pattern?</h2>
         <p class="section-lead">
           Shaded bands mark rough historical periods. Scrub a year to compare the valence
           distribution for that year to everything in your current filter.
         </p>
+        <p id="era-takeaway" class="takeaway takeaway--secondary">Loading era comparison…</p>
         <div class="chart-wrap chart-wrap--wide" id="era-timeline"></div>
+        <p class="support-copy">
+          The era view focuses on valence because mood is the feature most likely to be misread
+          from a single average. The histogram below shows whether a year really shifts the shape
+          of the mood distribution or only nudges the mean.
+        </p>
         <div class="era-controls">
           <label class="control control--grow">
             <span>Focus year for distribution</span>
@@ -98,10 +165,16 @@
       </section>
 
       <section class="mini-viz" id="mini-viz-1">
-        <h2>Myth 1 · Tempo and one hit at a time</h2>
+        <p class="step-label">Step 5a · Hypothesis check</p>
+        <h2>Does faster tempo mean more popular?</h2>
         <p class="mini-viz-description">
-          The small chart uses the same filter as above (tempo vs popularity, binned means). The
-          slider still picks the nearest hit by BPM so you can hear a concrete example.
+          The small chart tests tempo against popularity in bins. The slider then turns the pattern
+          into a concrete track example from the same filtered set.
+        </p>
+        <p id="tempo-takeaway" class="result-callout">Loading tempo check…</p>
+        <p class="support-copy support-copy--compact">
+          Tempo is intentionally narrow: it is easy to understand, but it does not capture groove,
+          subdivision, production density, or whether listeners experience a song as fast.
         </p>
         <div class="myth-inline" id="myth-tempo"></div>
 
@@ -157,22 +230,37 @@
         </p>
       </section>
 
-      <section class="myth-grid" aria-label="Myth checkers">
-        <article class="myth-card">
-          <h3>Happier over time?</h3>
-          <p class="myth-claim">Mean valence (mood) by year in your filter.</p>
-          <div class="chart-wrap chart-wrap--short" id="myth-valence"></div>
-        </article>
-        <article class="myth-card">
-          <h3>Dance × energy</h3>
-          <p class="myth-claim">Where do very popular tracks cluster?</p>
-          <div class="chart-wrap chart-wrap--short" id="myth-dance-energy"></div>
-        </article>
-        <article class="myth-card">
-          <h3>Shorter songs?</h3>
-          <p class="myth-claim">Average duration (minutes) by year.</p>
-          <div class="chart-wrap chart-wrap--short" id="myth-duration"></div>
-        </article>
+      <section class="viz-section" id="section-hypotheses" aria-label="Hypothesis checkers">
+        <p class="step-label">Step 5b · Pressure test the profile</p>
+        <h2>Which simple explanations hold up?</h2>
+        <p class="section-lead">
+          These checks ask whether one easy claim explains the filtered set. Each result updates
+          with the same year and segment choices above.
+        </p>
+        <p class="support-copy">
+          A strong result here should survive the current filter. A mixed result means the claim may
+          describe part of the data, but it is not enough to explain the whole selected group.
+        </p>
+        <div class="myth-grid">
+          <article class="myth-card">
+            <h3>Happier over time?</h3>
+            <p class="myth-claim">Mean valence (mood) by year in your filter.</p>
+            <p id="myth-valence-result" class="result-callout">Loading result…</p>
+            <div class="chart-wrap chart-wrap--short" id="myth-valence"></div>
+          </article>
+          <article class="myth-card">
+            <h3>Dance × energy</h3>
+            <p class="myth-claim">Where do very popular tracks cluster?</p>
+            <p id="myth-dance-energy-result" class="result-callout">Loading result…</p>
+            <div class="chart-wrap chart-wrap--short" id="myth-dance-energy"></div>
+          </article>
+          <article class="myth-card">
+            <h3>Shorter songs?</h3>
+            <p class="myth-claim">Average duration (minutes) by year.</p>
+            <p id="myth-duration-result" class="result-callout">Loading result…</p>
+            <div class="chart-wrap chart-wrap--short" id="myth-duration"></div>
+          </article>
+        </div>
       </section>
 
       <section class="insight-section insight-section--compact">
@@ -184,14 +272,19 @@
       </section>
 
       <section class="viz-section capstone" id="section-capstone" aria-labelledby="cap-heading">
-        <h2 id="cap-heading">Capstone · Given your filter, what profile stands out?</h2>
+        <p class="step-label">Step 6 · Answer the question</p>
+        <h2 id="cap-heading">What profile stands out now?</h2>
         <p class="section-lead">
-          Same encoding as the dashboard scatter, larger. The summary updates with your linked
-          filters: think of it as a compact answer to “what audio profile shows up among popular
-          tracks here?”
+          This final view restates the selected subset as an answer: the typical feature profile,
+          the hottest examples, and the main caveat.
+        </p>
+        <p class="support-copy">
+          Treat the answer as descriptive rather than predictive. The page can show what successful
+          tracks in this dataset tend to sound like, but it cannot prove which feature caused a song
+          to become popular.
         </p>
         <div class="capstone-layout">
-          <div class="chart-wrap chart-wrap--tall" id="cap-scatter"></div>
+          <section class="cap-answer-panel" id="cap-answer-panel" aria-live="polite"></section>
           <aside class="cap-stats" id="cap-stats" aria-live="polite"></aside>
         </div>
       </section>

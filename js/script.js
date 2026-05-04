@@ -110,6 +110,304 @@ function aggregateByYear(data) {
     .sort((a, b) => a.year - b.year);
 }
 
+function setText(id, text) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = text;
+}
+
+function setHtml(id, html) {
+  const el = document.getElementById(id);
+  if (el) el.innerHTML = html;
+}
+
+function verdictClass(verdict) {
+  return verdict.toLowerCase().replace(/\s+/g, "-");
+}
+
+function setResult(id, verdict, detail) {
+  setHtml(
+    id,
+    `<span class="verdict-badge verdict-${verdictClass(verdict)}">${escapeHtml(
+      verdict
+    )}</span><span>${escapeHtml(detail)}</span>`
+  );
+}
+
+function fmt(value, digits = 2) {
+  return Number.isFinite(value) ? value.toFixed(digits) : "--";
+}
+
+function direction(delta) {
+  if (!Number.isFinite(delta) || Math.abs(delta) < 0.01) return "stayed nearly flat";
+  return delta > 0 ? "rose" : "fell";
+}
+
+function scoreLabel(value, high, mid, low) {
+  if (value >= 0.66) return high;
+  if (value >= 0.45) return mid;
+  return low;
+}
+
+function filteredProfile(data) {
+  return {
+    danceability: d3.median(data, (d) => d.danceability),
+    energy: d3.median(data, (d) => d.energy),
+    valence: d3.median(data, (d) => d.valence),
+    popularity: d3.median(data, (d) => d.popularity),
+  };
+}
+
+function profileSentence(data) {
+  const p = filteredProfile(data);
+  return `The typical track is ${scoreLabel(
+    p.danceability,
+    "dance-forward",
+    "moderately danceable",
+    "less danceable"
+  )}, ${scoreLabel(p.energy, "high-energy", "medium-energy", "low-energy")}, and ${scoreLabel(
+    p.valence,
+    "brighter in mood",
+    "mixed in mood",
+    "more subdued in mood"
+  )}.`;
+}
+
+function getTopQuartileSplit(data) {
+  const popSorted = [...data].sort((a, b) => b.popularity - a.popularity);
+  let cut = Math.max(1, Math.floor(popSorted.length * 0.25));
+  let topIds = new Set(popSorted.slice(0, cut).map((d) => d.trackId));
+  let rest = data.filter((d) => !topIds.has(d.trackId));
+  if (rest.length === 0 && cut < popSorted.length) {
+    cut = Math.min(popSorted.length - 1, cut + 1);
+    topIds = new Set(popSorted.slice(0, cut).map((d) => d.trackId));
+    rest = data.filter((d) => !topIds.has(d.trackId));
+  }
+  return {
+    top: data.filter((d) => topIds.has(d.trackId)),
+    rest,
+  };
+}
+
+function tempoPopularityBins(data) {
+  const edges = d3.range(70, 191, 10);
+  const rolled = [];
+  for (let i = 0; i < edges.length - 1; i++) {
+    const x0 = edges[i];
+    const x1 = edges[i + 1];
+    const slice = data.filter((d) => d.tempo >= x0 && d.tempo < x1);
+    if (slice.length) rolled.push({ x0, x1, n: slice.length, meanPop: d3.mean(slice, (d) => d.popularity) });
+  }
+  return rolled;
+}
+
+function featureSeparator(data) {
+  const finiteFeatureRows = data.filter((d) =>
+    ["danceability", "energy", "valence"].every((key) => Number.isFinite(d[key]))
+  );
+  if (finiteFeatureRows.length < 8) {
+    return {
+      strongest: { key: "features", delta: 0 },
+      rows: [],
+    };
+  }
+  const { top, rest } = getTopQuartileSplit(finiteFeatureRows);
+  const rows = ["danceability", "energy", "valence"].map((key) => {
+    const topValue = d3.median(top, (d) => d[key]);
+    const restValue = d3.median(rest, (d) => d[key]);
+    return {
+      key,
+      topValue,
+      restValue,
+      delta: Number.isFinite(topValue) && Number.isFinite(restValue) ? topValue - restValue : 0,
+    };
+  });
+  return {
+    strongest: d3.greatest(rows, (d) => Math.abs(d.delta)),
+    rows,
+  };
+}
+
+function renderSelectionStrip() {
+  const data = filtered();
+  const segment = state.genre === "all" ? "All segments" : state.genre;
+  if (data.length === 0) {
+    setHtml(
+      "selection-strip",
+      `<span class="selection-label">Current lens</span><strong>${escapeHtml(
+        segment
+      )}</strong><span>${state.year0}-${state.year1}</span><span>No matching tracks</span>`
+    );
+    return;
+  }
+  const p = filteredProfile(data);
+  setHtml(
+    "selection-strip",
+    `<span class="selection-label">Current lens</span><strong>${escapeHtml(segment)}</strong><span>${
+      state.year0
+    }-${state.year1}</span><span>${data.length} tracks</span><span>Median profile: dance ${fmt(
+      p.danceability
+    )}, energy ${fmt(p.energy)}, mood ${fmt(p.valence)}</span>`
+  );
+}
+
+function renderDashboardTakeaway() {
+  const data = filtered();
+  if (data.length === 0) {
+    setText("dashboard-takeaway", "No tracks match this filter, so the story pauses until the selection widens.");
+    setText("dash-timeline-title", "No trend to show yet");
+    setText("dash-scatter-title", "No mood-energy pattern yet");
+    setText("dash-threshold-title", "No top-song comparison yet");
+    return;
+  }
+  const p = filteredProfile(data);
+  const strongest = d3.greatest(
+    [
+      { key: "danceability", value: p.danceability },
+      { key: "energy", value: p.energy },
+      { key: "valence", value: p.valence },
+    ],
+    (d) => d.value
+  );
+  const segment = state.genre === "all" ? "all segments" : state.genre;
+  setText(
+    "dashboard-takeaway",
+    `${data.length} tracks in ${segment}, ${state.year0}-${state.year1}. ${profileSentence(
+      data
+    )} The highest median feature is ${strongest.key} (${fmt(strongest.value)}).`
+  );
+  const { strongest: separator } = featureSeparator(data);
+  setText("dash-timeline-title", `Feature trends move separately; ${strongest.key} is highest overall`);
+  setText("dash-scatter-title", "Popularity spans mood and energy, so the cluster matters");
+  setText(
+    "dash-threshold-title",
+    separator.key === "features"
+      ? "Need more tracks to compare top songs"
+      : `Top songs differ most in ${separator.key}`
+  );
+}
+
+function renderEraTakeaway() {
+  const byYear = aggregateByYear(filtered());
+  if (byYear.length < 2) {
+    setText("era-takeaway", "Need at least two years in the current filter to compare era movement.");
+    return;
+  }
+  const first = byYear[0];
+  const last = byYear[byYear.length - 1];
+  const delta = last.valence - first.valence;
+  const highest = d3.greatest(byYear, (d) => d.valence);
+  const lowest = d3.least(byYear, (d) => d.valence);
+  const focus = byYear.find((d) => d.year === state.eraYear);
+  const periodMean = d3.mean(byYear, (d) => d.valence);
+  const focusText = focus
+    ? `${state.eraYear} sits ${focus.valence >= periodMean ? "above" : "below"} the selected-period average.`
+    : "Choose a focus year inside the selected range for the histogram comparison.";
+  setText(
+    "era-takeaway",
+    `Mean mood ${direction(delta)} by ${fmt(Math.abs(delta))} from ${first.year} to ${last.year}; highest is ${
+      highest.year
+    } (${fmt(highest.valence)}), lowest is ${lowest.year} (${fmt(lowest.valence)}). ${focusText}`
+  );
+}
+
+function renderTempoTakeaway() {
+  const bins = tempoPopularityBins(filtered().filter((d) => Number.isFinite(d.tempo)));
+  if (bins.length < 2) {
+    setResult("tempo-takeaway", "Mixed", "Need more tempo variety in this filter before checking the tempo claim.");
+    return;
+  }
+  const strongest = d3.greatest(bins, (d) => d.meanPop);
+  const weakest = d3.least(bins, (d) => d.meanPop);
+  const spread = strongest.meanPop - weakest.meanPop;
+  const verdict = spread < 4 ? "Mixed" : "Partial";
+  setResult(
+    "tempo-takeaway",
+    verdict,
+    `The highest-popularity tempo bin is ${strongest.x0}-${strongest.x1} BPM, but tempo only creates a ${fmt(
+      spread,
+      1
+    )}-point spread across bins.`
+  );
+}
+
+function renderHypothesisTakeaways() {
+  const data = filtered();
+  const byYear = aggregateByYear(data);
+  if (byYear.length >= 2) {
+    const first = byYear[0];
+    const last = byYear[byYear.length - 1];
+    const delta = last.valence - first.valence;
+    const yearDeltas = byYear
+      .slice(1)
+      .map((d, i) => d.valence - byYear[i].valence)
+      .filter((d) => Math.abs(d) >= 0.01);
+    const hasReversals = new Set(yearDeltas.map((d) => Math.sign(d))).size > 1;
+    const verdict = Math.abs(delta) < 0.02 || hasReversals ? "Mixed" : "Supported";
+    setResult(
+      "myth-valence-result",
+      verdict,
+      `Mood ${direction(delta)} by ${fmt(Math.abs(delta))} from ${first.year} to ${last.year}${
+        hasReversals ? ", with reversals along the way" : ""
+      }.`
+    );
+  } else {
+    setResult("myth-valence-result", "Mixed", "Need at least two years to check a mood trend.");
+  }
+
+  const danceEnergy = data.filter((d) => Number.isFinite(d.danceability) && Number.isFinite(d.energy));
+  if (danceEnergy.length >= 8) {
+    const { top, rest } = getTopQuartileSplit(danceEnergy);
+    const danceDelta = d3.median(top, (d) => d.danceability) - d3.median(rest, (d) => d.danceability);
+    const energyDelta = d3.median(top, (d) => d.energy) - d3.median(rest, (d) => d.energy);
+    const verdict = danceDelta > 0.02 && energyDelta > 0.02 ? "Supported" : "Mixed";
+    setResult(
+      "myth-dance-energy-result",
+      verdict,
+      `Top-quartile hits are ${fmt(Math.abs(danceDelta))} ${
+        danceDelta >= 0 ? "higher" : "lower"
+      } in danceability and ${fmt(Math.abs(energyDelta))} ${energyDelta >= 0 ? "higher" : "lower"} in energy.`
+    );
+  } else {
+    setResult(
+      "myth-dance-energy-result",
+      "Mixed",
+      "Need more tracks to compare top-quartile hits against the rest."
+    );
+  }
+
+  const durationByYear = d3
+    .rollups(
+      data.filter((d) => Number.isFinite(d.durationMs)),
+      (v) => d3.mean(v, (d) => d.durationMs) / 60000,
+      (d) => d.year
+    )
+    .map(([year, minutes]) => ({ year, minutes }))
+    .sort((a, b) => a.year - b.year);
+  if (durationByYear.length >= 2) {
+    const first = durationByYear[0];
+    const last = durationByYear[durationByYear.length - 1];
+    const delta = last.minutes - first.minutes;
+    const verdict = delta < -0.05 ? "Supported" : Math.abs(delta) <= 0.05 ? "Mixed" : "Not supported";
+    setResult(
+      "myth-duration-result",
+      verdict,
+      `Average duration ${direction(delta)} by ${fmt(Math.abs(delta), 2)} minutes from ${first.year} to ${
+        last.year
+      }.`
+    );
+  } else {
+    setResult("myth-duration-result", "Mixed", "Need at least two years to check duration movement.");
+  }
+}
+
+function renderNarrativeTakeaways() {
+  renderSelectionStrip();
+  renderDashboardTakeaway();
+  renderEraTakeaway();
+  renderTempoTakeaway();
+  renderHypothesisTakeaways();
+}
+
 function chartSize(container, fallbackW, h) {
   const el = typeof container === "string" ? document.querySelector(container) : container;
   const w = Math.max(fallbackW, (el && el.clientWidth) || fallbackW);
@@ -151,6 +449,18 @@ function addGridLines(g, x, y, innerWidth, innerHeight, xTickCount, yTickCount) 
     });
 }
 
+function addPointAnnotation(g, x, y, d, key, label, width, dx = 8, dy = -10) {
+  const px = x(d.year);
+  const py = y(d[key]);
+  const labelX = Math.max(4, Math.min(width - 120, px + dx));
+  g.append("circle").attr("class", "chart-marker").attr("cx", px).attr("cy", py).attr("r", 4.5).attr("fill", "#fef3c7");
+  g.append("text")
+    .attr("class", "chart-annotation")
+    .attr("x", labelX)
+    .attr("y", Math.max(12, py + dy))
+    .text(label);
+}
+
 function renderHook() {
   const margin = { top: 16, right: 24, bottom: 40, left: 44 };
   const height = 200;
@@ -166,9 +476,11 @@ function renderHook() {
   const first = byYear[0];
   const dv = (last.valence ?? 0) - (first.valence ?? 0);
   if (takeaway) {
-    takeaway.textContent = `From ${first.year} to ${last.year}, average valence among these hits ${
+    takeaway.textContent = `From ${first.year} to ${last.year}, average mood among these hits ${
       dv >= 0 ? "rose" : "fell"
-    } by about ${Math.abs(dv).toFixed(2)} on Spotify's 0–1 scale—while energy and danceability wiggle year to year.`;
+    } by about ${Math.abs(dv).toFixed(
+      2
+    )} on Spotify's 0-1 scale. That is the starting question: is this broad movement, or is it driven by specific filters and eras?`;
   }
 
   const keys = ["danceability", "energy", "valence"];
@@ -197,6 +509,9 @@ function renderHook() {
       .attr("stroke-width", 2.2)
       .attr("d", gen);
   });
+
+  addPointAnnotation(g, x, y, first, "valence", `mood ${first.year}: ${fmt(first.valence)}`, width, 8, -12);
+  addPointAnnotation(g, x, y, last, "valence", `mood ${last.year}: ${fmt(last.valence)}`, width, -118, 18);
 
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(8).tickFormat(d3.format("d")));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5));
@@ -356,21 +671,12 @@ function renderThreshold() {
     g.append("text").attr("fill", "#e9d5ff").attr("y", height / 2).text("Need more tracks.");
     return;
   }
-  const popSorted = [...data].sort((a, b) => b.popularity - a.popularity);
-  let cut = Math.max(1, Math.floor(popSorted.length * 0.25));
-  let topIds = new Set(popSorted.slice(0, cut).map((d) => d.trackId));
-  let rest = data.filter((d) => !topIds.has(d.trackId));
-  if (rest.length === 0 && cut < popSorted.length) {
-    cut = Math.min(popSorted.length - 1, cut + 1);
-    topIds = new Set(popSorted.slice(0, cut).map((d) => d.trackId));
-    rest = data.filter((d) => !topIds.has(d.trackId));
-  }
+  const { top, rest } = getTopQuartileSplit(data);
   const feats = ["danceability", "energy", "valence"];
   const rows = feats.map((f) => {
-    const tops = data.filter((d) => topIds.has(d.trackId));
     return {
       feat: f,
-      mTop: d3.median(tops, (d) => d[f]),
+      mTop: d3.median(top, (d) => d[f]),
       mRest: rest.length ? d3.median(rest, (d) => d[f]) : null,
     };
   });
@@ -453,6 +759,13 @@ function renderEraTimeline() {
     .y((d) => y(d.valence));
   g.append("path").datum(byYear).attr("fill", "none").attr("stroke", "#fde047").attr("stroke-width", 2.5).attr("d", line);
 
+  const highest = d3.greatest(byYear, (d) => d.valence);
+  const lowest = d3.least(byYear, (d) => d.valence);
+  if (highest) addPointAnnotation(g, x, y, highest, "valence", `highest mood: ${highest.year}`, width, 8, -12);
+  if (lowest && lowest.year !== highest.year) {
+    addPointAnnotation(g, x, y, lowest, "valence", `lowest mood: ${lowest.year}`, width, 8, 18);
+  }
+
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(10).tickFormat(d3.format("d")));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5));
   g.append("text").attr("x", 4).attr("y", -4).attr("fill", "#fde68a").attr("font-size", 12).text("Mean valence by year (annotated eras)");
@@ -528,14 +841,7 @@ function renderMythTempo() {
   const { g } = clearAndSvg("#myth-tempo", width, h, margin);
   if (!g) return;
   if (data.length < 5) return;
-  const edges = d3.range(70, 191, 10);
-  const rolled = [];
-  for (let i = 0; i < edges.length - 1; i++) {
-    const x0 = edges[i];
-    const x1 = edges[i + 1];
-    const slice = data.filter((d) => d.tempo >= x0 && d.tempo < x1);
-    if (slice.length) rolled.push({ x0, x1, meanPop: d3.mean(slice, (d) => d.popularity) });
-  }
+  const rolled = tempoPopularityBins(data);
   const x = d3
     .scaleLinear()
     .domain([60, 200])
@@ -600,7 +906,7 @@ function renderMythDanceEnergy() {
   const { g } = clearAndSvg("#myth-dance-energy", width, h, margin);
   if (!g || data.length === 0) return;
   const popCut = d3.quantileSorted(
-    Float64Array.from(data, (d) => d.popularity),
+    data.map((d) => d.popularity).sort(d3.ascending),
     0.75
   );
   const x = d3.scaleLinear().domain([0, 1]).range([0, width]);
@@ -651,29 +957,121 @@ function renderMythDuration() {
 }
 
 function renderCapstone() {
-  renderScatter("#cap-scatter", 520, 400, true);
-  const el = document.getElementById("cap-stats");
-  if (!el) return;
+  const panel = document.getElementById("cap-answer-panel");
+  const stats = document.getElementById("cap-stats");
+  if (!panel || !stats) return;
   const data = filtered();
   if (data.length === 0) {
-    el.innerHTML = "<h4>Summary</h4><p>No tracks match.</p>";
+    panel.innerHTML = "<h3>No answer yet</h3><p>No tracks match this filter.</p>";
+    stats.innerHTML = "<h4>Summary</h4><p>Widen the year range or choose another segment.</p>";
     return;
   }
+
   const top = [...data].sort((a, b) => b.popularity - a.popularity).slice(0, 5);
-  const mf = (arr, acc) => Number((d3.median(arr, acc) ?? 0).toFixed(2));
+  const profile = filteredProfile(data);
   const mp = Number((d3.median(data, (d) => d.popularity) ?? 0).toFixed(1));
-  el.innerHTML = `
-    <h4>Filtered summary</h4>
+
+  const durationMinutes = (d3.median(data, (d) => d.durationMs) ?? 0) / 60000;
+  const finiteFeatureRows = data.filter((d) =>
+    ["danceability", "energy", "valence"].every((key) => Number.isFinite(d[key]))
+  );
+  const { top: topQuartile, rest } = getTopQuartileSplit(finiteFeatureRows);
+  const separators = ["danceability", "energy", "valence"].map((key) => {
+    const topValue = d3.median(topQuartile, (d) => d[key]);
+    const restValue = d3.median(rest, (d) => d[key]);
+    return {
+      key,
+      delta: Number.isFinite(topValue) && Number.isFinite(restValue) ? topValue - restValue : 0,
+    };
+  });
+  const strongestSeparator = d3.greatest(separators, (d) => Math.abs(d.delta));
+
+  const byYear = aggregateByYear(data);
+  const moodTrend =
+    byYear.length >= 2
+      ? `Mood ${direction(byYear[byYear.length - 1].valence - byYear[0].valence)} by ${fmt(
+          Math.abs(byYear[byYear.length - 1].valence - byYear[0].valence)
+        )} from ${byYear[0].year} to ${byYear[byYear.length - 1].year}.`
+      : "Mood needs at least two years to show movement.";
+
+  const durationByYear = d3
+    .rollups(
+      data.filter((d) => Number.isFinite(d.durationMs)),
+      (v) => d3.mean(v, (d) => d.durationMs) / 60000,
+      (d) => d.year
+    )
+    .map(([year, minutes]) => ({ year, minutes }))
+    .sort((a, b) => a.year - b.year);
+  const durationTrend =
+    durationByYear.length >= 2
+      ? `Duration ${direction(durationByYear[durationByYear.length - 1].minutes - durationByYear[0].minutes)} by ${fmt(
+          Math.abs(durationByYear[durationByYear.length - 1].minutes - durationByYear[0].minutes),
+          2
+        )} minutes.`
+      : "Duration needs at least two years to show movement.";
+
+  const tempoBins = tempoPopularityBins(data.filter((d) => Number.isFinite(d.tempo)));
+  const tempoSummary =
+    tempoBins.length >= 2
+      ? `Tempo is a weak standalone explanation here: mean popularity varies by ${fmt(
+          d3.max(tempoBins, (d) => d.meanPop) - d3.min(tempoBins, (d) => d.meanPop),
+          1
+        )} points across BPM bins.`
+      : "Tempo needs more variety in this filter before it can support a claim.";
+
+  const metricRows = [
+    ["Danceability", fmt(profile.danceability)],
+    ["Energy", fmt(profile.energy)],
+    ["Mood / valence", fmt(profile.valence)],
+    ["Duration", `${fmt(durationMinutes, 2)} min`],
+  ]
+    .map(([label, value]) => `<div class="cap-metric"><span>${label}</span><strong>${value}</strong></div>`)
+    .join("");
+
+  const separatorRows = separators
+    .map(
+      (item) =>
+        `<div class="cap-metric"><span>${item.key}</span><strong>${item.delta >= 0 ? "+" : ""}${fmt(
+          item.delta
+        )}</strong></div>`
+    )
+    .join("");
+
+  panel.innerHTML = `
+    <p class="cap-kicker">Conclusion for the current filter</p>
+    <p class="cap-answer">${profileSentence(data)} The clearest profile is descriptive: it summarizes what these popular tracks share, not what caused them to become popular.</p>
+    <div class="evidence-grid">
+      <article class="evidence-card">
+        <h3>Typical profile</h3>
+        <p>The median track gives the best compact snapshot of the selected group.</p>
+        <div class="cap-metric-list">${metricRows}</div>
+      </article>
+      <article class="evidence-card">
+        <h3>What separates the hottest tracks</h3>
+        <p>The top popularity quarter differs most on <strong>${strongestSeparator.key}</strong> (${strongestSeparator.delta >= 0 ? "+" : ""}${fmt(strongestSeparator.delta)}).</p>
+        <div class="cap-metric-list">${separatorRows}</div>
+      </article>
+      <article class="evidence-card">
+        <h3>What changed over time</h3>
+        <p>${moodTrend}</p>
+        <p>${durationTrend}</p>
+      </article>
+      <article class="evidence-card">
+        <h3>What did not fully explain it</h3>
+        <p>${tempoSummary}</p>
+      </article>
+    </div>
+  `;
+
+  stats.innerHTML = `
+    <h4>Selection</h4>
     <dl>
       <dt>Tracks</dt><dd>${data.length}</dd>
-      <dt>Years</dt><dd>${state.year0}–${state.year1}</dd>
+      <dt>Years</dt><dd>${state.year0}-${state.year1}</dd>
       <dt>Segment</dt><dd>${state.genre === "all" ? "All segments" : escapeHtml(state.genre)}</dd>
       <dt>Median popularity</dt><dd>${mp}</dd>
-      <dt>Median energy</dt><dd>${mf(data, (d) => d.energy)}</dd>
-      <dt>Median valence</dt><dd>${mf(data, (d) => d.valence)}</dd>
-      <dt>Median danceability</dt><dd>${mf(data, (d) => d.danceability)}</dd>
     </dl>
-    <h4>Five hottest in filter</h4>
+    <h4>Examples, not proof</h4>
     <ol style="margin:0;padding-left:1.1rem;color:#e9d5ff;font-size:0.88rem">
       ${top
         .map(
@@ -716,6 +1114,7 @@ function populateGenreOptions() {
 
 function renderAll() {
   renderHook();
+  renderNarrativeTakeaways();
   renderTimelineWithBrush();
   renderScatter("#dash-scatter", 400, 320, false);
   renderThreshold();
@@ -771,6 +1170,7 @@ function initControls() {
     eraSlider.addEventListener("input", () => {
       state.eraYear = Number(eraSlider.value);
       if (eraLabel) eraLabel.textContent = String(state.eraYear);
+      renderEraTakeaway();
       renderEraHist();
     });
 }
