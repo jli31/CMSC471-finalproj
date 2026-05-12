@@ -6,6 +6,7 @@
     <title>CMSC471 Final Project</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
   </head>
   <body>
     <main class="page">
@@ -111,7 +112,45 @@
         </p>
       </section>
 
-      <section id="viz-root">Mini visualizations 2-4 and the final integrated view will go here.</section>
+      <section class="mini-viz" id="mini-viz-neighbor">
+        <h2>Which songs are living in the same sonic neighborhood as yours?</h2>
+        <p class="mini-viz-description">
+          Every track in our dataset sits at a point in three-axis space: how energetic it is, how
+          positive its mood, and how fast it runs. Type a song or artist below—your pick lights up in
+          gold, and the 20 tracks closest to it (by straight-line distance across those three axes)
+          glow pink. Drag to rotate; scroll to zoom.
+        </p>
+
+        <div class="nbr-search-wrap">
+          <label class="nbr-search-label" for="nbr-search">Search by song title or artist</label>
+          <div class="nbr-search-group">
+            <input
+              type="text"
+              id="nbr-search"
+              class="nbr-search-input"
+              placeholder="e.g. Blinding Lights, Doja Cat…"
+              autocomplete="off"
+              aria-label="Search for a track by title or artist"
+            />
+            <div id="nbr-dropdown" class="nbr-dropdown" role="list" hidden></div>
+          </div>
+          <p id="nbr-selected-info" class="nbr-selected-info" aria-live="polite">&nbsp;</p>
+        </div>
+
+        <div class="nbr-layout">
+          <div id="nbr-plot" class="nbr-plot" aria-label="3D scatter plot of tracks by energy, valence, and tempo"></div>
+          <aside id="nbr-list" class="nbr-list" aria-live="polite">
+            <p class="nbr-hint">Search for a track above to see its neighbors.</p>
+          </aside>
+        </div>
+
+        <p class="viz-disclaimer">
+          <strong>What the axes mean:</strong> Energy (0–1) captures loudness and intensity.
+          Valence (0–1) is Spotify's mood score—higher means sunnier. Tempo is raw BPM.
+          Distance is geometric across these three dimensions, so a "neighbor" shares a similar
+          combination of all three—not necessarily the same genre or feel.
+        </p>
+      </section>
     </main>
 
     <script src="js/script.js"></script>
