@@ -860,8 +860,44 @@ p {
 .ai-disclaimer {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 1.25rem 1rem 2.5rem;
+  padding: 0 1.25rem 2.5rem;
+}
+
+.site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.acknowledgements {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 0.75rem;
+}
+
+.acknowledgements p {
+  margin: 0 0 0.65rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: #94a3b8;
+  max-width: 72ch;
+}
+
+.acknowledgements p:last-child {
+  margin-bottom: 0;
+}
+
+.acknowledgements a {
+  color: #c4b5fd;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.acknowledgements a:hover {
+  color: #e9d5ff;
+}
+
+.acknowledgements strong {
+  color: #c4b5fd;
+  font-weight: 600;
 }
 
 .ai-disclaimer p {

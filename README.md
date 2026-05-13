@@ -12,6 +12,9 @@ An interactive narrative website that asks whether Spotify audio features—temp
 
 Hosted on GitHub Pages from the `main` branch. No install or local server needed to view the project.
 
+**Code repository:** [https://github.com/jli31/CMSC471-finalproj](https://github.com/jli31/CMSC471-finalproj)
+
+
 ---
 
 ## Quick start (local development)
