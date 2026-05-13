@@ -6,7 +6,15 @@ An interactive narrative website that asks whether Spotify audio features—temp
 
 ---
 
-## Quick start
+## Live demo
+
+**[https://jli31.github.io/CMSC471-finalproj/](https://jli31.github.io/CMSC471-finalproj/)**
+
+Hosted on GitHub Pages from the `main` branch. No install or local server needed to view the project.
+
+---
+
+## Quick start (local development)
 
 From the project root:
 
@@ -14,7 +22,7 @@ From the project root:
 python3 -m http.server
 ```
 
-Open `http://localhost:8000` in a browser. The page loads CSVs from `data/processed/` via D3 and Plotly; a local server is required (opening `index.html` directly may block file requests).
+Open `http://localhost:8000` in a browser. The page loads CSVs from `data/processed/` via D3 and Plotly; a local server is required when developing locally (opening `index.html` directly may block file requests).
 
 **Stack:** HTML, CSS, D3 v7, Plotly 3D · no build step.
 
