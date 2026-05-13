@@ -34,11 +34,39 @@
 
       <section class="mini-viz" id="mini-viz-1">
         <h2>Are faster songs more popular?</h2>
-        <p class="mini-viz-description">
+        <p class="mini-viz-description" id="tempo-viz-description">
           Drag the tempo slider to explore tracks across BPM ranges and test whether higher speed
           consistently aligns with higher popularity.
         </p>
 
+        <div class="tempo-view-switch">
+          <p class="tempo-view-label">Switch view</p>
+          <p class="tempo-view-hint">Track explorer = slider + one song · Tempo vs popularity = full scatter plot</p>
+          <div class="tempo-view-toggle" role="tablist" aria-label="Tempo visualization mode">
+          <button
+            type="button"
+            id="tempo-view-explorer"
+            class="tempo-view-btn is-active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="tempo-view-explorer-panel"
+          >
+            Track explorer
+          </button>
+          <button
+            type="button"
+            id="tempo-view-scatter"
+            class="tempo-view-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tempo-view-scatter-panel"
+          >
+            Tempo vs popularity
+          </button>
+          </div>
+        </div>
+
+        <div id="tempo-view-explorer-panel" class="tempo-view-panel" role="tabpanel">
         <div class="tempo-player">
           <div class="slider-column">
             <span class="tempo-label tempo-label-top">High tempo</span>
@@ -87,11 +115,24 @@
             <p id="popularity-label" class="popularity-label">Popularity bubble</p>
           </aside>
         </div>
+        </div>
+
+        <div
+          id="tempo-view-scatter-panel"
+          class="tempo-view-panel"
+          role="tabpanel"
+          hidden
+        >
+          <div
+            id="tempo-scatter-chart"
+            class="tempo-scatter-chart viz-chart"
+            aria-label="Scatter plot of tempo versus popularity for popular tracks from 2015 to 2025"
+          ></div>
+          <p id="tempo-scatter-status" class="tempo-scatter-status">Loading chart…</p>
+        </div>
 
         <p class="viz-disclaimer">
-          <strong>Note on popularity:</strong> Spotify popularity is a platform-generated score from 0 to 100.
-          It generally reflects a track's recent and overall listening performance relative to other songs on
-          Spotify, so it is best interpreted as a comparative index rather than a direct play count.
+          <strong>Popularity:</strong> Spotify’s 0–100 score ranks a track vs. others on the platform—not a play count.
         </p>
 
         <p class="viz-transition">
@@ -101,24 +142,122 @@
       </section>
 
       <section class="insight-section">
-        <h3>Why tempo can be misleading</h3>
+        <p class="insight-lead">
+          If you flip to <strong>Tempo vs popularity</strong>, the scatter plot makes the same story
+          visible at a glance: our slice of hits is messy, and there is no clean line tying faster
+          tempos to bigger songs. Tracks in the 80–90 popularity band sit at all kinds of BPMs—slow,
+          mid, and fast—so tempo alone does not explain who rises to the top.
+        </p>
         <p>
-          One takeaway from this view is that BPM alone does not always match how fast a song
+          Another takeaway is that BPM alone does not always match how fast a song
           feels. A track with a lower tempo can still sound energetic if its rhythm uses many
           eighth or sixteenth notes, while a higher-tempo song can feel calmer when notes are more
           spread out. In other words, a song at 71 BPM may feel like 142 BPM in perception, and the
-          reverse can also happen. <br><br>Try playing around with the slider yourself until you find a slower 
-          tempo but still energetic song!
+          reverse can also happen.
+        </p>
+      </section>
+
+      <section class="mini-viz" id="mini-viz-energy">
+        <h2>What about energy?</h2>
+        <p class="mini-viz-description">
+          OK—so now that we know tempo is not a reliable indicator on its own, what else can we try?
+          It seems plausible that how <strong>energetic</strong> a song sounds—not just how fast it is—might
+          line up with popularity. Drag across the energy chart below—does narrowing to “high energy” tracks
+          suddenly concentrate popularity, or does the density curve stay messy?
+        </p>
+        <div class="energy-brush-layout">
+          <div class="energy-brush-panel">
+            <p class="energy-panel-label">Brush an energy range (0 = calm, 1 = intense)</p>
+            <div
+              id="energy-brush-chart"
+              class="energy-brush-chart viz-chart"
+              aria-label="Histogram of tracks by energy with brush to filter"
+            ></div>
+          </div>
+          <div class="energy-pop-panel">
+            <p class="energy-panel-label">Popularity density for tracks in your brush</p>
+            <div
+              id="energy-pop-chart"
+              class="energy-pop-chart viz-chart"
+              aria-label="Density of popularity for tracks in the selected energy range"
+            ></div>
+          </div>
+        </div>
+        <p id="energy-brush-status" class="tempo-scatter-status">Loading chart…</p>
+
+        <p class="viz-disclaimer">
+          <strong>Energy:</strong> Spotify’s 0–1 measure of how intense or busy a track sounds—not tempo or mood.
+        </p>
+      </section>
+
+      <section class="insight-section">
+        <p class="insight-lead">
+          Drag the brush from low to high energy and watch the popularity density on the right: the shape
+          stays stubbornly similar. Calm tracks and intense ones both spread across the same popularity
+          bands—there is no obvious “energy sweet spot” where hits pile up. Energy does not look like the
+          single dial that solves our problem either.
+        </p>
+      </section>
+
+      <section class="mini-viz" id="mini-viz-mood">
+        <h2>Can a song make me happier?</h2>
+        <p class="mini-viz-description">
+          What if we flip the script? A lot of us reach for music to feel better or unwind—so maybe the
+          <strong>mood</strong> of a track shapes how popular it is with a wide audience. It seems plausible
+          that a sunnier song would outperform a downbeat one. Each cell below is a valence × energy pocket;
+          <strong>color is median popularity</strong> in that pocket (brighter = more popular). Hover for track
+          counts—if mood alone drove hits, sunnier columns would light up across the board.
+        </p>
+
+        <div
+          id="mood-heatmap-chart"
+          class="mood-heatmap-chart viz-chart"
+          aria-label="Heatmap of median popularity by valence and energy bins"
+        ></div>
+        <p id="mood-heatmap-readout" class="mood-heatmap-readout"></p>
+        <p id="mood-heatmap-status" class="tempo-scatter-status">Loading chart…</p>
+
+        <p class="viz-disclaimer">
+          <strong>Valence:</strong> Spotify’s 0–1 “sunniness” from audio—not lyrics or whether the song cheers you up.
+        </p>
+      </section>
+
+      <section class="insight-section">
+        <p class="insight-lead">
+          We might be getting somewhere—but not quite. At least it seems like we can kind of see a correlation
+          between energy and valence, which makes sense: higher-energy songs often <em>sound</em> sunnier too.
+        </p>
+        <p>
+          Looking at the heatmap, lower-valence pockets may look slightly higher in popularity from the color,
+          but the gap is not very statistically meaningful. So maybe not valence, then…
+        </p>
+      </section>
+
+      <section class="big-picture-section">
+        <h2>What it all means</h2>
+        <p class="big-picture-body">
+          OK—maybe all these visualizations have helped you realize something we learned while parsing the
+          data: a popular song is not made by its statistics. A track you love might not land with your
+          friend; each song hits each listener differently, and that is part of what makes music great.
+        </p>
+        <p class="big-picture-punchline">
+          The answer is simple: there is not one clear-cut way to decide what makes a song popular.
+        </p>
+
+        <div class="big-picture-break" aria-hidden="true"></div>
+
+        <p class="big-picture-bridge">
+          Now that that is out of the way, one more thing. Using the three attributes we looked at—tempo,
+          energy, and valence—let us try to point you toward songs you might like based on similarity.
         </p>
       </section>
 
       <section class="mini-viz" id="mini-viz-neighbor">
         <h2>Which songs are living in the same sonic neighborhood as yours?</h2>
         <p class="mini-viz-description">
-          Every track in our dataset sits at a point in three-axis space: how energetic it is, how
-          positive its mood, and how fast it runs. Type a song or artist below—your pick lights up in
-          gold, and the 20 tracks closest to it (by straight-line distance across those three axes)
-          glow pink. Drag to rotate; scroll to zoom.
+          Each track in our merged English catalog sits at a point in three-axis space: how energetic it is, how positive its mood, and how fast it runs.
+          Type a song or artist below—your pick lights up in gold, and the 20 closest unique titles
+          (by straight-line distance across those three axes) glow pink. Drag to rotate; scroll to zoom.
         </p>
 
         <div class="nbr-search-wrap">
@@ -145,13 +284,29 @@
         </div>
 
         <p class="viz-disclaimer">
-          <strong>What the axes mean:</strong> Energy (0–1) captures loudness and intensity.
-          Valence (0–1) is Spotify's mood score—higher means sunnier. Tempo is raw BPM.
-          Distance is geometric across these three dimensions, so a "neighbor" shares a similar
-          combination of all three—not necessarily the same genre or feel.
+          <strong>Search:</strong> English tracks from our CSVs only. Neighbors use energy, valence, and tempo.
         </p>
       </section>
+
+      <section class="closing-section">
+        <p class="closing-body">
+          Hopefully you learned something today. Maybe next time you queue up a favorite, you will pay a
+          little more attention to its mood, energy, and tempo—or maybe our 3D viz pointed you to something
+          new worth a spin.
+        </p>
+        <p class="closing-signoff">Whatever it is, happy listening!</p>
+      </section>
     </main>
+
+    <footer class="ai-disclaimer" aria-label="AI tools disclosure">
+      <p>
+        <strong>AI tools disclosure:</strong> Parts of this project were developed with assistance from
+        AI tools, including <strong>Cursor</strong>, <strong>Google Gemini</strong>, and
+        <strong>ChatGPT</strong> (e.g. drafting code, copy, and debugging). All outputs were reviewed,
+        edited, and integrated by the authors; we remain responsible for the final implementation,
+        analysis, and claims on this page.
+      </p>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>

@@ -1,7 +1,47 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const NEIGHBOR_DATA = "data/processed/analysis_ready_popular_tracks_2015_2025.csv";
+function esc(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function kernelEpanechnikov(bandwidth) {
+  return (v) => {
+    const u = v / bandwidth;
+    return Math.abs(u) <= 1 ? (0.75 * (1 - u * u)) / bandwidth : 0;
+  };
+}
+
+function popularityDensity(values, xTicks, bandwidth) {
+  const kernel = kernelEpanechnikov(bandwidth);
+  const n = values.length;
+  return xTicks.map((x) => ({
+    x,
+    density: d3.sum(values, (v) => kernel(x - v)) / n,
+  }));
+}
+
+function initNeighborViz() {
+  const NEIGHBOR_LANGUAGE = "English";
+  const NEIGHBOR_SOURCES = [
+    { path: "data/raw/spotify_tracks.csv", englishOnly: true },
+    {
+      path: "data/processed/analysis_ready_popular_tracks_all_years.csv",
+      englishOnly: true,
+    },
+    {
+      path: "data/processed/analysis_ready_popular_tracks_2015_2025.csv",
+      englishOnly: true,
+    },
+    {
+      path: "data/processed/analysis_ready_popular_artists_tracks_2015_2025.csv",
+      englishOnly: false,
+    },
+  ];
   const TEMPO_MIN = 60;
   const TEMPO_RANGE = 220 - TEMPO_MIN;
+  const BG_PLOT_MAX = 15000;
 
   const searchInput = document.getElementById("nbr-search");
   const dropdown = document.getElementById("nbr-dropdown");
@@ -15,17 +55,64 @@ document.addEventListener("DOMContentLoaded", () => {
   let plotReady = false;
   let dropdownMatches = [];
 
-  function esc(s) {
-    return String(s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+  function parseNeighborRow(row, { englishOnly }) {
+    if (englishOnly && Object.prototype.hasOwnProperty.call(row, "language")) {
+      const language = String(row.language || "").trim();
+      if (language !== NEIGHBOR_LANGUAGE) return null;
+    }
+
+    const energy = Number(row.energy);
+    const valence = Number(row.valence);
+    const tempo = Number(row.tempo);
+    const popularity = Number(row.popularity);
+    const year = Number(row.year);
+    if (
+      !row.track_id ||
+      !Number.isFinite(energy) ||
+      !Number.isFinite(valence) ||
+      !Number.isFinite(tempo)
+    ) {
+      return null;
+    }
+
+    return {
+      trackId: row.track_id,
+      title: row.track_name || "Unknown",
+      artist: row.artist_name || row.artists || "Unknown",
+      energy,
+      valence,
+      tempo,
+      popularity: Number.isFinite(popularity) ? Math.round(popularity) : 0,
+      year: Number.isFinite(year) ? year : "N/A",
+    };
+  }
+
+  function dedupeByTrackId(list) {
+    const map = new Map();
+    for (const t of list) {
+      const prev = map.get(t.trackId);
+      if (!prev || t.popularity > prev.popularity) map.set(t.trackId, t);
+    }
+    return Array.from(map.values());
+  }
+
+  function backgroundForPlot(sel, nbrIds) {
+    const pool = tracks.filter((d) => d.trackId !== sel?.trackId && !nbrIds.has(d.trackId));
+    if (pool.length <= BG_PLOT_MAX) return pool;
+    const step = Math.ceil(pool.length / BG_PLOT_MAX);
+    return pool.filter((_, i) => i % step === 0);
+  }
+
+  function titleKey(d) {
+    return String(d.title || "")
+      .trim()
+      .toLowerCase();
   }
 
   function nearest(target, n = 20) {
     const nt = (target.tempo - TEMPO_MIN) / TEMPO_RANGE;
-    return tracks
+    const seenTitles = new Set([titleKey(target)]);
+    const ranked = tracks
       .filter((d) => d.trackId !== target.trackId)
       .map((d) => ({
         ...d,
@@ -35,8 +122,17 @@ document.addEventListener("DOMContentLoaded", () => {
           (d.tempo - TEMPO_MIN) / TEMPO_RANGE - nt
         ),
       }))
-      .sort((a, b) => a.dist - b.dist)
-      .slice(0, n);
+      .sort((a, b) => a.dist - b.dist);
+
+    const out = [];
+    for (const d of ranked) {
+      const key = titleKey(d);
+      if (seenTitles.has(key)) continue;
+      seenTitles.add(key);
+      out.push(d);
+      if (out.length >= n) break;
+    }
+    return out;
   }
 
   function renderPlot(sel) {
@@ -44,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const nbrs = sel ? nearest(sel) : [];
     const nbrIds = new Set(nbrs.map((d) => d.trackId));
-    const bg = tracks.filter((d) => d.trackId !== sel?.trackId && !nbrIds.has(d.trackId));
+    const bg = backgroundForPlot(sel, nbrIds);
 
     const tip = (d) =>
       `${esc(d.title)}<br>${esc(d.artist)}<br>Pop ${d.popularity} · ${d.year}`;
@@ -59,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
         z: bg.map((d) => d.tempo),
         text: bg.map(tip),
         hovertemplate: "%{text}<extra></extra>",
-        marker: { size: 2.5, color: "rgba(148,163,184,0.22)" },
+        marker: { size: bg.length > 8000 ? 1.5 : 2.5, color: "rgba(148,163,184,0.18)" },
       },
     ];
 
@@ -107,24 +203,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const scene = {
       bgcolor: "rgba(15,23,42,0.55)",
-      xaxis: { ...ax, title: "Energy" },
-      yaxis: { ...ax, title: "Valence (mood)" },
+      xaxis: { ...ax, title: "Energy", range: [0, 1], autorange: false },
+      yaxis: { ...ax, title: "Valence (mood)", range: [0, 1], autorange: false },
       zaxis: { ...ax, title: "Tempo (BPM)" },
     };
 
-    // Zoom to the neighborhood when a track is selected
+    // Zoom tempo when a track is selected; energy and valence stay on 0–1
     if (sel && nbrs.length) {
       const pts = [sel, ...nbrs];
-      const pad = 0.07;
       const padT = 12;
-      scene.xaxis.range = [
-        Math.max(0, Math.min(...pts.map((d) => d.energy)) - pad),
-        Math.min(1, Math.max(...pts.map((d) => d.energy)) + pad),
-      ];
-      scene.yaxis.range = [
-        Math.max(0, Math.min(...pts.map((d) => d.valence)) - pad),
-        Math.min(1, Math.max(...pts.map((d) => d.valence)) + pad),
-      ];
       scene.zaxis.range = [
         Math.max(60, Math.min(...pts.map((d) => d.tempo)) - padT),
         Math.min(220, Math.max(...pts.map((d) => d.tempo)) + padT),
@@ -180,18 +267,28 @@ document.addEventListener("DOMContentLoaded", () => {
     listEl.innerHTML = `<h4 class="nbr-list-title">20 nearest neighbors</h4>${rows}`;
   }
 
+  function dedupeByTitle(list) {
+    const map = new Map();
+    for (const t of list) {
+      const key = titleKey(t);
+      const prev = map.get(key);
+      if (!prev || t.popularity > prev.popularity) map.set(key, t);
+    }
+    return Array.from(map.values());
+  }
+
   function showDropdown(q) {
     if (!q.trim()) {
       dropdown.hidden = true;
       return;
     }
     const ql = q.toLowerCase();
-    dropdownMatches = tracks
-      .filter(
+    dropdownMatches = dedupeByTitle(
+      tracks.filter(
         (d) =>
           d.title.toLowerCase().includes(ql) || d.artist.toLowerCase().includes(ql)
       )
-      .slice(0, 12);
+    ).slice(0, 12);
     if (!dropdownMatches.length) {
       dropdown.hidden = true;
       return;
@@ -212,14 +309,13 @@ document.addEventListener("DOMContentLoaded", () => {
     searchInput.value = `${track.title} — ${track.artist}`;
     dropdown.hidden = true;
     if (selectedInfo) {
-      selectedInfo.textContent = `Showing 20 tracks nearest to "${track.title}" in energy × mood × tempo.`;
+      selectedInfo.textContent = `Showing 20 unique titles nearest to "${track.title}" across ${tracks.length.toLocaleString()} merged English tracks.`;
     }
     renderPlot(track);
   }
 
   searchInput.addEventListener("input", () => {
     if (!searchInput.value.trim()) {
-      selectedTrack = null;
       if (selectedInfo) selectedInfo.textContent = "";
       renderPlot(null);
     }
@@ -241,47 +337,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  d3.csv(NEIGHBOR_DATA)
-    .then((rows) => {
-      tracks = rows
-        .map((row) => {
-          const energy = Number(row.energy);
-          const valence = Number(row.valence);
-          const tempo = Number(row.tempo);
-          const popularity = Number(row.popularity);
-          const year = Number(row.year);
-          if (
-            !row.track_id ||
-            !Number.isFinite(energy) ||
-            !Number.isFinite(valence) ||
-            !Number.isFinite(tempo)
-          ) {
-            return null;
-          }
-          return {
-            trackId: row.track_id,
-            title: row.track_name || "Unknown",
-            artist: row.artist_name || "Unknown",
-            energy,
-            valence,
-            tempo,
-            popularity: Number.isFinite(popularity) ? Math.round(popularity) : 0,
-            year: Number.isFinite(year) ? year : "N/A",
-          };
-        })
-        .filter(Boolean);
+  Promise.all(NEIGHBOR_SOURCES.map((source) => d3.csv(source.path)))
+    .then((results) => {
+      const parsed = [];
+      results.forEach((rows, i) => {
+        const source = NEIGHBOR_SOURCES[i];
+        for (const row of rows) {
+          const track = parseNeighborRow(row, source);
+          if (track) parsed.push(track);
+        }
+      });
+      tracks = dedupeByTrackId(parsed);
 
       if (tracks.length) {
         renderPlot(null);
+      } else {
+        plotEl.textContent = `No ${NEIGHBOR_LANGUAGE} tracks found in the merged catalogs.`;
       }
     })
     .catch(() => {
       plotEl.textContent =
         "Could not load data. Serve the page over http(s) (e.g. python -m http.server).";
     });
-});
+}
 
-document.addEventListener("DOMContentLoaded", () => {
+function initTempoViz() {
   const slider = document.getElementById("tempo-slider");
   const songTitle = document.getElementById("song-title");
   const songArtist = document.getElementById("song-artist");
@@ -292,6 +372,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const popularityBubble = document.getElementById("popularity-bubble");
   const popularityLabel = document.getElementById("popularity-label");
   const fillTrack = document.getElementById("tempo-fill-track");
+  const tempoVizDescription = document.getElementById("tempo-viz-description");
+  const tempoViewExplorerBtn = document.getElementById("tempo-view-explorer");
+  const tempoViewScatterBtn = document.getElementById("tempo-view-scatter");
+  const tempoExplorerPanel = document.getElementById("tempo-view-explorer-panel");
+  const tempoScatterPanel = document.getElementById("tempo-view-scatter-panel");
+  const tempoScatterChart = document.getElementById("tempo-scatter-chart");
+  const tempoScatterStatus = document.getElementById("tempo-scatter-status");
 
   if (
     !slider ||
@@ -303,16 +390,31 @@ document.addEventListener("DOMContentLoaded", () => {
     !youtubeLink ||
     !popularityBubble ||
     !popularityLabel ||
-    !fillTrack
+    !fillTrack ||
+    !tempoViewExplorerBtn ||
+    !tempoViewScatterBtn ||
+    !tempoExplorerPanel ||
+    !tempoScatterPanel ||
+    !tempoScatterChart
   ) {
     return;
   }
 
   const dataPath = "data/processed/analysis_ready_popular_artists_tracks_2015_2025.csv";
+  const scatterDataPath = "data/processed/analysis_ready_popular_tracks_2015_2025.csv";
   let songs = [];
-  let selectedSong = null;
+  let scatterSongs = [];
   let isDataLoaded = false;
+  let isScatterDataLoaded = false;
   let suppressInputSync = false;
+  let tempoView = "explorer";
+
+  const tempoDescriptions = {
+    explorer:
+      "Drag the tempo slider to explore tracks across BPM ranges and test whether higher speed consistently aligns with higher popularity.",
+    scatter:
+      "Each dot is one popular track from 2015–2025 in our dataset. Scan whether faster tempos cluster at higher Spotify popularity—or whether the cloud stays messy.",
+  };
 
   youtubeLink.classList.add("disabled");
   youtubeLink.href = "#";
@@ -362,6 +464,111 @@ document.addEventListener("DOMContentLoaded", () => {
     popularityLabel.textContent = `Popularity bubble: ${song.popularity}/100`;
   }
 
+  function renderTempoScatter() {
+    if (!scatterSongs.length) {
+      if (tempoScatterStatus) {
+        tempoScatterStatus.textContent = isScatterDataLoaded
+          ? "No popular 2015–2025 tracks with tempo and popularity to plot."
+          : "Loading chart…";
+      }
+      return;
+    }
+
+    const margin = { top: 16, right: 18, bottom: 48, left: 52 };
+    const height = 320;
+    const width = Math.max(320, tempoScatterChart.clientWidth || 640);
+    const innerW = width - margin.left - margin.right;
+    const innerH = height - margin.top - margin.bottom;
+
+    d3.select(tempoScatterChart).selectAll("*").remove();
+
+    const svg = d3
+      .select(tempoScatterChart)
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("viewBox", `0 0 ${width} ${height}`);
+
+    const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const xMax = d3.max(scatterSongs, (d) => d.tempo) ?? 200;
+    const plotSongs = scatterSongs.filter((d) => d.tempo >= 40);
+
+    const x = d3
+      .scaleLinear()
+      .domain([40, xMax])
+      .nice()
+      .range([0, innerW]);
+    const y = d3
+      .scaleLinear()
+      .domain([45, 100])
+      .range([innerH, 0]);
+
+    g.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${innerH})`)
+      .call(d3.axisBottom(x).ticks(8).tickFormat((d) => Math.round(d)));
+    g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(6));
+
+    g.append("text")
+      .attr("x", innerW / 2)
+      .attr("y", innerH + 38)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 11)
+      .text("Tempo (BPM, from 40)");
+
+    g.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("x", -innerH / 2)
+      .attr("y", -40)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 11)
+      .text("Spotify popularity (45–100)");
+
+    g.selectAll("circle.scatter-dot")
+      .data(plotSongs)
+      .join("circle")
+      .attr("class", "scatter-dot")
+      .attr("cx", (d) => x(d.tempo))
+      .attr("cy", (d) => y(d.popularity))
+      .attr("r", 3.2)
+      .attr("fill", "rgba(244, 114, 182, 0.45)")
+      .attr("stroke", "rgba(255, 255, 255, 0.12)")
+      .attr("stroke-width", 0.5)
+      .append("title")
+      .text((d) => `${d.title} — ${d.artist}\n${Math.round(d.tempo)} BPM · Pop ${d.popularity}`);
+
+    if (tempoScatterStatus) {
+      tempoScatterStatus.textContent = `${plotSongs.length.toLocaleString()} popular tracks (2015–2025, tempo ≥ 40 BPM, popularity ≥ 45).`;
+    }
+  }
+
+  function setTempoView(view) {
+    tempoView = view;
+    const explorerActive = view === "explorer";
+
+    tempoViewExplorerBtn.classList.toggle("is-active", explorerActive);
+    tempoViewScatterBtn.classList.toggle("is-active", !explorerActive);
+    tempoViewExplorerBtn.setAttribute("aria-selected", String(explorerActive));
+    tempoViewScatterBtn.setAttribute("aria-selected", String(!explorerActive));
+
+    tempoExplorerPanel.hidden = !explorerActive;
+    tempoScatterPanel.hidden = explorerActive;
+
+    if (tempoVizDescription) {
+      tempoVizDescription.textContent = tempoDescriptions[view];
+    }
+
+    if (!explorerActive) {
+      renderTempoScatter();
+    }
+  }
+
+  tempoViewExplorerBtn.addEventListener("click", () => setTempoView("explorer"));
+  tempoViewScatterBtn.addEventListener("click", () => setTempoView("scatter"));
+
   function refreshSelection() {
     if (!isDataLoaded || songs.length === 0) {
       return;
@@ -370,9 +577,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!suppressInputSync) {
       tempoInput.value = String(selectedTempo);
     }
-    selectedSong = getNearestSong(selectedTempo);
     updateThumbSize(selectedTempo);
-    updateSongPanel(selectedSong, selectedTempo);
+    updateSongPanel(getNearestSong(selectedTempo), selectedTempo);
   }
 
   slider.addEventListener("input", refreshSelection);
@@ -391,6 +597,38 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   refreshSelection();
+
+  d3.csv(scatterDataPath)
+    .then((rows) => {
+      scatterSongs = rows
+        .map((row) => {
+          const tempo = Number(row.tempo);
+          const popularity = Number(row.popularity);
+          if (!Number.isFinite(tempo) || !Number.isFinite(popularity) || !row.track_id) {
+            return null;
+          }
+          return {
+            trackId: row.track_id,
+            title: row.track_name || "Unknown title",
+            artist: row.artist_name || "Unknown artist",
+            tempo,
+            popularity: Math.round(popularity),
+          };
+        })
+        .filter(Boolean);
+      isScatterDataLoaded = true;
+      if (tempoView === "scatter") {
+        renderTempoScatter();
+      } else if (tempoScatterStatus) {
+        tempoScatterStatus.textContent = `${scatterSongs.length.toLocaleString()} tracks ready—open Tempo vs popularity to view.`;
+      }
+    })
+    .catch(() => {
+      isScatterDataLoaded = true;
+      if (tempoScatterStatus) {
+        tempoScatterStatus.textContent = "Could not load popular 2015–2025 tracks for the scatter plot.";
+      }
+    });
 
   d3.csv(dataPath)
     .then((rows) => {
@@ -433,4 +671,506 @@ document.addEventListener("DOMContentLoaded", () => {
       audioNote.textContent = "Try: python3 -m http.server then open the page from localhost.";
       slider.disabled = true;
     });
+}
+
+function initEnergyBrush() {
+  const brushChart = document.getElementById("energy-brush-chart");
+  const popChart = document.getElementById("energy-pop-chart");
+  const statusEl = document.getElementById("energy-brush-status");
+  if (!brushChart || !popChart) return;
+
+  const dataPath = "data/processed/analysis_ready_popular_tracks_2015_2025.csv";
+  let songs = [];
+  let brushX = null;
+
+  function renderPopDensity(subset) {
+    const margin = { top: 12, right: 12, bottom: 40, left: 48 };
+    const height = 220;
+    const width = Math.max(260, popChart.clientWidth || 400);
+    const innerW = width - margin.left - margin.right;
+    const innerH = height - margin.top - margin.bottom;
+
+    d3.select(popChart).selectAll("*").remove();
+
+    const svg = d3
+      .select(popChart)
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("viewBox", `0 0 ${width} ${height}`);
+
+    const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear().domain([45, 100]).range([0, innerW]);
+
+    if (!subset.length) {
+      g.append("text")
+        .attr("x", innerW / 2)
+        .attr("y", innerH / 2)
+        .attr("text-anchor", "middle")
+        .attr("fill", "#94a3b8")
+        .attr("font-size", 12)
+        .text("No tracks in this brush");
+      return;
+    }
+
+    const values = subset.map((d) => d.popularity);
+    const xTicks = d3.range(45, 100.25, 0.5);
+    const bandwidth = 4;
+    const series = popularityDensity(values, xTicks, bandwidth);
+
+    const y = d3
+      .scaleLinear()
+      .domain([0, d3.max(series, (d) => d.density) || 0.01])
+      .nice()
+      .range([innerH, 0]);
+
+    const area = d3
+      .area()
+      .curve(d3.curveBasis)
+      .x((d) => x(d.x))
+      .y0(innerH)
+      .y1((d) => y(d.density));
+
+    g.append("path")
+      .datum(series)
+      .attr("fill", "rgba(244, 114, 182, 0.55)")
+      .attr("stroke", "rgba(244, 114, 182, 0.95)")
+      .attr("stroke-width", 1.5)
+      .attr("d", area);
+
+    g.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${innerH})`)
+      .call(d3.axisBottom(x).ticks(6).tickFormat(d3.format("d")));
+    g.append("g")
+      .attr("class", "axis")
+      .call(d3.axisLeft(y).ticks(4).tickFormat((d) => d3.format(".2f")(d)));
+
+    g.append("text")
+      .attr("x", innerW / 2)
+      .attr("y", innerH + 32)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 10)
+      .text("Spotify popularity (45–100)");
+
+    g.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("x", -innerH / 2)
+      .attr("y", -38)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 10)
+      .text("Density (area = 100%)");
+  }
+
+  function updateStatus(e0, e1, subset) {
+    if (!statusEl) return;
+    if (!subset.length) {
+      statusEl.textContent = `No tracks between energy ${e0.toFixed(2)} and ${e1.toFixed(2)}. Widen the brush.`;
+      return;
+    }
+    const medianPop = d3.median(subset, (d) => d.popularity);
+    statusEl.textContent = `${subset.length.toLocaleString()} tracks with energy ${e0.toFixed(2)}–${e1.toFixed(2)} · median popularity ${medianPop?.toFixed(0) ?? "—"}. If energy “explained” hits, this density curve would sharpen as you brush higher—it usually doesn’t.`;
+  }
+
+  function applyBrushRange(e0, e1) {
+    const lo = Math.max(0, Math.min(e0, e1));
+    const hi = Math.min(1, Math.max(e0, e1));
+    const subset = songs.filter((d) => d.energy >= lo && d.energy <= hi);
+    renderPopDensity(subset);
+    updateStatus(lo, hi, subset);
+  }
+
+  function brushed(event) {
+    if (!brushX) return;
+    if (!event.selection) {
+      applyBrushRange(0, 1);
+      return;
+    }
+    const [x0, x1] = event.selection.map(brushX.invert);
+    applyBrushRange(x0, x1);
+  }
+
+  function renderEnergyBrush() {
+    const margin = { top: 10, right: 12, bottom: 36, left: 40 };
+    const height = 160;
+    const width = Math.max(260, brushChart.clientWidth || 400);
+    const innerW = width - margin.left - margin.right;
+    const innerH = height - margin.top - margin.bottom;
+
+    d3.select(brushChart).selectAll("*").remove();
+
+    const svg = d3
+      .select(brushChart)
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("viewBox", `0 0 ${width} ${height}`);
+
+    const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const energyBins = d3.bin().domain([0, 1]).thresholds(20);
+    const binned = energyBins(songs.map((d) => d.energy));
+
+    brushX = d3.scaleLinear().domain([0, 1]).range([0, innerW]);
+    const y = d3
+      .scaleLinear()
+      .domain([0, d3.max(binned, (d) => d.length) || 1])
+      .nice()
+      .range([innerH, 0]);
+
+    g.selectAll("rect.energy-bar")
+      .data(binned)
+      .join("rect")
+      .attr("class", "energy-bar")
+      .attr("x", (d) => brushX(d.x0) + 1)
+      .attr("y", (d) => y(d.length))
+      .attr("width", (d) => Math.max(0, brushX(d.x1) - brushX(d.x0) - 2))
+      .attr("height", (d) => innerH - y(d.length))
+      .attr("fill", "rgba(56, 189, 248, 0.65)")
+      .attr("rx", 2);
+
+    g.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${innerH})`)
+      .call(d3.axisBottom(brushX).ticks(6));
+
+    const brush = d3
+      .brushX()
+      .extent([
+        [0, 0],
+        [innerW, innerH],
+      ])
+      .on("end", brushed);
+
+    const brushLayer = g.append("g").attr("class", "brush").call(brush);
+    brushLayer.call(brush.move, [brushX(0.55), brushX(1)]);
+
+    g.append("text")
+      .attr("x", innerW / 2)
+      .attr("y", innerH + 28)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 10)
+      .text("Energy (0–1) · double-click brush to reset");
+
+    brushLayer.on("dblclick", () => {
+      brushLayer.call(brush.move, [brushX(0), brushX(1)]);
+      applyBrushRange(0, 1);
+    });
+
+    applyBrushRange(0.55, 1);
+  }
+
+  d3.csv(dataPath)
+    .then((rows) => {
+      songs = rows
+        .map((row) => {
+          const energy = Number(row.energy);
+          const popularity = Number(row.popularity);
+          if (!Number.isFinite(energy) || !Number.isFinite(popularity) || !row.track_id) {
+            return null;
+          }
+          return { energy, popularity: Math.round(popularity) };
+        })
+        .filter(Boolean);
+
+      if (!songs.length) {
+        if (statusEl) {
+          statusEl.textContent = "No popular 2015–2025 tracks with energy and popularity to plot.";
+        }
+        return;
+      }
+
+      renderEnergyBrush();
+    })
+    .catch(() => {
+      if (statusEl) {
+        statusEl.textContent = "Could not load popular 2015–2025 tracks for the energy brush chart.";
+      }
+    });
+}
+
+function initMoodHeatmap() {
+  const chartEl = document.getElementById("mood-heatmap-chart");
+  const readoutEl = document.getElementById("mood-heatmap-readout");
+  const statusEl = document.getElementById("mood-heatmap-status");
+  if (!chartEl) return;
+
+  const dataPath = "data/processed/analysis_ready_popular_tracks_2015_2025.csv";
+  const BIN_STEP = 0.1;
+  const POP_MIN = 45;
+  const POP_MAX = 100;
+  const MIN_CELL_COUNT = 8;
+
+  function featureBinIndex(value) {
+    const idx = Math.floor(value / BIN_STEP);
+    return Math.max(0, Math.min(9, idx));
+  }
+
+  function binLabel(i) {
+    const lo = (i * BIN_STEP).toFixed(1);
+    const hi = Math.min(1, (i + 1) * BIN_STEP).toFixed(1);
+    return `${lo}–${hi}`;
+  }
+
+  function paddedColorExtent(extent) {
+    const span = extent[1] - extent[0];
+    const pad = Math.max(2.5, span * 0.1);
+    return [Math.max(POP_MIN, extent[0] - pad), Math.min(POP_MAX, extent[1] + pad)];
+  }
+
+  function buildCells(songs) {
+    const buckets = new Map();
+
+    for (const song of songs) {
+      const vi = featureBinIndex(song.valence);
+      const ei = featureBinIndex(song.energy);
+      const key = `${vi},${ei}`;
+      if (!buckets.has(key)) {
+        buckets.set(key, { vi, ei, pops: [] });
+      }
+      buckets.get(key).pops.push(song.popularity);
+    }
+
+    const cells = [];
+    for (let vi = 0; vi < 10; vi += 1) {
+      for (let ei = 0; ei < 10; ei += 1) {
+        const bucket = buckets.get(`${vi},${ei}`);
+        const pops = bucket?.pops ?? [];
+        cells.push({
+          vi,
+          ei,
+          count: pops.length,
+          median: pops.length ? d3.median(pops) : null,
+        });
+      }
+    }
+    return cells;
+  }
+
+  function renderHeatmap(songs) {
+    const cells = buildCells(songs);
+    const ranked = cells.filter((d) => d.median != null && d.count >= MIN_CELL_COUNT);
+    const dataExtent = ranked.length ? d3.extent(ranked, (d) => d.median) : [POP_MIN, POP_MAX];
+    const popExtent = paddedColorExtent(dataExtent);
+
+    const margin = { top: 16, right: 88, bottom: 52, left: 80 };
+    const height = 380;
+    const width = Math.max(340, chartEl.clientWidth || 640);
+    const innerW = width - margin.left - margin.right;
+    const innerH = height - margin.top - margin.bottom;
+
+    d3.select(chartEl).selectAll("*").remove();
+
+    const svg = d3
+      .select(chartEl)
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("viewBox", `0 0 ${width} ${height}`);
+
+    const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const x = d3
+      .scaleBand()
+      .domain(d3.range(10))
+      .range([0, innerW])
+      .padding(0.04);
+    const y = d3
+      .scaleBand()
+      .domain(d3.range(10))
+      .range([innerH, 0])
+      .padding(0.04);
+
+    const color = d3
+      .scaleSequential()
+      .domain([popExtent[0], popExtent[1]])
+      .interpolator(d3.interpolateRgbBasis(["#1e1b4b", "#6366f1", "#f472b6", "#fde047"]));
+
+    const defs = svg.append("defs");
+    const gradient = defs
+      .append("linearGradient")
+      .attr("id", "mood-heat-legend")
+      .attr("x1", "0%")
+      .attr("y1", "100%")
+      .attr("x2", "0%")
+      .attr("y2", "0%");
+    d3.range(0, 1.01, 0.1).forEach((t) => {
+      gradient
+        .append("stop")
+        .attr("offset", `${t * 100}%`)
+        .attr("stop-color", color(popExtent[0] + t * (popExtent[1] - popExtent[0])));
+    });
+
+    g.selectAll("rect.heatmap-cell")
+      .data(cells)
+      .join("rect")
+      .attr("class", "heatmap-cell")
+      .attr("x", (d) => x(d.vi))
+      .attr("y", (d) => y(d.ei))
+      .attr("width", x.bandwidth())
+      .attr("height", y.bandwidth())
+      .attr("fill", (d) => {
+        if (d.median == null || d.count < MIN_CELL_COUNT) {
+          return "rgba(30, 41, 59, 0.55)";
+        }
+        return color(d.median);
+      })
+      .attr("rx", 2)
+      .on("mouseenter", function onEnter(_event, d) {
+        d3.selectAll(".heatmap-cell").classed("is-active", false);
+        d3.select(this).classed("is-active", true);
+        if (!readoutEl) return;
+        if (!d.count) {
+          readoutEl.textContent = `Valence ${binLabel(d.vi)} · Energy ${binLabel(d.ei)} · no tracks in this pocket.`;
+          return;
+        }
+        if (d.count < MIN_CELL_COUNT) {
+          readoutEl.textContent = `Valence ${binLabel(d.vi)} · Energy ${binLabel(d.ei)} · only ${d.count} tracks (too few for a stable median).`;
+          return;
+        }
+        readoutEl.textContent = `Valence ${binLabel(d.vi)} · Energy ${binLabel(d.ei)} · median popularity ${Math.round(d.median)} · ${d.count.toLocaleString()} tracks.`;
+      })
+      .on("mouseleave", () => {
+        d3.selectAll(".heatmap-cell").classed("is-active", false);
+        if (readoutEl) readoutEl.textContent = "";
+      })
+      .append("title")
+      .text((d) => {
+        if (!d.count) {
+          return `${binLabel(d.vi)} valence · ${binLabel(d.ei)} energy · no tracks`;
+        }
+        if (d.median == null || d.count < MIN_CELL_COUNT) {
+          return `${binLabel(d.vi)} valence · ${binLabel(d.ei)} energy · ${d.count} tracks`;
+        }
+        return `${binLabel(d.vi)} valence · ${binLabel(d.ei)} energy · median pop ${Math.round(d.median)} · ${d.count} tracks`;
+      });
+
+    g.selectAll("text.heatmap-label")
+      .data(cells.filter((d) => d.median != null && d.count >= MIN_CELL_COUNT))
+      .join("text")
+      .attr("class", "heatmap-label")
+      .attr("x", (d) => x(d.vi) + x.bandwidth() / 2)
+      .attr("y", (d) => y(d.ei) + y.bandwidth() / 2 + 4)
+      .attr("text-anchor", "middle")
+      .attr("fill", (d) => (d.median >= (popExtent[0] + popExtent[1]) / 2 ? "#0f172a" : "#f8fafc"))
+      .attr("font-size", 10)
+      .attr("font-weight", 600)
+      .attr("pointer-events", "none")
+      .text((d) => Math.round(d.median));
+
+    g.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${innerH})`)
+      .call(
+        d3
+          .axisBottom(x)
+          .tickFormat((i) => (Number(i) % 2 === 0 ? binLabel(i) : ""))
+          .tickSizeOuter(0)
+      );
+
+    g.append("g")
+      .attr("class", "axis")
+      .call(
+        d3
+          .axisLeft(y)
+          .tickFormat((i) => binLabel(i))
+          .tickSizeOuter(0)
+      );
+
+    g.append("text")
+      .attr("x", innerW / 2)
+      .attr("y", innerH + 40)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 11)
+      .text("Valence / mood (0 = subdued → 1 = sunnier)");
+
+    g.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("x", -innerH / 2)
+      .attr("y", -58)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 11)
+      .text("Energy (0 = calm → 1 = intense)");
+
+    const legendH = innerH;
+    const legendW = 12;
+    const legendX = innerW + 28;
+    const legend = g.append("g").attr("transform", `translate(${legendX},0)`);
+    const legendScale = d3
+      .scaleLinear()
+      .domain([popExtent[0], popExtent[1]])
+      .range([legendH, 0]);
+
+    legend
+      .append("rect")
+      .attr("width", legendW)
+      .attr("height", legendH)
+      .attr("fill", "url(#mood-heat-legend)")
+      .attr("rx", 3);
+
+    legend
+      .append("g")
+      .attr("transform", `translate(${legendW + 6},0)`)
+      .call(d3.axisRight(legendScale).ticks(5).tickFormat(d3.format("d")));
+
+    legend
+      .append("text")
+      .attr("x", legendW / 2)
+      .attr("y", -8)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 9)
+      .text("Median pop");
+
+    if (statusEl) {
+      statusEl.textContent = `${songs.length.toLocaleString()} tracks (2015–2025) · color = median popularity · no clear sweep toward sunnier valence.`;
+    }
+  }
+
+  d3.csv(dataPath)
+    .then((rows) => {
+      const songs = rows
+        .map((row) => {
+          const valence = Number(row.valence);
+          const energy = Number(row.energy);
+          const popularity = Number(row.popularity);
+          if (
+            !Number.isFinite(valence) ||
+            !Number.isFinite(energy) ||
+            !Number.isFinite(popularity) ||
+            !row.track_id
+          ) {
+            return null;
+          }
+          return { valence, energy, popularity: Math.round(popularity) };
+        })
+        .filter(Boolean);
+
+      if (!songs.length) {
+        if (statusEl) {
+          statusEl.textContent = "No popular 2015–2025 tracks with valence, energy, and popularity to plot.";
+        }
+        return;
+      }
+
+      renderHeatmap(songs);
+    })
+    .catch(() => {
+      if (statusEl) {
+        statusEl.textContent = "Could not load popular 2015–2025 tracks for the mood heatmap.";
+      }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initNeighborViz();
+  initTempoViz();
+  initEnergyBrush();
+  initMoodHeatmap();
 });
