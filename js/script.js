@@ -466,7 +466,7 @@ function initTempoViz() {
     const minTempo = Number(slider.min);
     const maxTempo = Number(slider.max);
     const ratio = (value - minTempo) / (maxTempo - minTempo);
-    const fillHeight = 10 + ratio * 212;
+    const fillHeight = 10 + ratio * 320;
     fillTrack.style.height = `${fillHeight}px`;
   }
 
@@ -478,8 +478,8 @@ function initTempoViz() {
     youtubeLink.classList.remove("disabled");
     audioNote.textContent = "Click Open on YouTube to hear this track.";
 
-    const minBubble = 10;
-    const maxBubble = 126;
+    const minBubble = 14;
+    const maxBubble = 175;
     const minPopularity = 45;
     const maxPopularity = 100;
     const clampedPopularity = Math.max(minPopularity, Math.min(maxPopularity, song.popularity));
@@ -501,7 +501,7 @@ function initTempoViz() {
     }
 
     const margin = { top: 16, right: 18, bottom: 48, left: 52 };
-    const height = 320;
+    const height = 520;
     const width = Math.max(320, tempoScatterChart.clientWidth || 640);
     const innerW = width - margin.left - margin.right;
     const innerH = height - margin.top - margin.bottom;
@@ -559,7 +559,7 @@ function initTempoViz() {
       .attr("class", "scatter-dot")
       .attr("cx", (d) => x(d.tempo))
       .attr("cy", (d) => y(d.popularity))
-      .attr("r", 3.2)
+      .attr("r", 4.5)
       .attr("fill", "rgba(244, 114, 182, 0.45)")
       .attr("stroke", "rgba(255, 255, 255, 0.12)")
       .attr("stroke-width", 0.5)
@@ -714,7 +714,7 @@ function initEnergyBrush() {
 
   function renderPopDensity(subset) {
     const margin = { top: 12, right: 12, bottom: 40, left: 48 };
-    const height = 220;
+    const height = 360;
     const width = Math.max(260, popChart.clientWidth || 400);
     const innerW = width - margin.left - margin.right;
     const innerH = height - margin.top - margin.bottom;
@@ -824,7 +824,7 @@ function initEnergyBrush() {
 
   function renderEnergyBrush() {
     const margin = { top: 10, right: 12, bottom: 36, left: 40 };
-    const height = 160;
+    const height = 260;
     const width = Math.max(260, brushChart.clientWidth || 400);
     const innerW = width - margin.left - margin.right;
     const innerH = height - margin.top - margin.bottom;
@@ -993,7 +993,7 @@ function initMoodHeatmap() {
     const popExtent = paddedColorExtent(dataExtent);
 
     const margin = { top: 16, right: 88, bottom: 52, left: 80 };
-    const height = 380;
+    const height = 580;
     const width = Math.max(340, chartEl.clientWidth || 640);
     const innerW = width - margin.left - margin.right;
     const innerH = height - margin.top - margin.bottom;
