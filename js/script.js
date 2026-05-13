@@ -1,3 +1,14 @@
+/**
+ * CMSC471 Final Project — interactive visualizations
+ *
+ * Entry: DOMContentLoaded → initNeighborViz, initTempoViz, initEnergyBrush, initMoodHeatmap
+ * Data: CSVs under data/processed/ and data/raw/ (see README.md)
+ * Requires: D3 v7, Plotly 2.x, page served over http(s)
+ */
+
+// --- Shared helpers (used by energy brush KDE) ---
+
+/** Escape text for safe HTML insertion in tooltips and neighbor list rows. */
 function esc(s) {
   return String(s)
     .replace(/&/g, "&amp;")
@@ -6,6 +17,7 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+/** Epanechnikov kernel for popularity KDE in the energy brush chart. */
 function kernelEpanechnikov(bandwidth) {
   return (v) => {
     const u = v / bandwidth;
@@ -13,6 +25,7 @@ function kernelEpanechnikov(bandwidth) {
   };
 }
 
+/** Kernel density estimate of popularity at each tick on the x-axis. */
 function popularityDensity(values, xTicks, bandwidth) {
   const kernel = kernelEpanechnikov(bandwidth);
   const n = values.length;
@@ -22,6 +35,12 @@ function popularityDensity(values, xTicks, bandwidth) {
   }));
 }
 
+// --- 3D neighbor explorer (#mini-viz-neighbor) — Plotly scatter3d ---
+
+/**
+ * Capstone viz: merge English catalogs, search by title/artist, show 20 nearest
+ * tracks by Euclidean distance in (energy, valence, normalized tempo).
+ */
 function initNeighborViz() {
   const NEIGHBOR_LANGUAGE = "English";
   const NEIGHBOR_SOURCES = [
@@ -40,8 +59,8 @@ function initNeighborViz() {
     },
   ];
   const TEMPO_MIN = 60;
-  const TEMPO_RANGE = 220 - TEMPO_MIN;
-  const BG_PLOT_MAX = 15000;
+  const TEMPO_RANGE = 220 - TEMPO_MIN; // scale tempo to ~0–1 so it matches energy/valence axes
+  const BG_PLOT_MAX = 15000; // subsample background points for Plotly performance
 
   const searchInput = document.getElementById("nbr-search");
   const dropdown = document.getElementById("nbr-dropdown");
@@ -109,6 +128,7 @@ function initNeighborViz() {
       .toLowerCase();
   }
 
+  /** Rank by 3D distance; skip duplicate titles so neighbors are distinct songs. */
   function nearest(target, n = 20) {
     const nt = (target.tempo - TEMPO_MIN) / TEMPO_RANGE;
     const seenTitles = new Set([titleKey(target)]);
@@ -361,6 +381,12 @@ function initNeighborViz() {
     });
 }
 
+// --- Tempo section (#mini-viz-1) — track explorer + scatter toggle ---
+
+/**
+ * Two linked views: vertical BPM slider picks nearest track from artist slice;
+ * scatter mode plots tempo vs popularity for the broader 2015–2025 hit set.
+ */
 function initTempoViz() {
   const slider = document.getElementById("tempo-slider");
   const songTitle = document.getElementById("song-title");
@@ -673,6 +699,9 @@ function initTempoViz() {
     });
 }
 
+// --- Energy section (#mini-viz-energy) — brush histogram → popularity KDE ---
+
+/** Linked brush: filter tracks by energy bin, redraw popularity density on the right. */
 function initEnergyBrush() {
   const brushChart = document.getElementById("energy-brush-chart");
   const popChart = document.getElementById("energy-pop-chart");
@@ -716,7 +745,7 @@ function initEnergyBrush() {
 
     const values = subset.map((d) => d.popularity);
     const xTicks = d3.range(45, 100.25, 0.5);
-    const bandwidth = 4;
+    const bandwidth = 4; // KDE smoothness on popularity axis (45–100)
     const series = popularityDensity(values, xTicks, bandwidth);
 
     const y = d3
@@ -893,6 +922,12 @@ function initEnergyBrush() {
     });
 }
 
+// --- Mood / valence section (#mini-viz-mood) — valence × energy heatmap ---
+
+/**
+ * 10×10 bins over valence and energy; cell color = median popularity.
+ * Cells with fewer than MIN_CELL_COUNT tracks are hidden to avoid noisy pockets.
+ */
 function initMoodHeatmap() {
   const chartEl = document.getElementById("mood-heatmap-chart");
   const readoutEl = document.getElementById("mood-heatmap-readout");
@@ -903,7 +938,7 @@ function initMoodHeatmap() {
   const BIN_STEP = 0.1;
   const POP_MIN = 45;
   const POP_MAX = 100;
-  const MIN_CELL_COUNT = 8;
+  const MIN_CELL_COUNT = 8; // omit sparse bins from the heatmap
 
   function featureBinIndex(value) {
     const idx = Math.floor(value / BIN_STEP);
@@ -1167,6 +1202,8 @@ function initMoodHeatmap() {
       }
     });
 }
+
+// --- Bootstrap all visualizations once the DOM is ready ---
 
 document.addEventListener("DOMContentLoaded", () => {
   initNeighborViz();

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");
 
+/* ===== Base layout & typography ===== */
+
 * {
   box-sizing: border-box;
 }
@@ -75,6 +77,8 @@ p {
   margin-bottom: 0;
 }
 
+/* ===== Mini-viz sections (shared card chrome) ===== */
+
 .mini-viz {
   margin-top: 1.75rem;
   background: linear-gradient(145deg, rgba(30, 41, 59, 0.78) 0%, rgba(88, 28, 135, 0.78) 100%);
@@ -94,6 +98,8 @@ p {
   margin-bottom: 1rem;
   color: #e9d5ff;
 }
+
+/* ===== Tempo viz (#mini-viz-1) — slider, scatter toggle, player panel ===== */
 
 .tempo-view-switch {
   margin-bottom: 1.25rem;
@@ -163,6 +169,8 @@ p {
   display: none !important;
 }
 
+/* ===== Shared D3 chart containers ===== */
+
 .viz-chart {
   border-radius: 12px;
   background: rgba(15, 23, 42, 0.48);
@@ -195,6 +203,8 @@ p {
   font-size: 0.76rem;
   color: #a78bfa;
 }
+
+/* ===== Mood heatmap (#mini-viz-mood) ===== */
 
 .mood-heatmap-chart {
   width: 100%;
@@ -495,6 +505,8 @@ p {
   color: #fdf4ff;
 }
 
+/* ===== Insight blurbs between chapters ===== */
+
 .insight-section {
   margin-top: 1.2rem;
   padding: 1rem 1.1rem;
@@ -513,6 +525,8 @@ p {
   margin: 0;
   color: #e9d5ff;
 }
+
+/* ===== “What it all means” bridge section ===== */
 
 .big-picture-section {
   margin-top: 2rem;
@@ -563,7 +577,7 @@ p {
   color: #f5d0fe;
 }
 
-/* ===== Neighbor Finder ===== */
+/* ===== 3D neighbor explorer (#mini-viz-neighbor) ===== */
 
 .nbr-search-wrap {
   margin-bottom: 1rem;
@@ -774,6 +788,8 @@ p {
   transition: background 150ms;
 }
 
+/* ===== Energy brush (#mini-viz-energy) ===== */
+
 .energy-brush-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -813,6 +829,8 @@ p {
 .nbr-yt:hover {
   background: rgba(190, 24, 93, 0.95);
 }
+
+/* ===== Closing & footer ===== */
 
 .closing-section {
   margin-top: 2rem;
