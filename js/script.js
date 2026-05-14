@@ -1275,10 +1275,10 @@ function initGenreViz() {
       .attr("stroke-dasharray", "4,4");
 
     [
-      { qx: 0.03, qy: 0.97, label: "Calm & subdued" },
-      { qx: 0.53, qy: 0.97, label: "Calm & sunny" },
-      { qx: 0.03, qy: 0.50, label: "Intense & dark" },
-      { qx: 0.53, qy: 0.50, label: "Intense & sunny" },
+      { qx: 0.03, qy: 0.97, label: "Intense & subdued" },
+      { qx: 0.53, qy: 0.97, label: "Intense & sunny" },
+      { qx: 0.03, qy: 0.50, label: "Calm & dark" },
+      { qx: 0.53, qy: 0.50, label: "Calm & sunny" },
     ].forEach(({ qx, qy, label }) => {
       g.append("text")
         .attr("x", x(qx))
