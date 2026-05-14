@@ -912,3 +912,25 @@ p {
   color: #c4b5fd;
   font-weight: 600;
 }
+
+/* ===== Genre bubble chart (#mini-viz-genre) ===== */
+
+.genre-bubble-chart {
+  width: 100%;
+  min-height: 400px;
+}
+
+.genre-bubble-readout {
+  margin: 0.4rem 0 0;
+  min-height: 0;
+  font-size: 0.76rem;
+  color: #c4b5fd;
+}
+
+.genre-bubble-readout:not(:empty) {
+  min-height: 1.1rem;
+}
+
+.genre-node {
+  cursor: default;
+}

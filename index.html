@@ -167,10 +167,10 @@
       <section class="mini-viz" id="mini-viz-energy">
         <h2>What about energy?</h2>
         <p class="mini-viz-description">
-          OK—so now that we know tempo is not a reliable indicator on its own, what else can we try?
+          So tempo alone does not explain popularity—what else can we try?
           It seems plausible that how <strong>energetic</strong> a song sounds—not just how fast it is—might
-          line up with popularity. Drag across the energy chart below—does narrowing to “high energy” tracks
-          suddenly concentrate popularity, or does the density curve stay messy?
+          line up with popularity. Drag across the energy chart below—does isolating high-energy tracks
+          produce a clearer popularity pattern, or does the curve stay flat?
         </p>
         <div class="energy-brush-layout">
           <div class="energy-brush-panel">
@@ -214,8 +214,9 @@
           What if we flip the script? A lot of us reach for music to feel better or unwind—so maybe the
           <strong>mood</strong> of a track shapes how popular it is with a wide audience. It seems plausible
           that a sunnier song would outperform a downbeat one. Each cell below is a valence × energy pocket;
-          <strong>color is median popularity</strong> in that pocket (brighter = more popular). Hover for track
-          counts—if mood alone drove hits, sunnier columns would light up across the board.
+          <strong>color is median popularity</strong> in that pocket (brighter = more popular),
+          and the <strong>number inside each cell is the track count</strong> for that pocket.
+          Hover for the full breakdown—if mood alone drove hits, sunnier columns would light up across the board.
         </p>
 
         <div
@@ -234,12 +235,47 @@
       <!-- Insight: valence / energy correlation -->
       <section class="insight-section">
         <p class="insight-lead">
-          We might be getting somewhere—but not quite. At least it seems like we can kind of see a correlation
+          We might be getting somewhere—but not quite. There is some visible correlation
           between energy and valence, which makes sense: higher-energy songs often <em>sound</em> sunnier too.
         </p>
         <p>
-          Looking at the heatmap, lower-valence pockets may look slightly higher in popularity from the color,
-          but the gap is not very statistically meaningful. So maybe not valence, then…
+          Looking at the heatmap, lower-valence cells do tend to appear slightly brighter,
+          but the difference is too small to be meaningful. So maybe not valence, then…
+        </p>
+      </section>
+
+      <!-- Mini viz 4: genre fingerprints — initGenreViz() -->
+      <section class="mini-viz" id="mini-viz-genre">
+        <h2>Do genres have an audio personality?</h2>
+        <p class="mini-viz-description">
+          We have been looking at individual features—but what if we zoom out to entire genres?
+          Each bubble below represents a genre, placed by its average energy and mood. Bubble size
+          shows how danceable it is on average. Hover a bubble to see its full audio fingerprint.
+        </p>
+
+        <div
+          id="genre-bubble-chart"
+          class="genre-bubble-chart viz-chart"
+          aria-label="Bubble chart of genres by average energy and valence"
+        ></div>
+        <p id="genre-bubble-readout" class="genre-bubble-readout"></p>
+        <p id="genre-bubble-status" class="tempo-scatter-status">Loading chart…</p>
+
+        <p class="viz-disclaimer">
+          <strong>Data:</strong> Averages computed from 1,000 sampled tracks per genre via the Spotify dataset.
+        </p>
+      </section>
+
+      <!-- Insight: genre fingerprints -->
+      <section class="insight-section">
+        <p class="insight-lead">
+          Genres do claim distinct sonic territory. Classical sits alone in the calm, introspective corner.
+          Metal surges into the high-energy, low-valence zone. Latin and R&amp;B share the sunny, rhythmic
+          corner—and their large bubbles confirm they are also the most danceable. Pop and K-Pop cluster
+          near the center, accessible across moods.
+        </p>
+        <p>
+          But even within a genre, individual songs scatter widely—which is exactly why no single dial predicts a hit.
         </p>
       </section>
 
@@ -258,8 +294,8 @@
         <div class="big-picture-break" aria-hidden="true"></div>
 
         <p class="big-picture-bridge">
-          Now that that is out of the way, one more thing. Using the three attributes we looked at—tempo,
-          energy, and valence—let us try to point you toward songs you might like based on similarity.
+          One more thing. Using the three attributes we looked at—tempo, energy, and valence—let us
+          try to point you toward songs you might like based on similarity.
         </p>
       </section>
 
@@ -267,9 +303,9 @@
       <section class="mini-viz" id="mini-viz-neighbor">
         <h2>Which songs are living in the same sonic neighborhood as yours?</h2>
         <p class="mini-viz-description">
-          Each track in our merged English catalog sits at a point in three-axis space: how energetic it is, how positive its mood, and how fast it runs.
-          Type a song or artist below—your pick lights up in gold, and the 20 closest unique titles
-          (by straight-line distance across those three axes) glow pink. Drag to rotate; scroll to zoom.
+          Each track sits at a point in 3D space defined by its energy, mood (valence), and tempo.
+          Type a song or artist below—your pick lights up in gold, and the 20 closest matches glow pink.
+          Drag to rotate; scroll to zoom.
         </p>
 
         <div class="nbr-search-wrap">

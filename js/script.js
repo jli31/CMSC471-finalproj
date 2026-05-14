@@ -801,7 +801,7 @@ function initEnergyBrush() {
       return;
     }
     const medianPop = d3.median(subset, (d) => d.popularity);
-    statusEl.textContent = `${subset.length.toLocaleString()} tracks with energy ${e0.toFixed(2)}–${e1.toFixed(2)} · median popularity ${medianPop?.toFixed(0) ?? "—"}. If energy “explained” hits, this density curve would sharpen as you brush higher—it usually doesn’t.`;
+    statusEl.textContent = `${subset.length.toLocaleString()} tracks · energy ${e0.toFixed(2)}–${e1.toFixed(2)} · median popularity ${medianPop?.toFixed(0) ?? "\u2014"}.`;
   }
 
   function applyBrushRange(e0, e1) {
@@ -1092,10 +1092,10 @@ function initMoodHeatmap() {
       .attr("y", (d) => y(d.ei) + y.bandwidth() / 2 + 4)
       .attr("text-anchor", "middle")
       .attr("fill", (d) => (d.median >= (popExtent[0] + popExtent[1]) / 2 ? "#0f172a" : "#f8fafc"))
-      .attr("font-size", 10)
+      .attr("font-size", 9)
       .attr("font-weight", 600)
       .attr("pointer-events", "none")
-      .text((d) => Math.round(d.median));
+      .text((d) => d.count >= 1000 ? `${(d.count / 1000).toFixed(1)}k` : d.count);
 
     g.append("g")
       .attr("class", "axis")
@@ -1164,7 +1164,7 @@ function initMoodHeatmap() {
       .text("Median pop");
 
     if (statusEl) {
-      statusEl.textContent = `${songs.length.toLocaleString()} tracks (2015–2025) · color = median popularity · no clear sweep toward sunnier valence.`;
+      statusEl.textContent = `${songs.length.toLocaleString()} tracks (2015–2025) · color = median popularity · number in cell = track count · no clear sweep toward sunnier valence.`;
     }
   }
 
@@ -1203,6 +1203,175 @@ function initMoodHeatmap() {
     });
 }
 
+function initGenreViz() {
+  const chartEl = document.getElementById("genre-bubble-chart");
+  const statusEl = document.getElementById("genre-bubble-status");
+  const readoutEl = document.getElementById("genre-bubble-readout");
+  if (!chartEl) return;
+
+  d3.csv("data/processed/genre_summary.csv")
+    .then((rows) => {
+      const genres = rows
+        .map((r) => ({
+          genre: r.genre,
+          energy: +r.energy,
+          valence: +r.valence,
+          danceability: +r.danceability,
+          tempo: +r.tempo,
+        }))
+        .filter((d) => d.genre && isFinite(d.energy) && isFinite(d.valence));
+
+      if (!genres.length) {
+        if (statusEl) statusEl.textContent = "No genre data to display.";
+        return;
+      }
+      renderBubbles(genres);
+    })
+    .catch(() => {
+      if (statusEl) statusEl.textContent = "Could not load genre summary data.";
+    });
+
+  function renderBubbles(genres) {
+    const margin = { top: 24, right: 24, bottom: 54, left: 52 };
+    const height = 400;
+    const width = Math.max(340, chartEl.clientWidth || 620);
+    const innerW = width - margin.left - margin.right;
+    const innerH = height - margin.top - margin.bottom;
+
+    d3.select(chartEl).selectAll("*").remove();
+
+    const svg = d3
+      .select(chartEl)
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("viewBox", `0 0 ${width} ${height}`);
+
+    const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear().domain([0, 1]).range([0, innerW]);
+    const y = d3.scaleLinear().domain([0, 1]).range([innerH, 0]);
+    const rScale = d3.scaleLinear()
+      .domain(d3.extent(genres, (d) => d.danceability))
+      .range([16, 32]);
+
+    const colorScale = d3.scaleOrdinal()
+      .domain(genres.map((d) => d.genre))
+      .range([
+        "#6366f1", "#f472b6", "#34d399", "#fbbf24", "#60a5fa",
+        "#a78bfa", "#fb923c", "#2dd4bf", "#f87171", "#e879f9",
+        "#86efac", "#facc15",
+      ]);
+
+    g.append("line")
+      .attr("x1", x(0.5)).attr("x2", x(0.5))
+      .attr("y1", 0).attr("y2", innerH)
+      .attr("stroke", "rgba(255,255,255,0.07)")
+      .attr("stroke-dasharray", "4,4");
+    g.append("line")
+      .attr("x1", 0).attr("x2", innerW)
+      .attr("y1", y(0.5)).attr("y2", y(0.5))
+      .attr("stroke", "rgba(255,255,255,0.07)")
+      .attr("stroke-dasharray", "4,4");
+
+    [
+      { qx: 0.03, qy: 0.97, label: "Calm & subdued" },
+      { qx: 0.53, qy: 0.97, label: "Calm & sunny" },
+      { qx: 0.03, qy: 0.50, label: "Intense & dark" },
+      { qx: 0.53, qy: 0.50, label: "Intense & sunny" },
+    ].forEach(({ qx, qy, label }) => {
+      g.append("text")
+        .attr("x", x(qx))
+        .attr("y", y(qy))
+        .attr("fill", "rgba(196,181,253,0.3)")
+        .attr("font-size", 10)
+        .text(label);
+    });
+
+    const nodes = g
+      .selectAll("g.genre-node")
+      .data(genres)
+      .join("g")
+      .attr("class", "genre-node")
+      .attr("transform", (d) => `translate(${x(d.valence)},${y(d.energy)})`);
+
+    nodes
+      .append("circle")
+      .attr("r", (d) => rScale(d.danceability))
+      .attr("fill", (d) => colorScale(d.genre))
+      .attr("fill-opacity", 0.8)
+      .attr("stroke", "rgba(15,23,42,0.6)")
+      .attr("stroke-width", 1.5);
+
+    nodes
+      .append("text")
+      .attr("text-anchor", "middle")
+      .attr("dy", "0.35em")
+      .attr("fill", "#fff")
+      .attr("font-size", 9)
+      .attr("font-weight", 700)
+      .attr("pointer-events", "none")
+      .text((d) => d.genre);
+
+    nodes
+      .on("mouseenter", function (_e, d) {
+        d3.select(this)
+          .select("circle")
+          .attr("fill-opacity", 1)
+          .attr("stroke", "#f8fafc")
+          .attr("stroke-width", 2.5);
+        if (readoutEl) {
+          readoutEl.textContent = `${d.genre} · energy ${d.energy.toFixed(2)} · valence ${d.valence.toFixed(2)} · danceability ${d.danceability.toFixed(2)} · avg tempo ${Math.round(d.tempo)} BPM`;
+        }
+      })
+      .on("mouseleave", function () {
+        d3.select(this)
+          .select("circle")
+          .attr("fill-opacity", 0.8)
+          .attr("stroke", "rgba(15,23,42,0.6)")
+          .attr("stroke-width", 1.5);
+        if (readoutEl) readoutEl.textContent = "";
+      });
+
+    g.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${innerH})`)
+      .call(d3.axisBottom(x).ticks(5).tickFormat(d3.format(".1f")).tickSizeOuter(0));
+    g.append("g")
+      .attr("class", "axis")
+      .call(d3.axisLeft(y).ticks(5).tickFormat(d3.format(".1f")).tickSizeOuter(0));
+
+    g.append("text")
+      .attr("x", innerW / 2)
+      .attr("y", innerH + 42)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 11)
+      .text("Mood / Valence (0 = subdued → 1 = sunny)");
+
+    g.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("x", -innerH / 2)
+      .attr("y", -40)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#c4b5fd")
+      .attr("font-size", 11)
+      .text("Energy (0 = calm → 1 = intense)");
+
+    g.append("text")
+      .attr("x", innerW - 4)
+      .attr("y", innerH - 6)
+      .attr("text-anchor", "end")
+      .attr("fill", "rgba(196,181,253,0.4)")
+      .attr("font-size", 9)
+      .text("Bubble size = danceability");
+
+    if (statusEl) {
+      statusEl.textContent = "Average audio features across 1,000 sampled tracks per genre.";
+    }
+  }
+}
+
 // --- Bootstrap all visualizations once the DOM is ready ---
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -1210,4 +1379,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initTempoViz();
   initEnergyBrush();
   initMoodHeatmap();
+  initGenreViz();
 });
